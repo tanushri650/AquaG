@@ -1,0 +1,68 @@
+Good news again — this is very likely already done too, since your screenshot showed `zone_flood_data.csv` already sitting in the file list. This spec is just describing what that CSV should look like. You just need to verify it matches exactly, not create it from scratch.
+
+## Step 1: Check if your existing CSV already matches this spec
+
+Paste this into Replit's AI chat:
+
+```
+Open zone_flood_data.csv and show me:
+1. The column headers
+2. The first 5 rows
+3. The total row count
+4. A count of how many rows have flood_severity = Low, Medium, and High
+5. Confirm there are no blank/missing values in any column
+```
+
+Compare what it shows you against the required column list:
+```
+zone_id, rainfall_1h, rainfall_3h, rainfall_6h, elevation, slope, 
+distance_to_drain, drain_capacity, pump_load_pct, flood_history_count, 
+population_density, critical_infra_flag, flood_severity
+```
+
+## Step 2: If anything doesn't match, fix it with one prompt
+
+If columns are missing, misnamed, or there are blank values, paste this:
+
+```
+Regenerate zone_flood_data.csv with exactly these columns, in this order:
+zone_id, rainfall_1h, rainfall_3h, rainfall_6h, elevation, slope, distance_to_drain, 
+drain_capacity, pump_load_pct, flood_history_count, population_density, 
+critical_infra_flag, flood_severity
+
+Requirements:
+- 150 rows, zone_id as ZONE-001, ZONE-002, etc.
+- rainfall_1h, rainfall_3h, rainfall_6h: numeric mm, realistic increasing values (1h < 3h < 6h)
+- elevation: numeric, 5 to 60
+- slope: numeric, 0.5 to 8
+- distance_to_drain: numeric, 50 to 1000
+- drain_capacity: numeric, 20 to 100
+- pump_load_pct: numeric, 10 to 100
+- flood_history_count: integer, 0 to 5
+- population_density: numeric, 2000 to 25000
+- critical_infra_flag: 0 or 1
+- flood_severity: exactly "Low", "Medium", or "High" — computed using this rule:
+  score = (rainfall_3h*0.4) + (flood_history_count*20) - (elevation*0.5) - (drain_capacity*0.3)
+  score > 60 = High, score > 30 = Medium, else Low
+- No blank values anywhere
+- Include a reasonable mix of all three severity classes (not all one class)
+Save this as zone_flood_data.csv, then also retrain aquag_model.pkl using this new file 
+with the same XGBoost training approach as before.
+```
+
+This regenerates both the CSV **and** retrains the model on it in one go, so they stay in sync.
+
+## Step 3: Confirm it's ready
+
+Once done, ask:
+
+```
+Show me the classification report from the retrained model, and confirm 
+aquag_model.pkl was saved successfully.
+```
+
+If it shows reasonable accuracy/F1 numbers with no errors, you're done — the CSV meets the spec, and the model is trained on it correctly.
+
+---
+
+One clarification on your last line: you don't need Colab specifically — since you're already doing this training in Replit (as your screenshot shows), that's completely fine. The instruction just meant "wherever you're training" — Colab and Replit both work the same way here.
