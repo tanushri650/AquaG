@@ -1,0 +1,1 @@
+- [Post-merge Python setup](python-post-merge.md) — Replit-managed Python hooks need a non-interactive pip install that allows the externally managed environment.
