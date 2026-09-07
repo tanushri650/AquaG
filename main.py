@@ -1,14 +1,16 @@
-"""Train an AquaG flood-risk model from the supplied Delhi flood dataset.
+"""Train an AquaG water-logging model from the supplied Delhi flood dataset.
 
 The supplied archive is a page-by-page export of the Delhi Flood Control Order.
 Its most consistently structured records are the water-logging tables on pages
 58-83, so those pages are normalized into ``zone_flood_data.csv``.
 
-The source records do not contain a measured flood/no-flood target. For a
-reproducible baseline, ``label`` identifies locations with repeated dates in
-the source record (1 = repeated water-logging observations, 0 = one observed
-date). This is a frequency baseline, not a substitute for a measured flood
-forecast label.
+The model target is based on measured location/date observations, not on the
+number of dates attached to a location. A positive row is a location/date
+reported as water-logged by the order. A matched negative row is a date in the
+same source year for which that location is absent from the order's
+water-logging list. The saved metadata records this source-observation
+definition explicitly: an absent incident record is not proof that a location
+could never flood outside the source's observation coverage.
 """
 
 from __future__ import annotations
@@ -22,7 +24,14 @@ import numpy as np
 import pandas as pd
 import sklearn
 import xgboost
-from sklearn.metrics import accuracy_score
+from sklearn.metrics import (
+    accuracy_score,
+    confusion_matrix,
+    f1_score,
+    precision_score,
+    recall_score,
+    roc_auc_score,
+)
 from sklearn.model_selection import train_test_split
 from xgboost import XGBClassifier
 
@@ -147,7 +156,14 @@ def load_water_logging_records() -> list[dict[str, object]]:
 
 
 def build_dataset(records: list[dict[str, object]]) -> pd.DataFrame:
-    """Add the reproducible baseline target and model-ready text features."""
+    """Build measured location/date outcomes and model-ready features.
+
+    The source has positive observations only, so each positive observation is
+    paired with one deterministic, same-year date that is absent for that
+    location. These controls represent the measurable target available in the
+    order: incident listed versus incident not listed on that date. They never
+    use ``event_count`` to define the target.
+    """
 
     if not records:
         raise RuntimeError(
@@ -155,8 +171,76 @@ def build_dataset(records: list[dict[str, object]]) -> pd.DataFrame:
             "Make sure the supplied page CSVs are present."
         )
 
-    frame = pd.DataFrame(records)
-    frame["label"] = (frame["event_count"] > 1).astype(int)
+    source_frame = pd.DataFrame(records)
+    source_frame["observed_dates"] = source_frame["date_values"].str.split("|")
+    all_dates_by_year: dict[int, list[str]] = {}
+    for dates in source_frame["observed_dates"]:
+        for date in dates:
+            all_dates_by_year.setdefault(int(date[:4]), set()).add(date)
+    all_dates_by_year = {
+        year: sorted(dates) for year, dates in all_dates_by_year.items()
+    }
+
+    measured_rows: list[dict[str, object]] = []
+    for source_row in source_frame.to_dict("records"):
+        observed_dates = list(source_row["observed_dates"])
+        observed_set = set(observed_dates)
+        for event_date in observed_dates:
+            measured_rows.append(
+                {
+                    **{
+                        key: value
+                        for key, value in source_row.items()
+                        if key != "observed_dates"
+                    },
+                    "event_date": event_date,
+                    "event_year": int(event_date[:4]),
+                    "event_month": int(event_date[5:7]),
+                    "event_day": int(event_date[8:10]),
+                    "outcome_source": (
+                        "Delhi Flood Control Order water-logging incident list"
+                    ),
+                    "flood_outcome": 1,
+                }
+            )
+
+        # Use the first available same-year non-incident date as a matched
+        # control. Sorting makes the generated dataset reproducible.
+        for event_date in observed_dates:
+            year_dates = all_dates_by_year[int(event_date[:4])]
+            control_dates = [
+                date for date in year_dates if date not in observed_set
+            ]
+            if not control_dates:
+                continue
+            control_date = control_dates[0]
+            measured_rows.append(
+                {
+                    **{
+                        key: value
+                        for key, value in source_row.items()
+                        if key != "observed_dates"
+                    },
+                    "event_date": control_date,
+                    "event_year": int(control_date[:4]),
+                    "event_month": int(control_date[5:7]),
+                    "event_day": int(control_date[8:10]),
+                    "event_count": 0,
+                    "outcome_source": (
+                        "Delhi Flood Control Order: location absent from "
+                        "water-logging incident list on this date"
+                    ),
+                    "flood_outcome": 0,
+                }
+            )
+
+    frame = pd.DataFrame(measured_rows)
+    if frame.empty or frame["flood_outcome"].nunique() < 2:
+        raise RuntimeError(
+            "The source did not produce both measured incident and matched "
+            "non-incident outcomes."
+        )
+    frame["label"] = frame["flood_outcome"].astype(int)
     combined_text = (frame["road"] + " " + frame["location"]).str.lower()
     frame["road_length"] = frame["road"].str.len()
     frame["location_length"] = frame["location"].str.len()
@@ -167,17 +251,19 @@ def build_dataset(records: list[dict[str, object]]) -> pd.DataFrame:
     return frame
 
 
-def train_model(frame: pd.DataFrame) -> tuple[XGBClassifier, float]:
-    """Train and evaluate the baseline classifier."""
+def train_model(
+    frame: pd.DataFrame,
+) -> tuple[XGBClassifier, dict[str, object]]:
+    """Train and evaluate against the measured flood outcome."""
 
-    if frame["label"].nunique() < 2:
+    if frame["flood_outcome"].nunique() < 2:
         raise RuntimeError(
-            "The normalized dataset contains only one label class; "
-            "a classifier needs both single-date and repeated-date records."
+            "The labeled dataset contains only one measured outcome class; "
+            "a classifier needs both incident and non-incident records."
         )
 
     X = frame[FEATURE_COLUMNS].astype(float)
-    y = frame["label"].astype(int)
+    y = frame["flood_outcome"].astype(int)
     X_train, X_test, y_train, y_test = train_test_split(
         X, y, test_size=0.2, random_state=42, stratify=y
     )
@@ -195,10 +281,32 @@ def train_model(frame: pd.DataFrame) -> tuple[XGBClassifier, float]:
     )
     model.fit(X_train, y_train)
     predictions = model.predict(X_test)
-    return model, float(accuracy_score(y_test, predictions))
+    probabilities = model.predict_proba(X_test)[:, 1]
+    tn, fp, fn, tp = confusion_matrix(y_test, predictions, labels=[0, 1]).ravel()
+    metrics = {
+        "accuracy": float(accuracy_score(y_test, predictions)),
+        "precision": float(
+            precision_score(y_test, predictions, zero_division=0)
+        ),
+        "recall": float(recall_score(y_test, predictions, zero_division=0)),
+        "f1": float(f1_score(y_test, predictions, zero_division=0)),
+        "roc_auc": float(roc_auc_score(y_test, probabilities)),
+        "confusion_matrix": {
+            "true_negative": int(tn),
+            "false_positive": int(fp),
+            "false_negative": int(fn),
+            "true_positive": int(tp),
+        },
+        "test_rows": int(len(y_test)),
+    }
+    return model, metrics
 
 
-def save_outputs(frame: pd.DataFrame, model: XGBClassifier, accuracy: float) -> None:
+def save_outputs(
+    frame: pd.DataFrame,
+    model: XGBClassifier,
+    metrics: dict[str, object],
+) -> None:
     """Write the requested dataset, model, and package version record."""
 
     output_columns = [
@@ -213,6 +321,8 @@ def save_outputs(frame: pd.DataFrame, model: XGBClassifier, accuracy: float) -> 
         "event_month",
         "event_day",
         "event_count",
+        "outcome_source",
+        "flood_outcome",
         "label",
     ]
     frame[output_columns].to_csv(DATASET_PATH, index=False)
@@ -220,8 +330,30 @@ def save_outputs(frame: pd.DataFrame, model: XGBClassifier, accuracy: float) -> 
         {
             "model": model,
             "feature_columns": FEATURE_COLUMNS,
-            "label_definition": "1 when a source location has repeated observed dates; 0 otherwise",
-            "accuracy": accuracy,
+            "target_column": "flood_outcome",
+            "label_definition": (
+                "1 when the Delhi Flood Control Order lists water-logging "
+                "for the location/date; 0 when the location is absent from "
+                "the order's water-logging list on a matched same-year date"
+            ),
+            "target_source": (
+                "Delhi Flood Control Order, water-logging tables on pages 58-83"
+            ),
+            "target_caveat": (
+                "A negative is a verified non-incident in this source list, "
+                "not proof of no flooding outside the order's observation "
+                "coverage."
+            ),
+            "metrics": metrics,
+            "accuracy": metrics["accuracy"],
+            "class_counts": {
+                str(key): int(value)
+                for key, value in frame["flood_outcome"]
+                .value_counts()
+                .sort_index()
+                .items()
+            },
+            "training_rows": int(len(frame)),
         },
         MODEL_PATH,
     )
@@ -244,11 +376,21 @@ def save_outputs(frame: pd.DataFrame, model: XGBClassifier, accuracy: float) -> 
 def main() -> None:
     records = load_water_logging_records()
     frame = build_dataset(records)
-    model, accuracy = train_model(frame)
-    save_outputs(frame, model, accuracy)
+    model, metrics = train_model(frame)
+    save_outputs(frame, model, metrics)
     print(f"Records loaded: {len(frame)}")
-    print(f"Label counts: {frame['label'].value_counts().sort_index().to_dict()}")
-    print(f"Accuracy: {accuracy:.4f}")
+    print(
+        "Measured outcome counts: "
+        f"{frame['flood_outcome'].value_counts().sort_index().to_dict()}"
+    )
+    print(
+        "Metrics: "
+        + ", ".join(
+            f"{name}={value:.4f}"
+            for name, value in metrics.items()
+            if isinstance(value, float)
+        )
+    )
     print(f"Saved dataset: {DATASET_PATH.name}")
     print(f"Saved model: {MODEL_PATH.name}")
     print(f"Saved versions: {VERSIONS_PATH.name}")
