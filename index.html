@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AquaG — Operational Urban Flood GIS Command Center</title>
+  
+  <!-- Leaflet CSS (Free Open Source CDN) -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Main Operational UI Stylesheet -->
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div id="app-container">
+    <!-- 1. TOP COMMAND NAVIGATION BAR -->
+    <header class="command-nav glass-panel">
+      <div class="nav-brand">
+        <div class="brand-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"></path>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="app-name">AquaG <span class="sih-badge">SIH26085</span></span>
+          <span class="gis-tag"><span class="live-dot"></span> GIS OPERATIONAL</span>
+        </div>
+      </div>
+
+      <!-- Navigation Module Items (GIS Console Navigation) -->
+      <nav class="nav-modules">
+        <button class="nav-module-btn active" title="Active Operational GIS View">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"/><line x1="8" y1="2" x2="8" y2="18"/><line x1="16" y1="6" x2="16" y2="22"/></svg>
+          Flood GIS Map
+        </button>
+        <button class="nav-module-btn disabled" title="Coming in later stage">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          Drainage & SCADA
+        </button>
+        <button class="nav-module-btn disabled" title="Coming in later stage">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+          Alerts & Triage
+        </button>
+        <button class="nav-module-btn disabled" title="Coming in later stage">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          Hydro Analytics
+        </button>
+      </nav>
+
+      <!-- System Status Telemetry -->
+      <div class="nav-status-telemetry">
+        <div id="status-health-badge" class="telemetry-pill offline">
+          <span class="status-dot"></span>
+          <span id="health-status-text">Backend Offline</span>
+        </div>
+        <div class="telemetry-item">
+          <span class="t-label">Model:</span>
+          <span id="t-model" class="t-val">XGBoost V2</span>
+        </div>
+        <div class="telemetry-item">
+          <span class="t-label">Router:</span>
+          <span id="t-router" class="t-val">AquaGraph A*</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- 2. MAIN WORKSPACE GRID -->
+    <main class="workspace-grid">
+      <!-- MAIN GIS LEAFLET MAP CANVAS -->
+      <div id="map-workspace">
+        <div id="map"></div>
+
+        <!-- 3. FLOATING ACTIVE LAYERS PANEL -->
+        <div class="active-layers-panel glass-panel">
+          <div class="panel-tag">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg>
+            ACTIVE GIS LAYERS
+          </div>
+          <div class="layer-item">
+            <label class="custom-checkbox">
+              <input type="checkbox" id="layer-zones-check" checked />
+              <span class="checkmark"></span>
+              <span class="layer-name">Zone Severity Layers (GET /zones)</span>
+            </label>
+          </div>
+          <div class="layer-item">
+            <label class="custom-checkbox">
+              <input type="checkbox" id="layer-drains-check" checked />
+              <span class="checkmark"></span>
+              <span class="layer-name">MPD-1976 Drainage Locations</span>
+            </label>
+          </div>
+          <div class="layer-item">
+            <label class="custom-checkbox">
+              <input type="checkbox" id="layer-route-check" checked />
+              <span class="checkmark"></span>
+              <span class="layer-name">AquaGraph Risk Polyline</span>
+            </label>
+          </div>
+        </div>
+
+        <!-- 5. FLOATING MAP LEGEND (BOTTOM LEFT) -->
+        <div class="map-legend-panel glass-panel">
+          <div class="legend-header">FLOOD RISK CLASSIFICATION</div>
+          <div class="legend-items">
+            <div class="legend-row">
+              <span class="legend-color high"></span>
+              <span class="legend-text">High Severity / Spatial Risk ($5.0\times$)</span>
+            </div>
+            <div class="legend-row">
+              <span class="legend-color medium"></span>
+              <span class="legend-text">Medium Severity / Spatial Risk ($2.0\times$)</span>
+            </div>
+            <div class="legend-row">
+              <span class="legend-color low"></span>
+              <span class="legend-text">Low Severity / Spatial Risk ($1.0\times$)</span>
+            </div>
+          </div>
+          <div class="legend-footer">
+            Basis: Model V2 Inference & DEM 30m / MPD-1976 Drainage Proxy
+          </div>
+        </div>
+
+        <!-- 6. MAP CLICK INSPECTOR OVERLAY -->
+        <div id="inspector-card" class="inspector-overlay-card glass-panel hidden">
+          <div class="card-title-bar">
+            <span><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> POINT GIS INSPECTION</span>
+            <button id="btn-close-inspector" class="close-card-btn">&times;</button>
+          </div>
+          <div class="inspector-body">
+            <div class="insp-row">
+              <span class="insp-lbl">Coordinates:</span>
+              <span id="insp-coords" class="insp-val font-mono">--</span>
+            </div>
+            <div class="insp-row">
+              <span class="insp-lbl">DEM Elevation:</span>
+              <span id="insp-elevation" class="insp-val highlight">--</span>
+            </div>
+            <div class="insp-row">
+              <span class="insp-lbl">Nearest Drain Location:</span>
+              <span id="insp-drain-name" class="insp-val">--</span>
+            </div>
+            <div class="insp-row">
+              <span class="insp-lbl">Drainage Proximity:</span>
+              <span id="insp-drain-dist" class="insp-val highlight">--</span>
+            </div>
+            <div class="insp-basis-tag">
+              Risk Basis: <strong id="insp-basis">spatial_proxy</strong> (Terrain DEM + MPD-1976)
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. BOTTOM NOWCAST TIMELINE BAR -->
+        <div class="timeline-bar-container glass-panel">
+          <div class="timeline-label">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            NOWCAST TIMELINE
+          </div>
+          <div class="timeline-steps">
+            <button class="time-step-btn active" data-step="now">
+              <span class="step-dot"></span>
+              <span class="step-label">NOW (Real-Time)</span>
+            </button>
+            <button class="time-step-btn scenario" data-step="+30m" title="Scenario Simulation Prototype">
+              <span class="step-label">+30m</span>
+            </button>
+            <button class="time-step-btn scenario" data-step="+1h" title="Scenario Simulation Prototype">
+              <span class="step-label">+1h</span>
+            </button>
+            <button class="time-step-btn scenario" data-step="+2h" title="Scenario Simulation Prototype">
+              <span class="step-label">+2h</span>
+            </button>
+            <button class="time-step-btn scenario" data-step="+3h" title="Scenario Simulation Prototype">
+              <span class="step-label">+3h</span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4. RIGHT-SIDE FLOOD SITUATION COMMAND PANEL -->
+      <aside class="command-sidebar">
+        <!-- Sidebar Navigation Tabs -->
+        <div class="sidebar-tabs-header glass-panel">
+          <button class="side-tab-btn active" data-tab="tab-situation">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2.69l5.66 5.66a8 8 0 1 1-11.31 0z"/></svg>
+            Rain Simulator & Nowcast
+          </button>
+          <button class="side-tab-btn" data-tab="tab-routing">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
+            AquaGraph Router
+          </button>
+        </div>
+
+        <!-- TAB 1: RAINFALL SCENARIO SIMULATOR & ACTION PRIORITY -->
+        <div id="tab-situation" class="sidebar-tab-content active glass-panel">
+          <div class="section-title-box">
+            <h3>Rainfall Scenario Simulator</h3>
+            <span class="sub-title-text">Model V2 (XGBoost) Rain Event Simulation</span>
+          </div>
+
+          <!-- 4 Preset Buttons: NORMAL, MODERATE, HEAVY, EXTREME -->
+          <div class="scenario-presets-box">
+            <span class="box-label">Simulation Presets</span>
+            <div class="preset-btn-group-4">
+              <button class="preset-btn-4" data-preset="normal">NORMAL</button>
+              <button class="preset-btn-4" data-preset="moderate">MODERATE</button>
+              <button class="preset-btn-4" data-preset="heavy">HEAVY</button>
+              <button class="preset-btn-4" data-preset="extreme">EXTREME</button>
+            </div>
+          </div>
+
+          <!-- Feature Inputs Form -->
+          <form id="predict-form" class="predict-form-grid">
+            <div class="group-header">Simulated Rainfall Inputs (mm)</div>
+            <div class="field-item">
+              <label>Rainfall 1h (mm)</label>
+              <input type="number" id="rainfall_1h" step="0.1" value="45.0" required />
+            </div>
+            <div class="field-item">
+              <label>Rainfall 3h (mm)</label>
+              <input type="number" id="rainfall_3h" step="0.1" value="85.0" required />
+            </div>
+            <div class="field-item">
+              <label>Rainfall 6h (mm)</label>
+              <input type="number" id="rainfall_6h" step="0.1" value="130.0" required />
+            </div>
+            <div class="field-item">
+              <label>Intensity (mm/h)</label>
+              <input type="number" id="recent_rainfall_intensity" step="0.1" value="22.5" required />
+            </div>
+
+            <div class="group-header">Terrain & Spatial Features</div>
+            <div class="field-item">
+              <label>DEM Elevation (m)</label>
+              <input type="number" id="elevation" step="0.1" value="208.5" required />
+            </div>
+            <div class="field-item">
+              <label>Slope (deg)</label>
+              <input type="number" id="slope" step="0.1" value="1.8" required />
+            </div>
+            <div class="field-item">
+              <label>Drain Dist (m)</label>
+              <input type="number" id="distance_to_drain" step="0.1" value="45.0" required />
+            </div>
+
+            <div class="group-header">Infrastructure & Exposure</div>
+            <div class="field-item">
+              <label>Road Dist (m)</label>
+              <input type="number" id="distance_to_road" step="0.1" value="20.0" required />
+            </div>
+            <div class="field-item">
+              <label>Infra Dist (m)</label>
+              <input type="number" id="distance_to_infra" step="0.1" value="150.0" required />
+            </div>
+            <div class="field-item">
+              <label>Population</label>
+              <input type="number" id="population_total" step="1" value="120000" required />
+            </div>
+            <div class="field-item">
+              <label>Critical Infra Flag</label>
+              <select id="critical_infra_flag">
+                <option value="1" selected>1 (Critical Asset Nearby)</option>
+                <option value="0">0 (Normal Exposure)</option>
+              </select>
+            </div>
+
+            <div class="form-submit-row">
+              <button type="submit" id="btn-predict" class="cmd-primary-btn">
+                <span class="btn-spinner hidden"></span>
+                <span>RUN SCENARIO SIMULATION</span>
+              </button>
+            </div>
+          </form>
+
+          <!-- ACTIVE SCENARIO SUMMARY CARD -->
+          <div class="scenario-summary-card">
+            <div class="sim-card-header">CURRENT SIMULATED SCENARIO</div>
+            <div class="sim-metrics-row">
+              <span><b>1h:</b> <span id="sim-sum-1h">45.0</span> mm</span>
+              <span><b>3h:</b> <span id="sim-sum-3h">85.0</span> mm</span>
+              <span><b>6h:</b> <span id="sim-sum-6h">130.0</span> mm</span>
+            </div>
+            <div class="sim-card-note">
+              Simulation scenario only — not an official rainfall forecast.
+            </div>
+          </div>
+
+          <!-- NOWCAST PREDICTION OUTCOME -->
+          <div id="predict-results-panel" class="results-display-panel hidden">
+            <div class="outcome-card severity-box">
+              <div class="outcome-header">
+                <span class="header-lbl">Model V2 Flood Severity</span>
+                <span class="ver-tag">XGBoost V2</span>
+              </div>
+              <div class="severity-content">
+                <div id="res-severity-badge" class="sev-badge low">Low</div>
+                <div class="prob-distribution">
+                  <div class="prob-row">
+                    <span class="p-name">Low:</span>
+                    <div class="p-track"><div id="p-bar-low" class="p-bar low" style="width:0%"></div></div>
+                    <span id="p-val-low" class="p-num">0%</span>
+                  </div>
+                  <div class="prob-row">
+                    <span class="p-name">Medium:</span>
+                    <div class="p-track"><div id="p-bar-medium" class="p-bar medium" style="width:0%"></div></div>
+                    <span id="p-val-medium" class="p-num">0%</span>
+                  </div>
+                  <div class="prob-row">
+                    <span class="p-name">High:</span>
+                    <div class="p-track"><div id="p-bar-high" class="p-bar high" style="width:0%"></div></div>
+                    <span id="p-val-high" class="p-num">0%</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- ACTION PRIORITY ENGINE AREA -->
+            <div class="outcome-card action-box">
+              <div class="outcome-header">
+                <span class="header-lbl">Action Priority Engine</span>
+                <span id="res-priority-score" class="score-pill">Score: --</span>
+              </div>
+              <div class="action-content">
+                <div id="res-action-level" class="act-level normal">NORMAL</div>
+                <p id="res-action-desc" class="act-desc">Standard operational monitoring active.</p>
+              </div>
+            </div>
+
+            <!-- LIGHTWEIGHT SCENARIO LOG CARD -->
+            <div class="outcome-card log-box">
+              <div class="outcome-header">
+                <span class="header-lbl">Simulated Scenarios Log</span>
+                <span class="ver-tag">Backend Tested</span>
+              </div>
+              <div id="scenario-log-list" class="scenario-log-list">
+                <div class="log-empty-msg">Run simulations to compare scenario outcomes...</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- TAB 2: AQUAGRAPH ROUTER -->
+        <div id="tab-routing" class="sidebar-tab-content glass-panel">
+          <div class="section-title-box">
+            <h3>AquaGraph A* Risk Router</h3>
+            <span class="sub-title-text">Spatially Varying Risk-Aware Pathfinding</span>
+          </div>
+
+          <form id="route-form" class="predict-form-grid">
+            <div class="group-header">Origin & Destination Coordinates</div>
+            
+            <div class="coord-input-group">
+              <div class="field-item">
+                <label>Origin Lat</label>
+                <input type="number" id="start_lat" step="0.000001" value="28.613900" required />
+              </div>
+              <div class="field-item">
+                <label>Origin Lon</label>
+                <input type="number" id="start_lon" step="0.000001" value="77.209000" required />
+              </div>
+              <button type="button" id="btn-pick-start" class="pick-map-btn" title="Click map to set Origin">Pick Origin</button>
+            </div>
+
+            <div class="coord-input-group">
+              <div class="field-item">
+                <label>Dest Lat</label>
+                <input type="number" id="end_lat" step="0.000001" value="28.650000" required />
+              </div>
+              <div class="field-item">
+                <label>Dest Lon</label>
+                <input type="number" id="end_lon" step="0.000001" value="77.230000" required />
+              </div>
+              <button type="button" id="btn-pick-end" class="pick-map-btn" title="Click map to set Destination">Pick Dest</button>
+            </div>
+
+            <div class="field-item full-width">
+              <label>Risk Avoidance Sensitivity</label>
+              <select id="route_risk">
+                <option value="Low" selected>Low Avoidance (Base Spatial Proxy Path)</option>
+                <option value="Medium">Medium Avoidance (Avoid Low-Lying Drains)</option>
+                <option value="High">High Avoidance (Strict Risk Bypass)</option>
+              </select>
+            </div>
+
+            <div class="route-submit-row">
+              <button type="submit" id="btn-route" class="cmd-primary-btn flex-1">
+                <span class="btn-spinner hidden"></span>
+                <span>Find Risk-Aware Route</span>
+              </button>
+              <button type="button" id="btn-clear-route" class="cmd-secondary-btn">Clear</button>
+            </div>
+          </form>
+
+          <!-- ROUTE METRICS OUTCOME -->
+          <div id="route-results-panel" class="results-display-panel hidden">
+            <div class="outcome-card route-metrics-box">
+              <div class="outcome-header">
+                <span class="header-lbl">AquaGraph Routing Metrics</span>
+                <span id="route-status-tag" class="ver-tag ok">OK</span>
+              </div>
+              <div class="metrics-grid-2col">
+                <div class="m-box">
+                  <span class="m-lbl">Physical Distance</span>
+                  <span id="route-dist" class="m-val">-- m</span>
+                </div>
+                <div class="m-box">
+                  <span class="m-lbl">Routing Cost</span>
+                  <span id="route-cost" class="m-val">--</span>
+                </div>
+                <div class="m-box">
+                  <span class="m-lbl">Path Nodes</span>
+                  <span id="route-nodes" class="m-val">--</span>
+                </div>
+                <div class="m-box">
+                  <span class="m-lbl">Risk Sensitivity</span>
+                  <span id="route-sensitivity" class="m-val">Low</span>
+                </div>
+                <div class="m-box">
+                  <span class="m-lbl">Origin Snap</span>
+                  <span id="route-snap-orig" class="m-val">-- m</span>
+                </div>
+                <div class="m-box">
+                  <span class="m-lbl">Dest Snap</span>
+                  <span id="route-snap-dest" class="m-val">-- m</span>
+                </div>
+              </div>
+
+              <div class="spatial-basis-footer">
+                <strong>Risk Basis:</strong> <span id="route-risk-basis">spatial_proxy</span> (DEM 30m + MPD-1976 Drains)
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </main>
+
+    <!-- FOOTER TECHNICAL DISCLAIMER BAR -->
+    <footer class="command-footer glass-panel">
+      <div class="footer-modules">
+        <span><strong>Model V2:</strong> Zone Severity XGBoost</span> • 
+        <span><strong>Action Engine:</strong> Deterministic Backend Scoring</span> • 
+        <span><strong>AquaGraph:</strong> A* Risk-Aware Routing</span> • 
+        <span><strong>GIS Basis:</strong> DEM 30m + MPD-1976 Drains</span>
+      </div>
+      <div class="footer-disclaimer-text">
+        <em>Operational Disclaimer: Rainfall scenarios represent user-defined simulations, NOT official rainfall forecasts or measured street water depths.</em>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Leaflet JavaScript CDN -->
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- Main Frontend Controller -->
+  <script src="app.js"></script>
+</body>
+</html>
