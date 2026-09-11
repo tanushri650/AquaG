@@ -15,7 +15,6 @@ Deployment optimized:
 
 from pathlib import Path
 
-import geopandas as gpd
 import rasterio
 from shapely.geometry import Point
 
@@ -119,6 +118,8 @@ def _load_drains():
     if DRAINS_GDF is not None:
         return DRAINS_GDF
 
+    import geopandas as gpd
+
     print("Loading drainage data lazily...")
 
     frames = []
@@ -191,6 +192,8 @@ def _load_population():
 
     if not POP_PATH.exists():
         return None
+
+    import geopandas as gpd
 
     print("Loading population data lazily...")
 

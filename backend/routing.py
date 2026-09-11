@@ -79,6 +79,8 @@ def haversine(
     )
 
 
+from shared_resources import get_shared_graph
+
 class AquaGRouter:
     """
     Memory-efficient A* router with dynamic flood-aware routing capability.
@@ -88,46 +90,26 @@ class AquaGRouter:
     - lat/lon: coordinate arrays
     - offsets/targets/distances: CSR-style adjacency arrays
     - node_risk_mult: compact NumPy array
-    - osm_id_to_index: fast lookup dictionary from OSM Node ID to array index
+    - osm_id_to_index: FastNodeIndex for O(log N) memory-efficient lookup
     """
 
     def __init__(self, graph_path=GRAPH_PATH):
         self.graph_path = Path(graph_path)
 
-        if not self.graph_path.exists():
-            raise FileNotFoundError(
-                f"Compact road graph not found: {self.graph_path}"
-            )
+        g_data = get_shared_graph()
 
-        print("Loading compact AquaG road graph...")
+        # Shared numpy graph arrays
+        self.node_ids = g_data["node_ids"]
+        self.osm_id_to_index = g_data["osm_id_to_index"]
+        self.lat = g_data["lat"]
+        self.lon = g_data["lon"]
+        self.offsets = g_data["offsets"]
+        self.targets = g_data["targets"]
+        self.distances = g_data["distances"]
+        self.node_risk_mult = g_data["node_risk_mult"]
 
-        graph = np.load(self.graph_path)
-
-        # Original OSM node IDs
-        self.node_ids = graph["node_ids"]
-
-        # Fast O(1) mapping from OSM Node ID to compact array index
-        self.osm_id_to_index = {
-            int(nid): idx for idx, nid in enumerate(self.node_ids)
-        }
-
-        # Coordinates
-        self.lat = graph["lat"]
-        self.lon = graph["lon"]
-
-        # CSR adjacency representation
-        self.offsets = graph["offsets"]
-        self.targets = graph["targets"]
-        self.distances = graph["distances"]
-
-        self.node_count = len(self.node_ids)
-        self.edge_count = len(self.targets)
-
-        print(
-            f"Compact graph loaded: "
-            f"{self.node_count:,} nodes, "
-            f"{self.edge_count:,} edges"
-        )
+        self.node_count = g_data["node_count"]
+        self.edge_count = g_data["edge_count"]
 
         # Coordinate array for nearest-node lookup
         node_coords = np.column_stack(
@@ -240,10 +222,16 @@ class AquaGRouter:
         start_node_id = int(self.node_ids[start])
         end_node_id = int(self.node_ids[target])
 
-        if start_snap_distance > 10000 or end_snap_distance > 10000:
+        # Check bounds against Delhi operating area [76.80, 28.40, 77.40, 28.90]
+        outside_delhi = (
+            not (28.40 <= start_lat <= 28.90 and 76.80 <= start_lon <= 77.40)
+            or not (28.40 <= end_lat <= 28.90 and 76.80 <= end_lon <= 77.40)
+        )
+
+        if outside_delhi or start_snap_distance > 10000 or end_snap_distance > 10000:
             return {
                 "status": "error",
-                "message": "Coordinates are outside the supported domain.",
+                "message": "Coordinates are outside the supported Delhi domain operating area.",
             }
 
         sensitivity = RISK_SENSITIVITY[risk]

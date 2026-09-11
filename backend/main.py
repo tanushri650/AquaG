@@ -71,22 +71,12 @@ METADATA_PATH = project_root / "models" / "aquag_model_v2_metadata.json"
 ZONE_DATASET_PATH = project_root / "data" / "processed" / "aquag_ml_dataset_v2_renamed.csv"
 
 
-def load_model_bundle() -> dict:
-    if not MODEL_PATH.exists():
-        raise FileNotFoundError(f"Missing model file: {MODEL_PATH}")
-    if not METADATA_PATH.exists():
-        raise FileNotFoundError(f"Missing metadata file: {METADATA_PATH}")
-    model = joblib.load(MODEL_PATH)
-    import json
-    with METADATA_PATH.open("r", encoding="utf-8") as f:
-        meta = json.load(f)
-    return {"model": model, "metadata": meta}
+from shared_resources import get_shared_model_bundle
 
-
-BUNDLE = load_model_bundle()
+BUNDLE = get_shared_model_bundle()
 MODEL = BUNDLE["model"]
 METADATA = BUNDLE["metadata"]
-FEATURE_ORDER = METADATA["feature_order"]
+FEATURE_ORDER = METADATA.get("feature_order", [])
 MODEL_TYPE = METADATA.get("model_type", "unknown")
 MODEL_VERSION = METADATA.get("model_version", "unknown")
 

@@ -1,0 +1,5 @@
+__pycache__/
+*.pyc
+openapi.txt
+.pytest_cache/
+scratch/

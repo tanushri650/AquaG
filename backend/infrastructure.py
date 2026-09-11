@@ -12,7 +12,7 @@ import time
 from pathlib import Path
 from typing import Dict, Any, List, Optional, Tuple
 
-from waterlogging import find_project_file
+from waterlogging import find_project_file, clamp_and_validate_bbox, DELHI_OPERATING_BOUNDS
 
 # ---------------------------------------------------------------------------
 # Path Resolutions & Constants
@@ -111,7 +111,6 @@ def _init_infrastructure_cache() -> None:
             "name": name,
             "category": category,
             "critical": is_critical,
-            "tags": tags,
             "source": "OSM"
         })
 
@@ -135,15 +134,30 @@ def get_infrastructure_geojson(
             "metadata": {"total": 0, "returned": 0, "source": "OSM"}
         }
 
-    # Bounding Box Filtering
-    filtered = []
-    if bbox and len(bbox) == 4:
-        min_lon, min_lat, max_lon, max_lat = bbox
-        for item in _INFRA_CACHE:
-            if min_lon <= item["lon"] <= max_lon and min_lat <= item["lat"] <= max_lat:
-                filtered.append(item)
-    else:
-        filtered = _INFRA_CACHE
+    # Bounding Box Filtering & Clamping
+    clamped_bbox, is_valid = clamp_and_validate_bbox(bbox)
+    if not is_valid or clamped_bbox is None:
+        exec_ms = round((time.time() - t_start) * 1000.0, 1)
+        return {
+            "type": "FeatureCollection",
+            "features": [],
+            "metadata": {
+                "total_matched": 0,
+                "returned_features": 0,
+                "max_features_cap": max_features,
+                "bbox": bbox,
+                "execution_ms": exec_ms,
+                "geometry": "Point",
+                "source": "OSM",
+                "status": "outside_operating_area",
+            },
+        }
+
+    min_lon, min_lat, max_lon, max_lat = clamped_bbox
+    filtered = [
+        item for item in _INFRA_CACHE
+        if min_lon <= item["lon"] <= max_lon and min_lat <= item["lat"] <= max_lat
+    ]
 
     total_matched = len(filtered)
 

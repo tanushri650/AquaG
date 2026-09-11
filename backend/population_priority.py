@@ -13,12 +13,12 @@ Population exposure represents a DISTRICT-LEVEL POPULATION EXPOSURE PROXY derive
 from __future__ import annotations
 import time
 import numpy as np
-import geopandas as gpd
 from pathlib import Path
 from typing import Dict, Any, List, Optional
 from scipy.spatial import cKDTree
 
-from waterlogging import get_street_waterlogging_geojson, find_project_file
+from shared_resources import get_shared_spatial_trees, find_project_file
+from waterlogging import get_street_waterlogging_geojson
 
 # ---------------------------------------------------------------------------
 # Path Resolutions & Resources
@@ -36,19 +36,10 @@ def _init_population_resources() -> None:
     if _POP_KDTREE is not None:
         return
 
-    if not POP_PATH.exists():
-        return
-
-    try:
-        gdf_pop = gpd.read_file(POP_PATH)
-        coords = np.column_stack([gdf_pop.geometry.y, gdf_pop.geometry.x]).astype(np.float32)
-        _POP_NAMES = gdf_pop["district"].values
-        _POP_TOTALS = gdf_pop["population_total"].values.astype(np.float32)
-        _POP_KDTREE = cKDTree(coords)
-    except Exception:
-        _POP_KDTREE = None
-        _POP_NAMES = None
-        _POP_TOTALS = None
+    st = get_shared_spatial_trees()
+    _POP_KDTREE = st["pop_tree"]
+    _POP_TOTALS = st["pop_totals"]
+    _POP_NAMES = st["pop_names"]
 
 
 def calculate_population_priority_score(

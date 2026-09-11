@@ -8,11 +8,11 @@ and returns GeoJSON FeatureCollection preserving source Point geometries and att
 from __future__ import annotations
 import json
 import time
-import geopandas as gpd
 from pathlib import Path
 from typing import Dict, Any, List, Optional
 
-from waterlogging import find_project_file
+from shared_resources import find_project_file
+from waterlogging import clamp_and_validate_bbox, DELHI_OPERATING_BOUNDS
 
 # ---------------------------------------------------------------------------
 # Path Resolutions
@@ -34,21 +34,27 @@ def _init_drainage_cache() -> None:
     # 1. Load Main Drainage GeoJSON
     if DRAIN_FULL_PATH.exists():
         try:
-            gdf_main = gpd.read_file(DRAIN_FULL_PATH)
-            for _, row in gdf_main.iterrows():
-                geom = row.geometry
-                if geom is None or geom.is_empty:
+            with open(DRAIN_FULL_PATH, "r", encoding="utf-8") as f:
+                d_data = json.load(f)
+            for feat in d_data.get("features", []):
+                geom = feat.get("geometry")
+                props = feat.get("properties", {})
+                if not geom or geom.get("type") != "Point":
                     continue
-                
-                lon, lat = float(geom.x), float(geom.y)
+                coords = geom.get("coordinates")
+                if not coords or len(coords) < 2:
+                    continue
+                lon, lat = float(coords[0]), float(coords[1])
+                seq_val = props.get("seq_no", 0)
+                seq_no = int(seq_val) if str(seq_val).isdigit() else 0
                 features.append({
                     "lon": lon,
                     "lat": lat,
-                    "drain_name": str(row.get("drain_name", "MPD-1976 Drain")),
-                    "basin": str(row.get("basin", "Delhi Basin")),
-                    "seq_no": int(row.get("seq_no", 0)) if str(row.get("seq_no", "")).isdigit() else 0,
-                    "status": str(row.get("status", "Existing / Remodeling")),
-                    "source": str(row.get("source", "MPD-1976")),
+                    "drain_name": str(props.get("drain_name", "MPD-1976 Drain")),
+                    "basin": str(props.get("basin", "Delhi Basin")),
+                    "seq_no": seq_no,
+                    "status": str(props.get("status", "Existing / Remodeling")),
+                    "source": str(props.get("source", "MPD-1976")),
                     "geometry_type": "Point"
                 })
         except Exception:
@@ -57,19 +63,25 @@ def _init_drainage_cache() -> None:
     # 2. Load Untraceable Drains GeoJSON
     if UNTRACE_PATH.exists():
         try:
-            gdf_untrace = gpd.read_file(UNTRACE_PATH)
-            for _, row in gdf_untrace.iterrows():
-                geom = row.geometry
-                if geom is None or geom.is_empty:
+            with open(UNTRACE_PATH, "r", encoding="utf-8") as f:
+                u_data = json.load(f)
+            for feat in u_data.get("features", []):
+                geom = feat.get("geometry")
+                props = feat.get("properties", {})
+                if not geom or geom.get("type") != "Point":
                     continue
-
-                lon, lat = float(geom.x), float(geom.y)
+                coords = geom.get("coordinates")
+                if not coords or len(coords) < 2:
+                    continue
+                lon, lat = float(coords[0]), float(coords[1])
+                seq_val = props.get("seq_no", 0)
+                seq_no = int(seq_val) if str(seq_val).isdigit() else 0
                 features.append({
                     "lon": lon,
                     "lat": lat,
-                    "drain_name": str(row.get("drain_name", "Untraceable Drain")),
-                    "basin": str(row.get("basin", "Delhi Basin")),
-                    "seq_no": int(row.get("seq_no", 0)) if str(row.get("seq_no", "")).isdigit() else 0,
+                    "drain_name": str(props.get("drain_name", "Untraceable Drain")),
+                    "basin": str(props.get("basin", "Delhi Basin")),
+                    "seq_no": seq_no,
                     "status": "Untraceable / Encroached",
                     "source": "MPD-1976 Untraceable",
                     "geometry_type": "Point"
@@ -97,15 +109,30 @@ def get_drainage_geojson(
             "metadata": {"total": 0, "returned": 0, "source": "MPD-1976"}
         }
 
-    # Bounding Box Filtering
-    filtered = []
-    if bbox and len(bbox) == 4:
-        min_lon, min_lat, max_lon, max_lat = bbox
-        for item in _DRAINAGE_CACHE:
-            if min_lon <= item["lon"] <= max_lon and min_lat <= item["lat"] <= max_lat:
-                filtered.append(item)
-    else:
-        filtered = _DRAINAGE_CACHE
+    # Bounding Box Filtering & Clamping
+    clamped_bbox, is_valid = clamp_and_validate_bbox(bbox)
+    if not is_valid or clamped_bbox is None:
+        exec_ms = round((time.time() - t_start) * 1000.0, 1)
+        return {
+            "type": "FeatureCollection",
+            "features": [],
+            "metadata": {
+                "total_matched": 0,
+                "returned_features": 0,
+                "max_features_cap": max_features,
+                "bbox": bbox,
+                "execution_ms": exec_ms,
+                "geometry": "Point",
+                "source": "MPD-1976",
+                "status": "outside_operating_area",
+            },
+        }
+
+    min_lon, min_lat, max_lon, max_lat = clamped_bbox
+    filtered = [
+        item for item in _DRAINAGE_CACHE
+        if min_lon <= item["lon"] <= max_lon and min_lat <= item["lat"] <= max_lat
+    ]
 
     total_matched = len(filtered)
     filtered_capped = filtered[:max_features]

@@ -71,10 +71,19 @@ document.addEventListener("DOMContentLoaded", () => {
 // Leaflet Map Initialization
 // --------------------------------------------------------------------------
 function initMap() {
-  // Center on Delhi coordinates [28.6139, 77.2090]
+  // Center on Delhi coordinates [28.6139, 77.2090] bounded by Delhi/NCR study domain
+  const delhiBounds = L.latLngBounds(
+    L.latLng(28.35, 76.75), // SW margin
+    L.latLng(28.95, 77.45)  // NE margin
+  );
+
   map = L.map("map", {
     center: [28.6139, 77.2090],
     zoom: 12,
+    minZoom: 10,
+    maxZoom: 19,
+    maxBounds: delhiBounds,
+    maxBoundsViscosity: 0.8,
     zoomControl: true,
   });
 

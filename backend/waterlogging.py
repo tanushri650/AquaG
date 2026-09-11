@@ -17,40 +17,11 @@ import json
 import joblib
 import numpy as np
 import pandas as pd
-import geopandas as gpd
+from shared_resources import get_shared_graph, get_shared_model_bundle, get_shared_spatial_trees, find_project_file
 from pathlib import Path
 from typing import Dict, Any, List, Tuple
 from scipy.spatial import cKDTree
 import rasterio
-
-# ---------------------------------------------------------------------------
-# Path Resolutions
-# ---------------------------------------------------------------------------
-def find_project_file(relative_path: str) -> Path:
-    this_dir = Path(__file__).resolve().parent
-    candidate_roots = [
-        this_dir.parent.parent,
-        this_dir.parent,
-        this_dir,
-        Path.cwd(),
-        Path.cwd().parent,
-    ]
-    clean_rel = relative_path.replace("\\", "/").strip("/")
-    rel_parts = clean_rel.split("/")
-
-    for root in candidate_roots:
-        target = root.joinpath(*rel_parts)
-        if target.exists():
-            return target
-        if rel_parts[0] == "existing code":
-            target_stripped = root.joinpath(*rel_parts[1:])
-            if target_stripped.exists():
-                return target_stripped
-        target_added = root.joinpath("existing code", *rel_parts)
-        if target_added.exists():
-            return target_added
-
-    return candidate_roots[0].joinpath(*rel_parts)
 
 MODEL_PATH = find_project_file("models/aquag_model_v2.pkl")
 METADATA_PATH = find_project_file("models/aquag_model_v2_metadata.json")
@@ -61,7 +32,45 @@ INFRA_PATH = find_project_file("existing code/data/raw/infrastructure/delhi_impo
 POP_PATH = find_project_file("existing code/data/raw/population/delhi_districts_population_2011-3.geojson")
 
 # ---------------------------------------------------------------------------
-# Lazy Loaded Singletons & Cache
+# Delhi Operating Area Boundary Helper
+# ---------------------------------------------------------------------------
+DELHI_OPERATING_BOUNDS = [76.80, 28.40, 77.40, 28.90]
+
+def clamp_and_validate_bbox(bbox: List[float] | None) -> Tuple[List[float] | None, bool]:
+    """
+    Validates and clamps a requested bounding box to the Delhi study area.
+    Returns (clamped_bbox, is_valid_inside_delhi).
+    """
+    if not bbox:
+        return DELHI_OPERATING_BOUNDS, True
+        
+    if len(bbox) != 4:
+        return None, False
+        
+    req_min_lon, req_min_lat, req_max_lon, req_max_lat = [float(x) for x in bbox]
+    
+    # Disjoint check
+    if (
+        req_max_lon <= DELHI_OPERATING_BOUNDS[0]
+        or req_min_lon >= DELHI_OPERATING_BOUNDS[2]
+        or req_max_lat <= DELHI_OPERATING_BOUNDS[1]
+        or req_min_lat >= DELHI_OPERATING_BOUNDS[3]
+    ):
+        return None, False
+        
+    # Clamp to Delhi operating bounds
+    c_min_lon = max(req_min_lon, DELHI_OPERATING_BOUNDS[0])
+    c_min_lat = max(req_min_lat, DELHI_OPERATING_BOUNDS[1])
+    c_max_lon = min(req_max_lon, DELHI_OPERATING_BOUNDS[2])
+    c_max_lat = min(req_max_lat, DELHI_OPERATING_BOUNDS[3])
+    
+    if c_min_lon >= c_max_lon or c_min_lat >= c_max_lat:
+        return None, False
+        
+    return [c_min_lon, c_min_lat, c_max_lon, c_max_lat], True
+
+# ---------------------------------------------------------------------------
+# Module Resources & Caches
 # ---------------------------------------------------------------------------
 _MODEL = None
 _METADATA = None
@@ -84,7 +93,7 @@ _POP_TOTALS = None
 _DEM_DATASET = None
 
 _WATERLOGGING_CACHE: Dict[Tuple, Tuple[float, Dict[str, Any]]] = {}
-_CACHE_MAX_SIZE = 30
+_CACHE_MAX_SIZE = 20
 _CACHE_TTL_SEC = 60.0
 
 
@@ -126,69 +135,32 @@ def _init_waterlogging_resources() -> None:
     ):
         return
 
-    # 1. Load Model V2 and Metadata
-    if not MODEL_PATH.exists() or not METADATA_PATH.exists():
-        raise FileNotFoundError(f"Model V2 or metadata artifact missing for waterlogging engine: {MODEL_PATH}")
-    
-    _MODEL = joblib.load(MODEL_PATH)
-    with METADATA_PATH.open("r", encoding="utf-8") as f:
-        _METADATA = json.load(f)
-    
-    _FEATURE_ORDER = _METADATA["feature_order"]
-    _CLASS_NAMES = _METADATA.get("class_names", ["High", "Low", "Medium"])
+    # 1. Load Shared Model V2 and Metadata Singleton
+    mb = get_shared_model_bundle()
+    _MODEL = mb["model"]
+    _METADATA = mb["metadata"]
+    _FEATURE_ORDER = mb["feature_order"]
+    _CLASS_NAMES = mb["class_names"]
 
-    # 2. Load Compact Road Graph
-    if not GRAPH_PATH.exists():
-        raise FileNotFoundError(f"Compact road graph missing: {GRAPH_PATH}")
-    
-    _GRAPH_DATA = np.load(GRAPH_PATH)
-    _LATS = np.ascontiguousarray(_GRAPH_DATA["lat"], dtype=np.float32)
-    _LONS = np.ascontiguousarray(_GRAPH_DATA["lon"], dtype=np.float32)
-    _OFFSETS = np.ascontiguousarray(_GRAPH_DATA["offsets"], dtype=np.int32)
-    _TARGETS = np.ascontiguousarray(_GRAPH_DATA["targets"], dtype=np.int32)
-    _DISTANCES = np.ascontiguousarray(_GRAPH_DATA["distances"], dtype=np.float32)
-    _NODE_RISK_MULT = np.ascontiguousarray(_GRAPH_DATA["node_risk_mult"], dtype=np.float32)
-    _U_NODES = np.repeat(np.arange(len(_LATS), dtype=np.int32), np.diff(_OFFSETS))
+    # 2. Load Shared Compact Road Graph Singleton
+    g_data = get_shared_graph()
+    _LATS = g_data["lat"]
+    _LONS = g_data["lon"]
+    _OFFSETS = g_data["offsets"]
+    _TARGETS = g_data["targets"]
+    _DISTANCES = g_data["distances"]
+    _NODE_RISK_MULT = g_data["node_risk_mult"]
+    _U_NODES = g_data["u_nodes"]
+    _GRAPH_DATA = g_data
 
-    # 3. Build Drains Spatial KDTree
-    if DRAINS_PATH.exists():
-        try:
-            drn_gdf = gpd.read_file(DRAINS_PATH)
-            drn_coords = np.column_stack([drn_gdf.geometry.y, drn_gdf.geometry.x]).astype(np.float32)
-            _DRAIN_KDTREE = cKDTree(drn_coords)
-        except Exception:
-            _DRAIN_KDTREE = None
+    # 3. Load Shared Spatial KDTrees
+    st = get_shared_spatial_trees()
+    _DRAIN_KDTREE = st["drain_tree"]
+    _POP_KDTREE = st["pop_tree"]
+    _POP_TOTALS = st["pop_totals"]
+    _INFRA_KDTREE = st["infra_tree"]
 
-    # 4. Build Population Spatial KDTree
-    if POP_PATH.exists():
-        try:
-            pop_gdf = gpd.read_file(POP_PATH)
-            pop_coords = np.column_stack([pop_gdf.geometry.y, pop_gdf.geometry.x]).astype(np.float32)
-            _POP_TOTALS = pop_gdf["population_total"].values
-            _POP_KDTREE = cKDTree(pop_coords)
-        except Exception:
-            _POP_KDTREE = None
-            _POP_TOTALS = None
-
-    # 5. Build Infrastructure Spatial KDTree
-    if INFRA_PATH.exists():
-        try:
-            with open(INFRA_PATH, "r", encoding="utf-8") as f:
-                infra_raw = json.load(f)
-            
-            infra_coords = []
-            for el in infra_raw.get("elements", []):
-                lat = el.get("lat") or el.get("center", {}).get("lat")
-                lon = el.get("lon") or el.get("center", {}).get("lon")
-                if lat is not None and lon is not None:
-                    infra_coords.append([lat, lon])
-            
-            if infra_coords:
-                _INFRA_KDTREE = cKDTree(np.array(infra_coords, dtype=np.float32))
-        except Exception:
-            _INFRA_KDTREE = None
-
-    # 6. Load DEM Raster Dataset Handle
+    # 4. Load DEM Raster Dataset Handle
     if DEM_PATH.exists():
         try:
             _DEM_DATASET = rasterio.open(DEM_PATH)
@@ -288,13 +260,23 @@ def get_street_waterlogging_geojson(
     if recent_rainfall_intensity is None:
         recent_rainfall_intensity = preset_rain[3]
 
-    # Validate Bounding Box
-    if not bbox or len(bbox) != 4:
-        raise ValueError("Invalid bounding box: must be [min_lon, min_lat, max_lon, max_lat]")
-    
-    min_lon, min_lat, max_lon, max_lat = bbox
-    if min_lon >= max_lon or min_lat >= max_lat:
-        raise ValueError("Invalid bounding box bounds: min values must be strictly less than max values")
+    # Validate & Clamp Bounding Box to Delhi Operating Bounds
+    clamped_bbox, is_valid = clamp_and_validate_bbox(bbox)
+    if not is_valid or clamped_bbox is None:
+        return {
+            "type": "FeatureCollection",
+            "features": [],
+            "metadata": {
+                "total_candidate_segments": 0,
+                "returned_segments": 0,
+                "truncated": False,
+                "scenario": scenario_clean,
+                "timestep": str(timestep).upper().strip(),
+                "bbox": bbox,
+                "status": "outside_operating_area",
+            },
+        }
+    min_lon, min_lat, max_lon, max_lat = clamped_bbox
 
     # 1. Check LRU Result Cache
     cache_key = (
