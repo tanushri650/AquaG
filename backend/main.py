@@ -118,10 +118,14 @@ if raw_origin_env.strip():
     allowed_origins = [o.strip() for o in raw_origin_env.split(",") if o.strip()]
 else:
     allowed_origins = [
+        "https://tanushri650.github.io",
+        "https://tanushri650.github.io/AquaG",
         "http://localhost:3000",
         "http://localhost:5173",
         "http://127.0.0.1:3000",
         "http://127.0.0.1:5173",
+        "http://localhost:8000",
+        "http://127.0.0.1:8000",
         "*",
     ]
 

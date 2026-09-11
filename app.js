@@ -12,8 +12,21 @@
  * - AquaGraph Risk Routing (POST /route)
  */
 
-// Configurable API_BASE_URL: supports window.AQUAG_API_URL for production deployment, defaulting to local http://127.0.0.1:8000
-const API_BASE_URL = (typeof window !== "undefined" && window.AQUAG_API_URL) ? window.AQUAG_API_URL : "http://127.0.0.1:8000";
+// Configurable API_BASE_URL: supports window.AQUAG_API_URL, automatically defaults to https://aquag.onrender.com in production (e.g. GitHub Pages) and http://127.0.0.1:8000 on localhost for local development.
+function getApiBaseUrl() {
+  if (typeof window !== "undefined" && window.AQUAG_API_URL) {
+    return window.AQUAG_API_URL;
+  }
+  if (typeof window !== "undefined" && window.location) {
+    const hostname = window.location.hostname;
+    if (hostname === "localhost" || hostname === "127.0.0.1") {
+      return "http://127.0.0.1:8000";
+    }
+  }
+  return "https://aquag.onrender.com";
+}
+
+const API_BASE_URL = getApiBaseUrl();
 
 // Global State Variables
 let map = null;
