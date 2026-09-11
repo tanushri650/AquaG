@@ -89,7 +89,16 @@ def _init_waterlogging_resources() -> None:
     global _GRAPH_DATA, _LATS, _LONS, _OFFSETS, _TARGETS, _DISTANCES, _NODE_RISK_MULT
     global _DRAIN_KDTREE, _INFRA_KDTREE, _POP_KDTREE, _POP_TOTALS, _DEM_DATASET
 
-    if _MODEL is not None and _GRAPH_DATA is not None:
+    if (
+        _MODEL is not None 
+        and _GRAPH_DATA is not None 
+        and _LATS is not None 
+        and _LONS is not None
+        and _OFFSETS is not None
+        and _TARGETS is not None
+        and _DISTANCES is not None
+        and _NODE_RISK_MULT is not None
+    ):
         return
 
     # 1. Load Model V2 and Metadata
@@ -108,12 +117,12 @@ def _init_waterlogging_resources() -> None:
         raise FileNotFoundError(f"Compact road graph missing: {GRAPH_PATH}")
     
     _GRAPH_DATA = np.load(GRAPH_PATH)
-    _LATS = _GRAPH_DATA["lat"]
-    _LONS = _GRAPH_DATA["lon"]
-    _OFFSETS = _GRAPH_DATA["offsets"]
-    _TARGETS = _GRAPH_DATA["targets"]
-    _DISTANCES = _GRAPH_DATA["distances"]
-    _NODE_RISK_MULT = _GRAPH_DATA["node_risk_mult"]
+    _LATS = np.ascontiguousarray(_GRAPH_DATA["lat"], dtype=np.float32)
+    _LONS = np.ascontiguousarray(_GRAPH_DATA["lon"], dtype=np.float32)
+    _OFFSETS = np.ascontiguousarray(_GRAPH_DATA["offsets"], dtype=np.int32)
+    _TARGETS = np.ascontiguousarray(_GRAPH_DATA["targets"], dtype=np.int32)
+    _DISTANCES = np.ascontiguousarray(_GRAPH_DATA["distances"], dtype=np.float32)
+    _NODE_RISK_MULT = np.ascontiguousarray(_GRAPH_DATA["node_risk_mult"], dtype=np.float32)
 
     # 3. Build Drains Spatial KDTree
     if DRAINS_PATH.exists():
@@ -262,6 +271,9 @@ def get_street_waterlogging_geojson(
         raise ValueError("Invalid bounding box bounds: min values must be strictly less than max values")
 
     # 1. Filter Nodes within Viewport Bounding Box
+    if _LONS is None or _LATS is None:
+        raise RuntimeError("Waterlogging graph coordinates failed to initialize")
+
     node_mask = (_LONS >= min_lon) & (_LONS <= max_lon) & (_LATS >= min_lat) & (_LATS <= max_lat)
     valid_nodes = np.where(node_mask)[0]
 

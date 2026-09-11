@@ -161,3 +161,16 @@ def test_existing_endpoints_regression():
             "critical_infra_flag": 1,
         },
     ).status_code == 200
+
+
+def test_lats_lons_initialization_regression():
+    """Ensure _LATS and _LONS are non-None NumPy arrays before spatial filtering."""
+    import numpy as np
+    import waterlogging
+    waterlogging._init_waterlogging_resources()
+    assert waterlogging._LATS is not None, "_LATS must be initialized"
+    assert waterlogging._LONS is not None, "_LONS must be initialized"
+    assert isinstance(waterlogging._LATS, np.ndarray), "_LATS must be a NumPy array"
+    assert isinstance(waterlogging._LONS, np.ndarray), "_LONS must be a NumPy array"
+    assert len(waterlogging._LATS) > 0, "_LATS array must not be empty"
+    assert len(waterlogging._LONS) > 0, "_LONS array must not be empty"
