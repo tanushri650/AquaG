@@ -1,0 +1,839 @@
+SlNo,Station,Agency,State LGD Code,State,District LGD Code,District,Tehsil,Block,Village,River,Basin,Tributary,Subtributary,SubSubtributary,Local River,Latitude,Longitude,Data Acquisition Time,Telemetry Hourly Rainfall (mm)
+1,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,25-06-2023 14:30,0.1
+2,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,25-06-2023 15:30,0.1
+3,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,25-06-2023 16:30,0.2
+4,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,25-06-2023 17:30,0.1
+5,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,15-07-2023 23:30,7
+6,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,16-07-2023 00:30,2.5
+7,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,16-07-2023 03:30,0.5
+8,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,18-07-2023 19:30,20
+9,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,05-08-2023 13:30,2.5
+10,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,05-08-2023 14:30,1.5
+11,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,05-08-2023 15:30,0.5
+12,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,17-08-2023 06:00,0.5
+13,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,19-08-2023 04:00,3
+14,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,22-08-2023 22:00,1
+15,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,23-08-2023 08:00,1
+16,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,23-08-2023 09:00,2
+17,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,23-08-2023 10:00,3.5
+18,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,23-08-2023 11:00,1
+19,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,23-08-2023 12:00,0.5
+20,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,09-09-2023 23:00,10.5
+21,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,10-09-2023 00:00,1
+22,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,10-09-2023 02:00,2
+23,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,10-09-2023 03:00,0.5
+24,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,10-09-2023 04:00,3.5
+25,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,10-09-2023 06:00,1
+26,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,10-09-2023 07:00,0.5
+27,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,16-09-2023 18:00,0.5
+28,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,31-01-2024 13:00,1
+29,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,31-01-2024 17:00,0.5
+30,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,31-01-2024 18:00,0.5
+31,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,01-02-2024 02:00,0.5
+32,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,01-02-2024 04:00,0.5
+33,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,01-02-2024 06:00,1
+34,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,03-03-2024 02:00,0.5
+35,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,13-04-2024 18:00,0.5
+36,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,22-04-2024 08:00,2
+37,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,24-06-2024 19:00,0.5
+38,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,27-06-2024 08:00,3.5
+39,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,28-06-2024 04:00,1.5
+40,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,28-06-2024 05:00,2
+41,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,28-06-2024 06:00,3
+42,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,28-06-2024 07:00,1.5
+43,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,28-06-2024 08:00,0.5
+44,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,09-07-2024 11:00,47
+45,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,22-07-2024 13:00,2
+46,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,22-07-2024 14:00,0.5
+47,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,26-07-2024 09:00,0.5
+48,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,27-07-2024 10:00,7
+49,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,27-07-2024 11:00,0.5
+50,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,27-07-2024 16:00,0.5
+51,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,31-07-2024 22:00,7
+52,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,01-08-2024 00:00,0.5
+53,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,24-12-2024 19:00,1
+54,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,27-12-2024 04:00,5
+55,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,27-12-2024 05:00,0.5
+56,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,27-12-2024 07:00,0.5
+57,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,27-12-2024 08:00,5.5
+58,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,27-12-2024 09:00,1
+59,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,27-12-2024 11:00,3.5
+60,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,27-12-2024 12:00,1.5
+61,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,27-12-2024 13:00,1
+62,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,27-12-2024 14:00,5
+63,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,27-12-2024 15:00,1.5
+64,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,27-12-2024 17:00,2
+65,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,27-12-2024 18:00,0.5
+66,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,27-12-2024 19:00,0.5
+67,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,27-12-2024 20:00,1
+68,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,11-01-2025 17:00,0.5
+69,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,11-01-2025 19:00,0.5
+70,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,14-01-2025 21:00,0.5
+71,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,16-01-2025 02:00,1.5
+72,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,01-03-2025 07:00,1.5
+73,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,13-05-2025 17:00,1
+74,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,25-05-2025 02:00,10
+75,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,23-06-2025 19:00,5
+76,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,04-07-2025 13:00,0.5
+77,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,04-07-2025 15:00,0.5
+78,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,04-07-2025 16:00,0.5
+79,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,07-07-2025 08:00,1
+80,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,07-07-2025 09:00,0.5
+81,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,16-07-2025 14:00,3.5
+82,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,16-07-2025 19:00,4.5
+83,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,21-07-2025 16:00,2.5
+84,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,21-07-2025 17:00,1
+85,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,27-07-2025 07:00,1.5
+86,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,28-07-2025 16:00,4.5
+87,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,29-07-2025 08:00,1.5
+88,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,30-07-2025 23:00,1
+89,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,31-07-2025 00:00,1
+90,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,31-07-2025 01:00,7
+91,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,31-07-2025 02:00,0.5
+92,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,31-07-2025 03:00,0.5
+93,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,31-07-2025 07:00,1
+94,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,31-07-2025 09:00,0.5
+95,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,31-07-2025 10:00,0.5
+96,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,31-07-2025 14:00,5
+97,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,03-08-2025 01:00,0.5
+98,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,03-08-2025 02:00,0.5
+99,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,03-08-2025 03:00,0.5
+100,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,03-08-2025 05:00,0.5
+101,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,09-08-2025 07:00,6.5
+102,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,09-08-2025 08:00,10.5
+103,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,09-08-2025 09:00,14.5
+104,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,09-08-2025 10:00,20
+105,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,09-08-2025 11:00,1
+106,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,09-08-2025 17:00,0.5
+107,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,27-08-2025 12:00,2.5
+108,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,02-09-2025 12:00,0.5
+109,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,02-09-2025 15:00,4
+110,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,02-09-2025 16:00,2
+111,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,02-09-2025 17:00,9.5
+112,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,02-09-2025 18:00,12.5
+113,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,04-09-2025 16:00,8.5
+114,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,06-09-2025 12:00,8
+115,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,06-09-2025 13:00,4.5
+116,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,06-10-2025 01:00,0.5
+117,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,06-10-2025 02:00,1
+118,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,06-10-2025 14:00,0.5
+119,Alipur Store,Delhi SW GW,7,Delhi,80,NORTH,-,-,-,-,-,-,-,-,-,77.11903800,28.79679900,07-10-2025 04:00,0.5
+120,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,25-06-2023 13:30,0.1
+121,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,25-06-2023 16:30,0.1
+122,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,25-06-2023 17:30,0.1
+123,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,25-06-2023 18:30,0.1
+124,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,15-07-2023 23:30,14.5
+125,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,16-07-2023 00:30,1.5
+126,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,16-07-2023 02:30,0.5
+127,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,23-07-2023 21:30,4
+128,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,23-07-2023 22:30,0.5
+129,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,26-07-2023 12:30,0.5
+130,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,19-08-2023 04:00,10
+131,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,19-08-2023 05:00,5.5
+132,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,19-08-2023 06:00,2.5
+133,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,19-08-2023 07:00,1
+134,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,23-08-2023 08:00,0.5
+135,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,23-08-2023 09:00,2
+136,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,23-08-2023 10:00,2.5
+137,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,23-08-2023 11:00,1.5
+138,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,23-08-2023 15:00,1
+139,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,07-09-2023 15:00,0.5
+140,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,07-09-2023 16:00,0.5
+141,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,09-09-2023 03:00,8.5
+142,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,09-09-2023 07:00,0.5
+143,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,09-09-2023 22:00,0.5
+144,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,09-09-2023 23:00,2
+145,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,10-09-2023 01:00,1
+146,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,10-09-2023 02:00,0.5
+147,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,10-09-2023 03:00,6
+148,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,10-09-2023 06:00,1.5
+149,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,15-09-2023 08:00,0.5
+150,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,15-09-2023 09:00,0.5
+151,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,10-11-2023 04:00,0.5
+152,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,30-11-2023 08:00,0.5
+153,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,18-12-2023 14:00,0.5
+154,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,18-12-2023 19:00,3
+155,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,31-01-2024 16:00,2
+156,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,31-01-2024 17:00,1
+157,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,31-01-2024 22:00,0.5
+158,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,01-02-2024 01:00,0.5
+159,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,01-02-2024 03:00,1.5
+160,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,01-02-2024 09:00,1.5
+161,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,01-02-2024 11:00,0.5
+162,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,27-02-2024 07:00,0.5
+163,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,03-03-2024 03:00,3
+164,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,22-04-2024 03:00,1
+165,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,29-04-2024 10:00,27
+166,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,29-04-2024 11:00,3.5
+167,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,24-06-2024 12:00,15
+168,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,27-06-2024 09:00,2
+169,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,28-06-2024 05:00,1
+170,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,28-06-2024 07:00,3.5
+171,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,28-06-2024 08:00,1
+172,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,14-07-2024 12:00,0.5
+173,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,15-07-2024 10:00,0.5
+174,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,22-07-2024 12:00,0.5
+175,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,22-07-2024 14:00,1
+176,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,23-07-2024 13:00,3.5
+177,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,24-07-2024 04:00,1
+178,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,24-07-2024 07:00,7.5
+179,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,27-07-2024 15:00,6
+180,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,27-07-2024 19:00,1
+181,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,31-07-2024 20:00,1.5
+182,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,31-07-2024 21:00,1
+183,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,27-12-2024 09:00,3.5
+184,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,27-12-2024 11:00,1.5
+185,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,27-12-2024 13:00,3
+186,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,27-12-2024 15:00,3.5
+187,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,27-12-2024 17:00,1.5
+188,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,27-12-2024 18:00,2
+189,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,27-12-2024 20:00,1.5
+190,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,14-02-2025 08:00,0.5
+191,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,14-02-2025 11:00,0.5
+192,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,14-02-2025 12:00,0.5
+193,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,15-02-2025 09:00,0.5
+194,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,01-03-2025 12:00,0.5
+195,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,16-03-2025 08:00,0.5
+196,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,02-05-2025 08:00,0.5
+197,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,02-05-2025 19:00,0.5
+198,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,25-05-2025 04:00,2
+199,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,25-05-2025 05:00,0.5
+200,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,17-06-2025 15:00,20.5
+201,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,17-06-2025 16:00,4
+202,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,17-06-2025 19:00,12
+203,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,19-06-2025 10:00,0.5
+204,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,04-07-2025 15:00,0.5
+205,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,16-07-2025 16:00,0.5
+206,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,20-07-2025 00:00,0.5
+207,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,20-07-2025 06:00,0.5
+208,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,27-07-2025 06:00,0.5
+209,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,27-07-2025 09:00,0.5
+210,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,28-07-2025 06:00,0.5
+211,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,29-07-2025 20:00,0.5
+212,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,29-07-2025 23:00,0.5
+213,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,30-07-2025 04:00,0.5
+214,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,30-07-2025 09:00,0.5
+215,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,30-07-2025 12:00,0.5
+216,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,30-07-2025 14:00,0.5
+217,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,30-07-2025 17:00,0.5
+218,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,30-07-2025 19:00,0.5
+219,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,30-07-2025 21:00,0.5
+220,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,30-07-2025 23:00,0.5
+221,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,31-07-2025 08:00,0.5
+222,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,31-07-2025 10:00,0.5
+223,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,31-07-2025 17:00,0.5
+224,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,01-08-2025 00:00,0.5
+225,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,01-08-2025 07:00,0.5
+226,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,01-08-2025 08:00,0.5
+227,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,01-08-2025 12:00,0.5
+228,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,01-08-2025 15:00,0.5
+229,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,01-08-2025 18:00,0.5
+230,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,02-08-2025 01:00,0.5
+231,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,02-08-2025 03:00,0.5
+232,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,02-08-2025 12:00,0.5
+233,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,02-08-2025 17:00,0.5
+234,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,02-08-2025 18:00,22.5
+235,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,02-08-2025 20:00,0.5
+236,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,03-08-2025 01:00,0.5
+237,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,03-08-2025 02:00,9.5
+238,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,03-08-2025 03:00,0.5
+239,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,03-08-2025 04:00,1
+240,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,03-08-2025 05:00,0.5
+241,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,03-08-2025 20:00,0.5
+242,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,03-08-2025 23:00,0.5
+243,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,04-08-2025 09:00,0.5
+244,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,04-08-2025 12:00,0.5
+245,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,04-08-2025 15:00,0.5
+246,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,04-08-2025 21:00,0.5
+247,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,05-08-2025 01:00,0.5
+248,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,09-08-2025 00:00,4
+249,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,09-08-2025 01:00,1
+250,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,09-08-2025 07:00,2.5
+251,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,09-08-2025 08:00,7
+252,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,09-08-2025 09:00,3
+253,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,09-08-2025 10:00,13.5
+254,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,09-08-2025 11:00,2.5
+255,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,09-08-2025 12:00,1.5
+256,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,09-08-2025 15:00,0.5
+257,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,09-08-2025 17:00,0.5
+258,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,18-08-2025 12:00,0.5
+259,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,20-08-2025 08:00,0.5
+260,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,20-08-2025 11:00,0.5
+261,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,20-08-2025 14:00,0.5
+262,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,21-08-2025 06:00,0.5
+263,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,24-08-2025 09:00,0.5
+264,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,24-08-2025 11:00,0.5
+265,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,24-08-2025 14:00,0.5
+266,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,24-08-2025 16:00,0.5
+267,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,24-08-2025 18:00,0.5
+268,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,24-08-2025 21:00,0.5
+269,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,27-08-2025 02:00,0.5
+270,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,27-08-2025 06:00,0.5
+271,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,27-08-2025 14:00,0.5
+272,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,27-08-2025 19:00,0.5
+273,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,27-08-2025 21:00,0.5
+274,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,28-08-2025 00:00,0.5
+275,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,28-08-2025 04:00,0.5
+276,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,28-08-2025 07:00,0.5
+277,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,28-08-2025 10:00,0.5
+278,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,28-08-2025 11:00,0.5
+279,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,28-08-2025 14:00,0.5
+280,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,01-09-2025 00:00,0.5
+281,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,01-09-2025 01:00,0.5
+282,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,01-09-2025 02:00,0.5
+283,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,01-09-2025 03:00,0.5
+284,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,01-09-2025 09:00,0.5
+285,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,02-09-2025 00:00,0.5
+286,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,02-09-2025 05:00,0.5
+287,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,02-09-2025 14:00,0.5
+288,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,02-09-2025 18:00,0.5
+289,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,02-09-2025 19:00,0.5
+290,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,02-09-2025 20:00,0.5
+291,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,03-09-2025 00:00,0.5
+292,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,03-09-2025 04:00,0.5
+293,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,03-09-2025 07:00,0.5
+294,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,04-09-2025 14:00,0.5
+295,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,04-09-2025 17:00,0.5
+296,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,04-09-2025 21:00,0.5
+297,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,05-09-2025 00:00,0.5
+298,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,05-09-2025 12:00,0.5
+299,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,06-09-2025 06:00,0.5
+300,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,07-09-2025 08:00,0.5
+301,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,24-09-2025 09:00,0.5
+302,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,01-10-2025 13:00,0.5
+303,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,02-10-2025 23:00,0.5
+304,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,06-10-2025 03:00,0.5
+305,Basaidarapur Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.12714200,28.65905000,08-10-2025 10:00,15.5
+306,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,25-06-2023 13:30,0.1
+307,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,25-06-2023 15:30,0.1
+308,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,25-06-2023 16:30,0.1
+309,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,25-06-2023 17:30,0.2
+310,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,25-06-2023 18:30,0.1
+311,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,16-07-2023 00:30,0.5
+312,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,16-07-2023 02:30,0.5
+313,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,16-07-2023 13:30,8.5
+314,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,16-07-2023 14:30,0.5
+315,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,26-07-2023 10:30,0.5
+316,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,19-08-2023 06:00,6.5
+317,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,19-08-2023 07:00,1
+318,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,19-08-2023 09:00,0.5
+319,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,07-09-2023 15:00,1.5
+320,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,07-09-2023 16:00,0.5
+321,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,09-09-2023 05:00,0.5
+322,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,10-09-2023 00:00,3.5
+323,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,10-09-2023 02:00,1
+324,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,10-09-2023 07:00,0.5
+325,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,15-09-2023 08:00,0.5
+326,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,16-09-2023 14:00,0.5
+327,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,16-09-2023 15:00,7.5
+328,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,16-09-2023 16:00,0.5
+329,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,16-09-2023 18:00,0.5
+330,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,17-10-2023 12:00,0.5
+331,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,10-11-2023 04:00,0.5
+332,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,27-11-2023 20:00,0.5
+333,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,31-01-2024 15:00,0.5
+334,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,31-01-2024 16:00,1
+335,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,14-04-2024 10:00,0.5
+336,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,04-06-2024 02:00,0.5
+337,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,26-06-2024 17:00,0.5
+338,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,28-06-2024 07:00,3
+339,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,28-06-2024 08:00,2.5
+340,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,29-06-2024 08:00,2
+341,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,03-07-2024 14:00,3.5
+342,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,04-07-2024 08:00,0.5
+343,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,09-07-2024 11:00,2
+344,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,31-07-2024 21:00,0.5
+345,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,31-07-2024 22:00,0.5
+346,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,31-07-2024 23:00,1.5
+347,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,01-08-2024 00:00,0.5
+348,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,01-08-2024 01:00,0.5
+349,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,23-12-2024 10:00,0.5
+350,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,27-12-2024 04:00,0.5
+351,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,27-12-2024 08:00,5
+352,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,27-12-2024 10:00,1
+353,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,27-12-2024 11:00,2.5
+354,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,27-12-2024 12:00,1.5
+355,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,27-12-2024 13:00,3.5
+356,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,27-12-2024 14:00,2
+357,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,27-12-2024 15:00,1
+358,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,27-12-2024 17:00,1.5
+359,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,27-12-2024 18:00,1.5
+360,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,27-12-2024 23:00,4.5
+361,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,06-01-2025 07:00,1
+362,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,11-01-2025 16:00,0.5
+363,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,11-01-2025 17:00,0.5
+364,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,02-05-2025 10:00,0.5
+365,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,25-05-2025 01:00,46.5
+366,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,25-05-2025 02:00,5.5
+367,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,25-05-2025 03:00,1.5
+368,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,17-06-2025 08:00,0.5
+369,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,17-06-2025 14:00,0.5
+370,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,17-06-2025 15:00,0.5
+371,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,17-06-2025 16:00,0.5
+372,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,17-06-2025 19:00,0.5
+373,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,17-06-2025 20:00,0.5
+374,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,18-06-2025 00:00,0.5
+375,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,18-06-2025 04:00,6.5
+376,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,18-06-2025 06:00,0.5
+377,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,21-06-2025 15:00,6
+378,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,23-06-2025 19:00,3.5
+379,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,25-06-2025 02:00,1.5
+380,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,28-06-2025 14:00,1
+381,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,28-06-2025 15:00,1
+382,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,29-06-2025 18:00,6
+383,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,29-06-2025 19:00,0.5
+384,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,30-06-2025 04:00,0.5
+385,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,30-06-2025 18:00,1.5
+386,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,30-06-2025 19:00,3
+387,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,04-07-2025 09:00,0.5
+388,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,04-07-2025 14:00,1
+389,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,07-07-2025 01:00,3
+390,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,07-07-2025 02:00,0.5
+391,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,07-07-2025 07:00,1
+392,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,07-07-2025 08:00,1
+393,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,09-07-2025 19:00,1
+394,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,09-07-2025 20:00,14.5
+395,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,09-07-2025 22:00,1
+396,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,09-07-2025 23:00,1.5
+397,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,10-07-2025 00:00,0.5
+398,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,10-07-2025 06:00,3
+399,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,10-07-2025 07:00,3
+400,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,10-07-2025 09:00,1
+401,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,13-07-2025 11:00,0.5
+402,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,13-07-2025 20:00,1
+403,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,14-07-2025 18:00,0.5
+404,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,22-07-2025 10:00,1.5
+405,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,22-07-2025 11:00,0.5
+406,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,22-07-2025 12:00,25.5
+407,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,22-07-2025 13:00,6
+408,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,29-07-2025 08:00,0.5
+409,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,30-07-2025 18:00,21.5
+410,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,31-07-2025 01:00,0.5
+411,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,31-07-2025 03:00,0.5
+412,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,31-07-2025 07:00,5.5
+413,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,31-07-2025 08:00,0.5
+414,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,31-07-2025 09:00,0.5
+415,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,02-08-2025 18:00,3
+416,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,03-08-2025 02:00,1
+417,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,03-08-2025 03:00,1.5
+418,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,08-08-2025 20:00,8
+419,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,09-08-2025 09:00,2
+420,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,09-08-2025 10:00,3
+421,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,09-08-2025 11:00,1.5
+422,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,09-08-2025 12:00,0.5
+423,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,24-08-2025 14:00,1.5
+424,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,24-08-2025 15:00,1.5
+425,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,24-08-2025 16:00,1.5
+426,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,24-08-2025 18:00,2
+427,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,24-08-2025 19:00,1
+428,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,25-08-2025 07:00,1.5
+429,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,25-08-2025 11:00,1
+430,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,25-08-2025 12:00,0.5
+431,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,25-08-2025 16:00,0.5
+432,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,01-09-2025 16:00,0.5
+433,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,02-09-2025 11:00,0.5
+434,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,02-09-2025 16:00,0.5
+435,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,03-09-2025 12:00,7
+436,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,04-09-2025 07:00,0.5
+437,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,04-09-2025 08:00,2
+438,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,04-09-2025 18:00,10.5
+439,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,06-10-2025 17:00,0.5
+440,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,07-10-2025 02:00,1.5
+441,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,07-10-2025 03:00,1
+442,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,07-10-2025 05:00,0.5
+443,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,07-10-2025 16:00,1
+444,Dhansa_1,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,76.86989400,28.53540500,07-10-2025 17:00,0.5
+445,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,25-06-2023 14:30,0.1
+446,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,25-06-2023 15:30,0.1
+447,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,25-06-2023 16:30,0.1
+448,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,25-06-2023 17:30,0.3
+449,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,16-07-2023 21:30,2
+450,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,16-07-2023 22:30,2
+451,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,18-07-2023 13:30,0.5
+452,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,26-07-2023 10:30,1.5
+453,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,27-07-2023 20:30,0.5
+454,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,19-08-2023 05:00,2.5
+455,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,09-09-2023 04:00,0.5
+456,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,09-09-2023 22:00,0.5
+457,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,09-09-2023 23:00,4
+458,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,10-09-2023 00:00,1.5
+459,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,10-09-2023 04:00,1
+460,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,10-09-2023 07:00,1
+461,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,13-09-2023 16:00,0.5
+462,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,16-09-2023 12:00,0.5
+463,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,16-09-2023 13:00,1
+464,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,16-09-2023 16:00,5.5
+465,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,16-09-2023 17:00,2
+466,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,16-09-2023 18:00,1
+467,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,16-09-2023 19:00,1
+468,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,17-09-2023 09:00,0.5
+469,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,23-09-2023 12:00,2
+470,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,10-11-2023 02:00,0.5
+471,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,10-11-2023 12:00,0.5
+472,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,31-01-2024 13:00,1
+473,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,01-02-2024 02:00,3.5
+474,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,03-03-2024 02:00,1.5
+475,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,13-04-2024 17:00,0.5
+476,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,13-04-2024 18:00,1.5
+477,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,26-04-2024 18:00,0.5
+478,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,24-06-2024 19:00,1.5
+479,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,26-06-2024 11:00,2.5
+480,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,27-06-2024 08:00,2
+481,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,28-06-2024 03:00,4
+482,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,28-06-2024 04:00,0.5
+483,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,28-06-2024 06:00,18.5
+484,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,28-06-2024 07:00,4
+485,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,28-06-2024 08:00,2
+486,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,29-06-2024 08:00,2
+487,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,04-07-2024 05:00,2
+488,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,04-07-2024 08:00,0.5
+489,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,09-07-2024 10:00,5
+490,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,09-07-2024 11:00,1.5
+491,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,09-07-2024 12:00,3
+492,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,13-07-2024 13:00,1
+493,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,13-07-2024 14:00,1
+494,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,17-07-2024 14:00,10
+495,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,17-07-2024 15:00,0.5
+496,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,24-07-2024 07:00,0.5
+497,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,31-07-2024 20:00,0.5
+498,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,31-07-2024 21:00,1
+499,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,31-07-2024 22:00,1
+500,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,01-08-2024 01:00,0.5
+501,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,01-08-2024 05:00,0.5
+502,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,27-12-2024 04:00,1
+503,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,27-12-2024 05:00,1
+504,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,27-12-2024 08:00,3.5
+505,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,27-12-2024 09:00,1
+506,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,27-12-2024 11:00,6
+507,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,27-12-2024 13:00,0.5
+508,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,27-12-2024 14:00,1.5
+509,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,27-12-2024 16:00,3.5
+510,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,27-12-2024 17:00,1.5
+511,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,27-12-2024 18:00,1
+512,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,27-12-2024 19:00,0.5
+513,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,11-01-2025 17:00,2
+514,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,11-01-2025 18:00,1.5
+515,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,11-01-2025 19:00,0.5
+516,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,15-01-2025 19:00,0.5
+517,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,16-01-2025 03:00,0.5
+518,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,28-02-2025 11:00,0.5
+519,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,18-04-2025 21:00,4.5
+520,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,10-05-2025 14:00,2
+521,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,10-05-2025 15:00,1
+522,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,11-05-2025 22:00,0.5
+523,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,13-05-2025 17:00,0.5
+524,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,21-05-2025 20:00,1.5
+525,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,26-05-2025 09:00,0.5
+526,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,17-06-2025 15:00,21
+527,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,18-06-2025 20:00,0.5
+528,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,21-06-2025 18:00,1.5
+529,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,23-06-2025 19:00,2
+530,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,24-06-2025 09:00,1.5
+531,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,29-06-2025 10:00,12
+532,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,30-06-2025 15:00,2.5
+533,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,03-07-2025 20:00,0.5
+534,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,07-07-2025 00:00,5
+535,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,07-07-2025 01:00,1
+536,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,07-07-2025 08:00,1
+537,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,09-07-2025 19:00,7.5
+538,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,09-07-2025 20:00,1
+539,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,09-07-2025 21:00,2
+540,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,09-07-2025 22:00,1.5
+541,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,09-07-2025 23:00,1
+542,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,10-07-2025 05:00,5
+543,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,10-07-2025 07:00,0.5
+544,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,14-07-2025 19:00,7
+545,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,21-07-2025 16:00,11
+546,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,22-07-2025 12:00,0.5
+547,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,22-07-2025 13:00,0.5
+548,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,29-07-2025 08:00,3.5
+549,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,29-07-2025 10:00,1
+550,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,29-07-2025 12:00,0.5
+551,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,30-07-2025 09:00,2
+552,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,30-07-2025 22:00,1
+553,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,30-07-2025 23:00,14.5
+554,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,31-07-2025 03:00,1
+555,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,31-07-2025 04:00,0.5
+556,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,31-07-2025 07:00,0.5
+557,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,31-07-2025 10:00,1
+558,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,31-07-2025 13:00,6.5
+559,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,03-08-2025 01:00,13.5
+560,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,03-08-2025 02:00,1.5
+561,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,03-08-2025 03:00,1
+562,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,03-08-2025 04:00,1.5
+563,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,08-08-2025 23:00,0.5
+564,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,09-08-2025 07:00,3
+565,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,09-08-2025 08:00,5.5
+566,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,09-08-2025 09:00,5.5
+567,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,09-08-2025 10:00,2.5
+568,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,09-08-2025 11:00,1
+569,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,24-08-2025 12:00,0.5
+570,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,24-08-2025 13:00,2.5
+571,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,24-08-2025 14:00,0.5
+572,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,24-08-2025 16:00,2.5
+573,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,25-08-2025 05:00,0.5
+574,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,25-08-2025 06:00,1.5
+575,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,28-08-2025 17:00,4
+576,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,01-09-2025 09:00,0.5
+577,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,01-09-2025 16:00,0.5
+578,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,01-09-2025 18:00,0.5
+579,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,02-09-2025 12:00,4
+580,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,02-09-2025 17:00,1
+581,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,03-09-2025 13:00,16
+582,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,03-09-2025 14:00,0.5
+583,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,03-09-2025 15:00,1.5
+584,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,03-09-2025 16:00,0.5
+585,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,03-09-2025 17:00,0.5
+586,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,04-09-2025 06:00,4.5
+587,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,05-09-2025 14:00,0.5
+588,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,05-09-2025 15:00,12.5
+589,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,05-09-2025 17:00,0.5
+590,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,02-10-2025 15:00,0.5
+591,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,06-10-2025 17:00,0.5
+592,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,07-10-2025 02:00,2.5
+593,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,07-10-2025 04:00,0.5
+594,Kanjhawala Store,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.00135500,28.73826000,07-10-2025 16:00,1
+595,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,30-06-2023 20:30,0.3
+596,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,30-06-2023 21:30,0.1
+597,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,18-07-2023 19:30,1.5
+598,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,26-07-2023 11:30,0.5
+599,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,26-07-2023 14:30,0.5
+600,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,23-08-2023 05:00,2
+601,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,23-08-2023 08:00,0.5
+602,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,23-08-2023 09:00,0.5
+603,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,23-08-2023 10:00,0.5
+604,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,23-08-2023 11:00,0.5
+605,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,23-08-2023 18:00,0.5
+606,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,09-09-2023 03:00,1
+607,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,09-09-2023 22:00,0.5
+608,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,10-09-2023 00:00,1
+609,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,10-09-2023 06:00,2
+610,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,15-09-2023 08:00,11
+611,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,15-09-2023 09:00,1.5
+612,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,16-09-2023 12:00,12
+613,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,23-09-2023 13:00,1.5
+614,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,10-11-2023 05:00,0.5
+615,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,10-11-2023 13:00,0.5
+616,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,31-01-2024 17:00,0.5
+617,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,31-01-2024 21:00,1
+618,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,01-02-2024 03:00,3.5
+619,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,01-02-2024 05:00,2.5
+620,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,02-03-2024 09:00,0.5
+621,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,27-06-2024 10:00,0.5
+622,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,28-06-2024 05:00,1.5
+623,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,28-06-2024 07:00,3
+624,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,29-06-2024 15:00,0.5
+625,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,05-07-2024 10:00,0.5
+626,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,09-07-2024 12:00,4
+627,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,13-07-2024 06:00,0.5
+628,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,27-07-2024 18:00,8
+629,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,31-07-2024 19:00,5
+630,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,31-07-2024 20:00,4.5
+631,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,31-07-2024 21:00,1
+632,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,31-07-2024 22:00,1.5
+633,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,27-12-2024 09:00,1
+634,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,27-12-2024 12:00,3
+635,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,27-12-2024 13:00,0.5
+636,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,27-12-2024 16:00,0.5
+637,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,27-12-2024 17:00,2
+638,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,27-12-2024 18:00,2
+639,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,27-12-2024 20:00,1
+640,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,31-12-2024 18:00,0.5
+641,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,12-01-2025 20:00,0.5
+642,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,15-01-2025 23:00,0.5
+643,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,16-01-2025 05:00,0.5
+644,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,02-05-2025 08:00,5
+645,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,17-05-2025 15:00,5
+646,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,25-05-2025 02:00,44.5
+647,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,25-05-2025 16:00,0.5
+648,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,17-06-2025 19:00,14.5
+649,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,17-06-2025 20:00,0.5
+650,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,29-06-2025 20:00,15.5
+651,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,30-06-2025 11:00,0.5
+652,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,04-07-2025 15:00,0.5
+653,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,05-07-2025 09:00,0.5
+654,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,07-07-2025 06:00,0.5
+655,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,09-07-2025 18:00,2
+656,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,09-07-2025 19:00,6
+657,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,09-07-2025 21:00,0.5
+658,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,09-07-2025 22:00,0.5
+659,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,09-07-2025 23:00,1
+660,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,10-07-2025 00:00,0.5
+661,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,10-07-2025 08:00,1
+662,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,10-07-2025 09:00,0.5
+663,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,10-07-2025 10:00,0.5
+664,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,11-07-2025 12:00,0.5
+665,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,11-07-2025 15:00,0.5
+666,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,13-07-2025 21:00,0.5
+667,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,14-07-2025 18:00,3
+668,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,14-07-2025 19:00,3
+669,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,14-07-2025 20:00,0.5
+670,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,14-07-2025 23:00,0.5
+671,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,21-07-2025 17:00,4
+672,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,21-07-2025 18:00,0.5
+673,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,22-07-2025 09:00,0.5
+674,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,22-07-2025 13:00,0.5
+675,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,28-07-2025 17:00,0.5
+676,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,29-07-2025 09:00,9.5
+677,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,29-07-2025 11:00,8
+678,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,29-07-2025 12:00,0.5
+679,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,30-07-2025 23:00,4
+680,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,31-07-2025 00:00,7.5
+681,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,31-07-2025 01:00,1.5
+682,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,31-07-2025 02:00,1.5
+683,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,31-07-2025 03:00,0.5
+684,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,31-07-2025 05:00,0.5
+685,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,31-07-2025 06:00,1.5
+686,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,31-07-2025 09:00,0.5
+687,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,31-07-2025 10:00,1
+688,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,03-08-2025 02:00,10
+689,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,09-08-2025 08:00,0.5
+690,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,09-08-2025 09:00,0.5
+691,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,24-08-2025 15:00,2
+692,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,24-08-2025 16:00,0.5
+693,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,25-08-2025 06:00,0.5
+694,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,25-08-2025 12:00,1
+695,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,27-08-2025 13:00,0.5
+696,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,01-09-2025 21:00,0.5
+697,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,02-09-2025 16:00,0.5
+698,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,02-09-2025 17:00,0.5
+699,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,02-09-2025 18:00,0.5
+700,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,03-09-2025 01:00,0.5
+701,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,03-09-2025 14:00,0.5
+702,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,04-09-2025 04:00,0.5
+703,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,04-09-2025 23:00,0.5
+704,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,05-09-2025 23:00,0.5
+705,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,06-09-2025 11:00,1
+706,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,02-10-2025 18:00,0.5
+707,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,06-10-2025 01:00,1.5
+708,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,06-10-2025 03:00,1
+709,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,06-10-2025 12:00,0.5
+710,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,06-10-2025 14:00,1
+711,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,06-10-2025 15:00,0.5
+712,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,07-10-2025 04:00,2.5
+713,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,07-10-2025 06:00,0.5
+714,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,07-10-2025 17:00,3.5
+715,L.M. Bund Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.27020600,28.64160800,07-10-2025 18:00,6.5
+716,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,25-06-2023 15:30,0.2
+717,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,25-06-2023 16:30,0.1
+718,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,25-06-2023 17:30,0.1
+719,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,14-07-2023 17:30,12.5
+720,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,14-07-2023 18:30,1
+721,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,16-07-2023 00:30,1
+722,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,18-07-2023 19:30,1
+723,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,23-08-2023 09:00,0.5
+724,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,23-08-2023 10:00,0.5
+725,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,23-08-2023 11:00,0.5
+726,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,09-09-2023 03:00,6
+727,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,09-09-2023 23:00,2
+728,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,10-09-2023 00:00,1.5
+729,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,10-09-2023 03:00,0.5
+730,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,10-09-2023 04:00,0.5
+731,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,31-01-2024 13:00,0.5
+732,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,01-02-2024 03:00,2
+733,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,26-06-2024 15:00,6
+734,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,22-07-2024 13:00,5
+735,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,24-07-2024 04:00,0.5
+736,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,24-07-2024 07:00,1
+737,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,26-07-2024 08:00,0.5
+738,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,27-07-2024 16:00,2
+739,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,31-07-2024 20:00,0.5
+740,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,31-07-2024 22:00,1.5
+741,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,27-12-2024 04:00,2
+742,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,27-12-2024 05:00,0.5
+743,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,27-12-2024 08:00,2.5
+744,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,27-12-2024 09:00,0.5
+745,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,27-12-2024 10:00,0.5
+746,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,27-12-2024 12:00,1
+747,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,27-12-2024 13:00,0.5
+748,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,27-12-2024 14:00,6
+749,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,27-12-2024 15:00,2.5
+750,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,27-12-2024 17:00,3
+751,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,27-12-2024 20:00,1.5
+752,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,27-12-2024 23:00,0.5
+753,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,11-01-2025 17:00,0.5
+754,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,11-01-2025 18:00,0.5
+755,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,11-01-2025 19:00,0.5
+756,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,16-01-2025 06:00,0.5
+757,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,01-03-2025 06:00,3
+758,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,11-04-2025 20:00,0.5
+759,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,18-04-2025 20:00,1
+760,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,18-04-2025 21:00,1.5
+761,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,02-05-2025 08:00,3
+762,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,13-05-2025 17:00,2
+763,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,13-05-2025 20:00,0.5
+764,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,17-05-2025 15:00,0.5
+765,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,21-05-2025 20:00,4
+766,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,25-05-2025 04:00,2
+767,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,26-05-2025 06:00,0.5
+768,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,23-06-2025 19:00,4.5
+769,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,29-06-2025 11:00,6
+770,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,29-06-2025 12:00,0.5
+771,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,07-07-2025 08:00,1.5
+772,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,09-07-2025 06:00,0.5
+773,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,09-07-2025 20:00,13.5
+774,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,09-07-2025 21:00,18.5
+775,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,09-07-2025 22:00,1.5
+776,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,09-07-2025 23:00,0.5
+777,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,10-07-2025 00:00,0.5
+778,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,10-07-2025 06:00,0.5
+779,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,10-07-2025 07:00,1
+780,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,10-07-2025 08:00,1
+781,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,11-07-2025 12:00,2.5
+782,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,12-07-2025 15:00,1.5
+783,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,14-07-2025 23:00,0.5
+784,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,21-07-2025 16:00,2.5
+785,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,21-07-2025 17:00,3
+786,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,22-07-2025 11:00,32
+787,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,22-07-2025 12:00,11
+788,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,27-07-2025 07:00,6.5
+789,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,29-07-2025 08:00,4.5
+790,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,29-07-2025 09:00,1
+791,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,30-07-2025 09:00,1
+792,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,30-07-2025 16:00,2
+793,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,30-07-2025 22:00,3
+794,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,31-07-2025 00:00,0.5
+795,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,31-07-2025 01:00,0.5
+796,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,31-07-2025 02:00,1
+797,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,31-07-2025 03:00,1
+798,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,31-07-2025 06:00,0.5
+799,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,31-07-2025 10:00,1.5
+800,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,31-07-2025 13:00,4
+801,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,03-08-2025 01:00,0.5
+802,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,03-08-2025 02:00,0.5
+803,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,03-08-2025 03:00,1.5
+804,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,03-08-2025 07:00,0.5
+805,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,08-08-2025 23:00,1.5
+806,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,09-08-2025 00:00,0.5
+807,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,09-08-2025 07:00,7
+808,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,09-08-2025 08:00,12.5
+809,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,09-08-2025 09:00,12.5
+810,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,09-08-2025 10:00,4.5
+811,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,09-08-2025 15:00,0.5
+812,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,18-08-2025 09:00,3
+813,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,24-08-2025 12:00,0.5
+814,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,24-08-2025 14:00,0.5
+815,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,24-08-2025 16:00,3.5
+816,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,24-08-2025 21:00,2
+817,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,27-08-2025 12:00,0.5
+818,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,28-08-2025 16:00,4
+819,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,28-08-2025 17:00,0.5
+820,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,01-09-2025 18:00,0.5
+821,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,02-09-2025 12:00,2.5
+822,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,02-09-2025 14:00,5
+823,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,02-09-2025 17:00,3
+824,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,02-09-2025 18:00,0.5
+825,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,02-09-2025 19:00,0.5
+826,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,03-09-2025 04:00,0.5
+827,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,03-09-2025 15:00,5.5
+828,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,03-09-2025 16:00,0.5
+829,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,03-09-2025 18:00,0.5
+830,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,05-09-2025 15:00,3
+831,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,06-10-2025 01:00,0.5
+832,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,06-10-2025 02:00,0.5
+833,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,06-10-2025 12:00,1.5
+834,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,06-10-2025 18:00,0.5
+835,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,07-10-2025 04:00,0.5
+836,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,07-10-2025 05:00,0.5
+837,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,07-10-2025 16:00,22
+838,Rohini Office Complex,Delhi SW GW,7,Delhi,79,NEW DELHI,-,-,-,-,-,-,-,-,-,77.31404000,28.72883100,07-10-2025 18:00,0.5

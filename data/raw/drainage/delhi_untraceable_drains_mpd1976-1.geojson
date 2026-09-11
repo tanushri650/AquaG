@@ -1,0 +1,69 @@
+{
+  "type": "FeatureCollection",
+  "name": "Delhi_Untraceable_Drains_MPD1976",
+  "description": "Source: Master Plan Drainage 1976 list of untraceable drains. Coordinates are APPROXIMATE basin/zone-level area centroids (not actual drain paths or precise drain locations) since the source document contains no geospatial data.",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": [
+    { "type": "Feature", "properties": { "basin": "Shahdara Basin", "drain_name": "G.T. Road Drain No. I", "seq_no": 1, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.2833, 28.6667] } },
+    { "type": "Feature", "properties": { "basin": "Shahdara Basin", "drain_name": "Northern Railway Line Drain", "seq_no": 2, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.2833, 28.6667] } },
+    { "type": "Feature", "properties": { "basin": "Shahdara Basin", "drain_name": "Vinod Nagar Drain", "seq_no": 3, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.2833, 28.6667] } },
+    { "type": "Feature", "properties": { "basin": "Shahdara Basin", "drain_name": "N.H. Bye Pass Drain", "seq_no": 4, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.2833, 28.6667] } },
+    { "type": "Feature", "properties": { "basin": "Shahdara Basin", "drain_name": "Hindon Cut Drain", "seq_no": 5, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.2833, 28.6667] } },
+    { "type": "Feature", "properties": { "basin": "Shahdara Basin", "drain_name": "Khichripur Drain", "seq_no": 6, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.2833, 28.6667] } },
+    { "type": "Feature", "properties": { "basin": "Shahdara Basin", "drain_name": "Gokulpur Drain", "seq_no": 7, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.2833, 28.6667] } },
+
+    { "type": "Feature", "properties": { "basin": "Alipur Basin", "drain_name": "Hameedpur Drain", "seq_no": 1, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.1333, 28.8000] } },
+
+    { "type": "Feature", "properties": { "basin": "Khanjhawala Basin", "drain_name": "Rithala Sub-Link Drain", "seq_no": 1, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.0167, 28.7500] } },
+    { "type": "Feature", "properties": { "basin": "Khanjhawala Basin", "drain_name": "Rithala Link Drain", "seq_no": 2, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.0167, 28.7500] } },
+    { "type": "Feature", "properties": { "basin": "Khanjhawala Basin", "drain_name": "Mundka Pond Link Drain", "seq_no": 3, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.0167, 28.7500] } },
+    { "type": "Feature", "properties": { "basin": "Khanjhawala Basin", "drain_name": "Rithala Pond Link Drain", "seq_no": 4, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.0167, 28.7500] } },
+    { "type": "Feature", "properties": { "basin": "Khanjhawala Basin", "drain_name": "Bakarwala Pond Link Drain", "seq_no": 5, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.0167, 28.7500] } },
+    { "type": "Feature", "properties": { "basin": "Khanjhawala Basin", "drain_name": "Kamrudin Nagar Pond Link Drain", "seq_no": 6, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.0167, 28.7500] } },
+    { "type": "Feature", "properties": { "basin": "Khanjhawala Basin", "drain_name": "Budhanpur Pond Link Drain", "seq_no": 7, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.0167, 28.7500] } },
+    { "type": "Feature", "properties": { "basin": "Khanjhawala Basin", "drain_name": "Mungeshpur Link Drain", "seq_no": 8, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.0167, 28.7500] } },
+    { "type": "Feature", "properties": { "basin": "Khanjhawala Basin", "drain_name": "Gheera Link Drain", "seq_no": 9, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.0167, 28.7500] } },
+    { "type": "Feature", "properties": { "basin": "Khanjhawala Basin", "drain_name": "Rani Khera Link Drain", "seq_no": 10, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.0167, 28.7500] } },
+    { "type": "Feature", "properties": { "basin": "Khanjhawala Basin", "drain_name": "Nithari Link Drain", "seq_no": 11, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.0167, 28.7500] } },
+    { "type": "Feature", "properties": { "basin": "Khanjhawala Basin", "drain_name": "Begumpur Drain", "seq_no": 12, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.0167, 28.7500] } },
+    { "type": "Feature", "properties": { "basin": "Khanjhawala Basin", "drain_name": "Sahibabad Daulatpur Link Drain", "seq_no": 13, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.0167, 28.7500] } },
+    { "type": "Feature", "properties": { "basin": "Khanjhawala Basin", "drain_name": "Naharpur Link Drain", "seq_no": 14, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.0167, 28.7500] } },
+
+    { "type": "Feature", "properties": { "basin": "Najafgarh Basin", "drain_name": "Bagraula Drain", "seq_no": 1, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [76.9800, 28.6092] } },
+    { "type": "Feature", "properties": { "basin": "Najafgarh Basin", "drain_name": "Barthal Drain", "seq_no": 2, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [76.9800, 28.6092] } },
+    { "type": "Feature", "properties": { "basin": "Najafgarh Basin", "drain_name": "Chhawla Link Drain", "seq_no": 3, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [76.9800, 28.6092] } },
+    { "type": "Feature", "properties": { "basin": "Najafgarh Basin", "drain_name": "Bijwasan Pond Link Drain", "seq_no": 4, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [76.9800, 28.6092] } },
+    { "type": "Feature", "properties": { "basin": "Najafgarh Basin", "drain_name": "Malikpur Pond Link Drain", "seq_no": 5, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [76.9800, 28.6092] } },
+    { "type": "Feature", "properties": { "basin": "Najafgarh Basin", "drain_name": "Sagarpur Link Drain", "seq_no": 6, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [76.9800, 28.6092] } },
+    { "type": "Feature", "properties": { "basin": "Najafgarh Basin", "drain_name": "Nasirpur Pond Link Drain", "seq_no": 7, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [76.9800, 28.6092] } },
+    { "type": "Feature", "properties": { "basin": "Najafgarh Basin", "drain_name": "Kair Link Drain", "seq_no": 8, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [76.9800, 28.6092] } },
+    { "type": "Feature", "properties": { "basin": "Najafgarh Basin", "drain_name": "Dhansa Outfall Channel", "seq_no": 9, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [76.9800, 28.6092] } },
+    { "type": "Feature", "properties": { "basin": "Najafgarh Basin", "drain_name": "Palam Pond Link Drain", "seq_no": 10, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [76.9800, 28.6092] } },
+
+    { "type": "Feature", "properties": { "basin": "Mehrauli Basin", "drain_name": null, "seq_no": null, "note": "0 untraceable drains listed for this basin", "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.1703, 28.5058] } },
+
+    { "type": "Feature", "properties": { "basin": "MCD Drains - Najafgarh Drain", "drain_name": null, "seq_no": null, "note": "0 untraceable drains listed", "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [76.9800, 28.6092] } },
+
+    { "type": "Feature", "properties": { "basin": "MCD Drains - Karol Bagh Zone", "drain_name": "Kanhaiya Nagar Drain", "seq_no": 1, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.1909, 28.6519] } },
+    { "type": "Feature", "properties": { "basin": "MCD Drains - Karol Bagh Zone", "drain_name": "Industrial Area Drain", "seq_no": 2, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.1909, 28.6519] } },
+
+    { "type": "Feature", "properties": { "basin": "MCD Drains - West Zone", "drain_name": "Rajouri Garden Drain", "seq_no": 1, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.1174, 28.6692] } },
+    { "type": "Feature", "properties": { "basin": "MCD Drains - West Zone", "drain_name": "Moti Nagar Drain", "seq_no": 2, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.1174, 28.6692] } },
+    { "type": "Feature", "properties": { "basin": "MCD Drains - West Zone", "drain_name": "Titarpur Drain", "seq_no": 3, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.1174, 28.6692] } },
+    { "type": "Feature", "properties": { "basin": "MCD Drains - West Zone", "drain_name": "Shubash Nagar Drain", "seq_no": 4, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.1174, 28.6692] } },
+
+    { "type": "Feature", "properties": { "basin": "MCD Drains - Civil Line Zone", "drain_name": "Gurmandi Drain", "seq_no": 1, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.2217, 28.6772] } },
+    { "type": "Feature", "properties": { "basin": "MCD Drains - Civil Line Zone", "drain_name": "Hansraj Drain", "seq_no": 2, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.2217, 28.6772] } },
+    { "type": "Feature", "properties": { "basin": "MCD Drains - Civil Line Zone", "drain_name": "Mall Road Drain", "seq_no": 3, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.2217, 28.6772] } },
+    { "type": "Feature", "properties": { "basin": "MCD Drains - Civil Line Zone", "drain_name": "Timarpur Drain", "seq_no": 4, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.2217, 28.6772] } },
+
+    { "type": "Feature", "properties": { "basin": "MCD Drains - City Zone", "drain_name": null, "seq_no": null, "note": "0 untraceable drains listed", "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.2311, 28.6508] } },
+
+    { "type": "Feature", "properties": { "basin": "MCD Drains - South Zone", "drain_name": null, "seq_no": null, "note": "0 untraceable drains listed", "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.2000, 28.5433] } },
+
+    { "type": "Feature", "properties": { "basin": "NDMC Drain", "drain_name": "Karbala Drain", "seq_no": 1, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.2090, 28.6139] } },
+    { "type": "Feature", "properties": { "basin": "NDMC Drain", "drain_name": "Lodhi Colony Drain", "seq_no": 2, "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.2090, 28.6139] } },
+
+    { "type": "Feature", "properties": { "basin": "Cantonment Area", "drain_name": null, "seq_no": null, "note": "0 untraceable drains listed", "source": "MPD-1976" }, "geometry": { "type": "Point", "coordinates": [77.1450, 28.5822] } }
+  ]
+}

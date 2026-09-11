@@ -1,0 +1,37 @@
+Dataset SHA-256: 9cd94eb3f9ac3b008bad15a4795c84470042a472941ddb0cf8ed8f6469a5fb31
+Training rows: 150
+Accuracy: 0.7667
+
+Classification report:
+{
+  "High": {
+    "precision": 0.9166666666666666,
+    "recall": 0.9166666666666666,
+    "f1-score": 0.9166666666666666,
+    "support": 12.0
+  },
+  "Low": {
+    "precision": 0.6666666666666666,
+    "recall": 1.0,
+    "f1-score": 0.8,
+    "support": 10.0
+  },
+  "Medium": {
+    "precision": 0.6666666666666666,
+    "recall": 0.25,
+    "f1-score": 0.36363636363636365,
+    "support": 8.0
+  },
+  "macro avg": {
+    "precision": 0.75,
+    "recall": 0.7222222222222222,
+    "f1-score": 0.6934343434343435,
+    "support": 30.0
+  },
+  "weighted avg": {
+    "precision": 0.7666666666666665,
+    "recall": 0.7666666666666667,
+    "f1-score": 0.7303030303030303,
+    "support": 30.0
+  }
+}

@@ -11,5 +11,5 @@ python -m pip install \
   --disable-pip-version-check \
   --no-input \
   --break-system-packages \
-  -r requirements.txt
-python main.py
+  -r backend/requirements.txt
+python backend/aquag-training.py

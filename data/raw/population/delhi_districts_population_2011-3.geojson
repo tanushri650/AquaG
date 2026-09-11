@@ -1,0 +1,124 @@
+{
+  "type": "FeatureCollection",
+  "name": "Delhi_District_Population_Census_2011",
+  "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "rank_2011": 1,
+        "district": "North West",
+        "population_total": 3656539,
+        "population_male": 1960922,
+        "population_female": 1695617,
+        "state": "NCT of Delhi",
+        "census_year": 2011
+      },
+      "geometry": { "type": "Point", "coordinates": [77.0648, 28.7185] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rank_2011": 2,
+        "district": "South",
+        "population_total": 2731929,
+        "population_male": 1467428,
+        "population_female": 1264501,
+        "state": "NCT of Delhi",
+        "census_year": 2011
+      },
+      "geometry": { "type": "Point", "coordinates": [77.2183, 28.5245] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rank_2011": 3,
+        "district": "West",
+        "population_total": 2543243,
+        "population_male": 1356240,
+        "population_female": 1187003,
+        "state": "NCT of Delhi",
+        "census_year": 2011
+      },
+      "geometry": { "type": "Point", "coordinates": [77.0688, 28.6469] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rank_2011": 4,
+        "district": "South West",
+        "population_total": 2292958,
+        "population_male": 1246046,
+        "population_female": 1046912,
+        "state": "NCT of Delhi",
+        "census_year": 2011
+      },
+      "geometry": { "type": "Point", "coordinates": [76.9784, 28.5921] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rank_2011": 5,
+        "district": "North East",
+        "population_total": 2241624,
+        "population_male": 1188425,
+        "population_female": 1053199,
+        "state": "NCT of Delhi",
+        "census_year": 2011
+      },
+      "geometry": { "type": "Point", "coordinates": [77.2773, 28.6800] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rank_2011": 6,
+        "district": "East",
+        "population_total": 1709346,
+        "population_male": 907500,
+        "population_female": 801846,
+        "state": "NCT of Delhi",
+        "census_year": 2011
+      },
+      "geometry": { "type": "Point", "coordinates": [77.2773, 28.6279] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rank_2011": 7,
+        "district": "North",
+        "population_total": 887978,
+        "population_male": 475002,
+        "population_female": 412976,
+        "state": "NCT of Delhi",
+        "census_year": 2011
+      },
+      "geometry": { "type": "Point", "coordinates": [77.2090, 28.6800] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rank_2011": 8,
+        "district": "Central",
+        "population_total": 582320,
+        "population_male": 307821,
+        "population_female": 274499,
+        "state": "NCT of Delhi",
+        "census_year": 2011
+      },
+      "geometry": { "type": "Point", "coordinates": [77.2334, 28.6519] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "rank_2011": 9,
+        "district": "New Delhi",
+        "population_total": 142004,
+        "population_male": 77942,
+        "population_female": 64062,
+        "state": "NCT of Delhi",
+        "census_year": 2011
+      },
+      "geometry": { "type": "Point", "coordinates": [77.2100, 28.6139] }
+    }
+  ]
+}

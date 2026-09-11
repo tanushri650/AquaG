@@ -1,0 +1,1383 @@
+zone_id,zone_name,scenario,rainfall_1h,rainfall_3h,rainfall_6h,elevation,slope,distance_to_drain,drain_capacity,pump_load_pct,flood_history_count,population_density,critical_infra_flag,lat,lon,data_source,flood_severity
+REAL-1013,Tilak Marg,light,3.2,6.7,9.7,17.5,0.58,214.0,86.1,88.0,1,5976.1,0,28.62893,77.23924,real_govt_record,Low
+REAL-0535,NH-8 Rangpuri Chowk,heavy,38.6,77.7,112.6,21.6,4.45,250.2,76.7,93.5,1,11610.3,1,28.6299,77.24189,real_govt_record,Medium
+REAL-0255,Barapullah Road,heavy,32.6,88.5,131.0,33.4,2.4,683.4,72.4,69.9,2,8090.5,1,28.6312,77.23236,real_govt_record,Medium
+REAL-0866,Kela Godam Road,moderate,20.9,43.1,56.8,32.9,3.06,50.0,74.7,51.3,1,6462.5,1,28.62843,77.23446,real_govt_record,Low
+ZONE-100,ZONE-100,synthetic_v1,17.64,60.55,77.93,31.59,3.97,668.68,77.47,75.43,1,4383.29,0,28.78265,77.24061,synthetic,Low
+REAL-0161,Panchsheel Marg,light,5.1,12.8,17.5,27.9,3.46,364.4,74.7,92.3,4,8277.1,0,28.62946,77.23994,real_govt_record,Low
+REAL-0672,NH-24 Underpass Street,extreme,39.5,95.5,134.5,21.2,2.34,436.0,74.1,42.1,1,15076.1,0,28.63102,77.24403,real_govt_record,Medium
+ZONE-089,ZONE-089,synthetic_v1,71.08,79.81,151.53,48.49,0.92,746.41,94.26,35.25,2,6330.95,0,28.79543,77.31572,synthetic,Low
+REAL-0913,Bharat Scouts & Guide Marg,light,8.7,19.4,29.3,18.7,3.64,564.4,94.2,43.6,1,16990.7,1,28.62916,77.24002,real_govt_record,Low
+REAL-0665,Netaji Subhash Marg,light,6.4,14.2,22.2,23.7,4.05,477.6,82.5,85.3,1,21795.3,0,28.62701,77.2394,real_govt_record,Low
+SYN2-0025,SYN2-0025,synthetic_v2,79.82,179.57,220.03,47.94,1.55,930.28,75.72,37.94,2,4548.49,0,28.75732,77.3424,synthetic,High
+ZONE-080,ZONE-080,synthetic_v1,56.8,84.6,144.44,10.31,3.66,847.19,94.82,40.02,3,8273.57,0,28.75184,77.17463,synthetic,High
+REAL-0982,Palam Colony,moderate,13.2,34.0,50.7,36.6,4.67,80.1,85.9,61.4,1,16661.4,0,28.63212,77.23395,real_govt_record,Low
+REAL-0548,Najafgarh-Nangloi Road,extreme,41.4,105.9,166.4,19.3,1.89,472.1,74.1,58.9,1,10259.8,1,28.63468,77.24118,real_govt_record,Medium
+ZONE-071,ZONE-071,synthetic_v1,61.41,139.67,165.09,34.13,2.64,568.54,89.31,27.93,3,24690.74,1,28.7609,77.25084,synthetic,High
+REAL-0649,Maulana Johar Ali Marg,light,5.8,14.2,19.2,29.8,3.77,312.0,76.7,43.3,1,16908.9,0,28.62766,77.23816,real_govt_record,Low
+REAL-0330,CV Raman Marg,moderate,23.4,53.6,73.8,31.9,1.9,135.0,87.5,37.5,2,16819.1,0,28.62816,77.23561,real_govt_record,Low
+REAL-0343,Maharaja Surajmal Marg,heavy,30.7,69.8,96.4,30.9,2.63,646.7,83.0,86.5,2,8980.5,1,28.63388,77.24316,real_govt_record,Low
+REAL-0058,Anuvrat Marg,moderate,25.8,52.6,82.8,24.2,4.11,278.6,85.9,55.3,11,12391.4,0,28.52913,77.18779,real_govt_record,Medium
+ZONE-095,ZONE-095,synthetic_v1,65.38,97.64,167.68,32.52,2.48,441.96,93.64,57.59,5,16188.18,0,28.562,77.16022,synthetic,High
+ZONE-112,ZONE-112,synthetic_v1,80.5,151.59,186.75,33.45,2.22,415.62,46.43,89.68,1,14214.99,0,28.605,77.22376,synthetic,Medium
+SYN2-0030,SYN2-0030,synthetic_v2,53.15,130.09,183.29,34.52,4.95,935.49,84.03,85.52,2,17106.95,0,28.75577,77.29363,synthetic,Medium
+REAL-0637,Major Hoshiyar Singh Marg,light,3.2,8.5,13.3,35.8,1.28,310.1,83.9,66.6,1,5168.5,0,28.62722,77.23548,real_govt_record,Low
+REAL-0862,Dr. K.S. Krishnan Marg,moderate,22.3,49.1,68.0,27.0,3.65,550.1,74.1,88.0,1,12582.0,1,28.63228,77.23863,real_govt_record,Low
+ZONE-072,ZONE-072,synthetic_v1,81.66,137.44,191.15,50.13,1.34,318.25,91.8,63.32,5,6783.08,0,28.63496,77.18344,synthetic,High
+REAL-0366,R.K. Ashram Marg,moderate,16.4,36.7,52.7,34.0,4.19,155.1,76.7,59.0,2,10862.4,1,28.63113,77.23831,real_govt_record,Low
+REAL-0760,Sarojini Nagar Market,extreme,50.6,138.4,183.1,43.9,4.16,475.5,86.5,68.6,1,13661.9,1,28.63222,77.24179,real_govt_record,High
+ZONE-003,ZONE-003,synthetic_v1,61.62,98.72,128.97,38.06,4.69,272.57,98.47,36.04,5,5138.34,0,28.69496,77.16754,synthetic,High
+REAL-0836,Badli Road,extreme,38.6,91.2,141.6,35.9,2.55,298.6,72.4,86.3,1,12295.6,1,28.6298,77.24198,real_govt_record,Medium
+SYN2-0035,SYN2-0035,synthetic_v2,74.62,180.38,261.64,58.0,7.6,651.92,94.0,22.94,2,4935.24,1,28.68067,77.34057,synthetic,Medium
+REAL-0154,Rafi Marg,moderate,15.5,38.9,58.4,30.4,4.87,782.3,83.0,98.5,4,12297.9,0,28.63487,77.23709,real_govt_record,Low
+REAL-0521,Mahipalpur to Gurugram,light,2.2,5.0,7.9,38.7,2.1,336.2,76.7,98.2,1,18274.5,1,28.62657,77.23445,real_govt_record,Low
+REAL-0755,Sant Nagar MargTowards,heavy,29.1,83.1,120.0,20.2,4.21,109.3,76.7,77.9,1,4511.4,1,28.63023,77.23983,real_govt_record,Medium
+REAL-0296,Pusa Road- Vande Matram Marg,extreme,34.7,95.9,149.8,28.3,2.5,258.5,76.7,93.0,2,16191.5,0,28.6311,77.2459,real_govt_record,Medium
+REAL-0192,PUSA Road,extreme,57.0,137.7,185.6,10.5,1.22,419.6,83.9,49.5,4,10687.4,0,28.63018,77.23808,real_govt_record,High
+REAL-0794,Surajkund Road,moderate,22.9,46.3,73.6,8.2,1.1,427.2,86.1,68.0,1,11421.5,0,28.63068,77.23498,real_govt_record,Low
+REAL-0951,Krishna Menon Marg,heavy,22.0,60.3,92.4,13.5,4.62,77.1,74.1,59.7,1,13249.4,1,28.6309,77.23715,real_govt_record,Low
+REAL-0594,Dadri Main Road,moderate,19.9,40.2,57.9,36.1,3.3,78.0,87.5,70.1,1,24757.1,1,28.63496,77.23404,real_govt_record,Low
+ZONE-039,ZONE-039,synthetic_v1,62.27,96.14,148.15,41.47,5.75,736.36,42.25,36.08,3,22421.21,0,28.75863,77.23267,synthetic,High
+REAL-0619,Kartavya Marg,heavy,33.8,72.5,99.5,29.3,0.51,94.9,87.5,92.5,1,21320.0,0,28.62896,77.23609,real_govt_record,Low
+REAL-0306,Old Gurugram Road,moderate,13.3,30.9,42.3,8.5,1.86,721.6,86.5,53.7,2,14257.0,1,28.6268,77.23985,real_govt_record,Low
+SYN2-0070,SYN2-0070,synthetic_v2,51.76,107.92,171.96,45.42,0.53,608.14,91.67,80.38,0,3252.51,0,28.79292,77.19738,synthetic,Low
+REAL-0813,Urban Extension Road,light,5.2,10.5,16.7,44.2,3.92,753.5,87.5,68.5,1,16156.8,0,28.62704,77.24602,real_govt_record,Low
+SYN2-0067,SYN2-0067,synthetic_v2,53.34,104.87,131.79,14.97,1.28,528.4,41.25,98.82,0,4316.7,1,28.61565,77.24794,synthetic,Low
+REAL-0507,Old Palam Road,heavy,20.9,55.7,74.9,33.8,2.41,337.8,79.7,59.3,1,6731.0,1,28.63001,77.24098,real_govt_record,Low
+REAL-0588,Brigadier Hoshiyar Singh Marg,extreme,44.0,112.7,178.2,17.7,4.21,232.4,74.1,47.0,1,19239.1,1,28.62926,77.23979,real_govt_record,High
+REAL-0320,Ashok Vihar Market,extreme,57.1,133.0,175.0,31.4,2.58,590.0,85.9,97.8,2,8960.9,0,28.63546,77.23832,real_govt_record,High
+REAL-0288,Narela Bawana Road,extreme,45.3,106.8,150.9,18.0,0.73,272.4,87.5,54.1,2,6413.3,0,28.62853,77.24548,real_govt_record,Medium
+ZONE-101,ZONE-101,synthetic_v1,29.31,70.21,114.18,34.14,1.64,655.12,42.45,28.55,5,24823.62,1,28.7934,77.22507,synthetic,High
+SYN2-0145,SYN2-0145,synthetic_v2,67.77,157.96,211.03,44.73,1.6,90.78,21.67,25.43,4,9252.73,1,28.73268,77.31026,synthetic,High
+REAL-0922,Captain Kumud Kumar Marg,moderate,13.1,32.7,44.3,35.3,4.61,730.4,76.7,54.6,1,6527.0,1,28.63635,77.23676,real_govt_record,Low
+REAL-0033,Bhairon Marg,light,2.1,5.7,7.4,18.5,3.76,233.3,72.4,66.9,21,14493.2,0,28.6124,77.24334,real_govt_record,Low
+ZONE-068,ZONE-068,synthetic_v1,7.97,22.81,52.93,52.04,3.95,305.59,60.88,55.25,5,2245.87,0,28.60213,77.2005,synthetic,High
+REAL-0413,NH-44 Near Apple,light,6.5,18.2,24.7,29.7,3.76,118.5,85.9,40.8,1,10603.1,1,28.62792,77.23784,real_govt_record,Low
+REAL-0130,Kautilya Marg,moderate,16.5,42.1,59.8,19.9,0.86,200.8,85.9,70.3,5,15737.6,0,28.62628,77.2443,real_govt_record,Low
+REAL-0983,Palam Colony,heavy,35.1,85.4,126.1,9.1,4.28,309.8,85.9,79.8,1,5621.1,1,28.63162,77.23713,real_govt_record,Medium
+REAL-0572,Azaz Market Road,extreme,66.7,133.7,183.2,9.2,4.07,140.4,74.7,60.5,1,13345.7,0,28.63086,77.24084,real_govt_record,High
+SYN2-0133,SYN2-0133,synthetic_v2,10.77,22.92,29.98,11.86,7.08,821.57,62.78,24.75,4,3551.71,1,28.68715,77.28455,synthetic,Medium
+REAL-0625,KN Katju Marg,light,7.2,16.5,22.4,17.7,4.29,292.9,80.7,45.2,1,8409.3,0,28.63175,77.23678,real_govt_record,Low
+REAL-0043,New Rohtak Road,heavy,42.9,86.1,135.2,9.8,1.73,771.1,80.7,54.1,19,8537.0,1,28.65884,77.19396,real_govt_record,High
+REAL-0613,Jaitpur Road,light,2.9,7.5,11.3,31.5,4.52,380.2,83.9,38.9,1,5551.2,0,28.63001,77.23731,real_govt_record,Low
+REAL-0464,JLN Marg,extreme,57.4,126.0,195.1,25.4,3.38,134.6,81.7,40.2,1,13505.6,0,28.63056,77.24443,real_govt_record,High
+REAL-0311,Bawana Road,heavy,39.4,84.6,128.6,39.7,2.73,386.5,82.5,52.2,2,17641.8,0,28.63719,77.23666,real_govt_record,Medium
+SYN2-0143,SYN2-0143,synthetic_v2,66.3,156.64,229.21,47.31,3.85,298.43,37.52,20.22,5,18207.88,0,28.65795,77.2544,synthetic,High
+SYN2-0085,SYN2-0085,synthetic_v2,13.19,27.11,32.55,24.84,5.32,61.77,76.13,66.97,0,23220.66,0,28.71523,77.23568,synthetic,Low
+REAL-0406,DND Flyway At,moderate,13.1,30.7,42.8,34.4,3.36,51.5,81.7,48.4,1,17002.3,1,28.62541,77.24157,real_govt_record,Low
+REAL-0858,Dr. Bhim Rao Ambedkar Marg,moderate,13.4,29.2,42.0,41.8,2.16,602.0,74.7,77.7,1,21941.5,1,28.6347,77.23885,real_govt_record,Low
+REAL-1004,"Sector-14 Road, Dwarka",extreme,38.8,95.7,136.2,40.5,4.9,240.4,79.7,44.3,1,9273.6,1,28.62709,77.24113,real_govt_record,Medium
+REAL-0828,Arakshan Road,extreme,33.8,93.7,124.0,37.3,1.0,764.8,72.4,55.8,1,23854.3,1,28.62571,77.24109,real_govt_record,Medium
+ZONE-018,ZONE-018,synthetic_v1,10.63,75.51,99.32,56.34,6.42,481.44,53.74,52.04,1,17795.75,0,28.79975,77.25634,synthetic,Low
+REAL-0624,Khalsa Road,extreme,54.0,137.8,203.0,43.4,1.87,793.8,72.4,67.0,1,18091.9,0,28.63145,77.23762,real_govt_record,High
+REAL-0603,Dr. Rajendra Prasad Road,heavy,34.4,78.7,113.8,36.4,1.32,331.8,80.7,75.4,1,22834.9,0,28.63013,77.24353,real_govt_record,Low
+REAL-0543,Jai Singh Road,heavy,21.6,59.9,82.3,12.9,0.55,721.9,74.1,68.7,1,22125.3,1,28.62945,77.23836,real_govt_record,Low
+ZONE-062,ZONE-062,synthetic_v1,61.58,115.13,164.92,48.51,1.12,92.0,96.28,96.62,0,13150.22,0,28.68626,77.17828,synthetic,Low
+REAL-0473,M.G. Road,light,7.0,15.1,24.1,17.7,1.83,438.8,83.9,35.4,1,17334.8,0,28.63209,77.24379,real_govt_record,Low
+REAL-0909,Bahadur Shah Zafar Marg,light,4.6,11.4,17.8,9.4,2.02,468.9,80.7,54.1,1,17797.9,0,28.6274,77.24328,real_govt_record,Low
+SYN2-0054,SYN2-0054,synthetic_v2,77.46,189.89,262.06,34.8,1.06,485.56,71.5,95.49,3,9802.27,0,28.76401,77.34226,synthetic,High
+REAL-0064,Bhairon Road,extreme,53.8,130.1,185.5,13.4,3.84,793.3,74.1,59.0,10,7520.8,0,28.61722,77.24101,real_govt_record,High
+REAL-0897,Sham Nath Marg,light,10.7,23.7,35.0,26.8,1.06,644.7,86.1,94.5,1,18875.8,1,28.63015,77.24253,real_govt_record,Low
+ZONE-092,ZONE-092,synthetic_v1,14.12,78.34,177.96,29.33,1.0,269.46,80.34,74.72,1,5681.26,1,28.69849,77.28308,synthetic,Low
+SYN2-0131,SYN2-0131,synthetic_v2,87.71,182.14,224.28,38.94,1.77,592.69,54.33,73.06,0,2848.89,0,28.73246,77.20455,synthetic,Medium
+SYN2-0086,SYN2-0086,synthetic_v2,69.6,134.79,174.85,46.53,1.08,462.54,32.6,76.06,3,13405.75,1,28.77619,77.21087,synthetic,High
+SYN2-0142,SYN2-0142,synthetic_v2,53.04,128.84,188.28,36.52,6.43,402.92,37.92,38.14,2,16263.12,1,28.58008,77.31827,synthetic,Medium
+REAL-0704,Old Seelam Pur,extreme,55.8,119.7,160.3,44.4,2.24,371.4,72.4,35.7,1,5696.5,0,28.63083,77.23636,real_govt_record,Medium
+REAL-0847,Chand Cinema Road,heavy,34.3,89.7,126.3,17.3,3.73,401.8,86.1,37.6,1,19444.3,0,28.62247,77.23395,real_govt_record,Medium
+REAL-0617,Kartavya Marg,light,9.3,20.0,29.8,18.7,0.66,726.2,87.5,52.0,1,24850.1,1,28.62812,77.23577,real_govt_record,Low
+REAL-0254,Barapullah Road,moderate,17.7,39.2,54.1,28.8,1.59,592.7,72.4,85.0,2,15307.3,0,28.63088,77.23594,real_govt_record,Low
+REAL-0397,Shahid Bhagat Singh Marg,light,7.7,21.4,30.5,21.1,4.69,515.8,76.7,47.6,2,13627.8,0,28.63336,77.23786,real_govt_record,Low
+REAL-0178,Najafgarh- Bahadurgarh Road,moderate,23.3,51.7,71.7,28.7,1.68,106.8,83.0,36.9,4,20666.0,0,28.63306,77.24195,real_govt_record,Low
+REAL-0658,Najafgarh-kapashera Road,moderate,15.7,35.5,46.5,22.1,0.88,521.7,94.2,48.2,1,18075.5,0,28.62845,77.2372,real_govt_record,Low
+REAL-0435,Teen Murti Marge,heavy,41.2,86.8,127.2,44.5,4.93,125.5,86.1,93.1,1,18503.4,1,28.62926,77.24135,real_govt_record,Low
+SYN2-0013,SYN2-0013,synthetic_v2,48.4,103.07,151.77,27.4,6.54,310.0,94.41,24.44,0,11649.87,1,28.73898,77.32668,synthetic,Low
+REAL-0560,Abai Marg,extreme,61.4,134.1,191.9,43.5,2.01,593.2,76.7,44.6,1,4406.3,0,28.63087,77.23616,real_govt_record,High
+REAL-0911,Bahadur Shah Zafar Marg,heavy,36.0,83.5,115.6,38.4,2.35,287.9,80.7,56.6,1,22708.8,0,28.63074,77.24468,real_govt_record,Low
+REAL-0087,Najafgarh Road,heavy,35.1,87.9,128.0,23.6,0.61,730.4,86.1,53.9,7,16940.4,1,28.62975,77.2369,real_govt_record,Medium
+REAL-0153,Rafi Marg,light,1.9,5.3,7.8,33.8,4.95,661.8,83.0,90.9,4,18027.4,0,28.63379,77.23505,real_govt_record,Low
+SYN2-0139,SYN2-0139,synthetic_v2,78.89,158.32,223.02,50.08,0.68,174.05,48.3,22.96,2,20811.36,0,28.76115,77.26756,synthetic,Medium
+REAL-0286,Narela Bawana Road,moderate,10.4,26.5,36.8,23.5,4.74,496.3,87.5,87.5,2,5497.2,0,28.62613,77.2455,real_govt_record,Low
+REAL-0782,Sunheri Bagh- Rafi Marg,moderate,13.2,29.7,40.6,20.7,0.61,180.1,83.0,46.3,1,10411.5,1,28.62716,77.24509,real_govt_record,Low
+REAL-0986,Patel Road,moderate,13.8,30.4,42.2,32.4,2.58,588.5,74.1,71.0,1,23790.4,1,28.62766,77.23954,real_govt_record,Low
+REAL-0401,Rajpath Suoth Rajpath,light,8.1,18.6,27.0,17.9,4.74,349.9,85.9,66.1,1,9337.0,1,28.63404,77.23465,real_govt_record,Low
+REAL-0391,Najafgarh – Dhansa Road,heavy,30.9,81.1,119.9,35.2,4.1,448.1,85.9,93.4,2,24709.6,1,28.62696,77.23823,real_govt_record,Medium
+REAL-0235,Sardar Patel Marg,heavy,29.0,70.9,103.9,40.6,4.96,737.7,82.5,88.5,3,5562.1,0,28.62833,77.24289,real_govt_record,Low
+REAL-0120,Sector 14 Road,extreme,45.8,101.4,139.0,8.0,2.95,345.4,83.9,50.3,6,14365.8,0,28.63044,77.23862,real_govt_record,High
+REAL-0792,Suraj Kund Road,extreme,65.5,137.2,187.3,9.6,2.18,626.2,86.5,87.3,1,10774.6,1,28.62815,77.2476,real_govt_record,High
+REAL-0212,GT Road,extreme,63.1,129.5,171.4,23.9,2.64,362.0,83.9,75.3,3,20981.5,1,28.62825,77.23639,real_govt_record,High
+REAL-0652,Maulana Johar Ali Marg,extreme,41.7,98.1,136.4,13.3,2.73,202.9,76.7,77.1,1,5974.7,0,28.62611,77.23467,real_govt_record,Medium
+REAL-0914,Bharat Scouts & Guide Marg,moderate,21.6,47.6,75.2,39.4,3.08,67.7,94.2,96.2,1,22347.2,1,28.62564,77.23871,real_govt_record,Low
+REAL-0784,Sunheri Bagh- Rafi Marg,extreme,44.0,97.6,155.9,28.7,3.12,485.1,83.0,59.2,1,19111.9,1,28.62772,77.24255,real_govt_record,Medium
+REAL-0726,Rajesh Pilot Marg,moderate,15.7,41.1,53.9,12.0,2.66,370.4,90.9,52.0,1,18787.3,0,28.62565,77.24597,real_govt_record,Low
+REAL-0421,Seelampur Road,light,5.0,11.4,14.9,29.1,2.35,94.6,72.4,73.9,1,11048.5,1,28.62801,77.23761,real_govt_record,Low
+REAL-0779,SPM Marg,heavy,23.2,63.3,87.2,32.8,3.84,387.0,74.7,69.9,1,17471.3,0,28.62923,77.24267,real_govt_record,Low
+REAL-0962,Najafgarh Bakkarwala Cut,moderate,19.6,52.5,79.6,21.5,4.26,403.1,76.7,97.9,1,19009.8,0,28.63214,77.24298,real_govt_record,Low
+REAL-0308,Old Gurugram Road,extreme,60.6,127.4,203.4,36.7,1.21,475.4,86.5,75.0,2,16698.3,0,28.62491,77.23958,real_govt_record,High
+REAL-0173,Loni Road,light,7.3,14.6,20.4,33.8,1.55,245.9,90.9,81.7,4,16074.5,1,28.63215,77.24453,real_govt_record,Low
+REAL-0117,Sector 14 Road,light,2.3,6.4,8.9,21.8,1.84,661.4,83.9,91.8,6,17488.7,1,28.63038,77.24099,real_govt_record,Low
+SYN2-0033,SYN2-0033,synthetic_v2,77.12,166.38,203.2,56.02,2.49,751.5,57.14,80.13,2,8916.05,1,28.77764,77.30794,synthetic,Medium
+REAL-0223,Mandi Road,heavy,31.2,73.5,99.2,31.1,4.52,547.5,87.5,53.5,3,20926.6,1,28.62827,77.23657,real_govt_record,Low
+ZONE-057,ZONE-057,synthetic_v1,72.0,114.62,207.57,27.29,2.11,769.38,60.41,96.37,3,24734.27,0,28.56271,77.306,synthetic,High
+REAL-0003,Ring Road,heavy,22.5,63.5,91.4,24.3,4.29,439.3,82.5,76.0,145,14495.2,0,28.62626,77.24227,real_govt_record,High
+REAL-0611,Geeta Colony,heavy,41.1,84.8,133.3,18.1,2.65,297.7,85.9,82.5,1,12701.1,1,28.63338,77.23748,real_govt_record,Medium
+REAL-0616,Jaitpur Road,extreme,39.6,98.3,156.1,14.8,1.42,552.2,83.9,67.2,1,23075.5,1,28.63071,77.23878,real_govt_record,Medium
+REAL-0680,NH-48 Jharela Village,extreme,38.9,110.3,166.0,35.8,1.4,586.7,83.9,38.2,1,7040.3,1,28.63233,77.23976,real_govt_record,Medium
+REAL-0850,Chelmsford Road,moderate,17.4,42.4,62.5,42.8,4.53,268.3,74.1,97.8,1,9966.4,1,28.63223,77.2384,real_govt_record,Low
+ZONE-004,ZONE-004,synthetic_v1,49.86,62.88,135.66,17.61,7.25,471.52,56.32,27.63,1,13691.21,1,28.72496,77.23557,synthetic,Low
+REAL-0234,Sardar Patel Marg,moderate,16.4,36.7,48.1,24.9,2.85,325.6,82.5,94.1,3,15695.5,1,28.62927,77.24534,real_govt_record,Low
+SYN2-0191,SYN2-0191,synthetic_v2,59.78,122.1,193.67,53.23,2.68,430.22,58.7,87.34,0,24216.29,0,28.71779,77.27876,synthetic,Low
+ZONE-033,ZONE-033,synthetic_v1,14.64,55.0,120.9,26.28,7.48,831.1,70.1,78.16,5,20126.9,0,28.5964,77.18159,synthetic,High
+REAL-0129,Kautilya Marg,light,7.8,21.0,28.4,12.0,4.7,238.5,85.9,66.2,5,6527.8,1,28.6312,77.24056,real_govt_record,Low
+REAL-0933,GGR-PDR RR Hospital,light,5.9,16.1,23.9,39.3,4.35,273.2,83.9,40.9,1,8293.9,1,28.63359,77.23827,real_govt_record,Low
+REAL-0157,Pankha Road,light,11.6,23.9,31.2,21.0,2.91,450.3,83.0,42.1,4,20573.7,1,28.63268,77.23554,real_govt_record,Low
+SYN2-0091,SYN2-0091,synthetic_v2,21.27,51.0,71.76,32.15,4.05,73.85,94.08,61.2,4,18799.04,1,28.67856,77.24809,synthetic,Medium
+ZONE-106,ZONE-106,synthetic_v1,26.89,84.59,111.81,6.88,2.4,167.73,70.06,72.82,2,6858.31,0,28.71654,77.29245,synthetic,Medium
+REAL-0386,Jawahar Lal Nehru Marg,moderate,21.1,47.2,73.1,36.1,2.76,782.5,74.7,64.6,2,13367.2,1,28.62873,77.24722,real_govt_record,Low
+SYN2-0186,SYN2-0186,synthetic_v2,29.76,65.87,89.34,18.76,0.87,480.94,74.03,21.93,2,5159.18,0,28.60487,77.34012,synthetic,Low
+REAL-0124,Rani Jhansi Marg,extreme,46.7,110.6,155.2,22.7,3.83,570.4,86.5,51.2,5,17330.3,1,28.6346,77.24365,real_govt_record,High
+REAL-0974,NH-48 Shiv Murti,moderate,17.6,40.4,61.4,20.6,2.27,450.2,86.5,64.5,1,18042.4,1,28.62525,77.23666,real_govt_record,Low
+REAL-0258,Burari Road,moderate,20.4,42.5,63.9,44.1,1.79,630.8,94.2,75.5,2,13836.7,0,28.62941,77.23812,real_govt_record,Low
+REAL-0225,Dwarka Near Sector,light,7.1,19.1,28.1,27.0,2.93,348.4,80.7,60.9,3,20553.9,0,28.63014,77.24043,real_govt_record,Low
+ZONE-130,ZONE-130,synthetic_v1,59.26,79.15,127.13,47.59,4.86,550.21,60.96,17.98,1,7839.11,0,28.78675,77.15746,synthetic,Low
+SYN2-0029,SYN2-0029,synthetic_v2,68.7,157.29,241.11,16.44,6.53,805.84,31.43,22.58,4,17390.79,0,28.70343,77.23559,synthetic,High
+REAL-0685,NH-48 Near Shiv,light,5.7,14.7,22.4,10.1,1.29,795.3,86.5,78.4,1,4757.4,1,28.63278,77.23536,real_govt_record,Low
+REAL-0970,NH-48 Near APS Colony,moderate,12.4,28.1,39.0,22.8,0.54,335.2,83.0,44.0,1,21201.9,0,28.63522,77.24195,real_govt_record,Low
+REAL-0713,"Pocket-16, Sector-22, Rohini",light,7.2,16.9,25.0,21.4,2.93,510.9,87.5,89.3,1,10210.5,0,28.63425,77.24128,real_govt_record,Low
+REAL-0523,Mahipalpur to Gurugram,heavy,40.6,85.1,135.3,15.6,1.3,581.1,76.7,38.7,1,24271.9,0,28.62407,77.23536,real_govt_record,Medium
+REAL-0553,NH-44 Khampur Singhu,light,4.6,9.7,14.9,26.6,2.97,610.8,72.4,72.8,1,5619.6,1,28.6295,77.23737,real_govt_record,Low
+REAL-0899,Sham Nath Marg,heavy,32.0,83.8,113.0,13.4,3.84,790.5,86.1,49.0,1,5181.2,1,28.62994,77.23848,real_govt_record,Medium
+ZONE-038,ZONE-038,synthetic_v1,93.42,116.97,216.35,42.21,3.92,234.37,67.42,50.79,4,17855.88,0,28.78818,77.20209,synthetic,High
+REAL-0772,Shamnat Hedge Marg,extreme,51.3,134.8,209.4,15.2,1.58,293.8,76.7,62.8,1,19952.9,0,28.6318,77.23557,real_govt_record,High
+REAL-0309,Bawana Road,light,4.6,12.7,19.1,17.6,1.48,276.9,82.5,73.9,2,10716.1,0,28.63697,77.23812,real_govt_record,Low
+REAL-0492,MGM Road,extreme,45.8,107.1,148.2,23.2,4.61,238.8,87.5,62.2,1,23077.6,1,28.62876,77.24201,real_govt_record,Medium
+SYN2-0168,SYN2-0168,synthetic_v2,72.0,136.14,210.26,10.23,6.7,263.24,40.64,12.87,1,3980.13,0,28.56499,77.24564,synthetic,Medium
+REAL-0764,Satguru Ram Singh Marg,extreme,52.8,127.6,190.4,38.2,0.99,458.4,94.2,46.0,1,4942.8,0,28.62871,77.23894,real_govt_record,High
+REAL-0454,Dhaula Kuan Dhaula,moderate,13.1,36.2,51.4,24.7,2.66,783.7,87.5,69.1,1,7482.7,0,28.63169,77.24167,real_govt_record,Low
+REAL-0125,SSN Marg,light,6.7,16.3,24.6,31.1,4.24,650.9,90.9,43.0,5,11916.0,1,28.62673,77.2407,real_govt_record,Low
+SYN2-0099,SYN2-0099,synthetic_v2,41.66,107.01,165.58,18.69,2.97,910.13,21.37,51.54,3,9657.71,1,28.78118,77.3394,synthetic,High
+SYN2-0015,SYN2-0015,synthetic_v2,79.37,149.93,225.64,36.01,4.02,436.52,26.37,28.04,4,5371.42,0,28.59509,77.25181,synthetic,High
+ZONE-138,ZONE-138,synthetic_v1,96.51,104.57,147.41,13.72,4.77,207.7,76.87,35.08,2,22689.1,1,28.6396,77.27674,synthetic,Medium
+SYN2-0090,SYN2-0090,synthetic_v2,8.01,20.51,24.76,45.82,6.54,414.99,85.2,25.79,4,16853.29,1,28.61358,77.15628,synthetic,Medium
+REAL-0361,Old Delhi Gurugram Road,light,5.3,13.6,21.0,32.1,2.92,639.4,76.7,39.8,2,24930.3,0,28.63093,77.23925,real_govt_record,Low
+REAL-0727,Rajesh Pilot Marg,heavy,27.6,67.2,94.6,26.2,4.85,177.1,90.9,66.4,1,7513.2,1,28.6241,77.24222,real_govt_record,Low
+SYN2-0076,SYN2-0076,synthetic_v2,38.07,80.61,128.16,19.33,1.34,316.73,70.93,11.35,2,5575.12,1,28.66315,77.29618,synthetic,Medium
+REAL-0969,NH-48 Near APS Colony,light,7.8,18.9,28.2,35.3,0.85,755.4,83.0,92.1,1,22956.7,1,28.6309,77.24309,real_govt_record,Low
+ZONE-067,ZONE-067,synthetic_v1,17.89,59.28,121.57,54.24,1.88,569.48,98.08,54.4,2,15621.36,0,28.73729,77.20243,synthetic,Low
+SYN2-0195,SYN2-0195,synthetic_v2,46.01,97.78,141.34,5.3,2.73,365.29,45.55,67.37,3,23717.18,0,28.57264,77.15822,synthetic,High
+REAL-0261,Purana Quila Road,light,6.1,13.9,18.5,16.5,1.17,537.3,90.9,54.9,2,12060.2,0,28.62716,77.2388,real_govt_record,Low
+REAL-1010,Sikandra Marg,moderate,14.7,30.3,46.2,19.2,2.37,699.1,94.2,55.3,1,11821.4,0,28.63007,77.23909,real_govt_record,Low
+REAL-0209,GT Road,light,9.2,18.7,26.2,42.3,4.6,267.9,83.9,95.9,3,17006.8,1,28.62937,77.23587,real_govt_record,Low
+REAL-0650,Maulana Johar Ali Marg,moderate,21.1,47.9,75.8,28.8,2.83,204.6,76.7,55.6,1,11641.0,1,28.62624,77.23676,real_govt_record,Low
+SYN2-0074,SYN2-0074,synthetic_v2,32.01,63.2,96.61,50.1,7.13,876.05,59.43,25.2,4,15773.91,1,28.57941,77.28833,synthetic,Medium
+REAL-0486,Mangolpuri- Udhyog Nagar,moderate,20.7,53.1,79.4,36.2,3.02,136.9,76.7,50.7,1,19347.4,0,28.63429,77.24145,real_govt_record,Low
+REAL-0620,Kartavya Marg,extreme,37.7,96.4,147.6,14.5,4.96,678.2,87.5,45.8,1,4058.9,0,28.62591,77.23817,real_govt_record,Medium
+SYN2-0095,SYN2-0095,synthetic_v2,96.71,237.2,312.4,29.55,7.76,530.14,45.34,57.59,1,11169.62,1,28.56793,77.25406,synthetic,High
+ZONE-035,ZONE-035,synthetic_v1,72.94,129.07,199.43,18.49,6.15,460.01,99.34,74.82,0,22922.68,1,28.68,77.22867,synthetic,Low
+REAL-0655,MP Road,heavy,38.0,87.3,123.7,15.7,2.18,610.9,74.1,78.6,1,17029.8,1,28.62842,77.24006,real_govt_record,Medium
+REAL-0202,Okhla Road,moderate,15.1,42.1,58.8,31.6,0.78,157.3,72.4,36.7,4,15308.5,0,28.62535,77.23777,real_govt_record,Low
+REAL-0654,MP Road,moderate,17.5,42.9,65.4,43.9,2.63,532.4,74.1,69.0,1,9331.4,0,28.62666,77.24087,real_govt_record,Low
+REAL-0694,NH-8 Near Uppal,moderate,15.1,34.5,51.1,31.2,3.96,136.0,94.2,88.5,1,5463.0,1,28.62649,77.23615,real_govt_record,Low
+REAL-0496,NH-8 Mahipalpur Flyover,extreme,63.8,128.7,168.4,42.1,1.02,163.9,86.1,63.4,1,7719.4,0,28.63208,77.23627,real_govt_record,High
+REAL-0007,Rohtak Road,heavy,29.8,80.6,120.3,12.3,2.39,209.6,72.4,52.3,88,24389.5,1,28.66186,77.1317,real_govt_record,High
+REAL-0632,Lodhi Road,extreme,40.7,113.7,175.6,10.6,1.15,357.3,83.0,54.0,1,23465.6,1,28.63139,77.239,real_govt_record,High
+REAL-0580,Benito Juarez Marg,extreme,35.7,93.0,133.2,42.8,3.63,694.5,94.2,83.1,1,14515.4,1,28.63285,77.24345,real_govt_record,Medium
+REAL-0015,M.B. Road,heavy,34.1,74.1,116.3,35.3,3.67,645.0,83.0,93.6,42,11388.5,1,28.50801,77.25899,real_govt_record,High
+SYN2-0102,SYN2-0102,synthetic_v2,66.9,171.66,261.26,9.35,0.52,963.2,47.27,68.87,1,24691.84,1,28.67342,77.15562,synthetic,High
+REAL-0618,Kartavya Marg,moderate,14.4,32.6,43.6,15.8,1.86,566.5,87.5,82.5,1,15416.5,0,28.6307,77.23493,real_govt_record,Low
+REAL-0081,Lala Lajpat Rai Marg,light,5.7,11.6,16.3,25.1,1.06,780.2,86.5,43.7,7,22985.2,0,28.63014,77.23776,real_govt_record,Low
+SYN2-0069,SYN2-0069,synthetic_v2,46.25,84.92,104.7,32.54,2.86,588.38,70.83,73.99,3,4026.29,0,28.62945,77.3233,synthetic,Medium
+REAL-0215,Mathura R oad,heavy,33.9,72.4,99.4,38.2,1.58,697.5,94.2,61.2,3,5825.5,0,28.62359,77.23629,real_govt_record,Low
+REAL-0263,Purana Quila Road,heavy,27.9,56.8,79.6,13.3,4.01,131.9,90.9,37.4,2,17691.6,1,28.6252,77.2443,real_govt_record,Low
+REAL-0431,Outer Circle Connaught,heavy,37.2,80.7,107.1,23.1,2.7,128.9,87.5,92.7,1,11828.0,0,28.63304,77.23934,real_govt_record,Medium
+REAL-0821,Ansari Road,light,8.4,22.9,32.2,44.0,3.17,349.7,83.9,74.0,1,13886.7,0,28.62551,77.23506,real_govt_record,Low
+ZONE-015,ZONE-015,synthetic_v1,53.38,121.27,214.31,49.12,6.13,76.75,93.79,98.25,0,12722.32,0,28.5705,77.15534,synthetic,Low
+REAL-0939,Goyla Dairy Road,heavy,31.5,73.1,110.2,15.5,4.28,560.6,72.4,36.2,1,7333.2,1,28.63316,77.23618,real_govt_record,Medium
+REAL-0579,Benito Juarez Marg,heavy,28.1,80.0,107.7,29.5,2.9,677.8,94.2,37.0,1,17135.0,0,28.62993,77.24433,real_govt_record,Low
+REAL-0147,Pusta Road,heavy,43.9,88.5,129.9,44.8,2.2,662.4,74.7,79.8,5,21737.7,1,28.62837,77.24125,real_govt_record,Medium
+SYN2-0019,SYN2-0019,synthetic_v2,95.79,221.33,297.17,59.01,2.83,926.03,59.32,41.52,1,19440.42,0,28.60264,77.23136,synthetic,Medium
+SYN2-0154,SYN2-0154,synthetic_v2,94.58,179.15,284.21,43.93,1.51,702.3,29.71,16.54,5,4254.83,1,28.58575,77.32146,synthetic,High
+REAL-0066,Ch. Fateh Singh Marg,moderate,15.7,35.8,53.0,25.5,2.79,381.5,76.7,92.2,10,12452.2,1,28.6985,77.22651,real_govt_record,Low
+REAL-1003,"Sector-14 Road, Dwarka",heavy,29.9,77.3,100.7,41.1,2.4,460.3,79.7,52.5,1,24559.6,1,28.62537,77.2395,real_govt_record,Low
+REAL-0793,Surajkund Road,light,5.4,14.2,19.1,41.4,0.9,747.4,86.1,48.4,1,14962.4,1,28.63017,77.23836,real_govt_record,Low
+REAL-0378,Veer Banda Bairagi,moderate,26.9,54.3,83.1,20.2,2.81,433.6,79.7,82.8,2,11992.6,1,28.6232,77.23917,real_govt_record,Low
+ZONE-083,ZONE-083,synthetic_v1,46.02,120.33,201.76,41.74,6.63,318.52,42.17,49.56,2,24313.76,0,28.6241,77.20877,synthetic,Medium
+REAL-0387,Jawahar Lal Nehru Marg,heavy,31.2,64.5,100.8,20.8,0.63,501.0,74.7,74.7,2,24155.5,0,28.62621,77.24557,real_govt_record,Low
+REAL-0267,Ashok Vihar Road,heavy,24.4,63.1,90.0,39.3,2.69,198.8,74.7,39.9,2,8731.6,0,28.62735,77.23803,real_govt_record,Low
+REAL-0059,Anuvrat Marg,heavy,25.2,55.8,82.3,37.5,3.82,326.2,85.9,60.0,11,7250.5,0,28.52968,77.18737,real_govt_record,Low
+REAL-0959,Maharishi Dayanand Marg,heavy,29.8,78.0,117.2,23.0,1.38,296.1,90.9,97.3,1,12561.1,0,28.63021,77.23314,real_govt_record,Medium
+SYN2-0007,SYN2-0007,synthetic_v2,76.16,158.18,251.47,25.73,1.95,122.08,57.28,27.7,3,23860.43,0,28.57291,77.26127,synthetic,High
+REAL-0875,Khudiram Bose Marg,heavy,25.4,60.0,81.0,30.0,3.63,491.1,72.4,53.7,1,7882.9,1,28.62781,77.24338,real_govt_record,Low
+REAL-0089,Press Enclave Road,light,11.5,23.8,38.1,35.0,4.42,326.6,80.7,70.0,7,15843.2,0,28.63243,77.24193,real_govt_record,Low
+REAL-0054,Okhla Estate Marg,moderate,15.3,36.2,49.3,20.7,3.85,678.9,74.7,39.8,12,6515.6,0,28.53163,77.27331,real_govt_record,Low
+REAL-0026,Aurobindo Marg,moderate,14.3,31.1,48.1,31.7,3.73,210.0,80.7,92.6,34,24590.4,1,28.56428,77.19761,real_govt_record,Medium
+REAL-0566,Army Battle Honours Mess (ABHM) Marg,moderate,12.9,34.4,53.1,43.1,3.08,549.5,90.9,97.5,1,14938.3,1,28.62686,77.23686,real_govt_record,Low
+REAL-1031,Dada Maheshwar Road,heavy,38.7,82.0,114.5,20.4,0.73,424.7,74.1,94.2,1,21332.8,1,28.63154,77.23537,real_govt_record,Medium
+REAL-0686,NH-48 Near Shiv,moderate,15.8,35.4,50.3,24.8,1.61,161.7,86.5,41.6,1,17315.0,1,28.63095,77.23785,real_govt_record,Low
+REAL-0351,Najafgarh Road-Azad Hind Fauz Marg,heavy,30.1,82.3,110.2,26.8,1.33,471.0,82.5,53.2,2,23811.7,1,28.63085,77.24636,real_govt_record,Medium
+REAL-0682,NH-48 Near Loop,moderate,20.2,51.6,82.5,43.8,0.8,662.3,82.5,47.5,1,20075.9,1,28.63458,77.23994,real_govt_record,Low
+REAL-0018,GTK Road,moderate,19.5,46.0,68.3,42.1,1.65,58.5,86.5,54.3,38,18240.9,0,28.70768,77.18068,real_govt_record,Medium
+REAL-0077,"NH-44, GTK Road",light,5.6,11.8,18.6,13.1,1.42,161.0,74.1,79.2,8,14137.6,1,28.63561,77.2407,real_govt_record,Low
+REAL-0638,Major Hoshiyar Singh Marg,moderate,12.1,26.3,35.2,25.4,1.11,562.0,83.9,97.3,1,18793.3,0,28.63142,77.23929,real_govt_record,Low
+REAL-0526,Mahipalpur- Mehrauli road Mahipalpur Chowk,moderate,15.7,34.5,48.5,16.5,0.67,640.7,74.7,54.1,1,9682.9,0,28.62946,77.23946,real_govt_record,Low
+REAL-0516,Palam Road,extreme,50.7,116.3,157.8,44.5,2.96,148.1,82.5,83.3,1,4592.0,1,28.63512,77.23413,real_govt_record,Medium
+SYN2-0094,SYN2-0094,synthetic_v2,86.62,188.08,266.84,43.33,2.46,68.46,99.28,58.93,4,6668.99,0,28.5757,77.19694,synthetic,High
+REAL-0373,Shanti Path,light,5.1,10.9,15.8,27.4,2.18,70.8,94.2,87.5,2,12179.3,0,28.63126,77.24193,real_govt_record,Low
+REAL-0719,Pragati Maidan Tunnel,heavy,32.3,85.6,120.0,26.3,0.52,262.5,74.1,90.8,1,24482.7,1,28.62617,77.23429,real_govt_record,Medium
+ZONE-022,ZONE-022,synthetic_v1,24.16,30.26,65.9,34.27,6.74,220.74,81.13,93.98,1,8875.91,0,28.74878,77.19923,synthetic,Low
+SYN2-0149,SYN2-0149,synthetic_v2,90.54,234.47,363.03,59.83,6.86,832.95,29.35,37.48,5,14188.49,1,28.68129,77.27581,synthetic,High
+REAL-0108,Mother Teresa Crescent Road,extreme,50.8,114.5,155.1,26.0,2.93,364.4,86.1,38.0,6,9806.4,1,28.6329,77.24487,real_govt_record,High
+SYN2-0153,SYN2-0153,synthetic_v2,48.21,110.04,168.22,55.56,7.25,207.46,46.74,14.14,0,4258.71,1,28.65907,77.27258,synthetic,Low
+REAL-0295,Pusa Road- Vande Matram Marg,heavy,36.7,87.0,131.5,32.3,1.83,539.8,76.7,43.3,2,23581.4,0,28.63057,77.2419,real_govt_record,Medium
+ZONE-097,ZONE-097,synthetic_v1,38.79,46.89,122.37,26.13,5.58,446.42,66.44,41.5,1,6980.98,1,28.66276,77.32064,synthetic,Low
+REAL-0097,"Firni Road, Najafgarh Firni Road",light,3.9,9.9,14.5,14.9,4.54,790.8,87.5,37.2,6,13694.3,1,28.62771,77.239,real_govt_record,Low
+ZONE-110,ZONE-110,synthetic_v1,82.87,128.41,178.49,36.3,3.63,117.6,81.02,93.57,3,7263.84,1,28.66848,77.30119,synthetic,High
+SYN2-0175,SYN2-0175,synthetic_v2,81.33,168.84,206.9,16.74,2.08,917.8,83.63,57.44,3,11616.97,1,28.63182,77.32131,synthetic,High
+REAL-0145,Pusta Road,light,8.8,20.4,32.1,37.5,1.18,324.4,74.7,41.4,5,4772.9,1,28.63015,77.24132,real_govt_record,Low
+ZONE-122,ZONE-122,synthetic_v1,66.14,145.67,225.55,40.09,5.55,893.63,84.87,65.83,1,19739.27,0,28.67573,77.20373,synthetic,Medium
+SYN2-0037,SYN2-0037,synthetic_v2,57.12,143.0,199.04,44.38,0.91,442.53,80.55,17.1,1,4674.41,0,28.77572,77.22303,synthetic,Low
+REAL-0377,Veer Banda Bairagi,light,3.3,6.9,9.9,33.0,4.21,417.1,79.7,49.9,2,21577.7,0,28.6275,77.2401,real_govt_record,Low
+SYN2-0163,SYN2-0163,synthetic_v2,94.81,227.88,353.7,26.81,3.46,499.88,28.48,17.29,1,19207.05,0,28.7797,77.19375,synthetic,High
+REAL-0443,Akbar Road,heavy,38.1,87.5,114.4,24.6,4.42,581.8,74.1,65.9,1,23616.9,0,28.62702,77.24504,real_govt_record,Medium
+SYN2-0032,SYN2-0032,synthetic_v2,48.65,93.78,133.17,18.6,0.79,613.03,99.27,79.83,5,21877.05,0,28.69043,77.27739,synthetic,High
+REAL-0993,Rajaji Marg,light,2.9,6.0,8.9,28.1,1.92,122.5,82.5,82.3,1,5121.7,0,28.62495,77.23438,real_govt_record,Low
+REAL-0801,Swami Dayanand Marg,light,4.3,10.2,16.2,31.7,2.84,57.2,87.5,60.2,1,6754.1,0,28.63008,77.24125,real_govt_record,Low
+ZONE-114,ZONE-114,synthetic_v1,75.47,127.35,209.6,40.12,6.9,772.73,39.34,44.97,1,15281.3,0,28.63065,77.19876,synthetic,Medium
+REAL-0997,Saket Road,light,12.4,25.0,33.9,23.8,0.53,609.7,87.5,38.5,1,13855.1,0,28.62701,77.24125,real_govt_record,Low
+REAL-0781,Sunheri Bagh- Rafi Marg,light,2.7,5.4,7.0,19.1,2.31,790.5,83.0,56.8,1,10064.1,1,28.62695,77.24308,real_govt_record,Low
+REAL-0656,MP Road,extreme,59.3,121.1,183.1,39.7,4.23,66.6,74.1,75.8,1,9163.8,1,28.63093,77.24318,real_govt_record,Medium
+SYN2-0197,SYN2-0197,synthetic_v2,5.15,12.09,17.18,39.68,0.72,218.74,32.7,17.54,4,11318.03,0,28.64347,77.18124,synthetic,Medium
+REAL-0503,Old GTK Road,heavy,34.7,70.5,98.4,27.1,3.02,462.4,86.5,89.0,1,21801.5,0,28.62866,77.23897,real_govt_record,Low
+REAL-0645,Mandi House R/A,light,4.5,9.1,14.0,16.9,2.9,191.0,82.5,50.1,1,17146.1,0,28.62751,77.23919,real_govt_record,Low
+SYN2-0087,SYN2-0087,synthetic_v2,13.3,32.26,49.2,10.56,5.84,778.56,66.89,87.49,5,13599.08,1,28.72142,77.33679,synthetic,High
+REAL-0767,"Sector 22, Dwarka",heavy,32.1,81.8,115.6,32.5,0.77,266.1,76.7,47.6,1,7693.0,1,28.63558,77.23813,real_govt_record,Medium
+ZONE-133,ZONE-133,synthetic_v1,37.51,92.9,173.96,35.22,1.61,989.45,52.41,76.24,0,23153.04,0,28.73492,77.23311,synthetic,Low
+REAL-0800,Surajmal Marg,extreme,52.1,123.6,185.2,20.4,1.49,660.2,76.7,83.8,1,20183.1,1,28.6287,77.24272,real_govt_record,High
+REAL-1020,TT Park Road,extreme,47.4,108.8,145.7,41.1,4.44,97.0,87.5,52.2,1,6056.6,1,28.62331,77.24539,real_govt_record,Medium
+REAL-0357,NH-48 Dhaula Kuan,light,8.0,20.4,31.3,26.3,2.38,527.0,74.1,72.0,2,14050.0,1,28.6323,77.23704,real_govt_record,Low
+REAL-0029,Mathura Road,light,6.0,13.8,21.4,28.8,1.24,435.7,86.1,93.1,28,9386.8,1,28.59722,77.24808,real_govt_record,Low
+REAL-0224,Mandi Road,extreme,38.8,92.4,135.6,24.3,0.6,267.7,87.5,62.7,3,5088.3,0,28.62601,77.24013,real_govt_record,Medium
+REAL-0155,Rafi Marg,heavy,32.4,89.9,129.3,22.8,3.45,213.6,83.0,98.3,4,8398.0,1,28.63595,77.23597,real_govt_record,Medium
+REAL-0293,Pusa Road- Vande Matram Marg,light,2.7,6.5,8.9,14.3,3.11,336.1,76.7,64.6,2,20939.7,0,28.62826,77.24533,real_govt_record,Low
+REAL-0520,Vande Matram Marg,extreme,48.7,113.4,147.7,42.6,4.36,421.5,83.9,93.9,1,19790.2,0,28.62657,77.24179,real_govt_record,Medium
+REAL-0960,Maharishi Dayanand Marg,extreme,48.1,136.8,193.6,41.8,2.81,572.2,90.9,68.5,1,16517.1,0,28.63381,77.23452,real_govt_record,High
+REAL-1015,Tilak Marg,heavy,25.3,60.2,84.9,30.4,2.05,476.2,86.1,98.3,1,4822.0,1,28.62438,77.23651,real_govt_record,Low
+ZONE-128,ZONE-128,synthetic_v1,62.12,70.88,103.73,48.63,2.39,810.44,22.74,37.58,0,4579.16,1,28.78679,77.29379,synthetic,Low
+REAL-0785,Sunheri Masjid R/A,light,7.3,16.1,24.2,17.0,4.5,515.2,82.5,57.8,1,6235.6,0,28.62781,77.23451,real_govt_record,Low
+REAL-0545,Najafgarh-Nangloi Road,light,4.1,8.7,13.1,28.2,2.5,654.2,74.1,65.3,1,23866.8,1,28.63108,77.24456,real_govt_record,Low
+REAL-0887,Rind Road,heavy,26.8,62.8,93.7,11.0,2.24,527.5,76.7,87.4,1,6583.5,1,28.62892,77.23919,real_govt_record,Low
+REAL-1006,Parade Road,moderate,13.7,30.1,44.4,22.6,3.72,152.8,83.0,61.2,1,4231.8,1,28.63725,77.23706,real_govt_record,Low
+REAL-0168,Ulan Batar Marg,extreme,63.3,136.7,201.5,8.2,3.82,363.8,85.9,78.5,4,24657.5,0,28.62901,77.23619,real_govt_record,High
+REAL-0644,Major Sudesh Marg,extreme,45.1,116.4,163.0,24.7,4.69,492.9,83.9,62.7,1,21459.4,0,28.62319,77.2457,real_govt_record,High
+REAL-0601,Dr. Rajendra Prasad Road,light,10.7,22.9,33.9,25.2,0.68,404.9,80.7,39.8,1,21195.7,1,28.62681,77.2435,real_govt_record,Low
+SYN2-0006,SYN2-0006,synthetic_v2,94.82,183.36,291.54,8.08,3.62,72.19,84.77,71.85,1,20514.17,0,28.68465,77.34764,synthetic,Medium
+SYN2-0138,SYN2-0138,synthetic_v2,41.34,75.61,101.4,40.99,7.02,426.74,32.72,67.02,0,8243.34,0,28.73187,77.29621,synthetic,Low
+REAL-0200,Vir Banda Bairagi Marg,extreme,60.4,134.6,193.9,28.8,4.64,623.9,80.7,94.8,4,10583.9,1,28.62319,77.24531,real_govt_record,High
+REAL-0246,Mother Teresa Crescent Marg,moderate,9.2,26.1,40.8,22.1,0.89,85.0,87.5,89.2,3,16633.2,0,28.63421,77.23371,real_govt_record,Low
+REAL-0928,Dwarka – Dabri Drain,extreme,46.0,94.7,129.5,36.4,3.57,674.5,82.5,73.6,1,13551.3,0,28.63228,77.23971,real_govt_record,Medium
+REAL-0402,Rajpath Suoth Rajpath,moderate,25.3,51.3,68.9,43.7,3.31,54.3,85.9,59.5,1,11581.9,1,28.63517,77.23915,real_govt_record,Low
+REAL-0144,Minto Road,extreme,54.5,130.4,190.5,40.0,1.38,259.7,80.7,76.2,5,5544.5,1,28.63509,77.23996,real_govt_record,High
+REAL-0301,Thimayya Marg,light,3.9,9.4,14.2,41.8,3.55,65.5,90.9,90.5,2,16787.3,1,28.63487,77.24248,real_govt_record,Low
+REAL-0715,"Pocket-16, Sector-22, Rohini",heavy,32.4,73.1,111.0,9.0,3.36,491.0,87.5,39.8,1,11906.2,0,28.63358,77.24076,real_govt_record,Medium
+REAL-0226,Dwarka Near Sector,moderate,23.3,52.3,68.4,15.1,0.59,93.2,80.7,72.3,3,17976.6,1,28.63406,77.24155,real_govt_record,Low
+REAL-0549,MG Road,light,2.2,6.1,8.8,31.5,0.86,107.6,80.7,91.2,1,5485.8,1,28.62929,77.24267,real_govt_record,Low
+REAL-0302,Thimayya Marg,moderate,12.7,35.2,52.8,10.0,3.56,733.3,90.9,77.7,2,16730.5,0,28.63695,77.24523,real_govt_record,Low
+REAL-0272,Azad Market Road,extreme,51.9,130.1,176.6,12.4,0.85,644.1,82.5,73.6,2,4317.6,1,28.62603,77.23743,real_govt_record,High
+SYN2-0190,SYN2-0190,synthetic_v2,13.21,29.14,40.27,13.95,7.55,847.37,50.36,62.08,1,24202.19,1,28.5603,77.16607,synthetic,Low
+REAL-0563,Abai Marg-San Martin Marg,heavy,34.2,89.3,122.5,43.9,3.11,647.5,72.4,98.9,1,17852.1,0,28.63068,77.23816,real_govt_record,Medium
+REAL-0978,Nishad Marg,moderate,16.2,39.6,54.9,43.1,4.96,660.7,85.9,93.7,1,17906.3,0,28.62793,77.24507,real_govt_record,Low
+SYN2-0183,SYN2-0183,synthetic_v2,98.72,232.83,362.1,55.39,5.45,174.31,64.5,17.65,2,2144.13,1,28.74305,77.20961,synthetic,High
+REAL-0533,NH-8 Rangpuri Chowk,light,3.3,9.1,13.7,21.3,3.64,173.6,76.7,75.9,1,9726.0,1,28.62982,77.24096,real_govt_record,Low
+SYN2-0125,SYN2-0125,synthetic_v2,24.61,55.36,82.27,14.27,1.11,980.21,91.09,16.54,4,16109.46,0,28.7021,77.2523,synthetic,High
+REAL-0249,Maulana Azad Road,light,8.6,23.5,35.2,17.8,1.84,233.3,83.0,98.8,2,6084.1,0,28.63242,77.23879,real_govt_record,Low
+REAL-0931,Firoz Shah Road,heavy,25.9,65.9,98.2,33.5,3.69,509.4,74.7,66.8,1,21830.4,0,28.63421,77.24742,real_govt_record,Low
+REAL-0955,Maa Anandmayee Marg,heavy,35.2,87.2,121.9,13.5,4.17,617.4,72.4,54.7,1,7588.2,1,28.62742,77.24315,real_govt_record,Medium
+REAL-0501,Old GTK Road,light,8.9,19.0,25.4,32.8,1.23,500.1,86.5,90.3,1,11618.7,0,28.62796,77.24245,real_govt_record,Low
+REAL-0998,Saket Road,moderate,25.6,51.8,74.2,23.0,1.13,148.5,87.5,44.3,1,20380.0,0,28.62679,77.24654,real_govt_record,Low
+REAL-0214,Mathura R oad,moderate,13.9,38.0,54.8,43.3,4.5,92.1,94.2,39.5,3,9657.9,1,28.62733,77.23884,real_govt_record,Low
+SYN2-0016,SYN2-0016,synthetic_v2,63.03,131.67,209.94,39.36,5.72,624.76,23.28,20.82,5,6199.85,0,28.58402,77.28659,synthetic,High
+REAL-0660,Najafgarh-kapashera Road,extreme,65.3,131.5,210.3,37.8,2.83,150.1,94.2,65.8,1,19811.1,1,28.62764,77.23933,real_govt_record,High
+REAL-0991,Police Colony,heavy,37.7,85.7,134.4,9.6,3.17,769.5,86.1,48.1,1,20114.0,1,28.62493,77.24549,real_govt_record,Medium
+ZONE-008,ZONE-008,synthetic_v1,76.26,109.06,120.79,29.47,1.61,780.78,43.26,97.21,1,5023.82,1,28.65808,77.28689,synthetic,Medium
+REAL-0102,Girdhari Lal Goswami Marg,moderate,22.0,47.2,72.2,26.4,3.43,432.9,72.4,59.2,6,9210.9,1,28.63337,77.24556,real_govt_record,Low
+ZONE-019,ZONE-019,synthetic_v1,79.04,126.8,223.94,57.6,2.76,106.19,42.25,61.89,2,2350.57,0,28.76254,77.23321,synthetic,Medium
+REAL-0023,MB Road,heavy,25.2,56.6,81.2,31.3,3.45,655.5,79.7,96.3,38,18374.3,0,28.51165,77.2628,real_govt_record,Medium
+SYN2-0048,SYN2-0048,synthetic_v2,50.17,123.27,176.06,18.3,5.06,679.46,46.56,93.67,4,14619.64,0,28.67181,77.16753,synthetic,High
+REAL-0468,Khyala Road,extreme,46.8,95.9,128.8,12.6,0.98,534.9,82.5,95.2,1,12036.8,1,28.63036,77.23795,real_govt_record,Medium
+REAL-0237,Satya Marg,light,7.3,16.8,22.1,34.3,0.81,608.4,79.7,50.5,3,14487.8,1,28.63342,77.24135,real_govt_record,Low
+SYN2-0105,SYN2-0105,synthetic_v2,26.33,66.75,83.4,23.99,6.27,754.36,43.57,80.9,5,12997.67,1,28.76528,77.30916,synthetic,High
+REAL-0510,"Raghubir Nagar, Nala Road",moderate,26.8,54.3,83.8,33.3,4.1,195.6,76.7,47.6,1,21699.1,1,28.63309,77.23907,real_govt_record,Low
+REAL-0172,Boulevard Road,extreme,43.0,98.3,133.8,20.8,1.24,312.3,82.5,72.8,4,14919.4,1,28.63157,77.23693,real_govt_record,Medium
+REAL-0681,NH-48 Near Loop,light,8.6,17.6,24.1,26.5,2.04,682.4,82.5,49.5,1,20405.5,1,28.63281,77.24302,real_govt_record,Low
+REAL-0364,Old Delhi Gurugram Road,extreme,40.7,93.4,147.8,27.3,3.87,97.9,76.7,90.5,2,11730.5,1,28.62646,77.24324,real_govt_record,Medium
+REAL-0697,Old GT Road/ Ansari Road,light,4.1,9.7,14.9,16.3,1.17,162.2,79.7,82.6,1,16353.3,1,28.62816,77.23639,real_govt_record,Low
+SYN2-0062,SYN2-0062,synthetic_v2,61.31,125.2,155.95,36.37,4.07,861.9,59.72,83.1,3,13270.24,0,28.76695,77.28328,synthetic,High
+SYN2-0073,SYN2-0073,synthetic_v2,21.4,39.65,49.64,9.06,2.76,459.21,92.37,68.67,0,9603.6,1,28.68279,77.21812,synthetic,Low
+SYN2-0129,SYN2-0129,synthetic_v2,90.9,215.14,322.97,53.28,6.3,266.44,33.94,41.84,2,18647.69,1,28.56744,77.27964,synthetic,High
+REAL-0598,Dallu Pura Road,moderate,19.8,51.7,73.1,8.9,3.74,365.5,72.4,95.0,1,15353.2,1,28.6361,77.24349,real_govt_record,Low
+ZONE-102,ZONE-102,synthetic_v1,40.45,96.43,110.26,36.64,6.13,203.67,46.98,51.26,5,13090.05,0,28.77757,77.25956,synthetic,High
+REAL-1032,Dada Maheshwar Road,extreme,64.8,133.3,213.0,27.3,4.0,409.1,74.1,80.5,1,16166.1,1,28.63288,77.23454,real_govt_record,High
+ZONE-137,ZONE-137,synthetic_v1,22.6,47.98,69.76,42.97,4.2,662.09,38.98,24.98,1,17865.82,1,28.76553,77.22118,synthetic,Low
+REAL-0803,Swami Dayanand Marg,heavy,28.6,77.4,117.0,18.7,1.26,393.5,87.5,37.2,1,22355.6,0,28.62604,77.2421,real_govt_record,Medium
+REAL-0628,KN Katju Marg,extreme,38.3,104.8,152.1,35.7,2.16,788.1,80.7,74.8,1,11611.8,1,28.63246,77.2361,real_govt_record,Medium
+REAL-0339,Kanhiya Nagar Kanhiya,heavy,33.0,79.6,126.6,25.8,1.25,433.5,94.2,57.9,2,7474.7,0,28.62799,77.24518,real_govt_record,Medium
+REAL-0300,Rao Tula Ram Marg,extreme,61.9,135.0,208.0,25.1,1.42,388.4,76.7,78.6,2,15511.6,0,28.62803,77.24063,real_govt_record,High
+REAL-0049,Vikas Marg,light,5.7,13.6,21.7,17.0,2.86,753.0,86.1,81.3,17,13835.4,0,28.65306,77.28043,real_govt_record,Low
+REAL-0895,Shalimar Bagh,heavy,40.1,83.9,121.5,32.4,1.48,268.3,80.7,60.5,1,20030.3,0,28.62642,77.24056,real_govt_record,Medium
+REAL-0260,Burari Road,extreme,43.5,111.0,176.3,33.4,4.68,561.6,94.2,89.7,2,5694.8,0,28.62704,77.23541,real_govt_record,Medium
+REAL-0148,Pusta Road,extreme,46.7,100.5,135.8,29.5,0.69,258.7,74.7,51.5,5,11224.2,1,28.62626,77.24005,real_govt_record,Medium
+REAL-0135,Veer Banda Bairagi Marg,heavy,34.7,84.4,132.5,31.1,0.54,155.6,94.2,55.7,5,19210.8,1,28.62733,77.24276,real_govt_record,Medium
+REAL-0467,Khyala Road,heavy,26.3,68.6,96.5,14.6,3.8,682.8,82.5,48.0,1,4275.8,1,28.62519,77.23901,real_govt_record,Low
+SYN2-0044,SYN2-0044,synthetic_v2,87.54,166.03,248.12,19.93,2.5,825.12,37.42,10.64,5,8764.03,0,28.65367,77.34277,synthetic,High
+ZONE-135,ZONE-135,synthetic_v1,83.42,143.29,202.73,25.44,6.53,946.01,72.42,21.45,1,8236.83,1,28.74531,77.22527,synthetic,Medium
+REAL-0505,Old Palam Road,light,4.4,11.7,15.4,33.1,2.18,376.0,79.7,75.4,1,11135.5,0,28.62681,77.24014,real_govt_record,Low
+REAL-0777,SPM Marg,light,4.8,10.6,15.0,29.3,1.85,393.5,74.7,89.8,1,20938.9,0,28.63219,77.24252,real_govt_record,Low
+REAL-0194,Subramaniam Bharti Marg,moderate,25.0,54.5,81.9,12.6,1.95,486.8,87.5,52.5,4,14961.5,1,28.63372,77.24462,real_govt_record,Low
+REAL-0851,Chelmsford Road,heavy,27.7,59.1,84.6,12.3,1.63,773.1,74.1,85.3,1,20523.7,0,28.63729,77.23933,real_govt_record,Low
+REAL-0031,Mathura Road,heavy,38.0,88.9,126.3,37.6,3.03,418.3,86.1,79.2,28,5383.9,1,28.59397,77.2486,real_govt_record,High
+REAL-0004,Ring Road,extreme,69.9,139.9,217.1,34.2,1.92,222.2,82.5,53.5,145,5474.7,0,28.62592,77.24568,real_govt_record,High
+REAL-0137,Mehrauli-Mahipalpur Road,light,2.6,7.1,10.0,23.9,0.54,426.9,83.0,60.8,5,10751.5,0,28.62516,77.23511,real_govt_record,Low
+REAL-0455,Dhaula Kuan Dhaula,heavy,40.9,86.1,135.9,26.7,1.63,50.0,87.5,48.1,1,15304.2,0,28.63019,77.2424,real_govt_record,Medium
+REAL-0352,Najafgarh Road-Azad Hind Fauz Marg,extreme,48.2,123.9,161.4,44.4,1.69,353.8,82.5,84.4,2,10848.5,1,28.62723,77.24511,real_govt_record,Medium
+REAL-0116,Shyama Prasad Mukherjee Marg,extreme,52.5,132.6,208.8,41.4,1.04,732.3,76.7,93.4,6,9712.1,1,28.63345,77.24299,real_govt_record,High
+SYN2-0039,SYN2-0039,synthetic_v2,78.29,166.49,224.44,17.17,3.7,757.53,79.77,90.84,4,20205.83,0,28.56625,77.17548,synthetic,High
+REAL-0669,NH-24 Underpass Street,light,9.2,21.8,29.1,16.0,2.02,52.2,74.1,39.1,1,22770.8,1,28.63312,77.24228,real_govt_record,Low
+REAL-0078,"NH-44, GTK Road",moderate,17.3,43.4,66.7,17.1,4.93,447.4,74.1,51.7,8,7964.0,1,28.63577,77.23698,real_govt_record,Low
+REAL-0279,Kanjhawala Bawana Road,heavy,28.7,60.6,96.5,14.6,3.9,663.5,80.7,95.0,2,8381.1,0,28.62838,77.23949,real_govt_record,Low
+REAL-0477,Maharaja Ajmeed Marg,light,6.8,16.0,22.8,29.0,4.61,498.2,87.5,82.7,1,13780.7,1,28.6268,77.24107,real_govt_record,Low
+REAL-0595,Dadri Main Road,heavy,24.1,61.8,96.5,42.6,4.75,699.0,87.5,88.0,1,8964.7,1,28.63343,77.23642,real_govt_record,Low
+SYN2-0194,SYN2-0194,synthetic_v2,49.98,118.63,152.86,17.6,4.54,647.66,60.45,86.02,5,11900.64,0,28.56609,77.19084,synthetic,High
+ZONE-127,ZONE-127,synthetic_v1,7.32,21.43,78.65,24.73,0.79,411.51,57.59,79.61,2,15799.26,0,28.63546,77.22545,synthetic,Low
+REAL-0577,Benito Juarez Marg,light,4.6,10.4,15.4,28.7,3.38,105.1,94.2,72.0,1,14635.6,1,28.63283,77.24332,real_govt_record,Low
+ZONE-096,ZONE-096,synthetic_v1,63.73,108.63,172.78,59.12,7.53,111.14,85.99,45.41,1,22009.38,0,28.71046,77.30012,synthetic,Low
+SYN2-0012,SYN2-0012,synthetic_v2,31.34,71.39,114.0,44.62,1.83,555.81,41.23,99.45,1,22162.17,1,28.64434,77.15357,synthetic,Low
+REAL-0674,NH-48 DKFO Towa,moderate,21.1,42.3,60.0,19.5,3.93,250.4,86.5,46.7,1,5910.7,0,28.62807,77.24227,real_govt_record,Low
+ZONE-044,ZONE-044,synthetic_v1,14.39,71.05,130.91,54.25,2.28,918.11,35.73,30.0,4,10480.8,0,28.72255,77.29123,synthetic,High
+REAL-0082,Lala Lajpat Rai Marg,moderate,26.1,52.3,80.8,30.3,1.05,668.5,86.5,53.5,7,22837.2,0,28.63133,77.23835,real_govt_record,Low
+REAL-0698,Old GT Road/ Ansari Road,moderate,16.3,40.7,58.4,43.4,4.43,590.3,79.7,87.3,1,19950.1,1,28.62405,77.23624,real_govt_record,Low
+REAL-0017,GTK Road,light,5.9,12.8,18.9,24.3,4.27,112.8,86.5,83.0,38,4625.6,0,28.70746,77.17754,real_govt_record,Low
+REAL-0917,Captain Gaur Marg,light,5.9,13.1,20.4,35.9,2.28,697.6,85.9,75.9,1,20916.0,1,28.62674,77.24524,real_govt_record,Low
+REAL-0802,Swami Dayanand Marg,moderate,25.9,52.9,71.5,40.8,3.7,175.4,87.5,44.2,1,16891.6,0,28.62602,77.24431,real_govt_record,Low
+REAL-0448,Barapulla Flyover Barapulla,extreme,42.6,110.6,171.9,19.8,4.6,75.8,85.9,91.9,1,4400.2,0,28.63303,77.23669,real_govt_record,Medium
+REAL-0141,Minto Road,light,7.4,17.0,24.7,9.2,3.32,385.1,80.7,73.0,5,16486.0,1,28.63128,77.23983,real_govt_record,Low
+REAL-0444,Akbar Road,extreme,56.0,134.5,178.3,11.4,0.95,134.2,74.1,76.0,1,8334.6,0,28.62721,77.24322,real_govt_record,High
+REAL-0765,"Sector 22, Dwarka",light,4.7,12.2,18.2,34.1,2.69,214.9,76.7,40.4,1,17259.8,0,28.63208,77.23968,real_govt_record,Low
+REAL-0390,Najafgarh – Dhansa Road,moderate,10.2,27.6,40.5,29.1,1.68,409.6,85.9,98.4,2,24610.5,0,28.62845,77.23818,real_govt_record,Low
+REAL-0696,NH-8 Near Uppal,extreme,38.7,93.7,123.8,35.4,1.86,131.8,94.2,88.0,1,20721.8,1,28.62512,77.24068,real_govt_record,Medium
+REAL-0943,Kapashera - Najafgarh Road,heavy,27.1,74.0,101.0,20.3,2.31,771.0,86.5,41.2,1,7305.6,1,28.63321,77.23956,real_govt_record,Medium
+REAL-0379,Veer Banda Bairagi,heavy,28.0,64.5,98.0,39.9,2.78,568.8,79.7,40.1,2,17852.4,1,28.62478,77.23665,real_govt_record,Low
+REAL-0208,Gurugram- Parade Road,extreme,44.0,109.2,142.7,14.0,4.08,221.5,94.2,76.8,3,20280.8,0,28.63221,77.242,real_govt_record,High
+REAL-0876,Khudiram Bose Marg,extreme,44.0,104.2,161.4,37.7,3.96,179.9,72.4,44.0,1,22311.8,1,28.62833,77.24251,real_govt_record,Medium
+ZONE-119,ZONE-119,synthetic_v1,9.97,64.83,130.62,20.26,2.58,826.71,90.19,18.77,1,13302.88,1,28.66901,77.29564,synthetic,Low
+ZONE-140,ZONE-140,synthetic_v1,43.0,49.56,92.77,23.5,5.38,900.11,49.63,42.04,5,18280.22,1,28.67427,77.24034,synthetic,High
+REAL-0981,Palam Colony,light,11.1,22.5,31.1,44.3,3.48,716.7,85.9,85.4,1,14509.0,0,28.63392,77.23347,real_govt_record,Low
+REAL-0019,GTK Road,heavy,32.8,67.0,97.1,16.9,2.32,237.9,86.5,75.6,38,20878.0,0,28.70985,77.17847,real_govt_record,High
+REAL-0759,Sarojini Nagar Market,heavy,23.1,56.4,85.1,16.6,3.46,221.2,86.5,77.8,1,4243.8,0,28.62855,77.24329,real_govt_record,Low
+REAL-0945,Kasturba Nagar Road,light,2.6,6.1,9.2,30.9,4.68,787.2,83.0,95.0,1,5899.7,0,28.63521,77.24477,real_govt_record,Low
+REAL-0404,Rajpath Suoth Rajpath,extreme,51.9,128.9,196.2,21.0,1.28,364.3,85.9,42.3,1,19079.6,1,28.63342,77.23891,real_govt_record,High
+REAL-0318,Ashok Vihar Market,moderate,11.1,26.7,41.2,17.7,4.2,233.1,85.9,60.2,2,20641.4,0,28.63437,77.23492,real_govt_record,Low
+REAL-0712,Pankha Road/ Cariappa Marg,extreme,52.5,113.3,159.6,16.4,2.81,192.5,86.5,81.6,1,21089.6,0,28.62885,77.24312,real_govt_record,High
+REAL-0481,Malkaganj Road,light,5.4,11.1,14.6,10.1,4.47,566.3,74.7,51.9,1,17499.0,1,28.63058,77.23564,real_govt_record,Low
+REAL-0114,Shyama Prasad Mukherjee Marg,moderate,14.2,32.0,42.5,23.8,2.27,95.1,76.7,59.5,6,10891.9,1,28.6347,77.2408,real_govt_record,Low
+REAL-0646,Mandi House R/A,moderate,18.7,48.7,71.0,43.8,3.88,139.8,82.5,65.2,1,20087.5,0,28.62999,77.23898,real_govt_record,Low
+SYN2-0200,SYN2-0200,synthetic_v2,66.83,154.68,241.19,15.75,3.22,880.03,26.92,17.49,0,6083.41,1,28.58975,77.22426,synthetic,Medium
+REAL-0857,Dr. Bhim Rao Ambedkar Marg,light,8.2,22.1,29.0,35.1,4.62,556.1,74.7,81.0,1,10107.4,0,28.63094,77.23883,real_govt_record,Low
+SYN2-0103,SYN2-0103,synthetic_v2,81.21,174.0,215.44,6.06,2.17,332.49,63.09,72.72,2,12464.53,1,28.67579,77.34782,synthetic,High
+REAL-0100,"Firni Road, Najafgarh Firni Road",extreme,39.2,103.1,164.1,9.9,2.52,710.5,87.5,55.8,6,16774.3,1,28.63253,77.23667,real_govt_record,High
+REAL-0437,Neela Gumbad BSF,light,8.6,17.6,22.9,15.6,0.95,327.4,83.0,93.5,1,13822.6,0,28.62815,77.23888,real_govt_record,Low
+SYN2-0053,SYN2-0053,synthetic_v2,7.32,14.3,20.23,17.83,2.14,389.87,56.75,92.61,4,21945.14,1,28.59709,77.31066,synthetic,Medium
+REAL-0668,Netaji Subhash Marg,extreme,40.6,97.4,146.6,25.1,2.75,109.7,82.5,95.7,1,9024.6,1,28.62547,77.24254,real_govt_record,Medium
+REAL-0825,Arakshan Road,light,4.0,8.3,13.0,36.5,4.57,194.9,72.4,75.3,1,23961.1,0,28.62971,77.24284,real_govt_record,Low
+ZONE-111,ZONE-111,synthetic_v1,15.53,83.66,178.22,19.04,6.55,215.29,22.77,72.24,3,24646.1,1,28.60054,77.24741,synthetic,High
+REAL-0103,Girdhari Lal Goswami Marg,heavy,29.6,82.5,117.4,21.5,1.47,777.9,72.4,37.7,6,14280.3,0,28.6301,77.2433,real_govt_record,Medium
+REAL-0276,Kanjhawala Road,extreme,34.6,92.4,146.7,19.5,2.48,399.0,82.5,71.1,2,9869.0,1,28.62581,77.23917,real_govt_record,Medium
+REAL-0270,Azad Market Road,moderate,14.7,30.2,44.6,31.5,3.65,785.3,82.5,69.0,2,17222.0,1,28.62789,77.23744,real_govt_record,Low
+REAL-0479,Maharaja Ajmeed Marg,heavy,32.4,84.8,121.2,40.4,4.41,302.2,87.5,70.6,1,5050.1,1,28.62511,77.23812,real_govt_record,Low
+REAL-0354,NH-48 Between Sanjay,moderate,16.5,40.6,61.5,26.2,3.22,616.6,83.0,62.5,2,16508.7,0,28.62999,77.23685,real_govt_record,Low
+REAL-0326,BSZ Marg,moderate,17.3,46.6,67.7,32.2,0.99,129.2,79.7,39.9,2,5542.2,1,28.62898,77.24289,real_govt_record,Low
+ZONE-108,ZONE-108,synthetic_v1,56.6,102.29,153.43,29.45,4.39,255.78,21.71,23.31,3,11160.7,1,28.75535,77.29115,synthetic,High
+REAL-0071,NH-24/Delhi- Meerut Expressway,heavy,26.8,57.9,84.7,26.7,0.59,190.8,79.7,47.4,10,18326.8,1,28.62775,77.23773,real_govt_record,Medium
+ZONE-026,ZONE-026,synthetic_v1,49.12,82.53,158.54,42.69,6.19,361.65,87.75,37.94,0,2180.19,1,28.57183,77.32739,synthetic,Low
+REAL-0482,Malkaganj Road,moderate,16.3,40.8,55.7,10.6,2.97,114.1,74.7,49.5,1,5479.1,1,28.62809,77.23882,real_govt_record,Low
+REAL-0737,Roshanara Road,light,5.5,11.8,18.6,29.1,3.58,683.2,82.5,42.0,1,13843.2,0,28.62644,77.23672,real_govt_record,Low
+REAL-0398,Shahid Bhagat Singh Marg,moderate,14.1,34.5,52.1,29.7,2.72,632.2,76.7,60.1,2,23092.0,1,28.63401,77.23841,real_govt_record,Low
+SYN2-0180,SYN2-0180,synthetic_v2,67.52,170.42,236.07,6.1,1.63,124.39,30.25,14.71,1,13616.95,0,28.71638,77.18906,synthetic,High
+REAL-0051,Vikas Marg,heavy,31.9,78.9,120.2,38.2,1.12,267.6,86.1,43.2,17,14103.2,1,28.65415,77.28349,real_govt_record,Medium
+ZONE-056,ZONE-056,synthetic_v1,61.65,73.29,146.89,24.34,1.87,88.76,39.92,65.53,1,13336.43,0,28.70386,77.24449,synthetic,Low
+REAL-0132,Kautilya Marg,extreme,45.1,117.9,175.1,38.6,1.64,191.5,85.9,53.6,5,9241.2,1,28.62932,77.24458,real_govt_record,High
+ZONE-049,ZONE-049,synthetic_v1,73.68,148.68,177.33,57.11,4.52,254.69,48.52,39.6,4,14513.22,0,28.79322,77.16808,synthetic,High
+REAL-0273,Kanjhawala Road,light,6.0,12.1,17.0,42.1,4.41,480.8,82.5,43.1,2,20964.0,0,28.62625,77.2411,real_govt_record,Low
+REAL-0775,Shanti Path- Panchsheel Marg,heavy,39.5,81.8,120.6,27.4,0.76,624.9,82.5,42.6,1,8605.4,1,28.62453,77.23679,real_govt_record,Medium
+ZONE-011,ZONE-011,synthetic_v1,34.82,62.61,151.02,30.08,2.7,448.22,93.2,31.46,4,14667.3,1,28.73141,77.15898,synthetic,High
+REAL-0597,Dallu Pura Road,light,3.8,9.2,12.2,32.7,3.64,94.9,72.4,74.2,1,22452.7,0,28.63564,77.24583,real_govt_record,Low
+REAL-1028,Shiv Das Puri Marg,extreme,59.9,137.2,210.2,13.1,4.78,80.9,83.9,75.8,1,19849.8,0,28.63577,77.24233,real_govt_record,High
+REAL-0819,Vinay Marg,heavy,31.1,85.9,112.5,29.0,4.58,670.9,86.1,76.5,1,12190.1,0,28.63193,77.237,real_govt_record,Medium
+REAL-0159,Pankha Road,heavy,30.7,70.8,101.8,39.5,0.97,687.6,83.0,44.9,4,24376.6,0,28.62913,77.23583,real_govt_record,Low
+REAL-0305,Old Gurugram Road,light,4.8,10.5,14.0,19.3,2.28,143.3,86.5,73.3,2,12882.2,0,28.62465,77.24356,real_govt_record,Low
+REAL-0989,Police Colony,light,3.4,8.0,11.9,35.8,1.46,333.1,86.1,63.0,1,24434.2,0,28.62821,77.24141,real_govt_record,Low
+SYN2-0159,SYN2-0159,synthetic_v2,75.32,185.88,285.22,27.88,1.11,840.09,84.15,50.61,0,2468.07,1,28.75265,77.2498,synthetic,Medium
+REAL-0021,MB Road,light,5.4,12.7,19.1,34.5,4.29,518.6,79.7,55.5,38,21403.3,1,28.51195,77.26151,real_govt_record,Low
+REAL-0559,Abai Marg,heavy,34.8,74.1,99.8,25.4,3.33,101.5,76.7,71.0,1,23221.7,0,28.63125,77.23771,real_govt_record,Low
+REAL-0513,Palam Road,light,6.5,14.7,21.8,23.7,2.6,589.2,82.5,36.6,1,4808.7,1,28.63573,77.2379,real_govt_record,Low
+REAL-0927,Dwarka – Dabri Drain,heavy,27.1,58.8,79.5,44.1,4.95,240.8,82.5,73.0,1,14360.1,1,28.63387,77.24136,real_govt_record,Low
+REAL-0183,Netaji Subhash Marg/,heavy,26.3,58.0,86.1,42.2,4.46,126.3,81.7,43.9,4,8050.9,1,28.6245,77.24714,real_govt_record,Low
+REAL-0457,Gulab Singh Marg,light,4.5,10.7,15.7,12.8,4.64,397.3,72.4,83.5,1,4405.8,1,28.63144,77.24765,real_govt_record,Low
+REAL-0872,Khoda Chowk,extreme,45.3,98.6,130.7,33.3,0.57,303.5,82.5,41.9,1,13711.8,0,28.63528,77.23896,real_govt_record,Medium
+REAL-1005,Parade Road,light,4.8,10.0,15.4,24.8,4.53,432.3,83.0,72.1,1,16130.0,1,28.63504,77.2355,real_govt_record,Low
+REAL-0599,Dallu Pura Road,heavy,30.5,66.9,106.9,31.7,3.35,525.3,72.4,38.9,1,6934.5,1,28.63634,77.24576,real_govt_record,Low
+REAL-0921,Captain Kumud Kumar Marg,light,6.2,16.0,24.9,23.5,3.45,354.6,76.7,51.2,1,17564.9,1,28.63281,77.23791,real_govt_record,Low
+REAL-0561,Abai Marg-San Martin Marg,light,9.7,21.3,29.3,8.0,1.04,113.2,72.4,67.5,1,5620.7,1,28.62889,77.23858,real_govt_record,Low
+REAL-0384,IP Marg,extreme,56.5,124.3,171.2,36.4,4.39,338.8,87.5,86.5,2,12197.8,1,28.63069,77.23475,real_govt_record,High
+SYN2-0057,SYN2-0057,synthetic_v2,48.86,115.33,173.12,10.85,5.83,913.46,38.93,63.25,5,11935.77,1,28.67567,77.27059,synthetic,High
+SYN2-0198,SYN2-0198,synthetic_v2,20.63,47.9,66.35,24.74,4.54,251.65,86.22,65.1,1,22517.55,0,28.57932,77.24945,synthetic,Low
+REAL-0016,M.B. Road,extreme,52.0,110.9,172.9,29.2,3.31,336.8,83.0,72.3,42,16786.2,0,28.50314,77.25445,real_govt_record,High
+REAL-0607,Gazipur Dairy Farm,heavy,34.1,79.1,115.6,18.7,3.75,253.6,85.9,57.8,1,16409.0,0,28.63401,77.23662,real_govt_record,Medium
+REAL-0667,Netaji Subhash Marg,heavy,26.2,61.0,86.0,33.7,1.08,97.0,82.5,93.4,1,19766.0,1,28.62827,77.23966,real_govt_record,Low
+ZONE-053,ZONE-053,synthetic_v1,45.51,83.89,137.74,54.05,2.31,75.63,89.74,11.05,1,12022.62,0,28.76554,77.21102,synthetic,Low
+REAL-0953,Maa Anandmayee Marg,light,9.2,20.1,27.4,42.6,3.22,493.6,72.4,49.1,1,17536.7,1,28.62837,77.24279,real_govt_record,Low
+REAL-0483,Malkaganj Road,heavy,34.7,73.8,109.5,37.5,2.42,624.4,74.7,39.6,1,4431.9,0,28.6335,77.23601,real_govt_record,Low
+REAL-0475,M.G. Road,heavy,23.3,60.7,89.3,27.7,4.06,281.6,83.9,92.7,1,17269.5,0,28.63208,77.24273,real_govt_record,Low
+REAL-0705,Outer Circle Outer,light,3.7,9.1,13.4,33.6,3.06,73.8,83.9,50.6,1,11504.5,1,28.63128,77.24265,real_govt_record,Low
+REAL-0024,MB Road,extreme,58.2,125.7,183.6,9.3,1.52,633.9,79.7,69.5,38,23883.2,0,28.50907,77.26601,real_govt_record,High
+REAL-0743,San Martin Marg,heavy,24.2,56.7,82.4,30.6,3.92,300.2,83.9,86.6,1,18961.6,0,28.63217,77.2437,real_govt_record,Low
+REAL-0189,PUSA Road,light,5.8,16.5,23.0,10.4,2.79,604.5,83.9,48.1,4,4723.5,0,28.62784,77.2377,real_govt_record,Low
+ZONE-118,ZONE-118,synthetic_v1,57.79,78.89,102.36,37.76,7.92,277.58,75.26,78.71,2,2156.76,1,28.72042,77.202,synthetic,Medium
+REAL-0542,Jai Singh Road,moderate,13.6,30.9,44.8,18.5,4.12,247.2,74.1,54.6,1,4955.3,0,28.63309,77.24108,real_govt_record,Low
+SYN2-0112,SYN2-0112,synthetic_v2,18.04,45.28,56.1,50.44,5.09,62.52,53.6,13.44,0,4654.79,1,28.77347,77.28491,synthetic,Low
+REAL-0344,Maharaja Surajmal Marg,extreme,59.2,139.4,222.7,30.5,3.3,337.0,83.0,98.9,2,12265.6,1,28.63519,77.24369,real_govt_record,High
+SYN2-0002,SYN2-0002,synthetic_v2,7.35,13.73,20.38,28.17,4.34,747.5,48.72,15.18,0,15549.84,0,28.70525,77.34415,synthetic,Low
+REAL-0008,Rohtak Road,extreme,49.6,99.4,147.2,29.3,0.69,159.8,72.4,63.3,88,4201.1,1,28.66085,77.1339,real_govt_record,High
+REAL-0968,New Friends Colony,extreme,46.0,97.0,137.5,28.6,0.99,639.9,85.9,44.9,1,19657.7,1,28.62826,77.23914,real_govt_record,Medium
+REAL-0690,NH-48 Shankar Vihar,moderate,18.9,44.3,58.4,29.8,1.29,103.9,76.7,45.9,1,12362.5,1,28.6312,77.24007,real_govt_record,Low
+ZONE-121,ZONE-121,synthetic_v1,83.39,96.71,188.89,27.85,4.66,131.05,91.45,82.71,2,2598.22,0,28.79304,77.27236,synthetic,Medium
+REAL-0854,DDU Marg,moderate,14.2,36.6,51.7,44.0,3.22,116.6,74.7,74.6,1,12647.1,1,28.6308,77.24604,real_govt_record,Low
+REAL-0409,NH-24 Gazipur Mandi,light,2.3,6.3,8.4,9.0,2.69,427.7,74.1,54.6,1,7216.2,0,28.62949,77.23477,real_govt_record,Low
+REAL-0216,Mathura R oad,extreme,44.9,110.1,167.7,35.0,3.29,206.0,94.2,50.7,3,19571.6,1,28.62768,77.2367,real_govt_record,Medium
+REAL-0110,Patparganj Road,moderate,18.4,38.5,54.5,17.5,4.45,551.9,87.5,54.3,6,16766.3,1,28.62966,77.23803,real_govt_record,Low
+REAL-0220,Dwarka Road,extreme,47.2,101.3,148.1,44.3,2.04,583.8,76.7,36.1,3,12738.8,1,28.62692,77.2359,real_govt_record,Medium
+REAL-0916,Bharat Scouts & Guide Marg,extreme,54.6,113.6,152.2,38.4,2.64,637.7,94.2,91.5,1,8123.5,0,28.62929,77.23969,real_govt_record,Medium
+REAL-0531,Manas Marg,heavy,23.2,64.0,98.9,44.7,4.92,749.4,74.7,82.1,1,7039.1,0,28.6279,77.23874,real_govt_record,Low
+REAL-0408,DND Flyway At,extreme,52.7,111.7,167.6,37.8,4.99,103.5,81.7,48.6,1,8874.0,0,28.62598,77.24263,real_govt_record,Medium
+ZONE-085,ZONE-085,synthetic_v1,42.74,88.61,163.71,49.14,6.47,991.21,70.07,96.47,4,12866.84,1,28.70566,77.28355,synthetic,High
+REAL-0537,Satya Niketan Road,light,2.7,5.9,8.0,40.1,4.2,317.1,86.1,41.4,1,8420.0,0,28.62615,77.23672,real_govt_record,Low
+REAL-0368,R.K. Ashram Marg,extreme,40.0,110.0,169.3,21.1,3.7,370.9,76.7,97.4,2,22470.2,1,28.63172,77.23954,real_govt_record,High
+REAL-0204,Okhla Road,extreme,49.8,104.5,151.6,20.7,1.38,211.4,72.4,88.4,4,20873.2,0,28.62895,77.23775,real_govt_record,High
+REAL-0879,Max Hospital Road,heavy,37.6,85.9,132.5,8.3,2.15,308.7,72.4,49.1,1,20156.3,0,28.63459,77.23852,real_govt_record,Medium
+REAL-0707,Outer Circle Outer,heavy,27.5,77.5,107.2,12.4,0.78,449.5,83.9,39.0,1,14389.2,0,28.63387,77.24444,real_govt_record,Medium
+REAL-0957,Maharishi Dayanand Marg,light,7.9,21.7,33.3,28.2,0.75,304.0,90.9,87.6,1,13274.5,0,28.63433,77.238,real_govt_record,Low
+REAL-0028,Aurobindo Marg,extreme,55.3,133.4,174.8,27.7,3.59,737.0,80.7,65.1,34,24996.3,1,28.56673,77.19583,real_govt_record,High
+REAL-0231,Kemal Ataturk Marg,heavy,33.1,76.5,100.5,13.6,3.55,90.3,83.0,84.9,3,8641.9,0,28.62585,77.23771,real_govt_record,Medium
+REAL-0582,Bhisham Pitamah Marg,moderate,25.4,51.1,71.6,30.2,2.23,338.0,81.7,75.8,1,18529.1,1,28.6328,77.24595,real_govt_record,Low
+REAL-0416,NH-44 Near Apple,extreme,43.6,118.8,162.6,25.5,0.99,575.2,85.9,98.4,1,24876.1,1,28.62313,77.23757,real_govt_record,High
+REAL-0053,Okhla Estate Marg,light,2.0,5.2,6.8,9.4,1.5,258.7,74.7,83.4,12,23170.6,0,28.53226,77.27262,real_govt_record,Low
+REAL-0569,Azaz Market Road,light,2.5,6.4,9.6,13.5,1.5,181.4,74.7,92.8,1,6015.0,1,28.62895,77.24471,real_govt_record,Low
+REAL-0629,Lodhi Road,light,2.3,6.6,10.4,21.3,3.76,707.9,83.0,52.9,1,7730.9,1,28.63652,77.24081,real_govt_record,Low
+REAL-0797,Surajmal Marg,light,5.7,13.2,20.7,26.5,0.99,300.2,76.7,44.8,1,22644.0,0,28.62477,77.24121,real_govt_record,Low
+REAL-0370,Rajpur Road,moderate,13.4,27.4,38.2,33.4,1.2,482.6,82.5,82.8,2,9097.2,1,28.63641,77.23813,real_govt_record,Low
+SYN2-0021,SYN2-0021,synthetic_v2,52.33,94.88,147.96,39.72,6.6,222.62,55.21,27.12,3,24565.96,1,28.76005,77.22828,synthetic,Medium
+REAL-0075,Ram Bagh,heavy,21.9,58.0,82.0,12.1,1.89,255.4,82.5,65.1,10,17446.9,1,28.62802,77.23649,real_govt_record,Medium
+REAL-0811,Teen Murti Haifa Marg,heavy,34.0,80.1,125.4,12.1,1.83,556.1,83.9,43.3,1,13392.3,1,28.62616,77.23735,real_govt_record,Medium
+ZONE-043,ZONE-043,synthetic_v1,54.19,104.66,178.69,17.71,5.65,602.11,67.56,40.26,2,20903.5,1,28.77814,77.31843,synthetic,Medium
+REAL-0994,Rajaji Marg,moderate,22.8,46.7,71.5,12.2,2.69,161.8,82.5,55.7,1,17299.6,0,28.62735,77.23349,real_govt_record,Low
+REAL-0570,Azaz Market Road,moderate,18.0,41.7,63.4,18.0,3.79,698.4,74.7,48.1,1,8147.3,0,28.62829,77.24544,real_govt_record,Low
+ZONE-094,ZONE-094,synthetic_v1,75.51,135.31,201.55,34.29,3.19,369.41,60.21,23.52,4,3857.49,0,28.79495,77.31879,synthetic,High
+REAL-0047,Wazirabad Road,heavy,29.7,70.0,97.0,22.7,1.91,447.8,80.7,65.9,18,9664.9,1,28.71148,77.22644,real_govt_record,High
+REAL-0197,Vir Banda Bairagi Marg,light,6.2,15.9,20.9,22.8,4.2,770.9,80.7,36.6,4,12905.5,1,28.62591,77.24001,real_govt_record,Low
+SYN2-0034,SYN2-0034,synthetic_v2,14.92,33.21,44.87,40.28,0.63,587.14,71.91,16.11,0,21743.14,1,28.72325,77.17118,synthetic,Low
+REAL-0641,Major Sudesh Marg,light,8.6,18.5,25.3,33.5,4.73,609.3,83.9,95.9,1,12099.2,1,28.62554,77.24351,real_govt_record,Low
+REAL-0871,Khoda Chowk,heavy,35.2,80.1,119.5,17.1,3.07,475.3,82.5,52.5,1,14587.8,1,28.63357,77.23945,real_govt_record,Medium
+REAL-0127,SSN Marg,heavy,22.4,59.9,95.8,40.2,1.37,317.3,90.9,69.5,5,20834.5,1,28.62732,77.23975,real_govt_record,Low
+REAL-0814,Urban Extension Road,moderate,16.3,37.6,53.3,30.1,4.86,227.0,87.5,73.1,1,4284.8,0,28.62318,77.24354,real_govt_record,Low
+SYN2-0080,SYN2-0080,synthetic_v2,15.39,27.9,41.76,37.33,4.37,620.66,82.33,33.91,4,8132.94,1,28.67269,77.2778,synthetic,Medium
+REAL-0065,Ch. Fateh Singh Marg,light,4.1,11.2,16.7,36.7,1.31,96.8,76.7,64.4,10,16265.4,0,28.69662,77.22205,real_govt_record,Low
+REAL-0540,Satya Niketan Road,extreme,35.1,94.4,126.0,24.0,3.68,341.7,86.1,54.8,1,9873.0,1,28.62672,77.2394,real_govt_record,Medium
+REAL-0070,NH-24/Delhi- Meerut Expressway,moderate,15.9,42.2,57.4,41.9,1.17,146.3,79.7,57.5,10,16912.1,0,28.63184,77.23863,real_govt_record,Low
+REAL-0947,Kasturba Nagar Road,heavy,38.9,85.0,111.8,38.9,1.26,691.9,83.0,93.0,1,12386.7,1,28.63353,77.24123,real_govt_record,Low
+ZONE-059,ZONE-059,synthetic_v1,10.79,16.93,82.38,38.03,3.86,680.37,41.11,12.3,3,21997.65,0,28.59034,77.34862,synthetic,Medium
+REAL-0882,Raj Niwas Marg,moderate,19.2,51.8,73.0,30.6,3.51,256.8,87.5,41.2,1,16172.1,1,28.6252,77.24283,real_govt_record,Low
+REAL-0809,Teen Murti Haifa Marg,light,6.1,12.5,17.3,20.3,3.46,502.7,83.9,89.4,1,6648.1,1,28.62888,77.23573,real_govt_record,Low
+REAL-0380,Veer Banda Bairagi,extreme,53.6,134.8,212.1,26.5,4.8,682.9,79.7,80.4,2,12191.7,0,28.62589,77.23701,real_govt_record,High
+REAL-0268,Ashok Vihar Road,extreme,53.0,119.9,183.6,30.5,4.44,777.3,74.7,61.0,2,17615.3,1,28.63205,77.2385,real_govt_record,High
+REAL-0334,Inside Pragati Maidan,moderate,18.8,53.1,75.3,42.3,2.62,767.5,85.9,74.1,2,18572.9,1,28.62813,77.2334,real_govt_record,Low
+SYN2-0036,SYN2-0036,synthetic_v2,65.41,150.25,217.64,57.01,3.5,752.45,68.01,46.22,2,18720.05,0,28.77292,77.30736,synthetic,Medium
+REAL-0708,Outer Circle Outer,extreme,56.2,115.1,153.4,42.5,4.46,70.4,83.9,96.2,1,17003.7,0,28.63111,77.24059,real_govt_record,Medium
+SYN2-0162,SYN2-0162,synthetic_v2,27.33,60.67,74.18,24.41,6.46,426.67,69.6,10.94,5,4688.52,0,28.55354,77.27795,synthetic,High
+ZONE-129,ZONE-129,synthetic_v1,34.57,62.28,130.56,54.11,4.14,968.66,54.55,65.5,4,21861.98,0,28.56069,77.2156,synthetic,High
+REAL-0041,New Rohtak Road,light,6.2,16.4,24.2,20.6,3.93,259.6,80.7,42.4,19,19602.5,0,28.66031,77.19319,real_govt_record,Low
+REAL-0139,Mehrauli-Mahipalpur Road,heavy,33.5,68.7,107.5,36.8,2.86,57.6,83.0,81.7,5,17912.4,0,28.62631,77.23776,real_govt_record,Low
+REAL-0063,Bhairon Road,heavy,32.9,69.4,104.1,39.6,4.13,675.4,74.1,91.9,10,24113.5,0,28.61802,77.2421,real_govt_record,Medium
+REAL-0219,Dwarka Road,heavy,40.6,83.0,130.0,10.8,1.52,221.6,76.7,73.7,3,16558.5,1,28.62797,77.23614,real_govt_record,Medium
+REAL-0530,Manas Marg,moderate,12.7,25.4,33.5,9.6,3.18,794.2,74.7,63.5,1,8392.5,0,28.63105,77.23613,real_govt_record,Low
+REAL-0358,NH-48 Dhaula Kuan,moderate,25.6,51.4,79.6,36.6,3.61,464.2,74.1,50.8,2,6150.3,1,28.62874,77.23752,real_govt_record,Low
+REAL-0484,Malkaganj Road,extreme,61.4,137.0,209.8,34.6,3.91,162.3,74.7,86.9,1,12455.9,0,28.63088,77.23926,real_govt_record,High
+REAL-0886,Rind Road,moderate,21.1,48.7,72.2,35.3,3.81,580.9,76.7,85.1,1,20336.4,0,28.62891,77.24016,real_govt_record,Low
+REAL-0236,Sardar Patel Marg,extreme,48.2,111.3,146.0,18.7,2.11,766.3,82.5,69.0,3,6365.6,0,28.62991,77.24516,real_govt_record,High
+SYN2-0199,SYN2-0199,synthetic_v2,47.63,93.65,149.22,43.71,3.31,636.03,71.32,18.05,4,20416.74,1,28.62488,77.22602,synthetic,High
+SYN2-0158,SYN2-0158,synthetic_v2,57.02,111.78,136.51,27.85,3.85,980.91,27.86,80.98,5,11552.02,1,28.7518,77.20845,synthetic,High
+SYN2-0072,SYN2-0072,synthetic_v2,99.69,205.67,316.83,22.74,7.21,479.46,89.75,22.32,3,15737.45,0,28.5839,77.23201,synthetic,High
+REAL-0863,Dr. K.S. Krishnan Marg,heavy,26.2,73.2,96.4,40.9,2.82,338.9,74.1,45.5,1,7447.0,1,28.62876,77.23668,real_govt_record,Low
+REAL-0905,August Kranti Marg,light,4.3,9.7,13.9,13.0,3.31,767.3,72.4,80.1,1,23818.6,0,28.63102,77.23348,real_govt_record,Low
+REAL-0818,Vinay Marg,moderate,23.3,48.9,66.1,12.1,4.56,180.2,86.1,38.1,1,11482.9,1,28.63607,77.24015,real_govt_record,Low
+REAL-0101,Girdhari Lal Goswami Marg,light,3.2,6.5,9.6,28.1,4.06,228.5,72.4,44.4,6,10531.2,0,28.6334,77.24549,real_govt_record,Low
+REAL-0333,Inside Pragati Maidan,light,6.8,15.4,22.6,33.1,3.01,464.5,85.9,50.1,2,6594.1,1,28.62504,77.234,real_govt_record,Low
+REAL-0830,Avantika Market Marg,moderate,13.7,35.7,55.9,37.5,1.49,445.3,87.5,45.1,1,20181.8,0,28.63179,77.23636,real_govt_record,Low
+REAL-0806,Talkatora Road,moderate,20.3,54.5,80.3,28.3,4.04,426.5,76.7,57.0,1,20212.7,1,28.62995,77.23459,real_govt_record,Low
+REAL-0604,Dr. Rajendra Prasad Road,extreme,47.6,111.1,159.8,10.9,2.15,748.2,80.7,59.1,1,22465.0,1,28.6279,77.24745,real_govt_record,High
+REAL-0259,Burari Road,heavy,35.0,71.9,96.9,17.8,2.93,319.6,94.2,58.4,2,6034.5,1,28.6272,77.23666,real_govt_record,Medium
+SYN2-0024,SYN2-0024,synthetic_v2,55.5,108.66,145.48,58.79,2.51,320.11,59.46,59.14,4,8790.59,0,28.60505,77.28376,synthetic,High
+ZONE-040,ZONE-040,synthetic_v1,48.89,125.01,223.32,30.87,4.5,692.02,30.24,25.67,2,7346.73,1,28.56606,77.26112,synthetic,High
+REAL-0734,Rani Jhansi Road,moderate,20.6,46.9,71.1,25.0,0.67,240.9,86.1,72.9,1,7270.0,1,28.63286,77.23754,real_govt_record,Low
+SYN2-0083,SYN2-0083,synthetic_v2,41.01,86.1,126.21,20.77,6.94,395.62,77.27,22.28,1,14403.83,0,28.63602,77.23711,synthetic,Low
+ZONE-002,ZONE-002,synthetic_v1,51.91,88.23,104.81,51.51,1.82,723.83,87.43,20.19,1,24056.88,1,28.61151,77.28688,synthetic,Low
+REAL-0438,Neela Gumbad BSF,moderate,19.7,51.2,72.2,43.8,0.58,575.5,83.0,37.2,1,14952.9,1,28.62598,77.24229,real_govt_record,Low
+REAL-0073,Ram Bagh,light,9.3,19.9,26.6,24.5,4.39,583.8,82.5,65.4,10,10162.8,0,28.62581,77.236,real_govt_record,Low
+REAL-0639,Major Hoshiyar Singh Marg,heavy,25.1,55.7,81.4,33.2,4.45,203.8,83.9,93.9,1,18451.8,1,28.63126,77.23878,real_govt_record,Low
+REAL-0085,Najafgarh Road,light,6.6,16.4,24.5,9.4,3.52,158.6,86.1,96.4,7,16602.0,1,28.62743,77.23869,real_govt_record,Low
+REAL-0676,NH-48 DKFO Towa,extreme,61.0,132.9,197.0,13.4,1.78,736.7,86.5,71.4,1,24911.5,1,28.63331,77.24323,real_govt_record,High
+ZONE-036,ZONE-036,synthetic_v1,44.0,66.59,98.85,29.29,4.55,295.7,34.8,19.84,3,4354.72,1,28.65155,77.15036,synthetic,High
+REAL-0626,KN Katju Marg,moderate,19.5,42.0,56.4,15.9,1.07,438.7,80.7,48.2,1,23537.0,0,28.63436,77.23509,real_govt_record,Low
+REAL-0873,Khudiram Bose Marg,light,6.2,12.8,18.1,31.8,3.43,571.0,72.4,74.3,1,22074.4,1,28.63171,77.24358,real_govt_record,Low
+REAL-0810,Teen Murti Haifa Marg,moderate,14.3,34.2,45.3,28.1,2.84,479.6,83.9,94.1,1,15254.0,1,28.62475,77.23989,real_govt_record,Low
+SYN2-0047,SYN2-0047,synthetic_v2,85.71,201.91,277.85,19.67,4.16,731.26,84.0,88.42,4,17322.49,0,28.63017,77.31456,synthetic,High
+REAL-0575,Baba Banda Singh Bahadur Marg,heavy,31.4,86.4,116.7,37.8,1.28,311.1,83.0,85.5,1,21436.1,1,28.62639,77.2387,real_govt_record,Medium
+REAL-0369,Rajpur Road,light,2.6,6.4,8.9,31.0,0.53,615.6,82.5,39.8,2,12878.9,1,28.63565,77.23644,real_govt_record,Low
+REAL-0451,Chhawla Road,heavy,28.3,71.2,113.4,25.5,0.77,341.5,76.7,63.1,1,4315.8,0,28.63185,77.23497,real_govt_record,Low
+REAL-0278,Kanjhawala Bawana Road,moderate,11.3,26.8,39.2,30.1,3.05,454.5,80.7,66.3,2,24184.2,0,28.6312,77.2392,real_govt_record,Low
+REAL-0856,DDU Marg,extreme,59.3,119.5,156.6,24.8,2.16,639.0,74.7,86.0,1,20025.7,0,28.62724,77.24475,real_govt_record,High
+REAL-0966,New Friends Colony,moderate,14.6,33.9,51.6,25.8,3.96,629.3,85.9,61.1,1,16303.9,1,28.62828,77.23993,real_govt_record,Low
+ZONE-029,ZONE-029,synthetic_v1,92.89,164.84,197.13,53.96,2.11,958.77,37.25,52.34,2,21791.28,0,28.58292,77.17339,synthetic,High
+REAL-1022,Vivekanand Marg,moderate,12.4,27.9,43.0,8.6,4.76,560.8,72.4,95.6,1,8977.8,0,28.63063,77.23528,real_govt_record,Low
+REAL-0571,Azaz Market Road,heavy,29.8,83.1,109.0,26.6,2.62,520.3,74.7,73.2,1,21100.8,1,28.63078,77.24151,real_govt_record,Medium
+REAL-0133,Veer Banda Bairagi Marg,light,7.1,15.8,21.8,8.9,3.0,97.2,94.2,64.8,5,22615.7,0,28.62823,77.24064,real_govt_record,Low
+REAL-0092,Press Enclave Road,extreme,56.3,114.9,183.1,25.5,1.43,271.5,80.7,94.0,7,22832.7,0,28.633,77.24261,real_govt_record,High
+ZONE-082,ZONE-082,synthetic_v1,60.21,99.46,193.57,25.59,4.03,813.11,69.77,82.4,4,20774.94,0,28.73952,77.16199,synthetic,High
+REAL-0429,Outer Circle Connaught,light,2.9,8.1,11.3,17.7,3.97,479.3,87.5,96.2,1,20672.0,0,28.63204,77.2433,real_govt_record,Low
+ZONE-037,ZONE-037,synthetic_v1,97.63,105.14,174.0,28.71,8.0,851.23,97.9,96.9,5,5885.92,1,28.74752,77.20006,synthetic,High
+REAL-0345,Motilal Nehru Marg,light,7.2,19.9,31.8,8.6,0.74,663.8,90.9,52.6,2,4617.3,0,28.63304,77.23824,real_govt_record,Low
+SYN2-0014,SYN2-0014,synthetic_v2,56.19,132.2,178.95,54.13,7.91,188.96,49.68,65.84,0,8383.29,1,28.5519,77.15741,synthetic,Low
+REAL-0687,NH-48 Near Shiv,heavy,30.8,63.0,89.0,10.6,3.63,209.4,86.5,59.5,1,12022.1,0,28.62796,77.23733,real_govt_record,Low
+REAL-0771,Shamnat Hedge Marg,heavy,31.4,87.3,139.0,39.8,1.89,412.7,76.7,35.3,1,7813.4,0,28.63172,77.23659,real_govt_record,Medium
+REAL-0426,Shastri Park Road,moderate,23.1,48.0,75.3,23.0,4.83,516.7,86.1,67.1,1,21333.5,1,28.63482,77.23838,real_govt_record,Low
+REAL-0640,Major Hoshiyar Singh Marg,extreme,62.1,137.1,217.6,35.5,4.27,433.2,83.9,62.8,1,11204.3,1,28.63011,77.23901,real_govt_record,High
+REAL-0880,Max Hospital Road,extreme,37.9,97.2,149.1,10.1,4.7,715.2,72.4,58.4,1,12257.3,1,28.63045,77.24042,real_govt_record,Medium
+REAL-0985,Patel Road,light,7.8,20.2,31.6,42.3,4.79,629.4,74.1,38.1,1,5328.3,1,28.62388,77.23723,real_govt_record,Low
+REAL-0581,Bhisham Pitamah Marg,light,8.9,17.9,28.2,37.6,1.0,427.6,81.7,66.8,1,20591.0,0,28.6302,77.24187,real_govt_record,Low
+REAL-0841,Bhiku Ram Jain Marg,light,8.8,24.6,32.7,13.9,1.46,771.6,86.1,87.2,1,13957.2,0,28.6264,77.24079,real_govt_record,Low
+REAL-0107,Mother Teresa Crescent Road,heavy,24.4,68.3,97.4,17.1,4.07,653.1,86.1,65.7,6,12404.7,1,28.63373,77.2446,real_govt_record,Medium
+REAL-0519,Vande Matram Marg,heavy,28.7,61.1,91.0,25.2,4.95,398.3,83.9,82.4,1,7436.0,1,28.62751,77.24495,real_govt_record,Low
+REAL-0587,Brigadier Hoshiyar Singh Marg,heavy,28.7,80.8,119.6,15.6,1.75,588.1,74.1,48.3,1,11396.4,0,28.62983,77.24342,real_govt_record,Medium
+REAL-1007,Parade Road,heavy,35.2,87.7,127.4,39.4,3.81,106.7,83.0,88.9,1,21799.9,0,28.63618,77.23448,real_govt_record,Medium
+SYN2-0078,SYN2-0078,synthetic_v2,38.09,86.92,121.72,58.92,3.71,737.14,37.32,83.79,4,13521.71,0,28.58296,77.29981,synthetic,High
+ZONE-143,ZONE-143,synthetic_v1,77.03,128.19,201.53,6.77,6.59,471.94,48.38,17.44,2,24802.66,0,28.67531,77.32149,synthetic,High
+REAL-0376,Shanti Path,extreme,51.1,127.6,183.8,21.5,3.66,339.4,94.2,85.0,2,10365.2,0,28.63057,77.24285,real_govt_record,High
+REAL-0940,Goyla Dairy Road,extreme,43.8,115.9,181.5,32.0,3.3,159.0,72.4,85.1,1,19266.9,1,28.63538,77.23299,real_govt_record,Medium
+REAL-0027,Aurobindo Marg,heavy,32.2,66.2,103.1,20.9,0.87,380.7,80.7,70.2,34,20132.9,1,28.56658,77.19418,real_govt_record,High
+REAL-0591,Ch. Nand Lal Marg,heavy,24.2,63.9,90.9,35.8,3.79,394.8,85.9,73.9,1,9352.7,1,28.6266,77.24053,real_govt_record,Low
+REAL-0790,Suraj Kund Road,moderate,14.4,39.2,57.2,18.9,1.89,718.3,86.5,92.7,1,16086.5,1,28.62863,77.24439,real_govt_record,Low
+REAL-1027,Shiv Das Puri Marg,heavy,28.6,63.3,93.0,23.7,2.74,678.7,83.9,41.3,1,24648.5,0,28.6335,77.24588,real_govt_record,Low
+SYN2-0130,SYN2-0130,synthetic_v2,93.1,167.6,232.39,26.72,1.87,697.3,81.01,20.28,5,3835.22,1,28.69312,77.29324,synthetic,High
+SYN2-0077,SYN2-0077,synthetic_v2,35.43,78.43,103.44,40.62,1.72,138.14,54.34,25.23,2,13102.94,0,28.59196,77.26891,synthetic,Low
+REAL-0948,Kasturba Nagar Road,extreme,45.0,118.2,165.9,33.3,1.89,388.3,83.0,38.6,1,11885.8,1,28.63329,77.24238,real_govt_record,Medium
+REAL-0233,Sardar Patel Marg,light,8.0,18.8,26.8,22.4,2.77,401.5,82.5,68.9,3,15194.0,0,28.62683,77.24265,real_govt_record,Low
+SYN2-0104,SYN2-0104,synthetic_v2,23.86,46.65,63.22,35.37,1.66,151.13,24.65,34.12,2,6253.02,1,28.61353,77.29567,synthetic,Low
+REAL-0723,Rail Bhawan Rafi Marg,heavy,32.0,87.7,130.3,39.7,3.5,746.1,86.1,91.2,1,7714.9,0,28.63013,77.23331,real_govt_record,Medium
+REAL-0567,Army Battle Honours Mess (ABHM) Marg,heavy,31.6,85.6,120.1,41.6,0.68,525.4,90.9,75.2,1,23568.2,0,28.6286,77.23537,real_govt_record,Low
+REAL-0867,Kela Godam Road,heavy,27.6,66.8,87.0,39.2,1.14,719.6,74.7,49.8,1,24079.5,1,28.62912,77.23889,real_govt_record,Low
+SYN2-0185,SYN2-0185,synthetic_v2,76.69,157.45,248.18,38.87,7.45,192.01,59.67,55.88,2,3755.29,0,28.67463,77.22268,synthetic,High
+REAL-1012,Sikandra Marg,extreme,36.2,96.7,138.7,43.1,2.13,519.3,94.2,41.8,1,6837.3,1,28.62895,77.23708,real_govt_record,Medium
+REAL-0289,Old Patparganj Road,light,6.0,13.9,18.2,11.8,4.03,467.4,72.4,66.6,2,11218.9,1,28.63236,77.23704,real_govt_record,Low
+SYN2-0121,SYN2-0121,synthetic_v2,18.08,40.53,48.77,29.27,7.01,890.4,20.81,29.78,3,5029.83,1,28.59029,77.22411,synthetic,Medium
+REAL-0949,Krishna Menon Marg,light,8.2,21.3,29.2,11.3,3.96,573.3,74.1,93.5,1,16080.5,0,28.63111,77.23566,real_govt_record,Low
+REAL-0677,NH-48 Jharela Village,light,7.8,21.8,32.3,30.7,3.77,142.1,83.9,50.7,1,23105.7,1,28.63244,77.23885,real_govt_record,Low
+REAL-0365,R.K. Ashram Marg,light,8.4,17.6,25.8,17.5,2.62,399.7,76.7,57.5,2,16194.5,0,28.63116,77.2352,real_govt_record,Low
+REAL-0284,Mata Mandir Road,extreme,43.9,105.1,147.8,25.5,4.07,246.3,82.5,86.9,2,23319.9,1,28.63243,77.24133,real_govt_record,Medium
+REAL-0671,NH-24 Underpass Street,heavy,26.5,62.2,85.9,41.6,4.11,126.7,74.1,76.5,1,17526.1,0,28.62903,77.24395,real_govt_record,Low
+REAL-0079,"NH-44, GTK Road",heavy,29.1,68.2,104.8,38.5,3.25,168.8,74.1,84.1,8,22962.9,0,28.63399,77.23934,real_govt_record,Medium
+REAL-0502,Old GTK Road,moderate,19.9,46.7,70.8,20.3,4.77,605.4,86.5,86.3,1,15337.1,0,28.62696,77.24354,real_govt_record,Low
+ZONE-078,ZONE-078,synthetic_v1,20.51,77.87,115.98,56.15,7.15,293.92,66.96,55.15,5,9439.94,1,28.63169,77.19088,synthetic,High
+REAL-0770,Shamnat Hedge Marg,moderate,20.2,45.8,70.1,19.6,1.92,83.5,76.7,59.2,1,4294.2,0,28.62667,77.23906,real_govt_record,Low
+REAL-0528,Mahipalpur- Mehrauli road Mahipalpur Chowk,extreme,43.2,103.5,156.4,18.8,2.47,532.7,74.7,36.1,1,23030.1,1,28.62383,77.24158,real_govt_record,Medium
+REAL-0877,Max Hospital Road,light,6.3,13.7,21.1,18.2,1.36,437.9,72.4,38.7,1,19266.0,1,28.63196,77.23788,real_govt_record,Low
+REAL-0976,NH-48 Shiv Murti,extreme,49.4,103.0,163.5,27.5,3.33,510.9,86.5,80.3,1,8711.6,1,28.62406,77.23952,real_govt_record,Medium
+REAL-0663,Near Zakir Nagar Main Road,heavy,32.3,71.3,107.1,23.1,3.23,507.9,76.7,38.6,1,22955.0,1,28.63294,77.24564,real_govt_record,Low
+REAL-0500,Old GT Road,extreme,44.8,126.9,195.9,18.2,0.78,231.7,86.1,97.6,1,17031.4,0,28.63252,77.23916,real_govt_record,High
+REAL-0915,Bharat Scouts & Guide Marg,heavy,37.3,76.1,103.6,13.2,1.8,709.9,94.2,89.5,1,23845.7,0,28.62701,77.24169,real_govt_record,Medium
+REAL-0495,NH-8 Mahipalpur Flyover,heavy,33.8,71.2,92.8,39.9,2.08,322.4,86.1,79.7,1,16043.8,1,28.63128,77.24152,real_govt_record,Low
+REAL-0798,Surajmal Marg,moderate,9.6,26.1,41.3,27.2,0.74,92.9,76.7,37.5,1,11745.5,1,28.62736,77.23804,real_govt_record,Low
+REAL-0038,"Firni Road, Najafgarh",moderate,21.2,47.9,75.3,25.8,1.35,136.2,83.0,46.0,21,7318.6,1,28.61455,76.97353,real_govt_record,Medium
+REAL-0837,Bamnikhera Road,light,7.5,17.3,23.0,38.4,0.89,422.8,79.7,87.3,1,6148.5,0,28.6234,77.23915,real_govt_record,Low
+REAL-0489,MGM Road,light,3.8,8.0,11.8,35.6,3.83,351.0,87.5,70.2,1,10360.3,1,28.63231,77.24151,real_govt_record,Low
+SYN2-0171,SYN2-0171,synthetic_v2,44.66,103.58,156.48,29.21,2.15,996.78,77.29,70.87,0,8784.13,0,28.76803,77.21116,synthetic,Low
+REAL-0106,Mother Teresa Crescent Road,moderate,16.0,44.5,62.4,33.7,4.39,493.0,86.1,91.7,6,13714.5,1,28.63478,77.24304,real_govt_record,Low
+REAL-1014,Tilak Marg,moderate,19.4,47.5,64.8,43.2,3.56,587.7,86.1,66.4,1,17053.4,1,28.62595,77.23843,real_govt_record,Low
+SYN2-0123,SYN2-0123,synthetic_v2,21.01,47.96,60.81,13.53,2.59,616.87,52.83,50.0,0,24576.79,0,28.61053,77.28683,synthetic,Low
+REAL-0126,SSN Marg,moderate,11.1,25.4,40.2,43.9,1.1,565.7,90.9,61.8,5,17260.7,1,28.62766,77.24367,real_govt_record,Low
+REAL-0724,Rail Bhawan Rafi Marg,extreme,32.7,91.7,125.2,38.6,3.87,174.8,86.1,46.9,1,22476.6,1,28.62516,77.23519,real_govt_record,Medium
+ZONE-139,ZONE-139,synthetic_v1,80.08,155.55,251.0,23.19,7.43,410.67,62.19,87.68,0,18911.46,1,28.7603,77.2569,synthetic,Medium
+REAL-0385,Jawahar Lal Nehru Marg,light,8.0,19.8,27.1,24.2,1.21,392.9,74.7,40.1,2,9411.6,0,28.6286,77.24208,real_govt_record,Low
+REAL-1030,Dada Maheshwar Road,moderate,14.8,42.1,56.6,31.6,2.17,774.6,74.1,63.2,1,23289.9,1,28.63586,77.23381,real_govt_record,Low
+REAL-0162,Panchsheel Marg,moderate,21.3,52.1,72.4,35.4,1.66,325.9,74.7,62.5,4,14014.3,1,28.62994,77.23893,real_govt_record,Low
+REAL-0984,Palam Colony,extreme,54.1,116.5,184.2,40.6,3.65,172.8,85.9,74.3,1,7621.1,1,28.63676,77.23895,real_govt_record,Medium
+REAL-0490,MGM Road,moderate,14.7,37.7,59.0,30.3,2.35,660.4,87.5,98.0,1,5163.2,0,28.63194,77.23933,real_govt_record,Low
+REAL-0717,Pragati Maidan Tunnel,light,5.8,16.4,26.0,14.8,0.88,713.6,74.1,87.9,1,6113.0,1,28.62961,77.23913,real_govt_record,Low
+REAL-0374,Shanti Path,moderate,23.4,51.2,73.6,39.3,1.68,376.8,94.2,43.6,2,9616.7,0,28.6302,77.23979,real_govt_record,Low
+REAL-0442,Akbar Road,moderate,22.0,44.5,70.2,39.2,1.93,600.2,74.1,94.9,1,22893.6,0,28.62497,77.24276,real_govt_record,Low
+REAL-0679,NH-48 Jharela Village,heavy,30.2,71.2,109.4,29.3,1.04,336.2,83.9,42.4,1,18072.2,0,28.63485,77.2362,real_govt_record,Low
+ZONE-025,ZONE-025,synthetic_v1,96.2,157.16,255.4,28.77,2.85,264.74,94.96,12.73,0,23181.81,0,28.55338,77.23207,synthetic,Low
+REAL-0860,Dr. Bhim Rao Ambedkar Marg,extreme,67.8,136.4,178.4,32.5,0.92,477.2,74.7,60.9,1,20043.6,0,28.63442,77.24016,real_govt_record,High
+REAL-0907,August Kranti Marg,heavy,34.9,80.8,106.1,16.8,2.18,84.7,72.4,89.2,1,8639.8,1,28.63103,77.23335,real_govt_record,Medium
+REAL-0375,Shanti Path,heavy,32.3,77.5,116.5,9.6,1.82,134.6,94.2,83.8,2,14061.1,1,28.62877,77.24065,real_govt_record,Medium
+REAL-1021,Vivekanand Marg,light,10.7,24.9,34.7,20.7,2.11,337.7,72.4,43.3,1,7867.7,1,28.62944,77.23893,real_govt_record,Low
+REAL-0944,Kapashera - Najafgarh Road,extreme,39.1,104.7,142.3,25.6,1.55,682.6,86.5,96.9,1,19397.4,0,28.63553,77.23999,real_govt_record,Medium
+REAL-0119,Sector 14 Road,heavy,35.0,70.7,100.1,37.7,3.58,254.6,83.9,66.7,6,13933.9,0,28.62759,77.23641,real_govt_record,Medium
+REAL-0758,Sarojini Nagar Market,moderate,17.3,35.1,55.2,15.7,4.35,306.0,86.5,38.3,1,20725.6,0,28.63291,77.24358,real_govt_record,Low
+REAL-0670,NH-24 Underpass Street,moderate,17.4,35.5,46.7,24.0,2.14,607.7,74.1,78.9,1,24875.7,1,28.63366,77.24405,real_govt_record,Low
+SYN2-0147,SYN2-0147,synthetic_v2,65.73,139.47,195.39,29.75,1.2,842.68,33.55,29.73,2,24786.36,1,28.77935,77.26457,synthetic,High
+SYN2-0056,SYN2-0056,synthetic_v2,96.57,179.92,221.07,10.12,3.37,154.71,38.5,64.44,0,7720.16,1,28.58221,77.19941,synthetic,Medium
+REAL-0702,Old Seelam Pur,moderate,14.1,39.0,58.6,24.0,1.48,582.6,72.4,86.1,1,8574.8,0,28.62886,77.23785,real_govt_record,Low
+REAL-0415,NH-44 Near Apple,heavy,37.3,76.5,121.4,13.1,2.47,114.0,85.9,70.9,1,8707.5,1,28.62624,77.23691,real_govt_record,Medium
+REAL-0721,Rail Bhawan Rafi Marg,light,9.6,19.6,27.5,44.2,2.15,714.9,86.1,49.2,1,20987.8,1,28.62941,77.23671,real_govt_record,Low
+REAL-0673,NH-48 DKFO Towa,light,11.0,23.9,34.3,25.1,3.9,107.5,86.5,57.7,1,14090.0,0,28.62854,77.24181,real_govt_record,Low
+REAL-0128,SSN Marg,extreme,49.5,117.1,165.3,19.4,4.1,679.0,90.9,53.2,5,12225.4,1,28.62993,77.24548,real_govt_record,High
+SYN2-0051,SYN2-0051,synthetic_v2,50.61,94.17,144.0,33.87,7.0,264.73,47.31,96.29,4,18779.31,0,28.72649,77.34582,synthetic,High
+REAL-0787,Sunheri Masjid R/A,heavy,30.8,68.1,93.3,32.1,1.77,371.4,82.5,51.2,1,5913.0,1,28.63018,77.23627,real_govt_record,Low
+REAL-0573,Baba Banda Singh Bahadur Marg,light,4.1,11.2,16.8,35.6,3.39,586.1,83.0,73.3,1,4623.2,1,28.62519,77.23633,real_govt_record,Low
+REAL-0977,Nishad Marg,light,5.9,14.4,18.9,13.7,0.86,496.8,85.9,83.3,1,4014.4,0,28.62947,77.24144,real_govt_record,Low
+REAL-0788,Sunheri Masjid R/A,extreme,44.3,100.8,159.5,21.9,2.5,742.7,82.5,45.6,1,22619.1,1,28.63037,77.23537,real_govt_record,Medium
+REAL-0400,Shahid Bhagat Singh Marg,extreme,55.7,114.2,157.2,31.3,3.08,51.2,76.7,47.3,2,16562.4,0,28.63417,77.24056,real_govt_record,Medium
+REAL-0647,Mandi House R/A,heavy,32.4,76.7,112.1,15.8,0.78,168.1,82.5,67.5,1,7009.7,0,28.62891,77.23493,real_govt_record,Medium
+REAL-1009,Sikandra Marg,light,2.1,5.7,7.6,13.3,4.28,398.8,94.2,62.3,1,10150.4,0,28.62522,77.23915,real_govt_record,Low
+REAL-0565,Army Battle Honours Mess (ABHM) Marg,light,8.0,18.0,23.7,27.0,1.2,470.1,90.9,50.2,1,15923.3,0,28.62994,77.23476,real_govt_record,Low
+REAL-0175,Loni Road,heavy,29.7,81.4,113.3,39.4,0.66,573.9,90.9,71.4,4,15581.6,1,28.62956,77.24239,real_govt_record,Medium
+REAL-0321,Baba Kharak Singh Marg,light,5.8,14.4,22.4,38.8,2.37,767.7,90.9,35.9,2,9951.9,0,28.62765,77.2359,real_govt_record,Low
+REAL-0525,Mahipalpur- Mehrauli road Mahipalpur Chowk,light,7.4,15.1,21.6,16.5,3.8,121.7,74.7,96.9,1,9472.9,0,28.62545,77.23713,real_govt_record,Low
+REAL-0470,Lawrence Road,moderate,14.5,33.1,47.5,19.1,2.21,436.5,74.7,90.2,1,8201.1,0,28.63158,77.243,real_govt_record,Low
+SYN2-0052,SYN2-0052,synthetic_v2,54.26,138.72,177.8,13.51,1.55,564.5,85.38,43.53,5,24014.36,1,28.58961,77.29552,synthetic,High
+SYN2-0119,SYN2-0119,synthetic_v2,96.78,201.58,290.15,23.95,1.44,288.65,32.77,22.73,5,17691.57,0,28.60719,77.24618,synthetic,High
+REAL-0995,Rajaji Marg,heavy,28.4,70.1,105.2,12.4,3.61,699.8,82.5,58.7,1,24088.8,1,28.62757,77.23706,real_govt_record,Medium
+REAL-0080,"NH-44, GTK Road",extreme,44.4,97.1,155.0,27.1,3.72,676.6,74.1,47.6,8,23842.7,0,28.63653,77.23716,real_govt_record,High
+REAL-0534,NH-8 Rangpuri Chowk,moderate,12.6,30.4,47.1,33.1,3.28,220.0,76.7,89.1,1,13955.6,1,28.62674,77.24013,real_govt_record,Low
+REAL-0884,Raj Niwas Marg,extreme,52.7,105.8,139.7,18.8,3.34,705.9,87.5,36.3,1,8205.1,0,28.62374,77.24438,real_govt_record,Medium
+REAL-0458,Gulab Singh Marg,moderate,14.6,35.3,53.4,9.0,3.25,345.4,72.4,95.0,1,18174.5,0,28.62791,77.2437,real_govt_record,Low
+REAL-0291,Old Patparganj Road,heavy,32.0,73.8,115.6,30.2,1.1,55.5,72.4,72.2,2,22847.2,1,28.63021,77.23681,real_govt_record,Medium
+REAL-0371,Rajpur Road,heavy,23.8,66.3,100.9,32.3,4.6,667.9,82.5,75.5,2,20383.2,0,28.63503,77.23989,real_govt_record,Low
+REAL-0266,Ashok Vihar Road,moderate,12.9,34.5,52.5,36.1,2.02,365.2,74.7,79.6,2,19279.1,1,28.62696,77.23687,real_govt_record,Low
+REAL-0589,Ch. Nand Lal Marg,light,9.8,23.4,34.5,10.7,4.56,615.6,85.9,50.8,1,21639.8,0,28.62727,77.24061,real_govt_record,Low
+REAL-0478,Maharaja Ajmeed Marg,moderate,13.5,34.1,54.3,31.7,0.82,440.5,87.5,62.4,1,16573.5,1,28.62291,77.24007,real_govt_record,Low
+REAL-0165,Ulan Batar Marg,light,4.3,9.2,12.1,14.8,1.03,618.8,85.9,57.1,4,21971.4,0,28.62949,77.23731,real_govt_record,Low
+ZONE-149,ZONE-149,synthetic_v1,9.84,20.32,94.82,22.1,1.55,168.28,73.46,69.43,4,6542.31,1,28.55526,77.30239,synthetic,Medium
+REAL-0094,"NH-48, Gurugram Road",moderate,13.2,29.0,45.9,24.5,0.86,217.4,87.5,54.7,7,18921.3,0,28.6326,77.23648,real_govt_record,Low
+REAL-0474,M.G. Road,moderate,12.2,29.0,38.9,21.1,3.23,93.7,83.9,58.7,1,24017.8,0,28.63136,77.24635,real_govt_record,Low
+REAL-0198,Vir Banda Bairagi Marg,moderate,10.3,25.7,34.7,44.0,2.01,685.9,80.7,71.0,4,18442.5,1,28.62598,77.24153,real_govt_record,Low
+REAL-0186,Noida Link Road,moderate,13.5,30.6,47.6,36.4,3.52,112.3,86.5,58.8,4,24121.8,0,28.62805,77.2419,real_govt_record,Low
+REAL-0839,Bamnikhera Road,heavy,27.6,74.1,114.7,41.3,3.19,738.6,79.7,42.0,1,8460.1,1,28.62743,77.24255,real_govt_record,Low
+REAL-0422,Seelampur Road,moderate,16.2,32.4,49.1,35.2,2.1,783.1,72.4,96.8,1,17347.4,0,28.62854,77.23871,real_govt_record,Low
+REAL-0452,Chhawla Road,extreme,66.3,134.0,202.3,21.6,3.85,426.4,76.7,96.0,1,14530.4,0,28.6313,77.23389,real_govt_record,High
+REAL-0257,Burari Road,light,8.3,22.1,31.0,11.4,3.65,695.2,94.2,93.8,2,11829.6,1,28.63206,77.23633,real_govt_record,Low
+REAL-0136,Veer Banda Bairagi Marg,extreme,49.1,121.9,168.7,41.5,1.95,120.6,94.2,56.4,5,19574.3,0,28.62275,77.24135,real_govt_record,High
+REAL-0924,Captain Kumud Kumar Marg,extreme,41.4,102.4,150.6,44.9,1.01,386.4,76.7,72.3,1,16640.5,1,28.63647,77.23562,real_govt_record,Medium
+REAL-0739,Roshanara Road,heavy,31.0,73.9,104.6,15.1,2.53,138.7,82.5,78.2,1,10183.6,0,28.6263,77.23771,real_govt_record,Medium
+REAL-1008,Parade Road,extreme,36.4,93.1,135.1,41.0,3.3,685.3,83.0,58.7,1,18965.8,0,28.63262,77.23556,real_govt_record,Medium
+REAL-0720,Pragati Maidan Tunnel,extreme,43.8,90.6,135.7,13.1,0.5,284.5,74.1,44.6,1,10739.2,0,28.62469,77.23571,real_govt_record,Medium
+REAL-0584,Bhisham Pitamah Marg,extreme,50.1,124.6,182.1,22.7,1.19,241.3,81.7,95.2,1,17373.3,1,28.63236,77.2469,real_govt_record,High
+REAL-0996,Rajaji Marg,extreme,51.0,112.4,178.5,34.5,4.43,181.2,82.5,81.6,1,4160.8,1,28.6262,77.23645,real_govt_record,Medium
+SYN2-0055,SYN2-0055,synthetic_v2,69.65,143.73,222.7,5.89,4.76,485.16,90.62,65.9,1,4098.72,0,28.79071,77.1601,synthetic,Medium
+SYN2-0193,SYN2-0193,synthetic_v2,44.84,101.18,159.49,48.95,7.15,309.01,71.2,70.74,0,11581.68,0,28.67032,77.32589,synthetic,Low
+REAL-0050,Vikas Marg,moderate,18.3,43.7,59.5,9.9,2.88,143.2,86.1,63.3,17,18025.7,1,28.65305,77.28358,real_govt_record,Medium
+REAL-0342,Maharaja Surajmal Marg,moderate,18.3,45.5,66.2,29.8,4.64,228.4,83.0,57.0,2,14368.8,1,28.63311,77.24318,real_govt_record,Low
+ZONE-077,ZONE-077,synthetic_v1,28.42,90.63,156.87,26.77,4.51,286.25,78.96,22.4,2,5625.96,0,28.73931,77.2243,synthetic,Medium
+REAL-0527,Mahipalpur- Mehrauli road Mahipalpur Chowk,heavy,27.3,57.4,87.8,8.6,1.79,676.3,74.7,65.4,1,7707.7,0,28.6277,77.23851,real_govt_record,Low
+REAL-0799,Surajmal Marg,heavy,28.8,77.3,112.9,31.0,4.76,475.8,76.7,51.2,1,5803.1,1,28.62597,77.23885,real_govt_record,Low
+REAL-0954,Maa Anandmayee Marg,moderate,14.2,29.1,45.8,19.8,1.4,448.8,72.4,51.4,1,9130.9,1,28.62378,77.24556,real_govt_record,Low
+REAL-0683,NH-48 Near Loop,heavy,34.3,77.0,121.4,44.3,2.23,634.0,82.5,38.3,1,15544.7,1,28.63259,77.24458,real_govt_record,Low
+REAL-0463,JLN Marg,heavy,35.8,79.4,113.7,18.8,0.86,643.6,81.7,52.0,1,24079.2,0,28.63285,77.24333,real_govt_record,Medium
+SYN2-0172,SYN2-0172,synthetic_v2,13.33,31.69,48.92,35.16,5.85,363.57,45.41,20.56,0,23498.41,0,28.75432,77.26423,synthetic,Low
+REAL-0807,Talkatora Road,heavy,27.3,61.5,85.6,12.8,4.2,147.5,76.7,97.5,1,10892.8,0,28.63006,77.23819,real_govt_record,Low
+ZONE-145,ZONE-145,synthetic_v1,90.41,151.95,187.84,38.37,7.58,707.93,38.54,45.6,0,6396.41,1,28.62911,77.21021,synthetic,Medium
+REAL-0469,Lawrence Road,light,6.4,17.2,24.6,12.9,2.94,597.7,74.7,89.7,1,23728.3,0,28.63426,77.23802,real_govt_record,Low
+REAL-0648,Mandi House R/A,extreme,55.0,122.3,186.3,24.5,4.62,557.2,82.5,94.8,1,20693.6,1,28.62999,77.23549,real_govt_record,High
+REAL-0980,Nishad Marg,extreme,48.8,106.8,139.5,25.4,1.94,120.5,85.9,42.3,1,18006.7,1,28.62736,77.24678,real_govt_record,Medium
+REAL-0034,Bhairon Marg,moderate,21.2,46.5,72.7,8.9,3.35,668.9,72.4,74.4,21,15301.9,0,28.61047,77.24471,real_govt_record,Medium
+REAL-0417,Pusa Road,light,6.5,15.5,24.1,22.8,3.92,427.2,82.5,50.3,1,20536.2,0,28.6242,77.23597,real_govt_record,Low
+REAL-0248,Mother Teresa Crescent Marg,extreme,47.1,115.4,166.4,9.5,3.27,195.0,87.5,56.5,3,4195.2,1,28.63239,77.23405,real_govt_record,High
+REAL-0731,Ram Kumar Gautam Marg,heavy,38.7,83.0,111.5,38.6,0.53,691.4,82.5,43.6,1,20738.8,1,28.63046,77.23773,real_govt_record,Low
+ZONE-050,ZONE-050,synthetic_v1,13.43,41.61,64.86,45.56,2.53,526.09,46.4,71.86,4,14584.16,0,28.5752,77.23582,synthetic,Medium
+REAL-0971,NH-48 Near APS Colony,heavy,29.1,60.3,78.8,34.0,1.97,672.1,83.0,88.9,1,6597.1,1,28.63052,77.24134,real_govt_record,Low
+SYN2-0043,SYN2-0043,synthetic_v2,60.79,146.32,222.78,19.07,4.42,213.59,68.99,49.11,1,4663.39,0,28.78426,77.34473,synthetic,Medium
+ZONE-014,ZONE-014,synthetic_v1,33.36,109.26,157.04,39.24,3.97,63.65,32.41,43.44,2,22484.27,0,28.73668,77.27279,synthetic,Medium
+REAL-0217,Dwarka Road,light,7.6,16.5,25.8,15.1,0.65,119.4,76.7,52.1,3,8347.9,1,28.62659,77.23483,real_govt_record,Low
+SYN2-0167,SYN2-0167,synthetic_v2,98.24,185.43,257.24,22.8,7.84,519.66,59.99,80.84,2,17392.69,0,28.71589,77.23721,synthetic,High
+REAL-0979,Nishad Marg,heavy,30.7,79.6,116.5,32.8,4.25,151.0,85.9,94.4,1,23087.6,0,28.62671,77.24138,real_govt_record,Low
+REAL-0544,Jai Singh Road,extreme,39.8,108.5,160.8,42.1,4.16,275.1,74.1,87.0,1,14709.8,0,28.63132,77.23807,real_govt_record,Medium
+ZONE-006,ZONE-006,synthetic_v1,41.95,48.78,133.03,35.33,4.87,112.57,41.01,83.32,0,16926.91,0,28.58579,77.18088,synthetic,Low
+REAL-0494,NH-8 Mahipalpur Flyover,moderate,17.2,37.9,55.0,15.7,0.64,292.2,86.1,56.0,1,4228.2,1,28.63154,77.23714,real_govt_record,Low
+ZONE-141,ZONE-141,synthetic_v1,93.94,116.19,167.75,22.25,5.57,711.58,44.8,53.41,2,20220.54,0,28.76528,77.24956,synthetic,High
+REAL-0465,Khyala Road,light,5.7,15.1,21.2,37.8,2.98,169.7,82.5,65.0,1,21260.9,1,28.62651,77.23718,real_govt_record,Low
+REAL-0392,Najafgarh – Dhansa Road,extreme,44.8,121.3,164.1,11.5,3.43,340.4,85.9,94.0,2,20936.2,1,28.62685,77.23855,real_govt_record,High
+SYN2-0017,SYN2-0017,synthetic_v2,93.56,190.45,296.85,21.23,6.46,95.11,23.45,78.39,0,9517.76,0,28.63763,77.18201,synthetic,Medium
+REAL-0439,Neela Gumbad BSF,heavy,30.9,83.7,122.3,21.8,1.63,680.6,83.0,93.7,1,21913.1,1,28.62316,77.2387,real_govt_record,Medium
+REAL-0961,Najafgarh Bakkarwala Cut,light,3.1,6.6,8.7,12.9,3.31,657.5,76.7,76.5,1,8109.5,0,28.62992,77.2425,real_govt_record,Low
+REAL-0583,Bhisham Pitamah Marg,heavy,30.9,74.8,108.2,12.1,2.08,614.2,81.7,94.6,1,12096.9,1,28.62949,77.24528,real_govt_record,Medium
+SYN2-0187,SYN2-0187,synthetic_v2,26.47,62.87,89.75,5.53,5.17,245.2,36.84,89.28,3,5686.47,1,28.71588,77.25973,synthetic,High
+REAL-0327,BSZ Marg,heavy,30.8,64.7,95.5,31.9,3.35,86.0,79.7,47.8,2,13061.6,0,28.62921,77.24349,real_govt_record,Low
+REAL-0888,Rind Road,extreme,44.1,106.7,154.4,20.8,0.7,342.7,76.7,69.8,1,23253.7,0,28.62804,77.24359,real_govt_record,Medium
+ZONE-117,ZONE-117,synthetic_v1,90.52,127.04,159.76,54.03,2.52,380.62,93.15,79.54,2,23869.73,0,28.69511,77.30077,synthetic,Medium
+REAL-0466,Khyala Road,moderate,17.6,44.6,67.5,29.1,0.75,234.5,82.5,49.8,1,21497.7,0,28.62996,77.23984,real_govt_record,Low
+REAL-0554,NH-44 Khampur Singhu,moderate,17.0,37.3,51.6,34.4,4.43,379.8,72.4,58.7,1,20097.7,1,28.63312,77.23557,real_govt_record,Low
+REAL-0062,Bhairon Road,moderate,14.7,35.1,49.3,37.9,2.0,152.5,74.1,66.2,10,20900.4,0,28.61913,77.24333,real_govt_record,Low
+REAL-0419,Pusa Road,heavy,25.2,63.9,89.6,15.3,3.09,80.4,82.5,50.2,1,9537.0,0,28.62748,77.23575,real_govt_record,Low
+REAL-1001,"Sector-14 Road, Dwarka",light,4.6,10.0,14.3,18.3,0.77,311.2,79.7,71.6,1,19615.8,0,28.62615,77.23818,real_govt_record,Low
+REAL-0709,Pankha Road/ Cariappa Marg,light,7.4,20.7,30.0,45.0,4.17,151.1,86.5,63.0,1,10394.8,1,28.62863,77.24176,real_govt_record,Low
+SYN2-0155,SYN2-0155,synthetic_v2,94.53,185.58,226.13,47.3,6.16,150.1,52.55,96.94,4,7486.82,1,28.57984,77.15588,synthetic,High
+REAL-0539,Satya Niketan Road,heavy,26.6,71.5,98.1,14.9,1.76,458.1,86.1,51.5,1,9654.1,0,28.62477,77.24111,real_govt_record,Medium
+REAL-0156,Rafi Marg,extreme,44.5,94.8,123.3,43.5,3.63,639.7,83.0,93.0,4,17930.6,1,28.63563,77.2336,real_govt_record,Medium
+ZONE-079,ZONE-079,synthetic_v1,91.19,164.19,229.55,26.22,2.26,84.89,26.21,69.55,4,15331.3,1,28.7521,77.16701,synthetic,High
+REAL-0834,Badli Road,moderate,10.8,30.4,46.5,30.9,2.73,650.3,72.4,72.3,1,14900.0,1,28.63093,77.24495,real_govt_record,Low
+REAL-0083,Lala Lajpat Rai Marg,heavy,26.7,60.8,93.8,24.8,2.32,637.0,86.5,94.5,7,24976.0,0,28.62863,77.2402,real_govt_record,Medium
+REAL-0778,SPM Marg,moderate,12.5,31.0,42.9,22.2,3.58,624.8,74.7,92.6,1,16914.2,1,28.62714,77.24153,real_govt_record,Low
+REAL-0367,R.K. Ashram Marg,heavy,25.6,61.8,87.8,11.3,0.99,276.0,76.7,58.6,2,9167.9,1,28.62884,77.23502,real_govt_record,Low
+REAL-0805,Talkatora Road,light,4.5,12.7,19.8,34.1,0.68,425.7,76.7,58.2,1,24800.0,1,28.62981,77.23878,real_govt_record,Low
+REAL-0823,Ansari Road,heavy,21.5,58.9,88.3,22.8,4.31,95.1,83.9,41.8,1,5726.6,1,28.62372,77.23256,real_govt_record,Low
+REAL-0612,Geeta Colony,extreme,48.7,102.7,138.4,28.8,3.95,432.6,85.9,53.8,1,16568.7,1,28.63347,77.23844,real_govt_record,Medium
+REAL-0349,Najafgarh Road-Azad Hind Fauz Marg,light,4.0,8.9,12.2,35.5,4.96,691.5,82.5,42.0,2,4916.0,0,28.62651,77.24354,real_govt_record,Low
+ZONE-064,ZONE-064,synthetic_v1,53.11,74.6,154.03,16.64,7.54,237.77,94.24,81.41,5,2100.49,1,28.57138,77.34395,synthetic,High
+SYN2-0065,SYN2-0065,synthetic_v2,70.73,174.62,210.36,22.0,0.57,962.6,84.21,30.05,0,16926.34,1,28.71904,77.25669,synthetic,Low
+REAL-0167,Ulan Batar Marg,heavy,39.2,83.7,124.9,10.1,3.94,86.0,85.9,75.0,4,15593.9,1,28.63181,77.23582,real_govt_record,Medium
+ZONE-023,ZONE-023,synthetic_v1,13.02,90.2,156.89,24.34,4.69,514.97,47.76,94.6,1,15873.06,1,28.65473,77.31224,synthetic,Low
+SYN2-0118,SYN2-0118,synthetic_v2,84.44,175.71,230.8,49.73,5.0,332.71,56.44,11.56,1,5560.61,0,28.68384,77.2239,synthetic,Medium
+REAL-0547,Najafgarh-Nangloi Road,heavy,32.6,71.7,108.9,38.2,1.52,744.9,74.1,97.0,1,17030.6,0,28.63158,77.24134,real_govt_record,Low
+REAL-0205,Gurugram- Parade Road,light,3.1,7.4,11.2,9.6,4.14,767.1,94.2,77.1,3,13889.0,1,28.63472,77.24397,real_govt_record,Low
+ZONE-042,ZONE-042,synthetic_v1,32.51,37.92,57.73,5.91,4.47,655.79,77.25,68.05,5,18347.2,1,28.65431,77.31934,synthetic,High
+REAL-0710,Pankha Road/ Cariappa Marg,moderate,19.4,45.3,66.7,16.0,2.53,320.1,86.5,86.5,1,10309.2,0,28.62383,77.24271,real_govt_record,Low
+REAL-0606,Gazipur Dairy Farm,moderate,17.4,35.1,52.4,26.3,0.9,529.4,85.9,37.8,1,13902.2,0,28.63306,77.2368,real_govt_record,Low
+SYN2-0189,SYN2-0189,synthetic_v2,27.33,68.0,99.46,58.49,2.3,926.96,36.59,76.96,3,24992.57,1,28.67904,77.18994,synthetic,Medium
+REAL-0187,Noida Link Road,heavy,27.7,69.3,97.3,8.6,3.97,246.7,86.5,72.5,4,15048.4,1,28.62533,77.23901,real_govt_record,Medium
+SYN2-0150,SYN2-0150,synthetic_v2,85.9,176.85,217.99,20.41,6.06,372.42,56.41,68.86,3,6503.62,0,28.65104,77.24671,synthetic,High
+SYN2-0075,SYN2-0075,synthetic_v2,20.81,40.62,53.43,42.9,3.59,470.1,60.5,61.8,3,15453.98,1,28.67189,77.21507,synthetic,Medium
+REAL-0010,Outer Ring Road,moderate,19.9,43.3,58.3,31.3,2.99,565.2,86.1,59.8,48,14132.8,0,28.57527,77.18471,real_govt_record,Medium
+REAL-0011,Outer Ring Road,heavy,27.9,56.4,77.4,34.1,1.66,667.8,86.1,73.2,48,10162.1,0,28.57832,77.18995,real_govt_record,Medium
+SYN2-0179,SYN2-0179,synthetic_v2,22.15,53.27,74.66,47.8,0.85,325.16,88.63,43.32,2,7638.07,1,28.62386,77.33239,synthetic,Low
+ZONE-010,ZONE-010,synthetic_v1,89.39,96.05,140.07,58.08,4.11,357.6,58.55,51.05,1,9412.84,0,28.57789,77.26862,synthetic,Low
+REAL-0722,Rail Bhawan Rafi Marg,moderate,22.9,54.8,79.3,14.4,0.8,441.3,86.1,38.0,1,10299.0,1,28.62533,77.23742,real_govt_record,Low
+REAL-0631,Lodhi Road,heavy,33.8,68.4,89.3,21.4,2.97,508.1,83.0,56.3,1,19143.8,1,28.63374,77.24052,real_govt_record,Low
+REAL-0817,Vinay Marg,light,8.8,17.7,25.6,10.8,4.4,781.9,86.1,54.8,1,22040.2,1,28.63538,77.2347,real_govt_record,Low
+REAL-0747,Sant Durbal Nath Mandir Marg,heavy,26.4,61.5,87.7,39.2,1.46,538.2,76.7,94.3,1,4541.3,1,28.63514,77.23657,real_govt_record,Low
+SYN2-0108,SYN2-0108,synthetic_v2,93.58,210.59,278.1,21.15,7.89,53.93,31.99,82.99,1,10555.93,1,28.6167,77.34648,synthetic,High
+REAL-0556,NH-44 Khampur Singhu,extreme,39.4,109.5,152.8,43.6,4.95,212.9,72.4,59.8,1,11557.2,1,28.62938,77.24119,real_govt_record,Medium
+REAL-0290,Old Patparganj Road,moderate,24.3,50.1,76.0,32.9,2.58,450.0,72.4,72.1,2,15030.2,0,28.63434,77.23725,real_govt_record,Low
+REAL-0972,NH-48 Near APS Colony,extreme,56.0,132.6,197.4,18.6,4.46,348.4,83.0,67.2,1,24560.8,0,28.63021,77.24501,real_govt_record,High
+REAL-0428,Shastri Park Road,extreme,55.6,137.9,212.0,34.7,3.05,340.5,86.1,55.0,1,21134.2,0,28.63602,77.23635,real_govt_record,High
+REAL-0562,Abai Marg-San Martin Marg,moderate,11.8,28.8,44.4,26.1,2.38,445.1,72.4,80.3,1,23530.7,1,28.62809,77.24152,real_govt_record,Low
+REAL-0838,Bamnikhera Road,moderate,10.0,28.4,39.0,19.6,3.01,730.7,79.7,67.7,1,22115.4,1,28.62382,77.24122,real_govt_record,Low
+SYN2-0117,SYN2-0117,synthetic_v2,61.01,114.33,168.18,48.07,2.53,400.42,40.74,57.09,0,5180.77,0,28.71004,77.23827,synthetic,Low
+REAL-0908,August Kranti Marg,extreme,40.7,115.1,150.0,20.5,1.83,694.3,72.4,90.8,1,23891.5,1,28.62873,77.23661,real_govt_record,High
+REAL-0122,Rani Jhansi Marg,moderate,17.3,39.7,56.0,18.6,3.87,450.5,86.5,50.2,5,9235.4,1,28.63455,77.24719,real_govt_record,Low
+REAL-0657,Najafgarh-kapashera Road,light,3.6,8.2,12.6,42.1,0.87,620.7,94.2,71.9,1,24349.8,1,28.62822,77.23782,real_govt_record,Low
+REAL-0890,Sai Hospital Road,moderate,11.7,28.7,45.9,44.3,1.64,230.8,72.4,60.2,1,8023.9,1,28.62869,77.23963,real_govt_record,Low
+REAL-0768,"Sector 22, Dwarka",extreme,62.6,130.6,192.2,15.9,5.0,683.2,76.7,91.5,1,8200.7,1,28.63591,77.2392,real_govt_record,High
+REAL-0152,Tuglak Road,extreme,47.8,123.6,175.9,12.9,4.53,238.7,83.0,61.9,4,11173.0,0,28.62597,77.23466,real_govt_record,High
+REAL-0113,Shyama Prasad Mukherjee Marg,light,7.7,16.3,26.0,19.0,3.52,739.3,76.7,48.8,6,18473.4,0,28.63621,77.24468,real_govt_record,Low
+REAL-0992,Police Colony,extreme,58.1,123.1,161.5,41.7,4.67,743.4,86.1,55.5,1,22045.2,1,28.62595,77.2442,real_govt_record,Medium
+REAL-0424,Seelampur Road,extreme,49.0,124.2,186.2,44.8,3.57,286.3,72.4,82.8,1,14465.9,0,28.62853,77.2418,real_govt_record,Medium
+SYN2-0137,SYN2-0137,synthetic_v2,87.44,166.51,245.56,22.27,3.19,755.54,45.43,98.43,4,9471.62,1,28.61375,77.2618,synthetic,High
+REAL-0131,Kautilya Marg,heavy,23.8,65.8,89.1,25.9,4.99,201.7,85.9,90.5,5,14169.3,1,28.628,77.2423,real_govt_record,Low
+REAL-0462,JLN Marg,moderate,19.5,47.8,68.3,32.1,1.43,614.9,81.7,93.9,1,22496.7,0,28.63303,77.24181,real_govt_record,Low
+REAL-0820,Vinay Marg,extreme,51.6,132.2,183.0,38.1,1.86,65.6,86.1,69.4,1,19003.9,1,28.63287,77.23977,real_govt_record,High
+REAL-0134,Veer Banda Bairagi Marg,moderate,19.2,40.8,62.7,35.2,2.3,652.3,94.2,88.0,5,20121.8,0,28.62809,77.24346,real_govt_record,Low
+REAL-0001,Ring Road,light,6.7,14.0,19.0,37.7,2.64,510.5,82.5,46.9,145,13378.5,0,28.62406,77.24546,real_govt_record,Low
+REAL-0973,NH-48 Shiv Murti,light,6.7,18.0,23.9,29.2,4.56,457.5,86.5,55.5,1,9251.2,0,28.62634,77.23904,real_govt_record,Low
+ZONE-065,ZONE-065,synthetic_v1,45.36,53.0,140.65,58.23,6.65,938.81,32.44,36.2,2,14863.49,1,28.60818,77.34384,synthetic,Low
+SYN2-0126,SYN2-0126,synthetic_v2,84.6,168.65,222.46,18.08,2.72,875.53,56.55,92.08,3,21482.11,1,28.70405,77.15689,synthetic,High
+REAL-0700,Old GT Road/ Ansari Road,extreme,37.1,100.6,156.8,27.3,2.58,193.3,79.7,94.1,1,18419.7,1,28.62536,77.23777,real_govt_record,Medium
+REAL-0881,Raj Niwas Marg,light,9.3,20.4,27.9,40.5,4.62,117.1,87.5,55.3,1,17925.3,0,28.62696,77.24275,real_govt_record,Low
+REAL-0822,Ansari Road,moderate,17.3,48.4,66.8,10.1,1.88,644.3,83.9,37.7,1,19206.3,0,28.62407,77.23711,real_govt_record,Low
+SYN2-0059,SYN2-0059,synthetic_v2,5.23,13.01,16.57,52.92,1.46,509.06,47.38,38.1,5,15091.85,1,28.7427,77.20117,synthetic,Medium
+SYN2-0005,SYN2-0005,synthetic_v2,56.5,142.13,196.41,17.01,1.62,638.67,29.55,81.56,3,7474.61,0,28.77969,77.26854,synthetic,High
+REAL-0412,NH-24 Gazipur Mandi,extreme,59.3,128.7,180.6,26.2,4.73,96.0,74.1,40.3,1,17442.6,0,28.6269,77.24018,real_govt_record,High
+REAL-0323,Baba Kharak Singh Marg,heavy,33.2,72.3,112.0,19.7,1.41,383.9,90.9,64.4,2,13224.4,0,28.62583,77.23463,real_govt_record,Medium
+REAL-0002,Ring Road,moderate,16.3,45.8,73.0,43.7,3.44,511.7,82.5,45.1,145,4315.0,0,28.62388,77.24174,real_govt_record,Medium
+REAL-0855,DDU Marg,heavy,23.1,57.6,80.9,18.9,0.69,321.7,74.7,82.7,1,24616.7,0,28.6283,77.24086,real_govt_record,Low
+REAL-0436,Teen Murti Marge,extreme,63.8,133.7,184.6,22.1,4.88,756.9,86.1,76.0,1,17229.4,1,28.62996,77.24357,real_govt_record,High
+REAL-0453,Dhaula Kuan Dhaula,light,7.3,20.7,30.4,43.6,1.67,270.3,87.5,91.9,1,8936.8,0,28.63043,77.23859,real_govt_record,Low
+REAL-0039,"Firni Road, Najafgarh",heavy,28.2,57.2,82.3,36.3,1.97,400.2,83.0,68.0,21,13031.7,1,28.60907,76.97717,real_govt_record,Medium
+REAL-0184,Netaji Subhash Marg/,extreme,49.0,134.9,211.8,17.5,1.49,254.4,81.7,44.7,4,15365.6,0,28.62947,77.24711,real_govt_record,High
+REAL-0218,Dwarka Road,moderate,11.1,31.3,48.9,31.0,0.9,601.3,76.7,75.0,3,15558.5,1,28.62943,77.23525,real_govt_record,Low
+REAL-0833,Badli Road,light,4.8,13.4,17.7,34.4,2.87,494.7,72.4,96.3,1,10231.2,0,28.62901,77.24453,real_govt_record,Low
+REAL-0307,Old Gurugram Road,heavy,33.5,69.3,109.9,36.7,4.11,796.7,86.5,43.5,2,10522.8,1,28.62294,77.23848,real_govt_record,Low
+REAL-0730,Ram Kumar Gautam Marg,moderate,19.5,54.1,84.5,12.2,1.59,543.4,82.5,38.3,1,20072.3,1,28.63061,77.2391,real_govt_record,Low
+REAL-0441,Akbar Road,light,3.4,9.4,12.6,43.1,4.93,735.3,74.1,43.7,1,8236.1,0,28.62252,77.24021,real_govt_record,Low
+REAL-0550,MG Road,moderate,17.7,41.0,56.0,13.4,1.57,278.1,80.7,65.2,1,23781.9,1,28.63012,77.23829,real_govt_record,Low
+REAL-0314,NH-8 Near Shiv,moderate,14.3,35.0,56.0,18.1,0.88,63.6,80.7,89.3,2,7356.3,1,28.62741,77.23615,real_govt_record,Low
+ZONE-016,ZONE-016,synthetic_v1,94.44,168.72,240.97,47.33,2.53,572.98,33.72,66.53,2,7130.42,1,28.739,77.33204,synthetic,High
+REAL-0701,Old Seelam Pur,light,6.8,19.1,26.9,38.3,3.22,592.0,72.4,91.7,1,9426.5,0,28.63112,77.23446,real_govt_record,Low
+REAL-0332,CV Raman Marg,extreme,53.0,121.1,169.2,22.0,3.06,235.3,87.5,76.1,2,22144.4,0,28.63175,77.23592,real_govt_record,High
+REAL-0037,"Firni Road, Najafgarh",light,11.5,23.2,31.0,26.7,3.91,427.1,83.0,78.9,21,7969.2,0,28.61188,76.97311,real_govt_record,Low
+REAL-0111,Patparganj Road,heavy,26.9,75.8,105.6,23.7,2.95,152.0,87.5,80.2,6,9468.2,1,28.63342,77.238,real_govt_record,Medium
+REAL-0919,Captain Gaur Marg,heavy,30.4,78.2,113.6,43.8,3.14,691.1,85.9,36.6,1,22163.3,0,28.62912,77.24257,real_govt_record,Low
+SYN2-0114,SYN2-0114,synthetic_v2,28.91,56.13,73.85,52.74,4.28,775.34,81.77,40.83,5,9653.8,1,28.67749,77.25518,synthetic,High
+ZONE-073,ZONE-073,synthetic_v1,55.03,113.06,180.81,35.16,6.94,733.26,44.34,38.21,0,15483.58,1,28.55631,77.1879,synthetic,Low
+REAL-0746,Sant Durbal Nath Mandir Marg,moderate,25.2,52.4,75.2,40.5,0.73,226.4,76.7,61.6,1,12865.4,0,28.63182,77.23335,real_govt_record,Low
+REAL-0938,Goyla Dairy Road,moderate,21.6,49.3,64.7,19.2,1.03,131.6,72.4,49.5,1,5378.4,1,28.63218,77.23711,real_govt_record,Low
+REAL-0776,Shanti Path- Panchsheel Marg,extreme,46.8,97.5,141.0,27.1,1.74,466.4,82.5,55.0,1,4341.5,0,28.62948,77.23644,real_govt_record,Medium
+REAL-0848,Chand Cinema Road,extreme,53.6,137.5,188.7,21.5,0.62,498.4,86.1,61.7,1,21698.1,1,28.62778,77.23526,real_govt_record,High
+REAL-0714,"Pocket-16, Sector-22, Rohini",moderate,21.5,44.1,65.0,36.5,2.28,561.4,87.5,59.6,1,10433.1,1,28.63227,77.23982,real_govt_record,Low
+REAL-0578,Benito Juarez Marg,moderate,12.9,33.3,50.0,44.5,3.04,518.8,94.2,59.8,1,20819.3,1,28.63299,77.24391,real_govt_record,Low
+ZONE-098,ZONE-098,synthetic_v1,65.74,126.32,197.98,50.38,7.34,729.45,58.72,96.57,1,22655.92,0,28.75246,77.33747,synthetic,Low
+REAL-0434,Teen Murti Marge,moderate,18.9,46.9,69.7,11.8,1.93,470.5,86.1,74.1,1,13740.0,0,28.62696,77.24368,real_govt_record,Low
+REAL-0164,Panchsheel Marg,extreme,58.8,137.5,200.5,35.1,2.18,495.0,74.7,41.7,4,18439.1,1,28.63181,77.23912,real_govt_record,High
+REAL-0264,Purana Quila Road,extreme,60.8,128.2,201.7,14.6,2.73,280.1,90.9,61.7,2,20263.4,0,28.62531,77.23972,real_govt_record,High
+REAL-0232,Kemal Ataturk Marg,extreme,40.3,102.4,141.1,8.6,1.9,494.0,83.0,52.2,3,6372.4,0,28.62652,77.23862,real_govt_record,High
+REAL-0303,Thimayya Marg,heavy,37.6,89.7,117.0,30.7,3.37,697.3,90.9,74.2,2,11630.3,0,28.63506,77.24229,real_govt_record,Medium
+REAL-0963,Najafgarh Bakkarwala Cut,heavy,28.6,62.3,97.7,44.9,1.65,575.0,76.7,59.0,1,14511.9,1,28.63073,77.24043,real_govt_record,Low
+REAL-0176,Loni Road,extreme,55.9,138.5,192.6,17.1,1.2,789.5,90.9,90.1,4,19489.3,1,28.62734,77.2443,real_govt_record,High
+SYN2-0148,SYN2-0148,synthetic_v2,48.46,118.33,161.46,47.23,7.3,123.93,24.72,13.65,3,14625.99,0,28.68486,77.1741,synthetic,High
+REAL-0150,Tuglak Road,moderate,16.1,35.4,48.5,29.4,1.78,704.5,83.0,53.3,4,21943.9,1,28.62404,77.23692,real_govt_record,Low
+SYN2-0141,SYN2-0141,synthetic_v2,68.78,139.8,198.96,43.55,4.63,229.71,33.02,84.53,2,9733.61,0,28.79051,77.18007,synthetic,Medium
+REAL-0918,Captain Gaur Marg,moderate,17.2,40.0,61.1,43.3,2.55,440.9,85.9,71.0,1,11786.3,0,28.62989,77.24239,real_govt_record,Low
+REAL-0072,NH-24/Delhi- Meerut Expressway,extreme,43.5,116.3,180.2,19.5,1.9,107.0,79.7,54.6,10,13811.8,0,28.62866,77.23859,real_govt_record,High
+REAL-0169,Boulevard Road,light,8.7,18.5,26.5,41.2,3.77,676.6,82.5,96.2,4,11474.4,0,28.63307,77.23578,real_govt_record,Low
+REAL-0456,Dhaula Kuan Dhaula,extreme,63.8,138.2,205.3,26.8,1.01,597.8,87.5,47.6,1,11971.8,0,28.629,77.24301,real_govt_record,High
+REAL-0090,Press Enclave Road,moderate,20.4,42.0,55.8,37.3,1.06,453.2,80.7,95.9,7,4012.1,0,28.63547,77.23759,real_govt_record,Low
+REAL-0118,Sector 14 Road,moderate,15.7,35.9,56.8,36.5,3.32,515.6,83.9,61.3,6,12727.0,1,28.6271,77.23804,real_govt_record,Low
+REAL-0488,Mangolpuri- Udhyog Nagar,extreme,41.4,112.3,176.7,20.7,3.25,95.3,76.7,95.8,1,24588.1,0,28.63138,77.23732,real_govt_record,High
+REAL-0322,Baba Kharak Singh Marg,moderate,23.2,49.0,65.7,19.2,1.15,418.4,90.9,36.8,2,22220.2,1,28.62941,77.23316,real_govt_record,Low
+SYN2-0106,SYN2-0106,synthetic_v2,10.15,24.88,38.01,22.78,6.18,96.67,40.17,48.73,4,9184.77,1,28.78909,77.15172,synthetic,High
+REAL-0460,Gulab Singh Marg,extreme,49.8,114.8,157.9,23.3,4.88,450.7,72.4,60.7,1,10398.8,1,28.63034,77.24405,real_govt_record,High
+SYN2-0166,SYN2-0166,synthetic_v2,97.3,179.23,249.84,26.52,1.82,986.52,25.2,15.43,2,19679.61,0,28.69387,77.24372,synthetic,High
+REAL-0987,Patel Road,heavy,34.5,82.7,114.8,17.3,4.85,156.6,74.1,87.3,1,5043.2,0,28.62582,77.23573,real_govt_record,Medium
+ZONE-030,ZONE-030,synthetic_v1,22.65,95.59,141.99,19.49,2.27,231.68,62.99,50.33,2,24255.63,0,28.6631,77.21604,synthetic,Medium
+REAL-0242,Teen Murti Marg,moderate,10.7,27.5,41.5,22.1,4.71,549.0,85.9,42.7,3,17305.5,1,28.62768,77.24076,real_govt_record,Low
+REAL-0699,Old GT Road/ Ansari Road,heavy,34.2,69.2,96.5,38.1,1.83,581.0,79.7,90.8,1,24775.0,0,28.62403,77.23998,real_govt_record,Low
+REAL-0861,Dr. K.S. Krishnan Marg,light,9.9,23.6,33.2,34.2,1.49,424.9,74.1,70.9,1,16388.3,1,28.62767,77.23664,real_govt_record,Low
+ZONE-086,ZONE-086,synthetic_v1,62.47,67.87,79.47,25.88,5.5,333.63,44.43,60.65,1,5009.72,1,28.5642,77.293,synthetic,Low
+REAL-0703,Old Seelam Pur,heavy,32.9,74.6,106.3,41.4,1.75,251.8,72.4,52.2,1,14777.2,1,28.63305,77.23719,real_govt_record,Low
+REAL-0585,Brigadier Hoshiyar Singh Marg,light,7.8,17.4,25.1,26.9,4.35,264.4,74.1,98.2,1,5276.2,1,28.62915,77.24403,real_govt_record,Low
+REAL-0693,NH-8 Near Uppal,light,8.6,22.3,33.8,14.8,4.71,352.5,94.2,50.9,1,4658.8,1,28.62912,77.2417,real_govt_record,Low
+REAL-0271,Azad Market Road,heavy,21.0,58.3,88.0,42.9,4.1,749.5,82.5,86.6,2,10415.2,1,28.62341,77.23833,real_govt_record,Low
+REAL-0112,Patparganj Road,extreme,39.3,100.2,151.7,23.0,2.24,699.5,87.5,49.5,6,10133.6,1,28.63309,77.23796,real_govt_record,Medium
+REAL-0596,Dadri Main Road,extreme,46.9,106.9,146.3,15.8,1.78,724.3,87.5,52.1,1,19016.6,0,28.63095,77.2357,real_govt_record,Medium
+REAL-0786,Sunheri Masjid R/A,moderate,15.5,38.3,55.4,34.2,1.39,257.0,82.5,66.5,1,6404.1,0,28.62866,77.23578,real_govt_record,Low
+REAL-0517,Vande Matram Marg,light,5.1,10.4,16.1,12.0,4.48,60.3,83.9,55.8,1,8389.1,0,28.62751,77.24147,real_govt_record,Low
+REAL-0227,Dwarka Near Sector,heavy,36.2,79.6,111.5,40.5,1.48,405.4,80.7,55.1,3,13279.1,1,28.63256,77.2462,real_govt_record,Low
+REAL-0497,Old GT Road,light,5.5,15.0,22.4,33.6,1.61,250.5,86.1,36.5,1,13425.2,1,28.62949,77.2363,real_govt_record,Low
+REAL-0842,Bhiku Ram Jain Marg,moderate,14.3,30.4,47.0,20.6,4.53,349.7,86.1,73.1,1,20331.6,1,28.62951,77.24256,real_govt_record,Low
+REAL-0499,Old GT Road,heavy,28.1,60.9,85.7,9.4,3.46,241.2,86.1,91.8,1,7795.3,1,28.62755,77.24143,real_govt_record,Low
+REAL-1018,TT Park Road,moderate,22.2,47.5,75.8,17.6,0.67,789.8,87.5,91.1,1,5856.2,0,28.62316,77.24705,real_govt_record,Low
+ZONE-131,ZONE-131,synthetic_v1,24.87,97.73,111.78,56.05,6.8,600.2,47.61,43.51,3,12955.08,1,28.70105,77.16345,synthetic,Medium
+REAL-0196,Subramaniam Bharti Marg,extreme,40.2,95.2,149.3,30.1,2.08,798.0,87.5,66.3,4,4819.2,0,28.63481,77.24733,real_govt_record,Medium
+REAL-0337,Kanhiya Nagar Kanhiya,light,4.5,12.1,17.6,27.2,2.02,167.6,94.2,63.1,2,6508.8,1,28.63048,77.24522,real_govt_record,Low
+REAL-0958,Maharishi Dayanand Marg,moderate,14.8,31.2,47.3,16.4,4.42,312.3,90.9,41.1,1,22308.9,0,28.63048,77.2356,real_govt_record,Low
+ZONE-021,ZONE-021,synthetic_v1,31.27,90.76,123.36,36.78,3.25,928.68,56.33,14.95,5,2260.82,0,28.78038,77.17018,synthetic,High
+REAL-0889,Sai Hospital Road,light,8.3,21.0,31.7,26.5,3.22,680.4,72.4,66.0,1,9895.4,0,28.62845,77.23501,real_govt_record,Low
+REAL-0138,Mehrauli-Mahipalpur Road,moderate,11.8,27.0,39.8,19.9,2.63,754.0,83.0,67.0,5,20388.7,0,28.62992,77.23448,real_govt_record,Low
+SYN2-0109,SYN2-0109,synthetic_v2,90.66,191.23,302.74,56.42,1.57,637.87,36.99,41.02,2,12748.43,0,28.69664,77.19347,synthetic,High
+REAL-0529,Manas Marg,light,11.3,24.7,34.5,44.8,2.54,146.7,74.7,81.1,1,4194.5,0,28.62943,77.2379,real_govt_record,Low
+REAL-0508,Old Palam Road,extreme,41.4,115.3,151.2,11.2,1.08,181.9,79.7,54.0,1,7155.7,1,28.62791,77.23855,real_govt_record,High
+SYN2-0113,SYN2-0113,synthetic_v2,27.76,65.31,101.91,10.96,3.6,673.98,36.66,62.38,3,13903.76,1,28.70125,77.31831,synthetic,High
+REAL-0394,"Sector-13 Road, Dwarka",moderate,26.7,53.5,71.1,30.8,3.33,601.8,86.5,64.8,2,7561.1,1,28.62307,77.23777,real_govt_record,Low
+REAL-0383,IP Marg,heavy,28.7,61.1,90.8,31.6,0.84,323.7,87.5,81.9,2,6335.4,0,28.63292,77.23446,real_govt_record,Low
+REAL-0222,Mandi Road,moderate,14.8,32.5,47.7,28.1,4.94,152.4,87.5,85.0,3,10820.1,0,28.62586,77.23938,real_govt_record,Low
+REAL-0757,Sarojini Nagar Market,light,5.0,13.5,20.5,20.3,2.81,254.3,86.5,84.0,1,18718.8,1,28.6317,77.24335,real_govt_record,Low
+REAL-0410,NH-24 Gazipur Mandi,moderate,20.2,43.8,69.5,34.8,1.76,125.6,74.1,46.1,1,9439.2,1,28.62585,77.23457,real_govt_record,Low
+REAL-0678,NH-48 Jharela Village,moderate,15.5,35.0,48.4,31.0,3.95,260.2,83.9,49.2,1,15909.3,0,28.63632,77.24075,real_govt_record,Low
+REAL-0896,Shalimar Bagh,extreme,54.7,117.7,173.1,24.1,4.32,276.6,80.7,87.8,1,13346.1,0,28.6266,77.23601,real_govt_record,High
+REAL-0329,CV Raman Marg,light,10.7,23.2,32.1,30.4,1.8,619.7,87.5,51.5,2,22257.6,0,28.63311,77.23653,real_govt_record,Low
+REAL-0013,M.B. Road,light,7.7,15.6,20.7,13.1,2.53,298.2,83.0,81.9,42,14960.7,0,28.50614,77.2593,real_govt_record,Medium
+REAL-0086,Najafgarh Road,moderate,22.8,52.4,74.5,18.4,4.5,397.6,86.1,92.9,7,18495.9,1,28.62606,77.234,real_govt_record,Low
+REAL-0084,Lala Lajpat Rai Marg,extreme,51.7,126.9,187.5,37.7,0.57,199.7,86.5,65.0,7,7002.7,1,28.62749,77.2386,real_govt_record,High
+REAL-0207,Gurugram- Parade Road,heavy,27.3,59.4,78.3,40.1,3.96,639.0,94.2,90.9,3,15952.1,1,28.63295,77.24305,real_govt_record,Low
+REAL-0104,Girdhari Lal Goswami Marg,extreme,45.3,127.2,174.5,40.9,1.14,344.7,72.4,54.1,6,12913.2,0,28.63506,77.24465,real_govt_record,High
+REAL-0859,Dr. Bhim Rao Ambedkar Marg,heavy,20.6,56.9,77.9,41.9,2.13,576.8,74.7,53.2,1,10135.0,0,28.63338,77.238,real_govt_record,Low
+REAL-0310,Bawana Road,moderate,15.4,32.6,43.3,29.5,0.84,124.4,82.5,95.7,2,6663.6,0,28.63659,77.23338,real_govt_record,Low
+REAL-0936,GGR-PDR RR Hospital,extreme,40.5,93.3,146.5,13.6,1.74,403.3,83.9,63.2,1,17263.9,1,28.63438,77.23322,real_govt_record,Medium
+REAL-0735,Rani Jhansi Road,heavy,27.1,76.2,106.2,10.0,0.58,521.2,86.1,81.4,1,23220.1,0,28.63321,77.23727,real_govt_record,Medium
+SYN2-0031,SYN2-0031,synthetic_v2,95.42,241.62,302.28,32.95,3.18,244.88,60.06,98.52,0,18356.22,0,28.64242,77.32703,synthetic,Medium
+REAL-0181,Netaji Subhash Marg/,light,8.1,16.5,25.1,19.2,0.51,750.1,81.7,96.5,4,8101.3,1,28.62618,77.24673,real_govt_record,Low
+REAL-0804,Swami Dayanand Marg,extreme,42.4,111.7,155.5,19.7,0.9,54.4,87.5,85.2,1,17045.9,1,28.62523,77.24082,real_govt_record,Medium
+REAL-0695,NH-8 Near Uppal,heavy,27.7,57.5,75.5,30.5,3.14,543.6,94.2,63.7,1,13469.2,1,28.63073,77.24005,real_govt_record,Low
+SYN2-0115,SYN2-0115,synthetic_v2,49.73,107.61,138.2,36.56,6.92,291.95,53.41,43.59,2,17131.4,0,28.56391,77.21906,synthetic,Medium
+SYN2-0157,SYN2-0157,synthetic_v2,58.65,144.77,217.73,32.43,1.99,991.4,45.42,66.68,4,6281.06,0,28.55113,77.19232,synthetic,High
+REAL-0498,Old GT Road,moderate,14.7,36.0,49.3,37.4,4.3,63.5,86.1,85.3,1,22507.4,0,28.62793,77.24168,real_govt_record,Low
+REAL-0317,Ashok Vihar Market,light,6.6,18.7,29.5,40.1,4.4,84.7,85.9,95.7,2,9016.1,0,28.63168,77.23588,real_govt_record,Low
+REAL-0142,Minto Road,moderate,25.2,54.8,76.4,35.3,4.95,351.6,80.7,90.5,5,6660.5,1,28.63104,77.23814,real_govt_record,Low
+ZONE-084,ZONE-084,synthetic_v1,12.81,41.91,120.62,50.28,7.48,929.46,56.06,41.1,4,22184.87,0,28.68669,77.17971,synthetic,Medium
+REAL-0328,BSZ Marg,extreme,40.0,92.3,131.3,42.4,1.43,203.6,79.7,36.0,2,4602.3,1,28.62658,77.24202,real_govt_record,Medium
+SYN2-0176,SYN2-0176,synthetic_v2,31.23,60.24,83.28,46.84,3.78,482.74,61.84,69.32,2,7423.99,0,28.77608,77.32581,synthetic,Low
+REAL-0661,Near Zakir Nagar Main Road,light,5.5,14.8,21.4,23.7,3.56,414.3,76.7,50.5,1,8188.2,1,28.63591,77.2429,real_govt_record,Low
+REAL-0347,Motilal Nehru Marg,heavy,30.3,78.6,111.0,25.7,0.99,743.1,90.9,65.9,2,8204.9,1,28.632,77.24053,real_govt_record,Medium
+REAL-0829,Avantika Market Marg,light,4.9,13.4,21.2,33.8,1.52,535.5,87.5,78.2,1,19829.0,1,28.62881,77.23972,real_govt_record,Low
+REAL-0211,GT Road,heavy,28.1,67.7,96.1,20.6,4.81,271.7,83.9,90.0,3,21990.4,1,28.62602,77.23939,real_govt_record,Medium
+REAL-0568,Army Battle Honours Mess (ABHM) Marg,extreme,39.7,103.6,159.6,8.5,2.92,779.5,90.9,51.2,1,13524.8,0,28.63076,77.2349,real_govt_record,Medium
+REAL-0143,Minto Road,heavy,40.9,87.3,117.2,12.2,0.97,238.8,80.7,51.7,5,7883.1,0,28.63464,77.23852,real_govt_record,Medium
+REAL-0515,Palam Road,heavy,34.4,84.8,120.5,23.1,1.39,310.4,82.5,41.7,1,24461.7,0,28.63628,77.23402,real_govt_record,Medium
+REAL-0363,Old Delhi Gurugram Road,heavy,31.2,81.4,114.0,35.4,3.49,747.9,76.7,63.9,2,20106.5,1,28.62906,77.23985,real_govt_record,Medium
+REAL-0005,Rohtak Road,light,4.5,9.3,12.2,21.9,3.69,364.8,72.4,71.2,88,8168.3,1,28.65789,77.13345,real_govt_record,Low
+REAL-0045,Wazirabad Road,light,2.0,5.2,7.2,20.6,2.93,361.8,80.7,68.3,18,21774.1,0,28.71133,77.22681,real_govt_record,Low
+REAL-0865,Kela Godam Road,light,3.4,8.6,12.8,31.1,2.11,451.6,74.7,42.2,1,4293.2,0,28.62681,77.23345,real_govt_record,Low
+REAL-0282,Mata Mandir Road,moderate,17.3,45.1,63.4,11.0,1.51,135.6,82.5,85.3,2,5236.6,1,28.6287,77.23681,real_govt_record,Low
+REAL-0892,Sai Hospital Road,extreme,52.0,118.6,169.0,28.8,4.26,228.5,72.4,58.2,1,19677.5,0,28.62743,77.23657,real_govt_record,High
+REAL-0203,Okhla Road,heavy,30.0,63.2,97.3,17.4,4.56,428.0,72.4,62.3,4,15658.6,0,28.62778,77.23586,real_govt_record,Medium
+REAL-0815,Urban Extension Road,heavy,29.3,67.8,93.2,14.7,2.87,661.4,87.5,97.0,1,12682.9,0,28.62302,77.24334,real_govt_record,Low
+ZONE-001,ZONE-001,synthetic_v1,24.35,75.96,113.12,58.13,1.85,568.38,95.56,74.93,1,15309.99,1,28.67252,77.20357,synthetic,Low
+REAL-0878,Max Hospital Road,moderate,12.2,25.9,33.8,23.7,4.69,110.1,72.4,72.2,1,17878.8,1,28.63153,77.241,real_govt_record,Low
+REAL-0359,NH-48 Dhaula Kuan,heavy,32.7,74.2,106.0,16.9,1.87,572.6,74.1,91.7,2,10695.0,1,28.63029,77.23425,real_govt_record,Medium
+REAL-0564,Abai Marg-San Martin Marg,extreme,50.9,139.7,216.8,23.0,0.77,334.9,72.4,77.4,1,22127.1,1,28.62686,77.24249,real_govt_record,High
+REAL-0952,Krishna Menon Marg,extreme,53.3,131.0,181.8,44.0,1.17,162.7,74.1,95.8,1,21167.6,1,28.63322,77.23848,real_govt_record,High
+REAL-0372,Rajpur Road,extreme,41.9,108.8,155.1,33.7,2.18,558.6,82.5,83.3,2,23288.5,0,28.63683,77.23904,real_govt_record,Medium
+ZONE-041,ZONE-041,synthetic_v1,59.16,116.71,202.08,31.55,3.62,537.12,86.96,63.16,5,13143.02,0,28.63858,77.23753,synthetic,High
+ZONE-034,ZONE-034,synthetic_v1,92.42,117.69,215.06,52.25,0.78,390.21,64.33,24.93,1,19353.18,1,28.68916,77.2658,synthetic,Low
+REAL-0891,Sai Hospital Road,heavy,26.1,60.0,84.5,16.1,2.1,637.0,72.4,87.8,1,23711.3,1,28.62976,77.23477,real_govt_record,Low
+ZONE-093,ZONE-093,synthetic_v1,27.52,71.74,111.15,57.18,5.87,187.89,78.26,98.53,2,13738.93,1,28.57541,77.31105,synthetic,Low
+REAL-0238,Satya Marg,moderate,26.7,54.7,81.2,8.5,3.75,743.4,79.7,73.7,3,9098.2,1,28.63151,77.24223,real_govt_record,Low
+REAL-0524,Mahipalpur to Gurugram,extreme,34.2,92.6,130.8,24.0,3.17,746.1,76.7,48.0,1,9684.5,0,28.62451,77.23963,real_govt_record,Medium
+REAL-0684,NH-48 Near Loop,extreme,37.7,95.7,148.8,10.3,3.66,344.7,82.5,49.3,1,23863.0,0,28.63262,77.24046,real_govt_record,Medium
+REAL-0274,Kanjhawala Road,moderate,15.1,40.1,59.6,19.1,1.93,272.0,82.5,53.9,2,5644.3,1,28.62906,77.24,real_govt_record,Low
+ZONE-136,ZONE-136,synthetic_v1,62.37,83.66,162.61,49.35,4.2,344.37,95.11,34.75,1,24469.2,0,28.55379,77.18672,synthetic,Low
+REAL-0633,Lothian Road,light,8.0,19.1,28.1,14.8,2.01,483.5,80.7,80.1,1,6576.6,0,28.63627,77.23832,real_govt_record,Low
+REAL-0999,Saket Road,heavy,32.3,88.4,129.0,34.9,2.84,348.9,87.5,95.5,1,4959.4,0,28.6244,77.24647,real_govt_record,Medium
+REAL-0195,Subramaniam Bharti Marg,heavy,31.9,88.1,120.4,10.8,1.89,620.5,87.5,94.1,4,14579.7,0,28.63494,77.24529,real_govt_record,Medium
+REAL-0514,Palam Road,moderate,13.4,33.8,46.7,28.3,3.06,149.5,82.5,44.8,1,17156.3,1,28.63282,77.23959,real_govt_record,Low
+REAL-0615,Jaitpur Road,heavy,29.2,63.4,85.6,19.4,2.85,467.8,83.9,63.7,1,11954.7,0,28.62689,77.23732,real_govt_record,Low
+REAL-0432,Outer Circle Connaught,extreme,40.5,100.3,132.7,12.7,4.61,382.4,87.5,40.1,1,11054.4,1,28.62877,77.24054,real_govt_record,Medium
+REAL-0675,NH-48 DKFO Towa,heavy,32.7,81.6,124.9,39.9,4.67,613.8,86.5,62.3,1,14078.5,0,28.63138,77.24495,real_govt_record,Low
+REAL-0946,Kasturba Nagar Road,moderate,11.6,25.2,35.0,41.5,1.06,433.9,83.0,69.9,1,13926.3,0,28.63129,77.24206,real_govt_record,Low
+REAL-0210,GT Road,moderate,14.3,33.4,48.3,9.3,4.38,451.6,83.9,65.3,3,19636.5,0,28.62646,77.23947,real_govt_record,Low
+REAL-0163,Panchsheel Marg,heavy,23.4,59.1,86.2,14.0,2.22,292.0,74.7,87.4,4,18175.8,1,28.62624,77.23909,real_govt_record,Medium
+REAL-0636,Lothian Road,extreme,41.4,116.9,181.0,38.8,2.51,276.0,80.7,88.9,1,20551.9,1,28.63301,77.23827,real_govt_record,Medium
+ZONE-134,ZONE-134,synthetic_v1,47.21,90.09,166.24,58.4,0.81,179.24,31.4,15.02,2,22127.32,0,28.76909,77.2897,synthetic,Medium
+ZONE-012,ZONE-012,synthetic_v1,47.07,106.83,161.83,51.12,4.52,550.23,61.53,47.43,0,14136.28,1,28.65887,77.30017,synthetic,Low
+REAL-0088,Najafgarh Road,extreme,50.5,127.6,188.6,10.6,1.06,385.2,86.1,67.2,7,12331.2,0,28.62821,77.23394,real_govt_record,High
+REAL-0346,Motilal Nehru Marg,moderate,19.2,38.8,54.2,33.3,2.26,405.4,90.9,87.6,2,16957.1,0,28.63102,77.24307,real_govt_record,Low
+ZONE-046,ZONE-046,synthetic_v1,60.06,121.72,210.53,21.69,6.75,594.75,22.75,72.66,5,9043.92,0,28.72901,77.33427,synthetic,High
+REAL-0910,Bahadur Shah Zafar Marg,moderate,14.1,34.0,52.5,11.9,2.95,424.6,80.7,83.8,1,8763.5,0,28.63048,77.24438,real_govt_record,Low
+REAL-0718,Pragati Maidan Tunnel,moderate,24.6,50.2,71.3,34.3,4.35,665.2,74.1,73.2,1,21626.9,0,28.62916,77.23912,real_govt_record,Low
+REAL-0191,PUSA Road,heavy,30.2,78.5,125.4,15.7,4.58,471.7,83.9,95.4,4,5431.6,0,28.62491,77.23743,real_govt_record,Medium
+REAL-0753,Sant Nagar MargTowards,light,2.4,5.1,7.6,26.6,3.29,92.0,76.7,42.8,1,19007.8,0,28.63501,77.24,real_govt_record,Low
+REAL-0179,Najafgarh- Bahadurgarh Road,heavy,40.7,85.1,126.2,28.1,3.8,450.9,83.0,77.2,4,23304.6,1,28.62966,77.24355,real_govt_record,Medium
+REAL-0853,DDU Marg,light,2.5,6.8,8.9,12.0,2.36,499.8,74.7,63.8,1,5302.0,0,28.63216,77.24115,real_govt_record,Low
+REAL-0769,Shamnat Hedge Marg,light,4.0,10.0,14.3,8.6,4.19,50.7,76.7,43.6,1,22839.8,0,28.62878,77.23695,real_govt_record,Low
+REAL-0557,Abai Marg,light,6.1,15.4,22.6,29.9,2.25,657.0,76.7,64.1,1,23378.8,1,28.63024,77.23386,real_govt_record,Low
+ZONE-005,ZONE-005,synthetic_v1,41.7,105.8,193.15,38.64,5.62,752.7,31.82,82.14,1,23257.48,1,28.62973,77.26189,synthetic,Medium
+REAL-0393,"Sector-13 Road, Dwarka",light,3.9,11.0,17.5,22.1,3.99,389.8,86.5,97.0,2,5689.2,1,28.62286,77.23482,real_govt_record,Low
+SYN2-0192,SYN2-0192,synthetic_v2,75.97,159.3,211.14,40.2,7.49,308.8,38.37,65.86,2,20146.16,1,28.61241,77.24061,synthetic,High
+SYN2-0144,SYN2-0144,synthetic_v2,8.87,20.85,28.58,9.74,7.57,539.67,21.27,31.87,2,3129.25,1,28.55018,77.23136,synthetic,Medium
+REAL-0904,Swami Narayan Marg,extreme,50.6,137.9,205.6,27.7,3.12,429.7,82.5,37.3,1,15403.8,0,28.63068,77.2451,real_govt_record,High
+ZONE-115,ZONE-115,synthetic_v1,60.11,124.04,221.51,41.31,3.72,910.3,53.01,11.49,4,21710.27,1,28.56809,77.19605,synthetic,High
+REAL-0745,Sant Durbal Nath Mandir Marg,light,11.5,23.9,34.9,32.0,0.87,663.9,76.7,54.5,1,10855.8,1,28.63612,77.23896,real_govt_record,Low
+REAL-0250,Maulana Azad Road,moderate,13.7,35.3,51.8,12.5,2.37,563.0,83.0,72.8,2,18210.1,1,28.63464,77.23864,real_govt_record,Low
+SYN2-0134,SYN2-0134,synthetic_v2,94.74,189.21,247.24,15.25,7.58,813.11,48.08,48.78,4,10591.15,1,28.62103,77.22423,synthetic,High
+SYN2-0082,SYN2-0082,synthetic_v2,12.63,22.82,34.16,38.66,2.48,501.09,58.28,19.93,2,21595.31,1,28.66748,77.33113,synthetic,Low
+REAL-1011,Sikandra Marg,heavy,37.3,79.5,104.6,20.7,0.88,383.5,94.2,88.0,1,8162.4,0,28.62864,77.23564,real_govt_record,Medium
+REAL-0512,"Raghubir Nagar, Nala Road",extreme,48.0,125.9,189.0,14.1,1.6,633.7,76.7,44.8,1,12693.9,0,28.63223,77.23858,real_govt_record,High
+REAL-0283,Mata Mandir Road,heavy,27.9,66.9,102.3,14.9,4.18,756.9,82.5,47.8,2,11946.6,1,28.63129,77.24012,real_govt_record,Medium
+REAL-0440,Neela Gumbad BSF,extreme,57.5,115.4,177.1,32.7,3.84,204.8,83.0,67.7,1,4368.0,0,28.62761,77.24074,real_govt_record,Medium
+REAL-0729,Ram Kumar Gautam Marg,light,10.2,22.1,29.4,39.9,4.6,654.4,82.5,88.6,1,14565.3,0,28.63245,77.23725,real_govt_record,Low
+REAL-0472,Lawrence Road,extreme,50.8,103.5,164.0,41.9,2.41,126.7,74.7,82.8,1,8361.6,1,28.63059,77.24063,real_govt_record,Medium
+REAL-0399,Shahid Bhagat Singh Marg,heavy,24.1,61.1,90.9,11.5,4.61,215.8,76.7,61.3,2,5524.1,1,28.63005,77.23939,real_govt_record,Low
+SYN2-0020,SYN2-0020,synthetic_v2,10.56,21.67,29.71,50.26,4.92,443.65,39.67,38.38,5,8813.58,0,28.6497,77.22347,synthetic,High
+REAL-0036,Bhairon Marg,extreme,49.7,134.4,184.4,34.9,1.67,122.8,72.4,88.3,21,12854.2,0,28.60849,77.24337,real_govt_record,High
+REAL-0206,Gurugram- Parade Road,moderate,12.1,26.9,35.9,44.3,4.42,283.0,94.2,46.9,3,18579.1,1,28.63503,77.24384,real_govt_record,Low
+REAL-0609,Geeta Colony,light,5.1,13.6,17.9,29.8,4.52,793.4,85.9,95.5,1,8257.4,0,28.63168,77.23843,real_govt_record,Low
+SYN2-0042,SYN2-0042,synthetic_v2,39.33,95.4,138.92,47.86,4.57,183.74,77.17,73.36,2,22195.23,0,28.57737,77.34798,synthetic,Low
+ZONE-058,ZONE-058,synthetic_v1,18.83,51.66,93.45,52.31,2.46,695.62,76.84,29.34,4,8985.38,0,28.7916,77.20614,synthetic,Medium
+REAL-0044,New Rohtak Road,extreme,54.7,109.5,163.4,33.9,3.93,785.1,80.7,36.5,19,16923.3,0,28.65696,77.19317,real_govt_record,High
+REAL-0262,Purana Quila Road,moderate,11.2,30.1,40.6,12.2,4.45,600.3,90.9,71.3,2,7250.4,1,28.62547,77.24241,real_govt_record,Low
+REAL-1029,Dada Maheshwar Road,light,8.2,21.4,33.0,29.3,2.61,331.7,74.1,75.5,1,16354.6,0,28.63259,77.23505,real_govt_record,Low
+REAL-0430,Outer Circle Connaught,moderate,19.2,38.9,57.9,40.7,1.37,356.1,87.5,53.7,1,14466.4,0,28.63282,77.24491,real_govt_record,Low
+ZONE-105,ZONE-105,synthetic_v1,86.84,137.45,190.91,37.04,1.47,441.3,55.52,40.89,3,18815.19,0,28.67021,77.31668,synthetic,High
+REAL-0852,Chelmsford Road,extreme,53.4,123.7,162.2,39.2,0.56,96.1,74.1,56.3,1,23388.2,0,28.63578,77.23986,real_govt_record,High
+REAL-0229,Kemal Ataturk Marg,light,4.5,9.3,14.5,16.4,2.14,221.6,83.0,81.0,3,4989.3,0,28.62831,77.23963,real_govt_record,Low
+REAL-0725,Rajesh Pilot Marg,light,4.5,11.8,18.1,26.2,3.05,81.3,90.9,58.4,1,13797.5,1,28.62347,77.24208,real_govt_record,Low
+REAL-0006,Rohtak Road,moderate,10.5,25.5,40.2,13.0,3.68,58.2,72.4,64.8,88,14223.3,0,28.65855,77.13272,real_govt_record,Medium
+SYN2-0161,SYN2-0161,synthetic_v2,67.12,144.77,187.57,35.98,7.16,975.67,40.05,84.35,0,17458.0,1,28.59849,77.31628,synthetic,Low
+ZONE-148,ZONE-148,synthetic_v1,32.96,40.79,75.16,6.27,6.81,113.26,50.38,67.2,1,17833.78,0,28.68914,77.21368,synthetic,Low
+SYN2-0188,SYN2-0188,synthetic_v2,76.04,155.05,196.52,29.97,6.74,502.61,57.96,90.6,2,23851.46,1,28.71918,77.23285,synthetic,High
+SYN2-0096,SYN2-0096,synthetic_v2,15.55,28.48,42.78,32.78,1.7,428.83,91.01,42.5,2,21121.42,1,28.66841,77.27554,synthetic,Low
+REAL-0586,Brigadier Hoshiyar Singh Marg,moderate,18.7,49.6,79.2,9.7,2.6,311.6,74.1,36.5,1,8267.4,1,28.62646,77.24465,real_govt_record,Low
+REAL-0728,Rajesh Pilot Marg,extreme,53.8,136.3,180.5,23.5,3.94,328.8,90.9,86.4,1,23695.0,1,28.62577,77.24229,real_govt_record,High
+REAL-0319,Ashok Vihar Market,heavy,26.5,63.4,85.1,26.0,4.9,143.7,85.9,89.4,2,8692.5,0,28.63416,77.23473,real_govt_record,Low
+REAL-0630,Lodhi Road,moderate,10.1,28.5,41.1,13.6,2.53,768.2,83.0,94.7,1,17453.6,0,28.6326,77.23796,real_govt_record,Low
+REAL-0926,Dwarka – Dabri Drain,moderate,15.3,32.8,48.7,38.0,2.38,527.8,82.5,54.5,1,4715.7,1,28.63693,77.24253,real_govt_record,Low
+REAL-0894,Shalimar Bagh,moderate,10.3,29.2,41.9,13.2,3.57,203.8,80.7,35.3,1,5204.6,0,28.62915,77.23561,real_govt_record,Low
+SYN2-0089,SYN2-0089,synthetic_v2,61.87,141.53,224.47,13.33,6.32,258.77,57.19,16.01,0,2307.48,0,28.60019,77.26494,synthetic,Low
+REAL-0035,Bhairon Marg,heavy,36.6,76.4,104.7,35.4,4.15,727.0,72.4,55.2,21,10614.8,0,28.6086,77.24559,real_govt_record,High
+REAL-0313,NH-8 Near Shiv,light,4.7,12.3,16.0,43.6,3.88,786.4,80.7,72.7,2,5310.3,0,28.63037,77.2371,real_govt_record,Low
+REAL-1019,TT Park Road,heavy,34.3,75.3,100.1,13.7,4.54,64.0,87.5,46.3,1,16841.3,1,28.62647,77.24673,real_govt_record,Medium
+SYN2-0178,SYN2-0178,synthetic_v2,62.97,130.31,180.52,8.74,6.42,623.64,70.29,87.81,5,22328.65,1,28.73104,77.17238,synthetic,High
+REAL-0076,Ram Bagh,extreme,35.3,97.0,145.8,34.2,1.31,351.7,82.5,88.6,10,16447.5,0,28.62366,77.23613,real_govt_record,High
+REAL-0174,Loni Road,moderate,12.6,32.6,44.5,41.6,0.79,184.8,90.9,61.5,4,15151.3,1,28.62954,77.2411,real_govt_record,Low
+REAL-0095,"NH-48, Gurugram Road",heavy,28.6,72.5,100.2,37.7,2.86,136.8,87.5,68.0,7,24519.8,0,28.63499,77.23382,real_govt_record,Medium
+REAL-0052,Vikas Marg,extreme,42.2,108.0,162.6,28.9,3.16,524.8,86.1,83.2,17,7986.1,0,28.65245,77.28366,real_govt_record,High
+REAL-0552,MG Road,extreme,49.6,114.1,170.8,35.5,4.64,777.7,80.7,42.2,1,19548.3,0,28.63035,77.24215,real_govt_record,Medium
+ZONE-074,ZONE-074,synthetic_v1,95.47,137.25,234.66,42.97,3.5,95.28,56.4,15.54,5,12097.19,1,28.73262,77.32654,synthetic,High
+REAL-0789,Suraj Kund Road,light,6.2,14.4,20.9,11.6,3.31,124.9,86.5,92.3,1,7543.9,0,28.6266,77.24722,real_govt_record,Low
+SYN2-0068,SYN2-0068,synthetic_v2,60.27,126.48,182.53,17.15,3.13,963.07,74.57,78.21,4,10997.04,0,28.5523,77.34971,synthetic,High
+REAL-0832,Avantika Market Marg,extreme,31.6,90.1,122.7,42.9,2.39,248.9,87.5,46.7,1,13245.8,0,28.62702,77.23706,real_govt_record,Medium
+REAL-0826,Arakshan Road,moderate,18.5,40.2,56.2,35.1,4.39,749.7,72.4,44.7,1,19716.4,1,28.62846,77.24067,real_govt_record,Low
+REAL-0420,Pusa Road,extreme,47.9,136.1,178.4,8.3,3.05,334.9,82.5,46.4,1,22615.3,0,28.62303,77.23498,real_govt_record,High
+SYN2-0127,SYN2-0127,synthetic_v2,50.54,105.19,146.56,27.39,5.48,667.5,20.09,57.09,3,12131.12,1,28.59646,77.31179,synthetic,High
+REAL-0748,Sant Durbal Nath Mandir Marg,extreme,58.5,126.6,170.3,35.4,0.79,677.6,76.7,98.2,1,19662.1,0,28.6323,77.23551,real_govt_record,High
+REAL-0221,Mandi Road,light,8.3,19.9,28.8,9.9,1.47,539.2,87.5,39.3,3,24531.7,1,28.62869,77.23945,real_govt_record,Low
+SYN2-0092,SYN2-0092,synthetic_v2,32.42,70.92,96.07,40.77,4.5,360.91,66.86,87.31,5,19202.13,1,28.74063,77.23119,synthetic,High
+REAL-0509,"Raghubir Nagar, Nala Road",light,7.7,16.8,26.3,39.5,2.23,432.9,76.7,51.4,1,19997.2,0,28.63412,77.23915,real_govt_record,Low
+REAL-0711,Pankha Road/ Cariappa Marg,heavy,22.9,60.8,94.1,44.6,1.76,60.7,86.5,45.0,1,6155.4,0,28.62789,77.24006,real_govt_record,Low
+ZONE-020,ZONE-020,synthetic_v1,55.62,75.62,164.24,16.78,3.78,290.89,95.84,66.04,2,6780.3,0,28.70653,77.20379,synthetic,Medium
+REAL-0608,Gazipur Dairy Farm,extreme,58.5,131.7,183.2,36.5,2.29,152.2,85.9,35.6,1,10360.9,0,28.63267,77.23727,real_govt_record,High
+REAL-1017,TT Park Road,light,4.7,10.0,14.4,29.0,3.48,656.7,87.5,41.4,1,20368.9,1,28.62637,77.24751,real_govt_record,Low
+REAL-0388,Jawahar Lal Nehru Marg,extreme,42.8,111.9,154.7,21.4,3.81,464.0,74.7,55.5,2,5160.7,0,28.62992,77.24195,real_govt_record,High
+SYN2-0165,SYN2-0165,synthetic_v2,44.78,115.8,144.79,59.8,4.59,123.45,67.41,14.18,4,3970.59,0,28.59256,77.16713,synthetic,High
+REAL-0752,Sant Nagar Marg,extreme,38.3,100.7,137.5,41.0,1.08,129.4,85.9,50.7,1,19675.1,1,28.63041,77.23914,real_govt_record,Medium
+REAL-0912,Bahadur Shah Zafar Marg,extreme,54.9,124.9,167.0,43.1,3.7,257.6,80.7,47.4,1,12074.4,1,28.62598,77.24167,real_govt_record,Medium
+REAL-0149,Tuglak Road,light,10.4,22.4,30.5,10.6,1.7,331.0,83.0,74.2,4,9864.1,0,28.62573,77.23971,real_govt_record,Low
+REAL-0754,Sant Nagar MargTowards,moderate,10.6,25.3,38.5,9.5,4.51,776.2,76.7,39.4,1,10784.0,0,28.63076,77.23936,real_govt_record,Low
+REAL-0403,Rajpath Suoth Rajpath,heavy,25.2,71.8,106.5,19.8,3.8,400.9,85.9,47.8,1,24934.0,1,28.63267,77.23865,real_govt_record,Low
+REAL-0341,Maharaja Surajmal Marg,light,6.6,13.8,18.4,27.9,2.62,464.6,83.0,85.7,2,16586.4,1,28.63285,77.24648,real_govt_record,Low
+ZONE-104,ZONE-104,synthetic_v1,51.36,104.91,190.03,14.94,4.85,486.89,79.06,59.28,4,16246.95,1,28.57666,77.23278,synthetic,High
+REAL-0988,Patel Road,extreme,39.5,95.0,146.7,36.3,2.46,473.8,74.1,43.6,1,17302.7,1,28.62425,77.24128,real_govt_record,Medium
+REAL-0201,Okhla Road,light,5.2,11.9,17.2,42.1,2.81,334.2,72.4,35.1,4,14426.5,1,28.62783,77.23805,real_govt_record,Low
+REAL-0733,Rani Jhansi Road,light,7.8,15.7,24.2,25.3,4.01,717.7,86.1,68.0,1,10676.3,0,28.63267,77.23394,real_govt_record,Low
+REAL-0541,Jai Singh Road,light,9.4,24.9,38.4,15.3,4.53,421.6,74.1,91.5,1,15362.9,1,28.63482,77.24126,real_govt_record,Low
+REAL-0692,NH-48 Shankar Vihar,extreme,46.6,101.3,148.0,13.4,4.73,258.3,76.7,43.7,1,19177.4,1,28.6284,77.24079,real_govt_record,Medium
+REAL-0610,Geeta Colony,moderate,18.2,39.0,53.6,24.1,3.54,718.0,85.9,51.3,1,11455.7,1,28.62925,77.2407,real_govt_record,Low
+SYN2-0177,SYN2-0177,synthetic_v2,61.77,155.44,209.55,22.03,6.81,761.27,69.59,28.46,1,16211.75,1,28.78739,77.32704,synthetic,Medium
+REAL-0956,Maa Anandmayee Marg,extreme,56.1,138.0,211.0,36.6,1.33,176.4,72.4,92.7,1,17873.3,1,28.62602,77.24305,real_govt_record,High
+REAL-0281,Mata Mandir Road,light,7.4,15.1,23.6,44.0,3.64,165.6,82.5,68.7,2,15814.6,0,28.62998,77.24107,real_govt_record,Low
+REAL-0411,NH-24 Gazipur Mandi,heavy,28.7,68.5,93.4,40.1,0.65,255.0,74.1,40.3,1,17875.2,0,28.62377,77.23945,real_govt_record,Low
+ZONE-054,ZONE-054,synthetic_v1,42.09,55.59,123.86,35.89,4.37,688.88,34.87,40.15,0,4260.08,1,28.62746,77.24148,synthetic,Low
+ZONE-147,ZONE-147,synthetic_v1,93.04,170.79,221.42,38.08,2.79,956.62,30.82,65.14,5,9912.02,0,28.58669,77.32467,synthetic,High
+ZONE-047,ZONE-047,synthetic_v1,21.8,61.48,73.66,5.91,4.72,748.75,25.32,59.59,5,7224.23,0,28.79357,77.20807,synthetic,High
+REAL-0688,NH-48 Near Shiv,extreme,44.9,105.0,156.3,15.8,1.93,552.2,86.5,44.2,1,10863.1,0,28.63189,77.234,real_govt_record,Medium
+REAL-0336,Inside Pragati Maidan,extreme,47.6,124.4,189.1,29.7,4.89,512.2,85.9,70.1,2,20131.8,1,28.62502,77.23794,real_govt_record,High
+REAL-0643,Major Sudesh Marg,heavy,26.3,65.1,101.8,12.1,1.27,88.8,83.9,79.9,1,14300.9,1,28.62413,77.24136,real_govt_record,Low
+REAL-0315,NH-8 Near Shiv,heavy,34.0,85.8,116.4,23.9,2.59,316.7,80.7,74.6,2,14808.5,0,28.62914,77.23425,real_govt_record,Medium
+REAL-0783,Sunheri Bagh- Rafi Marg,heavy,39.0,82.2,121.7,40.7,3.47,337.1,83.0,95.6,1,12619.7,0,28.62609,77.24155,real_govt_record,Low
+SYN2-0181,SYN2-0181,synthetic_v2,44.04,105.28,130.79,43.43,1.14,62.58,82.04,58.19,4,17803.29,1,28.58794,77.26359,synthetic,High
+SYN2-0135,SYN2-0135,synthetic_v2,42.17,94.29,120.75,51.49,5.9,361.64,40.51,38.91,2,19977.52,1,28.64906,77.29806,synthetic,Medium
+SYN2-0132,SYN2-0132,synthetic_v2,82.05,212.17,282.53,38.47,0.85,686.67,96.2,79.93,2,4785.48,1,28.55077,77.2626,synthetic,High
+REAL-0093,"NH-48, Gurugram Road",light,6.1,15.7,24.9,44.1,3.43,279.6,87.5,87.3,7,24188.5,1,28.63621,77.23644,real_govt_record,Low
+REAL-0835,Badli Road,heavy,29.7,63.4,95.9,40.0,2.98,278.7,72.4,59.6,1,19096.1,1,28.62759,77.24437,real_govt_record,Low
+REAL-0593,Dadri Main Road,light,10.1,24.0,33.4,40.6,4.8,477.0,87.5,69.3,1,16894.0,0,28.63254,77.23233,real_govt_record,Low
+SYN2-0164,SYN2-0164,synthetic_v2,15.82,39.02,61.35,23.47,4.18,387.82,33.22,83.95,4,2379.53,0,28.57157,77.29193,synthetic,High
+REAL-0395,"Sector-13 Road, Dwarka",heavy,34.0,72.7,108.3,29.0,1.27,157.2,86.5,40.2,2,13076.0,1,28.62685,77.2368,real_govt_record,Low
+SYN2-0008,SYN2-0008,synthetic_v2,66.7,156.91,223.31,18.13,1.25,206.68,20.94,78.57,5,22523.56,0,28.7738,77.28755,synthetic,High
+REAL-0576,Baba Banda Singh Bahadur Marg,extreme,63.2,130.9,172.9,23.3,2.42,228.3,83.0,43.3,1,23904.8,1,28.62666,77.23412,real_govt_record,High
+REAL-0574,Baba Banda Singh Bahadur Marg,moderate,27.1,54.5,84.2,39.2,1.21,706.4,83.0,87.7,1,8200.5,0,28.62907,77.23953,real_govt_record,Low
+SYN2-0088,SYN2-0088,synthetic_v2,88.45,216.68,313.17,22.87,0.74,718.3,78.25,17.59,4,21467.75,0,28.69512,77.28723,synthetic,High
+REAL-0736,Rani Jhansi Road,extreme,36.1,102.5,142.8,20.1,3.49,107.2,86.1,45.6,1,19151.8,0,28.63487,77.23734,real_govt_record,Medium
+SYN2-0071,SYN2-0071,synthetic_v2,67.63,153.39,199.32,34.6,2.49,311.47,56.27,14.06,1,23576.19,0,28.74254,77.21629,synthetic,Medium
+REAL-0280,Kanjhawala Bawana Road,extreme,49.3,135.6,176.5,39.2,4.59,118.1,80.7,53.2,2,21784.4,1,28.62881,77.23966,real_govt_record,High
+REAL-0338,Kanhiya Nagar Kanhiya,moderate,20.3,43.5,62.2,35.5,3.22,525.7,94.2,70.1,2,18008.9,1,28.62747,77.24496,real_govt_record,Low
+REAL-0228,Dwarka Near Sector,extreme,38.8,101.2,150.4,13.6,4.84,305.9,80.7,63.2,3,13054.5,0,28.63439,77.24434,real_govt_record,High
+REAL-0009,Outer Ring Road,light,2.1,5.3,7.9,12.7,3.14,674.3,86.1,43.7,48,12108.0,0,28.5746,77.18546,real_govt_record,Low
+SYN2-0009,SYN2-0009,synthetic_v2,44.2,104.07,159.43,40.17,2.29,330.49,52.77,79.45,4,16025.38,0,28.75664,77.17169,synthetic,High
+ZONE-048,ZONE-048,synthetic_v1,95.95,123.52,217.78,7.01,3.07,858.78,32.88,56.5,2,7586.67,0,28.57142,77.23363,synthetic,High
+REAL-0069,NH-24/Delhi- Meerut Expressway,light,6.4,17.1,23.0,19.9,1.67,701.9,79.7,68.0,10,17376.3,1,28.6296,77.23479,real_govt_record,Low
+SYN2-0079,SYN2-0079,synthetic_v2,9.28,23.87,37.59,13.8,3.96,51.6,51.97,26.08,4,3158.84,0,28.76583,77.32982,synthetic,High
+SYN2-0010,SYN2-0010,synthetic_v2,64.97,134.23,191.11,50.94,2.36,953.94,26.29,60.58,4,4613.68,1,28.74988,77.34766,synthetic,High
+ZONE-066,ZONE-066,synthetic_v1,10.76,40.39,70.15,30.14,1.1,652.01,50.49,95.1,2,19812.32,0,28.5997,77.27448,synthetic,Low
+REAL-0025,Aurobindo Marg,light,3.2,7.6,11.3,41.7,2.2,476.6,80.7,91.3,34,20732.1,1,28.56384,77.19678,real_govt_record,Low
+REAL-0634,Lothian Road,moderate,14.6,41.5,66.0,32.0,1.61,501.6,80.7,55.0,1,15702.1,0,28.63768,77.24121,real_govt_record,Low
+REAL-0471,Lawrence Road,heavy,33.6,81.6,123.4,27.1,1.01,724.6,74.7,89.0,1,22734.2,0,28.63005,77.2411,real_govt_record,Medium
+REAL-0558,Abai Marg,moderate,22.9,46.1,71.2,9.6,1.78,51.5,76.7,77.6,1,22615.1,1,28.62933,77.23726,real_govt_record,Low
+REAL-0294,Pusa Road- Vande Matram Marg,moderate,11.3,28.3,40.3,25.5,2.46,497.0,76.7,95.2,2,23561.2,0,28.63087,77.24249,real_govt_record,Low
+REAL-0773,Shanti Path- Panchsheel Marg,light,6.1,14.0,20.3,39.6,4.56,650.9,82.5,69.1,1,18636.2,0,28.62927,77.23753,real_govt_record,Low
+SYN2-0122,SYN2-0122,synthetic_v2,28.35,63.37,93.85,19.59,3.97,246.48,52.77,99.15,4,10325.11,1,28.65596,77.32777,synthetic,High
+REAL-1023,Vivekanand Marg,heavy,24.1,63.3,88.2,14.0,3.17,196.3,72.4,45.1,1,18376.6,0,28.62697,77.23525,real_govt_record,Low
+REAL-0121,Rani Jhansi Marg,light,3.8,10.3,13.4,37.8,1.44,347.2,86.5,45.0,5,8036.2,0,28.63127,77.24542,real_govt_record,Low
+REAL-0906,August Kranti Marg,moderate,10.1,27.1,41.4,41.2,1.3,387.3,72.4,90.2,1,18303.2,1,28.62712,77.23851,real_govt_record,Low
+REAL-0511,"Raghubir Nagar, Nala Road",heavy,25.2,65.9,98.2,31.3,0.83,656.7,76.7,71.7,1,11005.9,1,28.63322,77.23791,real_govt_record,Low
+REAL-0180,Najafgarh- Bahadurgarh Road,extreme,57.8,129.0,188.7,25.8,3.59,309.2,83.0,48.8,4,17441.5,1,28.63122,77.24308,real_govt_record,High
+REAL-0816,Urban Extension Road,extreme,45.8,92.5,139.9,19.5,3.82,70.0,87.5,64.7,1,24116.8,0,28.62544,77.24363,real_govt_record,Medium
+REAL-0864,Dr. K.S. Krishnan Marg,extreme,36.1,97.4,129.9,42.9,3.19,366.6,74.1,58.3,1,12936.5,0,28.62763,77.24056,real_govt_record,Medium
+ZONE-051,ZONE-051,synthetic_v1,89.27,162.79,229.95,27.12,4.83,777.9,93.4,86.97,1,6086.73,1,28.55228,77.34908,synthetic,Medium
+SYN2-0026,SYN2-0026,synthetic_v2,8.21,17.91,28.2,6.94,2.48,567.4,53.74,67.16,0,22137.53,0,28.78013,77.28199,synthetic,Low
+REAL-0381,IP Marg,light,3.2,8.3,11.3,14.2,0.69,534.2,87.5,77.6,2,9283.9,1,28.6362,77.23458,real_govt_record,Low
+REAL-0605,Gazipur Dairy Farm,light,4.2,10.5,16.2,37.3,3.51,140.5,85.9,81.9,1,24616.8,0,28.63506,77.23478,real_govt_record,Low
+ZONE-099,ZONE-099,synthetic_v1,82.25,144.08,195.52,19.9,4.01,546.8,99.72,88.95,1,2729.85,1,28.78212,77.27668,synthetic,Medium
+SYN2-0022,SYN2-0022,synthetic_v2,41.33,76.28,92.58,26.48,7.81,753.55,76.7,70.16,2,18541.91,0,28.70059,77.16271,synthetic,Low
+REAL-0551,MG Road,heavy,28.3,65.4,91.3,15.5,4.25,727.9,80.7,43.4,1,4936.5,0,28.6276,77.24231,real_govt_record,Low
+REAL-0252,Maulana Azad Road,extreme,42.7,109.5,164.3,39.9,0.64,190.3,83.0,67.4,2,16717.5,1,28.62984,77.23694,real_govt_record,Medium
+SYN2-0098,SYN2-0098,synthetic_v2,25.75,49.03,61.69,32.61,5.71,491.25,63.22,71.84,2,24373.33,1,28.72298,77.21945,synthetic,Low
+REAL-0213,Mathura R oad,light,7.3,20.3,27.3,28.4,1.73,589.7,94.2,81.5,3,10705.1,0,28.62636,77.23561,real_govt_record,Low
+ZONE-146,ZONE-146,synthetic_v1,76.74,102.91,178.91,8.93,2.81,942.22,36.74,50.54,2,4898.79,1,28.75742,77.16136,synthetic,High
+REAL-0331,CV Raman Marg,heavy,38.0,78.5,113.1,15.0,4.48,50.8,87.5,75.2,2,19238.0,0,28.63138,77.24007,real_govt_record,Medium
+REAL-0433,Teen Murti Marge,light,6.6,14.1,21.8,11.1,3.71,429.2,86.1,90.7,1,9859.8,0,28.62892,77.23987,real_govt_record,Low
+REAL-0277,Kanjhawala Bawana Road,light,3.3,6.9,9.1,17.9,3.96,493.1,80.7,77.7,2,12674.1,0,28.62876,77.23717,real_govt_record,Low
+SYN2-0045,SYN2-0045,synthetic_v2,44.11,86.39,137.16,49.27,7.25,117.64,21.6,26.31,0,18966.91,0,28.67886,77.2899,synthetic,Low
+REAL-0292,Old Patparganj Road,extreme,52.7,114.5,159.4,40.7,0.53,218.5,72.4,81.9,2,22456.6,1,28.6351,77.23475,real_govt_record,Medium
+REAL-0902,Swami Narayan Marg,moderate,22.8,53.4,79.4,16.0,4.61,77.8,82.5,61.3,1,12983.1,0,28.62787,77.24551,real_govt_record,Low
+REAL-0449,Chhawla Road,light,7.0,14.9,19.5,14.0,1.53,662.3,76.7,36.5,1,4470.0,1,28.62682,77.23637,real_govt_record,Low
+ZONE-125,ZONE-125,synthetic_v1,36.51,46.77,127.25,8.54,4.33,399.3,57.35,43.4,2,23187.04,0,28.55257,77.235,synthetic,Medium
+SYN2-0018,SYN2-0018,synthetic_v2,25.35,65.24,104.18,46.66,2.17,607.62,95.1,69.71,4,16978.02,1,28.66412,77.28194,synthetic,Medium
+REAL-0304,Thimayya Marg,extreme,48.4,114.6,155.8,9.3,3.2,207.3,90.9,92.6,2,17315.1,0,28.63451,77.24585,real_govt_record,High
+ZONE-150,ZONE-150,synthetic_v1,7.96,50.61,85.37,8.9,4.03,860.57,38.17,20.54,3,13420.87,0,28.73539,77.15537,synthetic,High
+SYN2-0107,SYN2-0107,synthetic_v2,92.45,210.02,267.34,34.7,1.13,891.71,27.59,55.42,2,9152.59,0,28.68983,77.29869,synthetic,High
+REAL-0941,Kapashera - Najafgarh Road,light,4.1,11.0,17.3,29.9,3.57,176.2,86.5,36.9,1,20796.0,1,28.63591,77.23776,real_govt_record,Low
+REAL-0068,Ch. Fateh Singh Marg,extreme,45.4,96.7,154.0,37.4,3.98,640.8,76.7,38.7,10,23409.4,0,28.69998,77.22629,real_govt_record,High
+REAL-0020,GTK Road,extreme,47.4,119.2,159.8,26.4,4.27,686.5,86.5,80.5,38,23950.0,1,28.7095,77.17684,real_govt_record,High
+REAL-0325,BSZ Marg,light,5.6,14.6,19.4,22.0,2.77,646.8,79.7,95.6,2,6568.1,1,28.6306,77.24601,real_govt_record,Low
+REAL-0055,Okhla Estate Marg,heavy,25.6,68.7,92.5,38.9,3.18,268.2,74.7,83.6,12,21349.3,0,28.53153,77.27105,real_govt_record,Medium
+REAL-0964,Najafgarh Bakkarwala Cut,extreme,51.9,128.0,191.3,42.9,3.62,788.6,76.7,93.4,1,8645.3,1,28.63411,77.24096,real_govt_record,High
+REAL-0932,Firoz Shah Road,extreme,45.0,97.3,128.2,14.8,2.57,443.5,74.7,98.7,1,18175.0,0,28.62942,77.2443,real_govt_record,Medium
+SYN2-0110,SYN2-0110,synthetic_v2,36.53,69.87,91.32,47.59,2.65,970.83,28.86,12.49,1,13597.83,1,28.66501,77.34092,synthetic,Low
+REAL-0151,Tuglak Road,heavy,25.6,62.0,84.7,31.7,2.15,300.0,83.0,72.4,4,17828.5,1,28.62445,77.23823,real_govt_record,Low
+SYN2-0152,SYN2-0152,synthetic_v2,13.26,23.92,35.83,25.71,1.28,207.12,36.44,60.66,3,10144.98,1,28.78536,77.19117,synthetic,Medium
+ZONE-090,ZONE-090,synthetic_v1,70.6,133.48,222.72,56.76,2.15,499.64,22.26,50.23,1,7523.26,1,28.79996,77.31542,synthetic,Medium
+ZONE-124,ZONE-124,synthetic_v1,14.11,56.82,143.31,7.56,2.32,368.8,52.48,19.53,1,15503.25,1,28.71455,77.25336,synthetic,Low
+REAL-0744,San Martin Marg,extreme,48.2,124.0,189.4,42.1,2.34,188.8,83.9,39.9,1,12296.5,0,28.63286,77.24136,real_govt_record,Medium
+REAL-0750,Sant Nagar Marg,moderate,13.9,36.3,52.0,36.5,0.64,440.7,85.9,48.7,1,16996.6,1,28.6291,77.23985,real_govt_record,Low
+REAL-0756,Sant Nagar MargTowards,extreme,41.2,101.8,160.9,22.0,3.56,405.5,76.7,43.3,1,11212.3,1,28.62993,77.23825,real_govt_record,Medium
+ZONE-017,ZONE-017,synthetic_v1,75.46,113.97,163.52,22.35,6.94,276.7,36.58,50.21,1,5472.6,0,28.79126,77.15809,synthetic,Medium
+REAL-0812,Teen Murti Haifa Marg,extreme,56.7,121.4,165.6,8.4,4.25,612.6,83.9,75.5,1,4121.5,1,28.62833,77.23779,real_govt_record,High
+REAL-0662,Near Zakir Nagar Main Road,moderate,14.1,38.4,51.9,20.9,1.74,765.1,76.7,41.8,1,14769.9,0,28.63501,77.24609,real_govt_record,Low
+SYN2-0081,SYN2-0081,synthetic_v2,12.93,30.81,44.09,52.34,1.36,316.34,81.47,24.72,2,14533.91,1,28.69745,77.28581,synthetic,Low
+ZONE-075,ZONE-075,synthetic_v1,93.16,128.07,176.68,54.33,2.07,144.82,91.05,24.06,4,12573.13,0,28.72201,77.32895,synthetic,High
+REAL-0256,Barapullah Road,extreme,33.7,94.9,136.4,38.5,3.58,460.9,72.4,89.8,2,11815.3,0,28.62573,77.2359,real_govt_record,Medium
+REAL-0935,GGR-PDR RR Hospital,heavy,31.4,80.6,123.2,30.5,4.47,552.2,83.9,50.8,1,23851.7,0,28.6297,77.23829,real_govt_record,Medium
+REAL-0870,Khoda Chowk,moderate,20.1,42.4,57.7,17.2,1.62,303.8,82.5,62.7,1,5514.2,0,28.63347,77.24157,real_govt_record,Low
+SYN2-0093,SYN2-0093,synthetic_v2,91.84,182.97,238.43,30.77,5.58,144.22,24.61,93.83,0,16002.47,0,28.66726,77.34198,synthetic,Medium
+REAL-0893,Shalimar Bagh,light,8.4,20.4,31.1,14.5,3.23,471.5,80.7,94.7,1,22084.6,0,28.62909,77.23786,real_govt_record,Low
+REAL-0874,Khudiram Bose Marg,moderate,18.0,40.8,64.1,23.4,4.76,267.7,72.4,61.5,1,22570.4,0,28.6307,77.24112,real_govt_record,Low
+REAL-0614,Jaitpur Road,moderate,14.9,35.2,45.9,31.3,4.56,169.4,83.9,43.0,1,12112.3,1,28.63047,77.23956,real_govt_record,Low
+ZONE-069,ZONE-069,synthetic_v1,95.07,107.66,142.33,29.67,7.33,692.81,47.87,73.88,0,5153.13,1,28.65922,77.32085,synthetic,Low
+REAL-0389,Najafgarh – Dhansa Road,light,6.9,14.5,21.6,21.3,2.46,210.4,85.9,76.4,2,16880.7,0,28.62775,77.23926,real_govt_record,Low
+REAL-0937,Goyla Dairy Road,light,6.4,16.9,26.5,8.8,4.26,451.6,72.4,83.7,1,14518.8,0,28.63588,77.23337,real_govt_record,Low
+REAL-0407,DND Flyway At,heavy,32.9,67.1,95.1,20.2,2.94,382.5,81.7,88.0,1,7393.6,1,28.62836,77.24247,real_govt_record,Low
+REAL-0795,Surajkund Road,heavy,26.6,69.2,92.6,10.8,2.1,695.4,86.1,71.8,1,21938.5,0,28.62852,77.23781,real_govt_record,Medium
+REAL-0716,"Pocket-16, Sector-22, Rohini",extreme,53.4,111.6,148.8,44.4,3.89,89.8,87.5,66.1,1,4291.7,0,28.63455,77.24367,real_govt_record,Medium
+ZONE-103,ZONE-103,synthetic_v1,10.82,42.02,85.81,47.67,6.88,885.68,59.11,12.7,0,13333.7,0,28.55486,77.22832,synthetic,Low
+REAL-1024,Vivekanand Marg,extreme,52.0,134.7,180.2,40.5,4.57,488.7,72.4,89.0,1,14094.5,1,28.63043,77.23671,real_govt_record,High
+ZONE-024,ZONE-024,synthetic_v1,98.41,118.14,161.74,12.12,2.86,94.76,37.06,50.43,0,7619.12,1,28.62182,77.18259,synthetic,Medium
+SYN2-0027,SYN2-0027,synthetic_v2,69.34,161.26,202.01,50.95,4.17,749.62,91.81,33.4,0,15801.83,1,28.73979,77.26386,synthetic,Low
+REAL-0247,Mother Teresa Crescent Marg,heavy,25.6,61.3,87.7,10.7,2.85,103.0,87.5,87.9,3,20624.2,1,28.63155,77.23574,real_govt_record,Low
+REAL-0146,Pusta Road,moderate,13.9,33.7,50.0,9.2,3.57,399.3,74.7,66.3,5,5854.1,0,28.62761,77.2419,real_govt_record,Low
+SYN2-0101,SYN2-0101,synthetic_v2,47.53,103.02,135.56,31.23,3.8,653.3,31.84,73.71,1,11216.59,0,28.72213,77.33613,synthetic,Medium
+SYN2-0084,SYN2-0084,synthetic_v2,24.37,45.78,63.15,37.53,2.24,867.41,66.52,42.1,0,19185.93,0,28.62832,77.322,synthetic,Low
+REAL-0623,Khalsa Road,heavy,30.4,81.3,112.2,12.9,2.1,528.7,72.4,57.6,1,22317.4,1,28.62949,77.24164,real_govt_record,Medium
+SYN2-0170,SYN2-0170,synthetic_v2,83.02,173.03,229.08,32.69,2.57,390.84,72.15,30.23,4,17436.0,0,28.79909,77.24577,synthetic,High
+REAL-0461,JLN Marg,light,7.2,15.6,22.2,11.7,2.98,648.3,81.7,44.4,1,13531.6,1,28.633,77.24255,real_govt_record,Low
+REAL-0487,Mangolpuri- Udhyog Nagar,heavy,32.3,66.8,98.6,31.1,2.77,197.6,76.7,55.3,1,24547.0,1,28.63057,77.23959,real_govt_record,Low
+SYN2-0124,SYN2-0124,synthetic_v2,17.66,37.62,53.86,15.15,1.3,410.29,88.55,28.32,3,21281.48,0,28.70889,77.18681,synthetic,Medium
+REAL-0091,Press Enclave Road,heavy,25.4,61.0,87.5,27.6,1.14,569.2,80.7,49.8,7,10430.7,1,28.63649,77.2393,real_govt_record,Medium
+REAL-0493,NH-8 Mahipalpur Flyover,light,7.4,18.1,28.9,11.4,4.32,590.7,86.1,80.4,1,13947.3,0,28.63172,77.23693,real_govt_record,Low
+REAL-0171,Boulevard Road,heavy,23.3,56.1,79.3,33.0,4.68,420.2,82.5,79.1,4,12148.0,1,28.62948,77.23785,real_govt_record,Low
+REAL-0057,Anuvrat Marg,light,6.9,14.9,20.8,40.6,1.48,542.9,85.9,55.9,11,23031.8,1,28.53288,77.18624,real_govt_record,Low
+REAL-0405,DND Flyway At,light,8.9,19.5,29.7,33.6,4.63,495.9,81.7,77.3,1,15548.7,1,28.62807,77.23904,real_govt_record,Low
+REAL-0600,Dallu Pura Road,extreme,55.2,119.7,163.5,15.8,2.81,789.6,72.4,97.2,1,8864.5,1,28.63374,77.24255,real_govt_record,High
+REAL-1016,Tilak Marg,extreme,38.8,95.2,138.3,35.2,2.4,229.2,86.1,87.9,1,16420.1,1,28.62458,77.23591,real_govt_record,Medium
+REAL-0098,"Firni Road, Najafgarh Firni Road",moderate,9.6,26.8,41.1,41.7,1.94,412.6,87.5,37.0,6,10120.4,0,28.63125,77.23828,real_govt_record,Low
+REAL-0827,Arakshan Road,heavy,29.9,62.3,91.6,13.2,2.74,85.4,72.4,54.7,1,22627.6,1,28.62855,77.23757,real_govt_record,Low
+ZONE-109,ZONE-109,synthetic_v1,94.18,160.28,205.42,5.64,7.8,815.74,46.31,36.72,0,10672.31,0,28.73771,77.15896,synthetic,Medium
+REAL-0480,Maharaja Ajmeed Marg,extreme,64.8,133.8,204.5,17.7,3.54,648.1,87.5,59.6,1,16447.2,1,28.62409,77.23965,real_govt_record,High
+REAL-0324,Baba Kharak Singh Marg,extreme,66.0,133.3,203.6,40.7,4.66,253.7,90.9,74.5,2,5335.3,0,28.62742,77.23525,real_govt_record,High
+SYN2-0049,SYN2-0049,synthetic_v2,80.47,199.16,294.83,22.31,7.81,641.7,44.99,80.75,1,11676.9,0,28.5638,77.32396,synthetic,High
+REAL-0099,"Firni Road, Najafgarh Firni Road",heavy,24.5,58.9,88.4,28.3,1.65,587.1,87.5,81.2,6,9453.3,0,28.63281,77.23727,real_govt_record,Low
+SYN2-0196,SYN2-0196,synthetic_v2,25.22,60.23,86.35,13.54,5.02,681.01,23.08,97.69,4,4145.02,1,28.71853,77.31285,synthetic,High
+REAL-0425,Shastri Park Road,light,3.4,8.5,11.9,9.7,2.3,51.6,86.1,97.0,1,21170.7,1,28.63114,77.24178,real_govt_record,Low
+REAL-0297,Rao Tula Ram Marg,light,7.8,17.1,26.0,13.0,1.66,763.3,76.7,46.1,2,19626.5,0,28.63279,77.24026,real_govt_record,Low
+REAL-0738,Roshanara Road,moderate,17.2,36.5,52.5,44.5,3.8,116.7,82.5,61.7,1,11607.2,1,28.6302,77.23691,real_govt_record,Low
+SYN2-0116,SYN2-0116,synthetic_v2,76.09,185.06,250.07,57.84,5.53,420.58,73.04,51.43,1,16701.8,0,28.60437,77.29955,synthetic,Medium
+REAL-0903,Swami Narayan Marg,heavy,26.8,55.8,87.7,25.1,2.53,439.8,82.5,71.5,1,20858.2,1,28.62891,77.24343,real_govt_record,Low
+REAL-0602,Dr. Rajendra Prasad Road,moderate,23.3,50.6,77.0,11.5,2.93,625.0,80.7,55.1,1,13773.4,1,28.62828,77.24259,real_govt_record,Low
+REAL-1000,Saket Road,extreme,65.0,136.4,195.1,18.8,2.76,433.5,87.5,60.8,1,11495.9,1,28.62533,77.2426,real_govt_record,High
+SYN2-0063,SYN2-0063,synthetic_v2,39.31,101.18,124.66,27.72,7.14,698.09,48.29,84.45,5,18638.4,1,28.78762,77.2915,synthetic,High
+REAL-0396,"Sector-13 Road, Dwarka",extreme,40.4,110.0,145.4,25.5,2.4,227.4,86.5,71.8,2,8540.9,0,28.62462,77.23395,real_govt_record,Medium
+REAL-0427,Shastri Park Road,heavy,34.8,89.7,136.8,10.9,4.62,458.7,86.1,46.1,1,21112.9,0,28.63113,77.24123,real_govt_record,Medium
+SYN2-0060,SYN2-0060,synthetic_v2,38.35,75.47,102.43,40.47,7.65,415.68,30.59,73.43,3,5254.99,1,28.77945,77.22692,synthetic,Medium
+ZONE-007,ZONE-007,synthetic_v1,77.96,103.02,133.06,16.42,1.16,815.65,47.01,61.07,2,12064.19,1,28.79597,77.20991,synthetic,Medium
+REAL-0253,Barapullah Road,light,8.3,18.8,28.1,25.4,2.78,70.3,72.4,62.6,2,23305.3,1,28.62646,77.23479,real_govt_record,Low
+REAL-0239,Satya Marg,heavy,27.2,74.6,111.2,17.7,4.16,593.1,79.7,83.5,3,5201.6,0,28.63387,77.24077,real_govt_record,Medium
+ZONE-113,ZONE-113,synthetic_v1,21.0,32.83,126.6,35.32,4.66,849.4,24.57,56.53,5,13417.37,1,28.73801,77.34847,synthetic,High
+REAL-0845,Chand Cinema Road,light,11.2,22.7,31.1,15.4,2.91,163.6,86.1,41.0,1,24470.4,0,28.62788,77.23853,real_govt_record,Low
+REAL-0846,Chand Cinema Road,moderate,19.1,48.8,76.6,8.7,1.02,458.9,86.1,37.8,1,6436.3,1,28.62343,77.23719,real_govt_record,Low
+REAL-0555,NH-44 Khampur Singhu,heavy,37.4,86.2,135.8,22.4,3.43,67.5,72.4,49.2,1,17626.0,1,28.62835,77.23759,real_govt_record,Medium
+REAL-0546,Najafgarh-Nangloi Road,moderate,13.7,30.2,45.4,11.0,2.62,228.4,74.1,42.3,1,20669.8,1,28.63416,77.23949,real_govt_record,Low
+REAL-0251,Maulana Azad Road,heavy,38.5,78.0,104.8,22.9,3.04,148.7,83.0,85.0,2,5305.1,1,28.6299,77.23933,real_govt_record,Medium
+REAL-0740,Roshanara Road,extreme,45.6,99.4,154.3,40.1,2.82,528.5,82.5,57.8,1,15247.2,0,28.63013,77.2366,real_govt_record,Medium
+REAL-0965,New Friends Colony,light,6.0,16.9,25.6,12.0,4.71,395.0,85.9,58.9,1,12769.6,1,28.62831,77.23878,real_govt_record,Low
+REAL-0199,Vir Banda Bairagi Marg,heavy,32.6,67.5,99.5,23.4,2.93,395.3,80.7,56.3,4,23187.8,0,28.62631,77.24336,real_govt_record,Medium
+REAL-0898,Sham Nath Marg,moderate,15.5,42.1,61.1,27.9,2.74,241.3,86.1,59.4,1,10846.2,1,28.62837,77.23893,real_govt_record,Low
+SYN2-0038,SYN2-0038,synthetic_v2,90.03,222.0,319.9,49.78,4.43,297.66,95.62,28.08,1,17807.03,0,28.67294,77.21427,synthetic,Medium
+SYN2-0023,SYN2-0023,synthetic_v2,60.87,134.62,190.76,11.67,1.01,499.57,31.65,67.73,2,4699.41,0,28.73755,77.27129,synthetic,High
+REAL-0990,Police Colony,moderate,12.9,28.6,44.2,29.2,2.92,318.9,86.1,75.1,1,10181.2,1,28.62413,77.2429,real_govt_record,Low
+ZONE-009,ZONE-009,synthetic_v1,70.85,108.91,142.77,54.48,4.56,640.33,34.85,88.51,3,22390.52,1,28.56974,77.26095,synthetic,High
+SYN2-0001,SYN2-0001,synthetic_v2,92.86,237.62,369.97,9.6,4.94,452.56,62.41,21.73,1,8149.78,0,28.60526,77.24101,synthetic,High
+REAL-0244,Teen Murti Marg,extreme,53.9,122.2,166.3,8.4,3.46,533.2,85.9,75.1,3,13417.3,1,28.62642,77.23931,real_govt_record,High
+REAL-0067,Ch. Fateh Singh Marg,heavy,35.5,74.3,107.4,22.9,4.8,545.2,76.7,84.4,10,5940.8,0,28.69714,77.22216,real_govt_record,Medium
+SYN2-0136,SYN2-0136,synthetic_v2,46.77,109.44,140.32,43.96,5.38,176.51,52.89,76.65,4,16259.86,0,28.59039,77.17878,synthetic,High
+REAL-0934,GGR-PDR RR Hospital,moderate,17.4,44.9,65.9,33.2,2.92,748.4,83.9,50.7,1,12213.3,1,28.63166,77.2351,real_govt_record,Low
+REAL-0360,NH-48 Dhaula Kuan,extreme,57.6,118.7,155.1,28.5,4.51,488.0,74.1,61.1,2,18231.4,1,28.62913,77.23883,real_govt_record,High
+REAL-0096,"NH-48, Gurugram Road",extreme,44.3,122.0,194.6,24.3,2.88,448.1,87.5,37.9,7,16593.7,1,28.63421,77.2347,real_govt_record,High
+SYN2-0160,SYN2-0160,synthetic_v2,81.61,203.95,290.83,48.85,5.59,770.83,72.4,38.04,3,22870.15,0,28.6793,77.26875,synthetic,High
+SYN2-0174,SYN2-0174,synthetic_v2,99.73,258.14,388.11,23.76,7.6,968.69,65.34,42.48,5,19508.8,0,28.68511,77.19129,synthetic,High
+REAL-0522,Mahipalpur to Gurugram,moderate,12.7,30.2,44.0,14.5,3.47,473.5,76.7,96.6,1,24033.1,0,28.62711,77.23978,real_govt_record,Low
+REAL-0975,NH-48 Shiv Murti,heavy,38.9,80.3,118.8,23.1,1.41,243.0,86.5,56.7,1,22998.1,0,28.62314,77.24036,real_govt_record,Medium
+REAL-0666,Netaji Subhash Marg,moderate,15.6,38.3,59.4,15.0,3.08,188.4,82.5,86.3,1,20499.5,1,28.62825,77.23867,real_govt_record,Low
+REAL-0362,Old Delhi Gurugram Road,moderate,12.3,25.6,33.8,19.0,4.72,555.2,76.7,87.7,2,21506.8,0,28.63159,77.24299,real_govt_record,Low
+REAL-0485,Mangolpuri- Udhyog Nagar,light,4.4,9.3,13.0,26.0,4.79,790.1,76.7,82.6,1,15956.4,0,28.63381,77.23632,real_govt_record,Low
+ZONE-144,ZONE-144,synthetic_v1,36.8,107.99,201.94,46.49,4.37,357.74,44.32,48.5,0,8462.02,1,28.75806,77.17748,synthetic,Low
+REAL-0312,Bawana Road,extreme,43.9,95.8,144.7,20.2,3.97,484.1,82.5,61.5,2,15042.1,1,28.63682,77.23672,real_govt_record,Medium
+REAL-0843,Bhiku Ram Jain Marg,heavy,25.1,60.8,96.6,44.7,4.45,593.5,86.1,36.0,1,14209.8,1,28.62919,77.24442,real_govt_record,Low
+REAL-0414,NH-44 Near Apple,moderate,15.0,42.6,56.2,38.3,3.22,797.4,85.9,67.9,1,18682.0,0,28.62744,77.23798,real_govt_record,Low
+ZONE-126,ZONE-126,synthetic_v1,90.76,145.69,231.66,17.4,0.78,355.74,91.39,33.17,3,18841.77,1,28.59412,77.34988,synthetic,High
+REAL-0032,Mathura Road,extreme,53.2,136.2,196.4,12.7,2.45,661.8,86.1,92.6,28,14007.2,1,28.59214,77.24538,real_govt_record,High
+REAL-0766,"Sector 22, Dwarka",moderate,12.6,32.6,43.1,42.4,3.88,774.2,76.7,64.3,1,21601.1,0,28.63513,77.23992,real_govt_record,Low
+REAL-0459,Gulab Singh Marg,heavy,25.0,66.0,105.3,42.1,1.91,478.3,72.4,57.2,1,20135.2,0,28.63209,77.24691,real_govt_record,Low
+SYN2-0004,SYN2-0004,synthetic_v2,80.91,180.18,264.75,33.6,4.87,128.21,54.09,61.12,4,8453.36,1,28.57726,77.33003,synthetic,High
+REAL-0340,Kanhiya Nagar Kanhiya,extreme,42.1,98.5,157.5,11.3,4.37,54.5,94.2,97.6,2,23078.4,1,28.6274,77.24562,real_govt_record,Medium
+REAL-0287,Narela Bawana Road,heavy,29.9,70.3,107.7,19.4,1.72,269.0,87.5,94.2,2,15308.3,1,28.62381,77.24596,real_govt_record,Low
+SYN2-0182,SYN2-0182,synthetic_v2,34.18,88.55,134.42,54.23,1.84,404.47,50.33,20.87,3,22911.39,1,28.62794,77.23281,synthetic,Medium
+REAL-0950,Krishna Menon Marg,moderate,19.9,54.6,87.3,20.5,1.71,629.1,74.1,60.1,1,6374.4,1,28.63124,77.23777,real_govt_record,Low
+REAL-0140,Mehrauli-Mahipalpur Road,extreme,64.3,134.4,200.1,26.7,3.05,135.6,83.0,88.6,5,18486.6,1,28.62766,77.23686,real_govt_record,High
+REAL-0849,Chelmsford Road,light,8.9,24.3,36.3,38.1,3.41,790.1,74.1,97.1,1,6609.0,0,28.63368,77.24094,real_govt_record,Low
+REAL-1026,Shiv Das Puri Marg,moderate,20.3,42.6,67.8,38.6,2.97,567.4,83.9,50.8,1,7961.7,0,28.63455,77.24563,real_govt_record,Low
+SYN2-0050,SYN2-0050,synthetic_v2,42.69,96.38,142.29,54.64,2.15,138.29,60.97,30.17,3,17966.22,0,28.66217,77.28287,synthetic,Medium
+ZONE-107,ZONE-107,synthetic_v1,69.49,134.66,189.37,40.68,7.23,999.24,47.68,12.5,2,13203.07,1,28.76355,77.23815,synthetic,Medium
+REAL-0901,Swami Narayan Marg,light,11.5,24.5,35.8,19.8,1.7,249.5,82.5,41.6,1,24802.4,1,28.62921,77.24235,real_govt_record,Low
+REAL-0732,Ram Kumar Gautam Marg,extreme,61.6,133.4,205.2,10.1,2.68,362.1,82.5,81.4,1,22620.2,0,28.63123,77.2373,real_govt_record,High
+REAL-0265,Ashok Vihar Road,light,9.5,19.5,30.0,9.5,2.77,154.9,74.7,70.0,2,23950.8,1,28.62807,77.23712,real_govt_record,Low
+REAL-0275,Kanjhawala Road,heavy,37.0,82.2,110.8,27.6,2.36,436.6,82.5,80.6,2,18469.8,1,28.62574,77.23803,real_govt_record,Medium
+ZONE-063,ZONE-063,synthetic_v1,87.85,115.59,165.13,29.16,0.75,74.67,37.87,41.39,5,16573.88,0,28.56978,77.16371,synthetic,High
+REAL-0445,Barapulla Flyover Barapulla,light,9.6,22.3,34.0,23.5,0.84,454.1,85.9,65.5,1,20803.9,0,28.63622,77.23813,real_govt_record,Low
+REAL-0040,"Firni Road, Najafgarh",extreme,49.9,132.2,189.9,35.4,2.32,196.3,83.0,45.6,21,14763.8,0,28.61093,76.97347,real_govt_record,High
+ZONE-091,ZONE-091,synthetic_v1,24.18,85.81,146.05,14.04,2.36,579.8,98.11,21.26,5,2634.64,0,28.65319,77.32845,synthetic,High
+REAL-0022,MB Road,moderate,20.2,46.3,64.5,37.3,0.59,151.9,79.7,64.1,38,4519.3,1,28.50813,77.26211,real_govt_record,Medium
+REAL-0706,Outer Circle Outer,moderate,16.8,33.9,51.1,40.5,2.26,148.2,83.9,85.5,1,7798.4,1,28.63483,77.24268,real_govt_record,Low
+REAL-0518,Vande Matram Marg,moderate,13.3,37.2,51.9,27.0,3.8,122.9,83.9,41.1,1,23450.9,0,28.62601,77.243,real_govt_record,Low
+ZONE-142,ZONE-142,synthetic_v1,34.57,80.94,91.06,55.29,7.37,980.15,97.28,59.4,0,19791.02,1,28.56703,77.23582,synthetic,Low
+REAL-0355,NH-48 Between Sanjay,heavy,28.3,77.0,105.2,12.7,0.61,730.5,83.0,96.7,2,11725.6,0,28.63015,77.23888,real_govt_record,Medium
+REAL-0298,Rao Tula Ram Marg,moderate,24.0,50.2,77.6,29.0,0.83,598.8,76.7,88.5,2,21594.0,0,28.62945,77.23778,real_govt_record,Low
+ZONE-045,ZONE-045,synthetic_v1,94.6,129.86,208.93,32.7,7.63,368.49,74.42,28.94,5,13430.37,0,28.64306,77.24127,synthetic,High
+REAL-0840,Bamnikhera Road,extreme,67.7,138.6,183.2,41.1,0.9,287.8,79.7,54.5,1,8938.0,1,28.62391,77.24311,real_govt_record,High
+SYN2-0041,SYN2-0041,synthetic_v2,90.61,217.2,285.16,32.75,6.29,795.43,78.43,85.88,3,14443.99,0,28.58154,77.15267,synthetic,High
+REAL-0925,Dwarka – Dabri Drain,light,6.9,19.7,27.4,20.0,5.0,513.8,82.5,44.2,1,5660.5,0,28.63415,77.24235,real_govt_record,Low
+REAL-0123,Rani Jhansi Marg,heavy,38.9,80.8,129.0,38.3,4.49,282.6,86.5,89.3,5,14759.5,1,28.63055,77.24542,real_govt_record,Medium
+SYN2-0046,SYN2-0046,synthetic_v2,59.75,149.43,225.08,53.76,2.18,107.59,92.46,10.36,0,6454.67,0,28.79978,77.3389,synthetic,Low
+ZONE-060,ZONE-060,synthetic_v1,14.32,75.13,90.13,7.97,3.0,869.28,89.52,46.31,1,5449.22,1,28.78658,77.34883,synthetic,Low
+SYN2-0066,SYN2-0066,synthetic_v2,84.91,161.66,247.43,50.65,2.72,694.61,86.37,40.58,4,3230.05,0,28.68419,77.17436,synthetic,High
+ZONE-120,ZONE-120,synthetic_v1,13.55,67.33,161.6,21.89,2.47,621.74,65.06,22.44,4,14557.78,0,28.60957,77.32883,synthetic,High
+ZONE-132,ZONE-132,synthetic_v1,21.4,43.53,114.62,6.78,3.73,105.95,88.48,39.12,3,15835.19,1,28.65638,77.3402,synthetic,Medium
+REAL-0418,Pusa Road,moderate,17.9,37.6,53.8,38.1,2.62,486.2,82.5,51.4,1,12596.1,1,28.62344,77.23754,real_govt_record,Low
+REAL-0967,New Friends Colony,heavy,25.8,60.5,79.9,33.8,4.64,339.0,85.9,70.6,1,18324.4,1,28.62545,77.2395,real_govt_record,Low
+SYN2-0061,SYN2-0061,synthetic_v2,44.03,97.54,154.7,44.0,6.54,920.55,32.86,99.77,3,8281.4,0,28.69128,77.17969,synthetic,High
+REAL-0158,Pankha Road,moderate,10.4,27.0,40.5,26.9,1.89,314.6,83.0,50.7,4,16406.4,1,28.62702,77.23347,real_govt_record,Low
+ZONE-087,ZONE-087,synthetic_v1,22.42,67.5,132.97,14.99,7.43,800.78,99.6,52.67,2,16463.6,0,28.69976,77.3422,synthetic,Low
+ZONE-032,ZONE-032,synthetic_v1,39.86,112.87,176.74,34.74,1.24,985.51,50.93,61.29,1,23857.04,1,28.79121,77.16162,synthetic,Medium
+ZONE-123,ZONE-123,synthetic_v1,36.59,63.37,147.5,50.12,6.05,266.52,69.94,93.01,2,10476.43,1,28.69272,77.20447,synthetic,Low
+REAL-0190,PUSA Road,moderate,18.5,47.9,65.4,23.3,4.95,328.1,83.9,57.8,4,23131.1,1,28.6306,77.23974,real_govt_record,Low
+REAL-0590,Ch. Nand Lal Marg,moderate,23.9,49.9,66.9,31.5,2.65,217.8,85.9,40.0,1,12776.4,0,28.62583,77.23967,real_govt_record,Low
+REAL-0761,Satguru Ram Singh Marg,light,10.7,24.8,37.1,37.1,2.68,508.3,94.2,78.3,1,17818.1,0,28.62915,77.23751,real_govt_record,Low
+ZONE-031,ZONE-031,synthetic_v1,85.19,149.29,222.58,41.34,3.68,740.03,80.83,27.59,4,20842.99,0,28.6141,77.22536,synthetic,High
+REAL-0243,Teen Murti Marg,heavy,22.7,55.2,81.5,12.5,1.64,137.7,85.9,58.0,3,16790.8,1,28.62441,77.2445,real_govt_record,Low
+REAL-0885,Rind Road,light,3.9,7.8,12.2,41.1,4.64,735.7,76.7,91.1,1,9650.7,0,28.62847,77.2438,real_govt_record,Low
+REAL-0621,Khalsa Road,light,2.4,6.2,8.4,37.6,4.32,488.2,72.4,56.8,1,4357.8,0,28.63297,77.24205,real_govt_record,Low
+REAL-0651,Maulana Johar Ali Marg,heavy,40.4,89.4,125.4,28.4,1.68,492.1,76.7,47.7,1,19134.3,0,28.62488,77.23773,real_govt_record,Medium
+REAL-0504,Old GTK Road,extreme,56.5,116.9,182.2,36.5,4.18,789.0,86.5,40.2,1,10984.9,1,28.62611,77.23835,real_govt_record,Medium
+REAL-0923,Captain Kumud Kumar Marg,heavy,36.1,80.8,128.1,33.3,0.77,375.9,76.7,36.1,1,21574.0,0,28.63068,77.23874,real_govt_record,Medium
+REAL-0160,Pankha Road,extreme,65.9,133.2,189.7,8.4,1.19,663.8,83.0,82.0,4,18964.8,0,28.62845,77.23587,real_govt_record,High
+REAL-0883,Raj Niwas Marg,heavy,30.4,85.9,124.5,28.1,2.08,686.8,87.5,60.1,1,10156.9,1,28.62518,77.24776,real_govt_record,Medium
+REAL-0538,Satya Niketan Road,moderate,19.0,39.8,62.8,30.2,2.7,761.4,86.1,90.3,1,7325.4,1,28.62961,77.23942,real_govt_record,Low
+REAL-0241,Teen Murti Marg,light,6.0,12.7,17.5,34.5,1.33,421.3,85.9,97.0,3,9038.5,1,28.62369,77.24004,real_govt_record,Low
+REAL-0014,M.B. Road,moderate,15.8,39.2,54.6,9.2,3.19,106.1,83.0,39.3,42,10532.3,0,28.5086,77.25421,real_govt_record,Medium
+REAL-0476,M.G. Road,extreme,59.0,132.5,183.2,35.9,4.97,550.4,83.9,46.8,1,16690.2,0,28.63451,77.24144,real_govt_record,High
+SYN2-0128,SYN2-0128,synthetic_v2,21.99,44.14,58.74,55.22,4.1,197.67,37.02,37.65,3,2088.16,0,28.7254,77.29628,synthetic,Medium
+REAL-0929,Firoz Shah Road,light,8.9,21.4,31.3,33.6,1.7,796.9,74.7,87.2,1,7962.6,0,28.62867,77.24563,real_govt_record,Low
+REAL-0796,Surajkund Road,extreme,50.3,103.4,138.2,16.6,2.23,183.0,86.1,43.4,1,10551.0,0,28.62842,77.2357,real_govt_record,Medium
+REAL-0356,NH-48 Between Sanjay,extreme,42.6,98.5,141.9,24.7,0.59,428.3,83.0,86.8,2,13789.2,0,28.63036,77.23953,real_govt_record,Medium
+ZONE-027,ZONE-027,synthetic_v1,51.13,96.14,147.87,52.68,0.95,781.72,48.06,64.07,0,17787.71,1,28.6499,77.20873,synthetic,Low
+REAL-0335,Inside Pragati Maidan,heavy,29.4,78.1,118.3,29.7,3.58,646.7,85.9,85.2,2,13894.2,0,28.62494,77.23614,real_govt_record,Medium
+REAL-0689,NH-48 Shankar Vihar,light,8.7,22.9,32.4,23.0,1.93,581.9,76.7,66.5,1,20715.9,1,28.6276,77.24094,real_govt_record,Low
+REAL-0185,Noida Link Road,light,8.6,23.7,34.5,43.5,0.64,133.8,86.5,90.6,4,24100.4,0,28.62469,77.23779,real_govt_record,Low
+REAL-0824,Ansari Road,extreme,50.3,128.9,179.2,8.9,3.03,557.7,83.9,42.5,1,5443.1,1,28.62719,77.23296,real_govt_record,High
+SYN2-0111,SYN2-0111,synthetic_v2,16.04,37.07,47.25,47.11,2.68,967.01,31.95,95.25,5,13461.58,0,28.77227,77.1613,synthetic,High
+REAL-1002,"Sector-14 Road, Dwarka",moderate,16.8,38.1,53.0,42.0,1.41,441.0,79.7,79.1,1,23605.8,1,28.62713,77.24099,real_govt_record,Low
+REAL-0188,Noida Link Road,extreme,60.0,122.6,174.6,15.4,1.45,388.5,86.5,49.1,4,23293.9,0,28.62363,77.24083,real_govt_record,High
+REAL-0942,Kapashera - Najafgarh Road,moderate,20.1,53.3,75.9,36.0,3.6,185.4,86.5,69.9,1,17670.7,0,28.63564,77.24002,real_govt_record,Low
+REAL-0285,Narela Bawana Road,light,9.1,23.6,33.9,41.4,0.84,490.4,87.5,55.4,2,5836.9,1,28.6289,77.24497,real_govt_record,Low
+REAL-0900,Sham Nath Marg,extreme,41.0,96.9,145.6,22.1,3.49,589.5,86.1,37.8,1,11774.8,0,28.62759,77.24099,real_govt_record,Medium
+SYN2-0169,SYN2-0169,synthetic_v2,47.06,106.0,152.98,11.96,7.01,243.01,40.36,14.61,1,2741.35,1,28.66821,77.34077,synthetic,Medium
+REAL-0166,Ulan Batar Marg,moderate,20.2,48.9,76.2,22.9,1.79,559.9,85.9,40.5,4,24666.1,1,28.62995,77.23759,real_govt_record,Low
+REAL-0348,Motilal Nehru Marg,extreme,36.4,101.6,150.8,10.0,1.99,348.3,90.9,41.5,2,4230.1,1,28.63198,77.24358,real_govt_record,Medium
+REAL-0299,Rao Tula Ram Marg,heavy,29.0,81.3,120.0,33.4,4.35,199.5,76.7,55.3,2,13137.2,0,28.63093,77.23512,real_govt_record,Medium
+REAL-0536,NH-8 Rangpuri Chowk,extreme,47.8,101.7,142.4,8.3,1.64,266.2,76.7,63.8,1,21820.7,1,28.62928,77.23635,real_govt_record,Medium
+REAL-0230,Kemal Ataturk Marg,moderate,18.8,53.2,74.3,30.0,3.93,418.9,83.0,69.1,3,12117.7,0,28.62622,77.241,real_govt_record,Low
+REAL-0042,New Rohtak Road,moderate,25.0,51.9,78.3,36.4,3.94,354.3,80.7,81.2,19,5481.6,1,28.65723,77.19137,real_govt_record,Medium
+REAL-0869,Khoda Chowk,light,5.3,11.3,16.6,25.7,2.07,577.0,82.5,47.3,1,13751.3,0,28.63487,77.23803,real_govt_record,Low
+REAL-0749,Sant Nagar Marg,light,6.2,16.6,24.8,40.3,0.87,426.9,85.9,94.6,1,12002.2,0,28.62868,77.23916,real_govt_record,Low
+SYN2-0146,SYN2-0146,synthetic_v2,97.05,225.15,330.95,49.64,5.48,456.2,74.64,17.47,0,3451.25,1,28.71824,77.3382,synthetic,Medium
+REAL-0447,Barapulla Flyover Barapulla,heavy,37.3,88.4,140.7,26.3,3.4,64.9,85.9,62.3,1,15199.7,1,28.63659,77.2358,real_govt_record,Medium
+REAL-0350,Najafgarh Road-Azad Hind Fauz Marg,moderate,20.0,48.0,64.5,33.1,4.98,516.5,82.5,63.5,2,15302.1,1,28.63004,77.24345,real_govt_record,Low
+REAL-0046,Wazirabad Road,moderate,12.0,27.3,41.7,9.7,4.69,169.9,80.7,65.2,18,7551.6,1,28.71075,77.22553,real_govt_record,Medium
+SYN2-0151,SYN2-0151,synthetic_v2,87.95,162.11,219.42,41.91,5.45,468.6,55.02,91.75,1,8009.44,1,28.73054,77.27425,synthetic,Medium
+SYN2-0173,SYN2-0173,synthetic_v2,56.89,125.87,191.29,9.7,2.12,193.51,98.57,54.41,5,24939.09,0,28.74477,77.22915,synthetic,High
+REAL-0109,Patparganj Road,light,4.2,10.4,14.0,42.7,2.12,624.3,87.5,81.3,6,23048.5,0,28.63541,77.24215,real_govt_record,Low
+REAL-0030,Mathura Road,moderate,17.1,43.3,58.1,28.2,1.73,423.2,86.1,61.3,28,6399.9,0,28.59512,77.24303,real_govt_record,Medium
+REAL-0182,Netaji Subhash Marg/,moderate,12.1,26.8,35.4,9.1,3.07,787.1,81.7,78.8,4,21961.6,0,28.62694,77.24558,real_govt_record,Low
+REAL-0622,Khalsa Road,moderate,11.4,30.8,40.1,12.4,1.98,770.1,72.4,83.4,1,7797.4,1,28.62816,77.23969,real_govt_record,Low
+REAL-0635,Lothian Road,heavy,31.5,73.8,99.3,9.2,4.5,780.4,80.7,88.1,1,7960.9,0,28.63641,77.24095,real_govt_record,Medium
+REAL-0105,Mother Teresa Crescent Road,light,4.0,10.9,17.0,23.5,0.89,220.4,86.1,54.8,6,23874.7,0,28.62941,77.24418,real_govt_record,Low
+REAL-0061,Bhairon Road,light,3.8,10.5,14.6,9.0,3.44,123.1,74.1,87.2,10,12863.1,0,28.61781,77.24329,real_govt_record,Low
+REAL-0659,Najafgarh-kapashera Road,heavy,26.3,64.1,99.9,34.4,1.02,154.9,94.2,38.3,1,18046.6,0,28.62638,77.23925,real_govt_record,Low
+ZONE-076,ZONE-076,synthetic_v1,77.45,85.23,140.32,59.61,7.13,166.55,86.34,48.58,1,21276.84,0,28.67471,77.27124,synthetic,Low
+REAL-0491,MGM Road,heavy,28.3,79.0,110.7,13.7,2.14,611.2,87.5,78.3,1,22232.4,0,28.62859,77.24124,real_govt_record,Medium
+REAL-0316,NH-8 Near Shiv,extreme,59.1,124.4,188.9,17.0,1.2,775.4,80.7,93.6,2,23391.6,1,28.62524,77.23507,real_govt_record,High
+REAL-0382,IP Marg,moderate,12.3,28.6,45.4,33.9,4.13,767.9,87.5,53.1,2,5798.6,0,28.63133,77.23819,real_govt_record,Low
+REAL-0423,Seelampur Road,heavy,23.0,58.8,79.6,31.3,2.86,79.5,72.4,36.0,1,5911.0,0,28.62932,77.24217,real_govt_record,Low
+SYN2-0156,SYN2-0156,synthetic_v2,89.63,210.44,304.7,9.84,3.81,743.48,25.69,81.66,4,9487.94,0,28.6542,77.30954,synthetic,High
+REAL-0446,Barapulla Flyover Barapulla,moderate,10.5,29.7,44.9,38.2,1.35,688.2,85.9,83.4,1,7451.9,0,28.63707,77.23539,real_govt_record,Low
+REAL-0664,Near Zakir Nagar Main Road,extreme,45.1,125.4,197.4,40.4,4.09,742.5,76.7,57.0,1,6707.9,1,28.63285,77.24384,real_govt_record,High
+REAL-1025,Shiv Das Puri Marg,light,2.5,6.9,9.4,34.5,4.33,667.5,83.9,97.7,1,24397.7,0,28.63724,77.24504,real_govt_record,Low
+REAL-0780,SPM Marg,extreme,50.8,116.1,155.7,25.0,2.76,620.6,74.7,53.3,1,24139.0,0,28.62977,77.2451,real_govt_record,High
+REAL-0627,KN Katju Marg,heavy,31.9,73.0,110.6,44.2,0.71,279.5,80.7,83.9,1,11072.9,0,28.63204,77.23595,real_govt_record,Low
+ZONE-081,ZONE-081,synthetic_v1,41.02,63.51,127.82,20.43,3.84,857.98,84.62,31.53,2,19963.46,1,28.66785,77.20807,synthetic,Low
+ZONE-070,ZONE-070,synthetic_v1,69.19,98.23,118.23,46.46,2.36,683.06,25.8,97.3,3,17819.88,1,28.57307,77.18256,synthetic,High
+REAL-0269,Azad Market Road,light,5.7,12.0,18.5,33.0,4.3,339.5,82.5,76.1,2,9276.0,1,28.62664,77.24032,real_govt_record,Low
+REAL-0930,Firoz Shah Road,moderate,16.4,35.3,53.8,28.6,3.13,265.9,74.7,43.3,1,18504.2,0,28.63193,77.24765,real_govt_record,Low
+ZONE-116,ZONE-116,synthetic_v1,95.45,131.5,229.9,40.33,0.69,748.6,45.97,57.53,0,19345.35,0,28.71838,77.34614,synthetic,Low
+SYN2-0140,SYN2-0140,synthetic_v2,34.69,66.96,99.29,40.6,3.11,521.76,85.56,12.2,1,11081.16,1,28.64293,77.15351,synthetic,Low
+ZONE-088,ZONE-088,synthetic_v1,25.7,39.24,78.59,28.89,1.83,664.47,21.12,15.69,2,21791.14,1,28.75239,77.18238,synthetic,Medium
+REAL-0012,Outer Ring Road,extreme,40.6,96.3,144.1,30.8,0.83,209.3,86.1,93.6,48,19728.7,0,28.57436,77.18676,real_govt_record,High
+REAL-0115,Shyama Prasad Mukherjee Marg,heavy,33.2,87.4,133.8,21.0,3.71,440.3,76.7,82.5,6,23057.8,0,28.63335,77.24101,real_govt_record,Medium
+REAL-0844,Bhiku Ram Jain Marg,extreme,52.3,120.4,180.1,26.3,2.38,762.6,86.1,59.4,1,17051.4,0,28.62789,77.24133,real_govt_record,High
+SYN2-0100,SYN2-0100,synthetic_v2,52.73,95.05,132.67,24.21,4.85,456.38,62.15,87.26,3,15633.98,1,28.70231,77.24251,synthetic,High
+REAL-0353,NH-48 Between Sanjay,light,2.2,5.1,7.4,13.4,3.79,240.2,83.0,60.8,2,9204.5,1,28.62985,77.23916,real_govt_record,Low
+SYN2-0184,SYN2-0184,synthetic_v2,58.06,109.71,162.52,10.76,7.77,442.37,70.77,96.8,5,20898.63,0,28.6435,77.25604,synthetic,High
+REAL-0774,Shanti Path- Panchsheel Marg,moderate,16.9,48.1,74.5,24.3,4.45,83.5,82.5,99.0,1,6195.3,1,28.62624,77.23454,real_govt_record,Low
+REAL-0691,NH-48 Shankar Vihar,heavy,42.5,88.6,136.7,39.4,2.84,603.8,76.7,96.5,1,8516.6,0,28.62775,77.23976,real_govt_record,Medium
+REAL-0791,Suraj Kund Road,heavy,36.1,81.9,130.9,37.7,4.49,77.8,86.5,64.9,1,7186.0,1,28.62663,77.24356,real_govt_record,Low
+REAL-0532,Manas Marg,extreme,49.5,105.8,144.5,37.7,3.95,521.8,74.7,39.9,1,6550.6,0,28.62726,77.23665,real_govt_record,Medium
+REAL-0868,Kela Godam Road,extreme,49.7,111.5,164.8,29.5,2.88,251.7,74.7,59.4,1,24683.4,0,28.62414,77.23428,real_govt_record,Medium
+REAL-0170,Boulevard Road,moderate,20.5,45.7,61.0,40.1,0.94,293.1,82.5,44.0,4,23896.0,0,28.63409,77.23623,real_govt_record,Low
+REAL-0240,Satya Marg,extreme,57.6,129.5,197.1,40.8,3.4,788.3,79.7,86.5,3,22926.0,0,28.63143,77.23717,real_govt_record,High
+SYN2-0120,SYN2-0120,synthetic_v2,79.79,163.11,225.15,55.66,3.13,353.27,44.81,23.53,3,8586.72,1,28.6584,77.21988,synthetic,High
+SYN2-0003,SYN2-0003,synthetic_v2,39.47,95.04,128.06,36.46,5.45,348.67,26.86,52.67,5,13110.94,1,28.71893,77.18272,synthetic,High
+REAL-0074,Ram Bagh,moderate,25.7,54.7,74.5,30.8,1.81,332.0,82.5,69.5,10,10262.3,1,28.62759,77.23927,real_govt_record,Medium
+ZONE-055,ZONE-055,synthetic_v1,16.34,69.6,134.64,29.64,6.25,86.44,74.46,16.77,5,11308.17,1,28.76726,77.19861,synthetic,High
+REAL-0762,Satguru Ram Singh Marg,moderate,13.4,28.9,40.8,32.5,1.24,563.6,94.2,67.9,1,6311.7,0,28.62731,77.23987,real_govt_record,Low
+REAL-0741,San Martin Marg,light,5.8,15.3,24.4,10.8,2.09,108.7,83.9,47.9,1,14540.1,0,28.6298,77.24388,real_govt_record,Low
+REAL-0751,Sant Nagar Marg,heavy,30.4,86.4,120.0,13.5,3.58,412.6,85.9,73.6,1,5190.7,0,28.6258,77.24051,real_govt_record,Medium
+REAL-0742,San Martin Marg,moderate,21.4,46.3,62.8,33.2,1.24,543.5,83.9,89.8,1,15651.9,1,28.63454,77.23947,real_govt_record,Low
+REAL-0831,Avantika Market Marg,heavy,22.4,60.5,79.5,13.3,4.1,209.5,87.5,66.2,1,18149.6,0,28.62797,77.23464,real_govt_record,Low
+REAL-0048,Wazirabad Road,extreme,42.5,91.3,134.7,31.4,2.34,563.2,80.7,38.4,18,10618.0,1,28.7078,77.22788,real_govt_record,High
+REAL-0763,Satguru Ram Singh Marg,heavy,25.7,68.5,93.2,24.5,1.64,431.8,94.2,67.2,1,18460.3,1,28.62656,77.24222,real_govt_record,Low
+REAL-0592,Ch. Nand Lal Marg,extreme,47.4,108.5,164.2,27.7,3.92,254.1,85.9,85.2,1,10681.2,0,28.62362,77.23813,real_govt_record,Medium
+REAL-0808,Talkatora Road,extreme,45.9,106.6,153.1,28.0,3.58,625.4,76.7,59.3,1,18582.8,1,28.6311,77.23566,real_govt_record,Medium
+ZONE-052,ZONE-052,synthetic_v1,5.5,12.1,90.67,14.07,2.36,125.8,92.07,82.56,0,11349.48,0,28.56212,77.34631,synthetic,Low
+REAL-0506,Old Palam Road,moderate,23.5,53.0,84.2,38.1,2.92,441.6,79.7,79.2,1,11713.7,0,28.63048,77.24115,real_govt_record,Low
+ZONE-013,ZONE-013,synthetic_v1,17.37,48.39,109.96,14.21,7.72,768.05,49.91,40.88,3,14856.21,0,28.78433,77.24621,synthetic,Medium
+REAL-0653,MP Road,light,5.6,12.7,19.4,23.6,3.79,214.3,74.1,54.2,1,22351.5,1,28.63158,77.24188,real_govt_record,Low
+REAL-0193,Subramaniam Bharti Marg,light,4.4,9.7,13.3,39.4,4.49,551.2,87.5,58.5,4,19263.1,1,28.63003,77.24668,real_govt_record,Low
+SYN2-0058,SYN2-0058,synthetic_v2,22.05,50.56,68.8,48.12,4.97,437.54,98.97,26.11,0,12902.35,0,28.69959,77.31231,synthetic,Low
+REAL-0245,Mother Teresa Crescent Marg,light,4.9,12.7,18.2,21.9,1.23,323.0,87.5,91.0,3,11365.5,0,28.63154,77.2333,real_govt_record,Low
+REAL-0060,Anuvrat Marg,extreme,52.6,134.0,175.1,27.1,2.95,475.6,85.9,96.9,11,17675.3,1,28.529,77.1861,real_govt_record,High
+SYN2-0064,SYN2-0064,synthetic_v2,6.59,15.95,19.88,39.18,7.43,936.08,48.28,52.21,4,9489.82,1,28.58131,77.19427,synthetic,Medium
+REAL-0177,Najafgarh- Bahadurgarh Road,light,7.6,18.8,29.8,34.6,1.81,693.2,83.0,81.5,4,9559.1,0,28.62997,77.24202,real_govt_record,Low
+REAL-0450,Chhawla Road,moderate,10.9,28.5,43.0,29.3,2.34,372.5,76.7,76.2,1,6004.4,1,28.63016,77.23421,real_govt_record,Low
+REAL-0056,Okhla Estate Marg,extreme,45.7,94.9,125.6,11.1,3.04,413.6,74.7,78.9,12,10276.3,0,28.52942,77.27011,real_govt_record,High
+SYN2-0097,SYN2-0097,synthetic_v2,38.51,98.11,128.42,17.03,4.16,810.84,81.78,69.45,0,22783.5,0,28.58145,77.18929,synthetic,Low
+REAL-0920,Captain Gaur Marg,extreme,59.6,122.1,185.6,42.6,0.81,489.6,85.9,35.1,1,15318.5,0,28.62706,77.24557,real_govt_record,Medium
+SYN2-0040,SYN2-0040,synthetic_v2,22.49,56.1,73.69,11.91,1.77,910.73,49.07,36.52,5,20658.79,0,28.76295,77.30247,synthetic,High
+ZONE-061,ZONE-061,synthetic_v1,83.29,100.31,150.23,31.02,3.7,109.9,34.92,38.82,5,7697.38,0,28.77252,77.29954,synthetic,High
+SYN2-0011,SYN2-0011,synthetic_v2,30.85,63.88,77.26,57.61,6.12,431.67,83.49,12.72,5,12334.45,1,28.78867,77.23399,synthetic,High
+SYN2-0028,SYN2-0028,synthetic_v2,59.34,144.69,210.46,12.67,6.48,386.18,66.7,56.12,3,2192.66,1,28.57045,77.21523,synthetic,High
+ZONE-028,ZONE-028,synthetic_v1,51.39,97.47,184.28,11.56,1.51,759.62,98.57,35.63,2,11802.23,1,28.57106,77.31956,synthetic,Medium
+REAL-0642,Major Sudesh Marg,moderate,13.1,34.9,51.5,37.4,4.9,731.0,83.9,73.7,1,8296.7,0,28.62868,77.24348,real_govt_record,Low

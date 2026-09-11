@@ -1,0 +1,70 @@
+Here are Person B's steps, picking up right after Person A finished training and fixing the dataset.
+
+## Person B — Build & Deploy the Backend
+
+**Step 1: Get the files from Person A**
+Ask Person A to send you:
+- `aquag_model.pkl`
+- `package_versions.txt` (or the version numbers directly)
+- `zone_flood_data.csv` (optional, only needed if `/zones` should show live predictions instead of fixed ones)
+
+**Step 2: Create your Replit project**
+Go to [replit.com](https://replit.com) → Create Repl → Python template → name it `aquag-backend`.
+
+**Step 3: Upload the model file**
+Drag and drop `aquag_model.pkl` (and `zone_flood_data.csv` if you have it) into the Replit file panel — must sit in the same folder as `main.py`.
+
+**Step 4: Build the backend**
+Paste this into Replit's AI chat:
+
+```
+Build a complete FastAPI backend in main.py for this flood prediction prototype:
+
+1. Load aquag_model.pkl using joblib at startup
+2. POST /predict endpoint:
+   - Accepts JSON with: rainfall_1h, rainfall_3h, rainfall_6h, elevation, slope, 
+     distance_to_drain, drain_capacity, pump_load_pct, flood_history_count, 
+     population_density, critical_infra_flag
+   - Runs the model and returns JSON with exactly these keys:
+     flood_severity (Low/Medium/High), pump_alert (true if pump_load_pct >= 85), 
+     immediate_action (a short text message, only included if flood_severity is 
+     "High" AND critical_infra_flag is 1, otherwise null)
+3. GET /zones endpoint:
+   - Reads zone_flood_data.csv, takes 5-8 sample zones
+   - For each zone, runs its features through the model to get a live predicted severity
+   - Returns a JSON list with: zone_id, lat, lon (generate reasonable dummy coordinates 
+     around Delhi if not present in the CSV), severity
+4. Enable CORS for all origins
+5. Add a requirements.txt with pinned versions: fastapi, uvicorn, joblib, 
+   xgboost==[version from Person A], scikit-learn==[version from Person A], pandas
+
+After writing this, run the server and give me the live public URL.
+```
+
+**Step 5: Test /predict**
+In Replit's Shell tab:
+```bash
+curl -X POST https://YOUR-REPLIT-URL/predict -H "Content-Type: application/json" -d '{"rainfall_1h":20,"rainfall_3h":45,"rainfall_6h":60,"elevation":15,"slope":2,"distance_to_drain":100,"drain_capacity":40,"pump_load_pct":85,"flood_history_count":3,"population_density":12000,"critical_infra_flag":1}'
+```
+Confirm you get back:
+```json
+{"flood_severity": "High", "pump_alert": true, "immediate_action": "..."}
+```
+
+**Step 6: Test /zones**
+```bash
+curl https://YOUR-REPLIT-URL/zones
+```
+Confirm it returns a list of zones with severity values.
+
+**Step 7: Confirm CORS is working**
+Ask Replit directly:
+```
+Confirm CORS middleware is enabled in main.py to allow requests from any origin.
+```
+
+**Step 8: Copy the live URL**
+Grab the public link (e.g. `https://aquag-backend.yourname.repl.co`) — this is what Person C needs.
+
+**Step 9: Send to Person C**
+Send the URL along with a note: *"Live backend is ready. Use this in your `.env.local` as `VITE_FLOOD_API_URL`. Two endpoints are live — `/predict` for the real AI prediction, `/zones` for the sample map data."*

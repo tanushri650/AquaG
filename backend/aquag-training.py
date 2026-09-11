@@ -22,7 +22,7 @@ from xgboost import XGBClassifier
 
 
 ROOT = Path(__file__).resolve().parent
-DATASET_PATH = ROOT / "zone_flood_data.csv"
+DATASET_PATH = ROOT.parent / "data" / "processed" / "zone_flood_data.csv"
 MODEL_PATH = ROOT / "aquag_model.pkl"
 VERSIONS_PATH = ROOT / "package_versions.txt"
 REPORT_PATH = ROOT / "classification_report.txt"
