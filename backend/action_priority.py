@@ -5,7 +5,7 @@ import pandas as pd
 from typing import Literal, Dict
 
 # Load processed V2 dataset to compute normalization ranges (once at import)
-DATASET_PATH = pathlib.Path(__file__).resolve().parents[2] / "data" / "processed" / "aquag_ml_dataset_v2_renamed.csv"
+DATASET_PATH = pathlib.Path(__file__).resolve().parents[1] / "data" / "processed" / "aquag_ml_dataset_v2_renamed.csv"
 if not DATASET_PATH.exists():
     raise FileNotFoundError(f"Dataset not found for Action Priority Engine: {DATASET_PATH}")
 _df = pd.read_csv(DATASET_PATH)
