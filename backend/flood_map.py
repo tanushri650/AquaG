@@ -1,105 +1,464 @@
 """
 AquaG Flood Map GIS Utilities
-Stage 6: GIS layer queries including DEM elevation and nearest drain distance.
+
+Stage 6:
+- DEM elevation queries
+- Nearest drain queries
+- Spatial flood proxy information
+
+Deployment optimized:
+- DEM is NOT fully loaded into RAM at startup.
+- Drain GeoJSON files are NOT loaded at startup.
+- Population GeoJSON is NOT loaded at startup.
+- Data is loaded only when the corresponding function is called.
 """
 
 from pathlib import Path
+
 import geopandas as gpd
-import pandas as pd
 import rasterio
 from shapely.geometry import Point
 
-# Base data directory
+
+# ============================================================
+# PATHS
+# ============================================================
+
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_RAW_ROOT = PROJECT_ROOT / "data" / "raw"
 
-# Load DEM dataset into memory once at module import
-DEM_PATH = DATA_RAW_ROOT / "dem" / "delhi_aw3d30.tif"
-if not DEM_PATH.exists():
-    raise FileNotFoundError(f"DEM file not found: {DEM_PATH}")
-DEMDataset = rasterio.open(DEM_PATH)
-DEM_CRS = DEMDataset.crs
-DEM_BOUNDS = DEMDataset.bounds
-DEM_DATA = DEMDataset.read(1)
-
-# Load drains GeoJSON
-DRAINS_DIR = DATA_RAW_ROOT / "drainage"
-DRN_FILES = [
-    DRAINS_DIR / "delhi_drains_mpd1976_full.geojson",
-    DRAINS_DIR / "delhi_untraceable_drains_mpd1976-1.geojson",
-]
-DRAINS_GDF = gpd.GeoDataFrame(
-    pd.concat(
-        [gpd.read_file(p) for p in DRN_FILES if p.exists()],
-        ignore_index=True,
-    )
+DEM_PATH = (
+    DATA_RAW_ROOT
+    / "dem"
+    / "delhi_aw3d30.tif"
 )
-if DRAINS_GDF.empty:
-    raise ValueError("No drain features loaded")
 
-if DRAINS_GDF.crs is None:
-    DRAINS_GDF.set_crs(epsg=4326, inplace=True)
-else:
-    DRAINS_GDF = DRAINS_GDF.to_crs(epsg=4326)
+DRAINS_DIR = (
+    DATA_RAW_ROOT
+    / "drainage"
+)
 
-# Load population GeoJSON
-POP_PATH = DATA_RAW_ROOT / "population" / "delhi_districts_population_2011-3.geojson"
+DRN_FILES = [
+    DRAINS_DIR
+    / "delhi_drains_mpd1976_full.geojson",
+
+    DRAINS_DIR
+    / "delhi_untraceable_drains_mpd1976-1.geojson",
+]
+
+POP_PATH = (
+    DATA_RAW_ROOT
+    / "population"
+    / "delhi_districts_population_2011-3.geojson"
+)
+
+
+# ============================================================
+# LAZY-LOADED DATA
+# ============================================================
+
+# These variables intentionally start as None.
+# They will be loaded only when required.
+
+DEMDataset = None
+DEM_CRS = None
+DEM_BOUNDS = None
+
+DRAINS_GDF = None
+
 POP_GDF = None
-if POP_PATH.exists():
-    POP_GDF = gpd.read_file(POP_PATH)
-    if POP_GDF.crs is None:
-        POP_GDF.set_crs(epsg=4326, inplace=True)
+
+
+# ============================================================
+# DEM LOADER
+# ============================================================
+
+def _load_dem():
+    """
+    Open the DEM only when a DEM query is required.
+
+    The complete raster is NOT read into RAM.
+    """
+
+    global DEMDataset
+    global DEM_CRS
+    global DEM_BOUNDS
+
+    if DEMDataset is not None:
+        return DEMDataset
+
+    if not DEM_PATH.exists():
+        raise FileNotFoundError(
+            f"DEM file not found: {DEM_PATH}"
+        )
+
+    print("Loading DEM dataset lazily...")
+
+    DEMDataset = rasterio.open(
+        DEM_PATH
+    )
+
+    DEM_CRS = DEMDataset.crs
+    DEM_BOUNDS = DEMDataset.bounds
+
+    return DEMDataset
+
+
+# ============================================================
+# DRAIN LOADER
+# ============================================================
+
+def _load_drains():
+    """
+    Load drainage GeoJSON files only when a drain query
+    is actually requested.
+    """
+
+    global DRAINS_GDF
+
+    if DRAINS_GDF is not None:
+        return DRAINS_GDF
+
+    print("Loading drainage data lazily...")
+
+    frames = []
+
+    for path in DRN_FILES:
+
+        if not path.exists():
+            continue
+
+        try:
+            gdf = gpd.read_file(
+                path
+            )
+
+            if gdf.empty:
+                continue
+
+            if gdf.crs is None:
+
+                gdf = gdf.set_crs(
+                    epsg=4326
+                )
+
+            elif gdf.crs.to_epsg() != 4326:
+
+                gdf = gdf.to_crs(
+                    epsg=4326
+                )
+
+            frames.append(gdf)
+
+        except Exception as exc:
+
+            print(
+                f"Warning: could not load drain file "
+                f"{path.name}: {exc}"
+            )
+
+    if not frames:
+
+        raise ValueError(
+            "No drain features loaded"
+        )
+
+    # Concatenate GeoDataFrames without pandas import.
+    DRAINS_GDF = gpd.GeoDataFrame(
+        gpd.pd.concat(
+            frames,
+            ignore_index=True,
+        ),
+        crs="EPSG:4326",
+    )
+
+    return DRAINS_GDF
+
+
+# ============================================================
+# POPULATION LOADER
+# ============================================================
+
+def _load_population():
+    """
+    Load population data only when needed.
+    """
+
+    global POP_GDF
+
+    if POP_GDF is not None:
+        return POP_GDF
+
+    if not POP_PATH.exists():
+        return None
+
+    print("Loading population data lazily...")
+
+    try:
+
+        POP_GDF = gpd.read_file(
+            POP_PATH
+        )
+
+        if POP_GDF.crs is None:
+
+            POP_GDF = POP_GDF.set_crs(
+                epsg=4326
+            )
+
+        elif POP_GDF.crs.to_epsg() != 4326:
+
+            POP_GDF = POP_GDF.to_crs(
+                epsg=4326
+            )
+
+        return POP_GDF
+
+    except Exception as exc:
+
+        print(
+            f"Warning: could not load population data: {exc}"
+        )
+
+        POP_GDF = None
+
+        return None
+
+
+# ============================================================
+# NEAREST DRAIN
+# ============================================================
+
+def nearest_drain(
+    lat: float,
+    lon: float,
+) -> dict:
+    """
+    Return the nearest drain feature and distance in metres.
+
+    Drain data is loaded lazily.
+    """
+
+    drains = _load_drains()
+
+    if drains.empty:
+        raise ValueError(
+            "No drain features available."
+        )
+
+    point = Point(
+        lon,
+        lat,
+    )
+
+    # Build/use GeoPandas spatial index.
+    nearest_result = drains.sindex.nearest(
+        point
+    )
+
+    # GeoPandas versions may return a 2 x N array.
+    if hasattr(
+        nearest_result,
+        "shape",
+    ) and len(nearest_result.shape) > 1:
+
+        nearest_idx = int(
+            nearest_result[1][0]
+        )
+
     else:
-        POP_GDF = POP_GDF.to_crs(epsg=4326)
 
+        nearest_idx = int(
+            nearest_result[0]
+        )
 
-def nearest_drain(lat: float, lon: float) -> dict:
-    """Return the nearest drain feature and distance (meters) using spatial index."""
-    point = Point(lon, lat)
-    nearest_idx = DRAINS_GDF.sindex.nearest(point)[1][0]
-    nearest_geom = DRAINS_GDF.geometry.iloc[nearest_idx]
-    deg_distance = nearest_geom.distance(point)
-    meters = deg_distance * 111_000
+    nearest_geom = (
+        drains.geometry.iloc[
+            nearest_idx
+        ]
+    )
+
+    if nearest_geom is None:
+        raise ValueError(
+            "Nearest drain geometry is unavailable."
+        )
+
+    # Coordinates are EPSG:4326.
+    # This is the same spatial proxy used previously.
+    deg_distance = (
+        nearest_geom.distance(
+            point
+        )
+    )
+
+    meters = (
+        float(deg_distance)
+        * 111_000.0
+    )
+
     return {
-        "drain_id": int(nearest_idx),
-        "distance_m": float(meters),
+        "drain_id": nearest_idx,
+        "distance_m": meters,
         "geometry": nearest_geom.wkt,
     }
 
 
-def dem_elevation(lat: float, lon: float) -> float:
-    """Return DEM elevation (meters) at given lat/lon using cached DEM memory array."""
-    if DEMDataset.crs.to_epsg() != 4326:
+# ============================================================
+# DEM ELEVATION
+# ============================================================
+
+def dem_elevation(
+    lat: float,
+    lon: float,
+) -> float:
+    """
+    Return DEM elevation in metres.
+
+    IMPORTANT:
+    The old implementation loaded the entire DEM into RAM.
+
+    This version reads only a tiny window around the requested
+    coordinate, greatly reducing memory usage.
+    """
+
+    dem = _load_dem()
+
+    query_lon = lon
+    query_lat = lat
+
+    # Transform coordinates if DEM CRS is not EPSG:4326.
+    if (
+        dem.crs is not None
+        and dem.crs.to_epsg() != 4326
+    ):
+
         from pyproj import Transformer
-        transformer = Transformer.from_crs("epsg:4326", DEMDataset.crs, always_xy=True)
-        lon, lat = transformer.transform(lon, lat)
-    row, col = DEMDataset.index(lon, lat)
+
+        transformer = Transformer.from_crs(
+            "EPSG:4326",
+            dem.crs,
+            always_xy=True,
+        )
+
+        query_lon, query_lat = (
+            transformer.transform(
+                lon,
+                lat,
+            )
+        )
+
     try:
-        value = DEM_DATA[row, col]
-    except IndexError:
-        raise ValueError("Coordinates out of DEM bounds")
+
+        row, col = dem.index(
+            query_lon,
+            query_lat,
+        )
+
+    except Exception as exc:
+
+        raise ValueError(
+            "Could not convert coordinates "
+            "to DEM pixel."
+        ) from exc
+
+    # Check bounds before reading.
+    if (
+        row < 0
+        or row >= dem.height
+        or col < 0
+        or col >= dem.width
+    ):
+
+        raise ValueError(
+            "Coordinates out of DEM bounds"
+        )
+
+    # Read ONLY the requested pixel.
+    window = rasterio.windows.Window(
+        col_off=col,
+        row_off=row,
+        width=1,
+        height=1,
+    )
+
+    value = dem.read(
+        1,
+        window=window,
+    )[0, 0]
+
     return float(value)
 
 
-def get_flood_info(lat: float, lon: float) -> dict:
-    """Aggregate flood info for a point: elevation and nearest documented MPD-1976 drain location."""
+# ============================================================
+# FLOOD INFORMATION
+# ============================================================
+
+def get_flood_info(
+    lat: float,
+    lon: float,
+) -> dict:
+    """
+    Aggregate flood information for a point.
+
+    Includes:
+    - DEM elevation
+    - nearest documented MPD-1976 drain
+    - spatial proxy basis
+    """
+
     try:
-        elev = dem_elevation(lat, lon)
+
+        elev = dem_elevation(
+            lat,
+            lon,
+        )
+
     except Exception:
+
         elev = None
+
     try:
-        drain = nearest_drain(lat, lon)
-        drain_dist = drain.get("distance_m") if drain else None
+
+        drain = nearest_drain(
+            lat,
+            lon,
+        )
+
+        drain_dist = (
+            drain.get(
+                "distance_m"
+            )
+            if drain
+            else None
+        )
+
     except Exception:
+
         drain = None
         drain_dist = None
 
     return {
         "latitude": lat,
         "longitude": lon,
+
         "elevation": elev,
-        "elevation_m": round(elev, 2) if elev is not None else None,
+
+        "elevation_m": (
+            round(elev, 2)
+            if elev is not None
+            else None
+        ),
+
         "nearest_drain": drain,
-        "nearest_drain_distance_m": round(drain_dist, 2) if drain_dist is not None else None,
+
+        "nearest_drain_distance_m": (
+            round(
+                drain_dist,
+                2,
+            )
+            if drain_dist is not None
+            else None
+        ),
+
         "risk_basis": "spatial_proxy",
     }

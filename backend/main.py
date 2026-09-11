@@ -176,7 +176,7 @@ def health() -> HealthResponse:
         status="ok",
         model_version=MODEL_VERSION,
         model_type=MODEL_TYPE,
-        router_loaded=bool(ROUTER is not None and len(ROUTER.nodes) > 0),
+        router_loaded=bool(ROUTER is not None and ROUTER.node_count > 0),
         dem_loaded=bool(DEMDataset is not None),
         drainage_loaded=bool(DRAINS_GDF is not None and not DRAINS_GDF.empty),
     )
