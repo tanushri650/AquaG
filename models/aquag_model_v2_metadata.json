@@ -1,0 +1,35 @@
+{
+  "model_type": "XGBoost",
+  "feature_order": [
+    "rainfall_1h",
+    "rainfall_3h",
+    "rainfall_6h",
+    "recent_rainfall_intensity",
+    "elevation",
+    "slope",
+    "distance_to_drain",
+    "distance_to_road",
+    "distance_to_infra",
+    "population_total",
+    "critical_infra_flag"
+  ],
+  "class_names": [
+    "High",
+    "Low",
+    "Medium"
+  ],
+  "dataset_sha256": "8ccc1961c34c11810431481c70b35b06467ef032efb30ddde98c5af8b9682eea",
+  "training_rows": 1105,
+  "test_rows": 277,
+  "cv_accuracy_mean": 0.7746606334841628,
+  "cv_accuracy_std": 0.022056212863265052,
+  "cv_macro_f1_mean": 0.7358085636374347,
+  "cv_macro_f1_std": 0.025090476235132227,
+  "test_metrics": {
+    "accuracy": 0.7148014440433214,
+    "macro_f1": 0.6605250422279649,
+    "weighted_f1": 0.7096460054545602
+  },
+  "training_date": "2026-09-10T00:34:58.967718",
+  "model_version": "AquaG Model V2"
+}

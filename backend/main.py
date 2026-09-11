@@ -23,9 +23,9 @@ from fastapi.middleware.cors import CORSMiddleware
 
 # Import deterministic Action Priority Engine
 import importlib.util, sys
-project_root = Path(__file__).resolve().parents[2]
+project_root = Path(__file__).resolve().parents[1]
 sys.path.append(str(project_root))
-action_path = project_root / "existing code" / "backend" / "action_priority.py"
+action_path = project_root / "backend" / "action_priority.py"
 spec = importlib.util.spec_from_file_location("action_priority", str(action_path))
 action_mod = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(action_mod)
