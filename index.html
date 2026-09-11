@@ -82,6 +82,34 @@
           </div>
           <div class="layer-item">
             <label class="custom-checkbox">
+              <input type="checkbox" id="layer-waterlogging-check" checked />
+              <span class="checkmark"></span>
+              <span class="layer-name">Waterlogged Streets (POST /waterlogging)</span>
+            </label>
+          </div>
+          <div class="layer-item">
+            <label class="custom-checkbox">
+              <input type="checkbox" id="layer-infra-check" />
+              <span class="checkmark"></span>
+              <span class="layer-name">Critical Infrastructure (GET /infrastructure)</span>
+            </label>
+          </div>
+          <div class="layer-item">
+            <label class="custom-checkbox">
+              <input type="checkbox" id="layer-pumps-check" />
+              <span class="checkmark"></span>
+              <span class="layer-name">Pump Stations (GET /pumps)</span>
+            </label>
+          </div>
+          <div class="layer-item">
+            <label class="custom-checkbox">
+              <input type="checkbox" id="layer-drains-check" checked />
+              <span class="checkmark"></span>
+              <span class="layer-name">Drainage Network (GET /drainage)</span>
+            </label>
+          </div>
+          <div class="layer-item">
+            <label class="custom-checkbox">
               <input type="checkbox" id="layer-zones-check" checked />
               <span class="checkmark"></span>
               <span class="layer-name">Zone Severity Layers (GET /zones)</span>
@@ -89,9 +117,9 @@
           </div>
           <div class="layer-item">
             <label class="custom-checkbox">
-              <input type="checkbox" id="layer-drains-check" checked />
+              <input type="checkbox" id="layer-pop-priority-check" />
               <span class="checkmark"></span>
-              <span class="layer-name">MPD-1976 Drainage Locations</span>
+              <span class="layer-name">Population Priority (GET /population-priority)</span>
             </label>
           </div>
           <div class="layer-item">
@@ -101,27 +129,36 @@
               <span class="layer-name">AquaGraph Risk Polyline</span>
             </label>
           </div>
+
         </div>
 
         <!-- 5. FLOATING MAP LEGEND (BOTTOM LEFT) -->
         <div class="map-legend-panel glass-panel">
-          <div class="legend-header">FLOOD RISK CLASSIFICATION</div>
+          <div class="legend-header">STREET WATERLOGGING DEPTH</div>
           <div class="legend-items">
             <div class="legend-row">
-              <span class="legend-color high"></span>
-              <span class="legend-text">High Severity / Spatial Risk ($5.0\times$)</span>
+              <span class="legend-color" style="background:#60a5fa"></span>
+              <span class="legend-text">0–10 cm (Low)</span>
             </div>
             <div class="legend-row">
-              <span class="legend-color medium"></span>
-              <span class="legend-text">Medium Severity / Spatial Risk ($2.0\times$)</span>
+              <span class="legend-color" style="background:#3b82f6"></span>
+              <span class="legend-text">10–25 cm (Medium)</span>
             </div>
             <div class="legend-row">
-              <span class="legend-color low"></span>
-              <span class="legend-text">Low Severity / Spatial Risk ($1.0\times$)</span>
+              <span class="legend-color" style="background:#2563eb"></span>
+              <span class="legend-text">25–50 cm (Medium)</span>
+            </div>
+            <div class="legend-row">
+              <span class="legend-color" style="background:#1d4ed8"></span>
+              <span class="legend-text">50–100 cm (High)</span>
+            </div>
+            <div class="legend-row">
+              <span class="legend-color" style="background:#9333ea"></span>
+              <span class="legend-text">&gt;100 cm (Critical)</span>
             </div>
           </div>
           <div class="legend-footer">
-            Basis: Model V2 Inference & DEM 30m / MPD-1976 Drainage Proxy
+            Model-derived waterlogging depth proxy
           </div>
         </div>
 
@@ -192,6 +229,10 @@
           <button class="side-tab-btn" data-tab="tab-routing">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="3 11 22 2 13 21 11 13 3 11"/></svg>
             AquaGraph Router
+          </button>
+          <button class="side-tab-btn" data-tab="tab-alerts">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.73 21a2 2 0 0 1-3.46 0"/></svg>
+            Alerts &amp; Triage
           </button>
         </div>
 
@@ -427,12 +468,48 @@
                   <span class="m-lbl">Dest Snap</span>
                   <span id="route-snap-dest" class="m-val">-- m</span>
                 </div>
+                <div class="m-box">
+                  <span class="m-lbl">Max Water Depth</span>
+                  <span id="route-max-depth" class="m-val highlight">-- cm</span>
+                </div>
+                <div class="m-box">
+                  <span class="m-lbl">Flooded Segments</span>
+                  <span id="route-flooded-count" class="m-val">--</span>
+                </div>
+                <div class="m-box">
+                  <span class="m-lbl">Route Risk Level</span>
+                  <span id="route-risk-level" class="m-val">--</span>
+                </div>
+                <div class="m-box">
+                  <span class="m-lbl">Forecast Context</span>
+                  <span id="route-forecast-tag" class="m-val">--</span>
+                </div>
+              </div>
+
+              <div id="route-avoided-banner" class="sim-card-note hidden" style="color: var(--accent-cyan-light); font-weight: 600;">
               </div>
 
               <div class="spatial-basis-footer">
-                <strong>Risk Basis:</strong> <span id="route-risk-basis">spatial_proxy</span> (DEM 30m + MPD-1976 Drains)
+                <strong>Risk Basis:</strong> <span id="route-risk-basis">model_derived_flood_aware_routing</span>
               </div>
             </div>
+          </div>
+        </div>
+
+        <!-- TAB 3: ALERTS & TRIAGE -->
+        <div id="tab-alerts" class="sidebar-tab-content glass-panel">
+          <div class="section-title-box">
+            <h3>Alerts &amp; Triage Incidents</h3>
+            <span class="sub-title-text">Model-derived Forecast Incidents (GET /alerts)</span>
+          </div>
+
+          <div class="alerts-meta-bar">
+            <span class="basis-pill">Basis: model_derived_forecast_triage</span>
+            <span id="alerts-count-badge" class="score-pill">0 Incidents</span>
+          </div>
+
+          <div id="alerts-list-container" class="alerts-list-scroll">
+            <div class="alert-empty-msg">No high priority incidents for current viewport.</div>
           </div>
         </div>
       </aside>

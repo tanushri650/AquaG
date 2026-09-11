@@ -38,6 +38,14 @@ if str(backend_dir) not in sys.path:
 
 from flood_map import get_flood_info, DEMDataset, DRAINS_GDF
 from routing import AquaGRouter
+from waterlogging import get_street_waterlogging_geojson
+from infrastructure import get_infrastructure_geojson
+from pumps import get_pumps_metadata
+from drainage import get_drainage_geojson
+from population_priority import get_population_priority_geojson
+from alerts import get_alerts_triage
+
+
 from schemas import (
     FeatureInput,
     ActionPriority,
@@ -48,6 +56,8 @@ from schemas import (
     RouteRequest,
     RouteResponse,
     HealthResponse,
+    WaterloggingRequest,
+    WaterloggingResponse,
 )
 
 # Instantiate authoritative AquaGRouter ONCE at application startup
@@ -172,14 +182,17 @@ def predict_severity(payload: FeatureInput) -> PredictResponse:
     tags=["System"],
 )
 def health() -> HealthResponse:
+    from flood_map import DEM_PATH, DRAINS_DIR
     return HealthResponse(
         status="ok",
         model_version=MODEL_VERSION,
         model_type=MODEL_TYPE,
         router_loaded=bool(ROUTER is not None and ROUTER.node_count > 0),
-        dem_loaded=bool(DEMDataset is not None),
-        drainage_loaded=bool(DRAINS_GDF is not None and not DRAINS_GDF.empty),
+        dem_loaded=bool(DEM_PATH.exists()),
+        drainage_loaded=bool(DRAINS_DIR.exists()),
     )
+
+
 
 
 @app.post(
@@ -248,11 +261,18 @@ def flood_info(payload: FloodInfoRequest) -> FloodInfoResponse:
 )
 def route(payload: RouteRequest) -> RouteResponse:
     res = ROUTER.route(
-        payload.start_lat,
-        payload.start_lon,
-        payload.end_lat,
-        payload.end_lon,
+        start_lat=payload.start_lat,
+        start_lon=payload.start_lon,
+        end_lat=payload.end_lat,
+        end_lon=payload.end_lon,
         risk=payload.risk,
+        scenario=payload.scenario,
+        timestep=payload.timestep,
+        rainfall_1h=payload.rainfall_1h,
+        rainfall_3h=payload.rainfall_3h,
+        rainfall_6h=payload.rainfall_6h,
+        recent_rainfall_intensity=payload.recent_rainfall_intensity,
+        flood_aware=payload.flood_aware,
     )
 
     if res.get("status") == "error":
@@ -262,6 +282,7 @@ def route(payload: RouteRequest) -> RouteResponse:
             risk_mode=payload.risk,
             risk_level=payload.risk,
             risk_basis="spatial_proxy",
+            basis="model_derived_flood_aware_routing" if payload.flood_aware else "spatial_proxy",
         )
 
     distance_m = res.get("distance_m", 0.0)
@@ -285,4 +306,140 @@ def route(payload: RouteRequest) -> RouteResponse:
         nodes_in_route=res.get("nodes_in_route"),
         route=res.get("route"),
         coordinates=res.get("coordinates"),
+        flood_aware=res.get("flood_aware", payload.flood_aware),
+        scenario=res.get("scenario", payload.scenario),
+        timestep=res.get("timestep", payload.timestep),
+        route_risk_level=res.get("route_risk_level", "Low"),
+        flooded_segments_on_route=res.get("flooded_segments_on_route", 0),
+        maximum_water_depth_cm=res.get("maximum_water_depth_cm", 0.0),
+        avoided_high_risk_segments=res.get("avoided_high_risk_segments", 0),
+        basis=res.get("basis", "model_derived_flood_aware_routing"),
+    )
+
+
+@app.post(
+    "/waterlogging",
+    response_model=WaterloggingResponse,
+    summary="Get Viewport-Filtered Street-Level Waterlogging GeoJSON Layer",
+    tags=["GIS & Waterlogging"],
+)
+def waterlogging(payload: WaterloggingRequest) -> WaterloggingResponse:
+    res = get_street_waterlogging_geojson(
+        scenario=payload.scenario,
+        timestep=payload.timestep,
+        rainfall_1h=payload.rainfall_1h,
+        rainfall_3h=payload.rainfall_3h,
+        rainfall_6h=payload.rainfall_6h,
+        recent_rainfall_intensity=payload.recent_rainfall_intensity,
+        bbox=payload.bbox,
+    )
+    return WaterloggingResponse(**res)
+
+
+@app.get(
+    "/infrastructure",
+    summary="Get Viewport-Filtered Critical Infrastructure GeoJSON Layer",
+    tags=["GIS & Infrastructure"],
+)
+def infrastructure(bbox: str | None = None) -> Dict[str, Any]:
+    bbox_list = None
+    if bbox:
+        try:
+            parts = [float(x.strip()) for x in bbox.split(",")]
+            if len(parts) == 4:
+                bbox_list = parts
+        except ValueError:
+            pass
+    return get_infrastructure_geojson(bbox=bbox_list)
+
+
+@app.get(
+    "/pumps",
+    summary="Get Permanent Pumping Stations Source Metadata",
+    tags=["GIS & Infrastructure"],
+)
+def pumps() -> Dict[str, Any]:
+    return get_pumps_metadata()
+
+
+@app.get(
+    "/drainage",
+    summary="Get Viewport-Filtered MPD-1976 Drainage Reference Points GeoJSON Layer",
+    tags=["GIS & Infrastructure"],
+)
+def drainage(bbox: str | None = None) -> Dict[str, Any]:
+    bbox_list = None
+    if bbox:
+        try:
+            parts = [float(x.strip()) for x in bbox.split(",")]
+            if len(parts) == 4:
+                bbox_list = parts
+        except ValueError:
+            pass
+    return get_drainage_geojson(bbox=bbox_list)
+
+
+@app.get(
+    "/population-priority",
+    summary="Get Viewport-Filtered Population Response Priority GeoJSON Layer",
+    tags=["GIS & Population Priority"],
+)
+def population_priority(
+    scenario: str = "NORMAL",
+    timestep: str = "T+0",
+    rainfall_1h: float = 10.0,
+    rainfall_3h: float = 20.0,
+    rainfall_6h: float = 30.0,
+    recent_rainfall_intensity: float = 5.0,
+    bbox: str | None = None,
+) -> Dict[str, Any]:
+    bbox_list = None
+    if bbox:
+        try:
+            parts = [float(x.strip()) for x in bbox.split(",")]
+            if len(parts) == 4:
+                bbox_list = parts
+        except ValueError:
+            pass
+    return get_population_priority_geojson(
+        scenario=scenario,
+        timestep=timestep,
+        rainfall_1h=rainfall_1h,
+        rainfall_3h=rainfall_3h,
+        rainfall_6h=rainfall_6h,
+        recent_rainfall_intensity=recent_rainfall_intensity,
+        bbox=bbox_list,
+    )
+
+
+@app.get(
+    "/alerts",
+    summary="Get Model-Derived Forecast Incident Triage List",
+    tags=["Alerts & Triage"],
+)
+def alerts(
+    scenario: str = "NORMAL",
+    timestep: str = "T+0",
+    rainfall_1h: float = 10.0,
+    rainfall_3h: float = 20.0,
+    rainfall_6h: float = 30.0,
+    recent_rainfall_intensity: float = 5.0,
+    bbox: str | None = None,
+) -> Dict[str, Any]:
+    bbox_list = None
+    if bbox:
+        try:
+            parts = [float(x.strip()) for x in bbox.split(",")]
+            if len(parts) == 4:
+                bbox_list = parts
+        except ValueError:
+            pass
+    return get_alerts_triage(
+        scenario=scenario,
+        timestep=timestep,
+        rainfall_1h=rainfall_1h,
+        rainfall_3h=rainfall_3h,
+        rainfall_6h=rainfall_6h,
+        recent_rainfall_intensity=recent_rainfall_intensity,
+        bbox=bbox_list,
     )

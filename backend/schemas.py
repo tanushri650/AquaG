@@ -92,9 +92,15 @@ class RouteRequest(BaseModel):
     end_lat: float = Field(..., ge=-90.0, le=90.0)
     end_lon: float = Field(..., ge=-180.0, le=180.0)
     risk: Literal["Low", "Medium", "High"] = "Low"
+    scenario: str = "NORMAL"
+    timestep: str = "T+0"
+    rainfall_1h: float | None = None
+    rainfall_3h: float | None = None
+    rainfall_6h: float | None = None
+    recent_rainfall_intensity: float | None = None
+    flood_aware: bool = True
 
     @field_validator("start_lat", "start_lon", "end_lat", "end_lon", mode="before")
-
     @classmethod
     def ensure_finite_route_coords(cls, v: Any) -> Any:
         if isinstance(v, (int, float)) and not np.isfinite(v):
@@ -122,6 +128,14 @@ class RouteResponse(BaseModel):
     nodes_in_route: int | None = None
     route: list[dict] | None = None
     coordinates: list[list[float]] | None = None
+    flood_aware: bool | None = None
+    scenario: str | None = None
+    timestep: str | None = None
+    route_risk_level: str | None = None
+    flooded_segments_on_route: int | None = None
+    maximum_water_depth_cm: float | None = None
+    avoided_high_risk_segments: int | None = None
+    basis: str | None = None
 
 
 class HealthResponse(BaseModel):
@@ -131,3 +145,34 @@ class HealthResponse(BaseModel):
     router_loaded: bool
     dem_loaded: bool
     drainage_loaded: bool
+
+
+class WaterloggingRequest(BaseModel):
+    scenario: str = "MODERATE"
+    timestep: str = "T+0"
+    rainfall_1h: float = Field(..., ge=0.0)
+    rainfall_3h: float = Field(..., ge=0.0)
+    rainfall_6h: float = Field(..., ge=0.0)
+    recent_rainfall_intensity: float = Field(..., ge=0.0)
+    bbox: List[float] = Field(..., description="[min_lon, min_lat, max_lon, max_lat]")
+
+    @field_validator("bbox")
+    @classmethod
+    def validate_bbox(cls, v: List[float]) -> List[float]:
+        if len(v) != 4:
+            raise ValueError("bbox must contain exactly 4 numbers: [min_lon, min_lat, max_lon, max_lat]")
+        min_lon, min_lat, max_lon, max_lat = v
+        if not (-180.0 <= min_lon <= 180.0 and -180.0 <= max_lon <= 180.0):
+            raise ValueError("Bounding box longitudes must be between -180 and 180")
+        if not (-90.0 <= min_lat <= 90.0 and -90.0 <= max_lat <= 90.0):
+            raise ValueError("Bounding box latitudes must be between -90 and 90")
+        if min_lon >= max_lon or min_lat >= max_lat:
+            raise ValueError("min_lon must be less than max_lon and min_lat must be less than max_lat")
+        return v
+
+
+class WaterloggingResponse(BaseModel):
+    type: str = "FeatureCollection"
+    features: List[Dict[str, Any]]
+    metadata: Dict[str, Any]
+

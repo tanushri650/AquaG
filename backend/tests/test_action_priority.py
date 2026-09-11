@@ -4,7 +4,7 @@ import pandas as pd
 import pathlib
 
 import importlib.util, pathlib, sys
-backend_dir = pathlib.Path(__file__).resolve().parents[2] / "existing code" / "backend"
+backend_dir = pathlib.Path(__file__).resolve().parents[1]
 module_path = backend_dir / "action_priority.py"
 spec = importlib.util.spec_from_file_location("action_priority", str(module_path))
 action_module = importlib.util.module_from_spec(spec)
@@ -13,6 +13,9 @@ calculate_action_priority = action_module.calculate_action_priority
 
 # Helper to load dataset min/max for manual calculation (mirrors module logic)
 DATASET_PATH = pathlib.Path(__file__).resolve().parents[2] / "data" / "processed" / "aquag_ml_dataset_v2_renamed.csv"
+
+
+
 _df = pd.read_csv(DATASET_PATH)
 POP_MIN = _df["population_total"].min()
 POP_MAX = _df["population_total"].max()

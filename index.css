@@ -872,3 +872,265 @@ body, html {
 @keyframes spin {
   to { transform: rotate(360deg); }
 }
+
+/* --------------------------------------------------------------------------
+   5. LEAFLET WATERLOGGING POPUP STYLING
+   -------------------------------------------------------------------------- */
+.dark-leaflet-popup .leaflet-popup-content-wrapper {
+  background: rgba(15, 23, 42, 0.95);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #f8fafc;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  padding: 4px;
+}
+
+.dark-leaflet-popup .leaflet-popup-tip {
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.waterlogging-popup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 210px;
+  font-family: var(--font-sans, 'Inter', sans-serif);
+  padding: 4px;
+}
+
+.wl-popup-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-cyan-light, #38bdf8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 4px;
+  margin-bottom: 2px;
+  font-family: var(--font-mono, monospace);
+}
+
+.wl-popup-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.72rem;
+  color: #94a3b8;
+}
+
+.wl-popup-row span {
+  color: #94a3b8;
+}
+
+.wl-popup-row strong {
+  color: #f8fafc;
+  font-weight: 600;
+}
+
+.wl-popup-row .sev-tag {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+
+.wl-popup-row .sev-tag.low { background: rgba(16, 185, 129, 0.2); color: #10b981; }
+.wl-popup-row .sev-tag.medium { background: rgba(245, 158, 11, 0.2); color: #f59e0b; }
+.wl-popup-row .sev-tag.high { background: rgba(239, 68, 68, 0.2); color: #ef4444; }
+
+.wl-popup-footer {
+  font-size: 0.62rem;
+  color: #64748b;
+  font-style: italic;
+  border-top: 1px dashed rgba(255, 255, 255, 0.1);
+  padding-top: 4px;
+  margin-top: 4px;
+}
+
+/* Infrastructure & Drainage Popups */
+.infra-popup, .drain-popup {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 200px;
+  font-family: var(--font-sans, 'Inter', sans-serif);
+  padding: 4px;
+}
+
+.infra-popup-title, .drain-popup-title {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--accent-cyan-light, #38bdf8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 4px;
+  margin-bottom: 2px;
+}
+
+.infra-popup-row, .drain-popup-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.72rem;
+  color: #94a3b8;
+}
+
+.infra-popup-row strong, .drain-popup-row strong {
+  color: #f8fafc;
+  font-weight: 600;
+}
+
+.infra-badge {
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 3px;
+  text-transform: uppercase;
+}
+.infra-badge.critical { background: rgba(239, 68, 68, 0.2); color: #ef4444; border: 1px solid rgba(239, 68, 68, 0.4); }
+.infra-badge.normal { background: rgba(59, 130, 246, 0.2); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.4); }
+
+/* Phase 3B Alerts & Triage Panel Styles */
+.alerts-meta-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 10px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-glass);
+}
+
+.basis-pill {
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  font-family: var(--font-mono);
+}
+
+.alerts-list-scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: calc(100vh - 220px);
+  overflow-y: auto;
+  padding-right: 2px;
+}
+
+.alert-empty-msg {
+  padding: 20px;
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: var(--radius-sm);
+}
+
+.alert-card {
+  background: rgba(13, 20, 36, 0.9);
+  border: 1px solid var(--border-glass);
+  border-radius: var(--radius-md);
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.alert-card:hover {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 12px rgba(6, 182, 212, 0.25);
+  transform: translateY(-1px);
+}
+
+.alert-card.priority-critical {
+  border-left: 4px solid #9333ea;
+}
+.alert-card.priority-high {
+  border-left: 4px solid #ef4444;
+}
+.alert-card.priority-medium {
+  border-left: 4px solid #f59e0b;
+}
+.alert-card.priority-low {
+  border-left: 4px solid #3b82f6;
+}
+
+.alert-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inc-id {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.inc-badge {
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 2px 6px;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.inc-badge.critical { background: rgba(147, 51, 234, 0.2); color: #c084fc; border: 1px solid rgba(147, 51, 234, 0.5); }
+.inc-badge.high { background: var(--severity-high-bg); color: var(--severity-high); border: 1px solid var(--severity-high-border); }
+.inc-badge.medium { background: var(--severity-medium-bg); color: var(--severity-medium); border: 1px solid var(--severity-medium-border); }
+.inc-badge.low { background: rgba(59, 130, 246, 0.2); color: #60a5fa; border: 1px solid rgba(59, 130, 246, 0.5); }
+
+.alert-card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.inc-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+.inc-row span { color: var(--text-dim); }
+.inc-row strong { color: var(--text-main); }
+
+.inc-action-box {
+  font-size: 0.72rem;
+  color: var(--text-main);
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  padding: 6px;
+  margin-top: 4px;
+  line-height: 1.3;
+}
+
+.alert-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.65rem;
+  color: var(--text-dim);
+  border-top: 1px dashed var(--border-glass);
+  padding-top: 6px;
+  margin-top: 2px;
+}
+
+.locate-inc-btn {
+  background: transparent;
+  border: 1px solid var(--border-cyan);
+  color: var(--accent-cyan-light);
+  border-radius: 3px;
+  padding: 2px 6px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.locate-inc-btn:hover {
+  background: var(--accent-cyan);
+  color: #000;
+}

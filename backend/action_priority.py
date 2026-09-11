@@ -56,7 +56,7 @@ def calculate_action_priority(
         "rainfall_1h": rainfall_1h,
         "distance_to_drain": distance_to_drain,
     }.items():
-        if not isinstance(val, (int, float)) or not np.isfinite(val):
+        if not isinstance(val, (int, float, np.number)) or not np.isfinite(val):
             raise ValueError(f"{name} must be a finite number")
 
     # Base score
