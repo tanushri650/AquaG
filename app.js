@@ -7,7 +7,9 @@
  */
 
 // Configurable API_BASE_URL: supports window.AQUAG_API_URL for production deployment, defaulting to local http://127.0.0.1:8000
-const API_BASE_URL = (typeof window !== "undefined" && window.AQUAG_API_URL) ? window.AQUAG_API_URL : "http://127.0.0.1:8000";
+const API_BASE_URL = (typeof window !== "undefined" && window.AQUAG_API_URL)
+  ? window.AQUAG_API_URL
+  : "https://aquag.onrender.com";
 
 // Global State Variables
 let map = null;
