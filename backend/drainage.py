@@ -12,12 +12,13 @@ import geopandas as gpd
 from pathlib import Path
 from typing import Dict, Any, List, Optional
 
+from waterlogging import find_project_file
+
 # ---------------------------------------------------------------------------
 # Path Resolutions
 # ---------------------------------------------------------------------------
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-DRAIN_FULL_PATH = PROJECT_ROOT / "existing code" / "data" / "raw" / "drainage" / "delhi_drains_mpd1976_full.geojson"
-UNTRACE_PATH = PROJECT_ROOT / "existing code" / "data" / "raw" / "drainage" / "delhi_untraceable_drains_mpd1976-1.geojson"
+DRAIN_FULL_PATH = find_project_file("existing code/data/raw/drainage/delhi_drains_mpd1976_full.geojson")
+UNTRACE_PATH = find_project_file("existing code/data/raw/drainage/delhi_untraceable_drains_mpd1976-1.geojson")
 
 _DRAINAGE_CACHE: Optional[List[Dict[str, Any]]] = None
 
@@ -32,43 +33,49 @@ def _init_drainage_cache() -> None:
 
     # 1. Load Main Drainage GeoJSON
     if DRAIN_FULL_PATH.exists():
-        gdf_main = gpd.read_file(DRAIN_FULL_PATH)
-        for _, row in gdf_main.iterrows():
-            geom = row.geometry
-            if geom is None or geom.is_empty:
-                continue
-            
-            lon, lat = float(geom.x), float(geom.y)
-            features.append({
-                "lon": lon,
-                "lat": lat,
-                "drain_name": str(row.get("drain_name", "MPD-1976 Drain")),
-                "basin": str(row.get("basin", "Delhi Basin")),
-                "seq_no": int(row.get("seq_no", 0)) if str(row.get("seq_no", "")).isdigit() else 0,
-                "status": str(row.get("status", "Existing / Remodeling")),
-                "source": str(row.get("source", "MPD-1976")),
-                "geometry_type": "Point"
-            })
+        try:
+            gdf_main = gpd.read_file(DRAIN_FULL_PATH)
+            for _, row in gdf_main.iterrows():
+                geom = row.geometry
+                if geom is None or geom.is_empty:
+                    continue
+                
+                lon, lat = float(geom.x), float(geom.y)
+                features.append({
+                    "lon": lon,
+                    "lat": lat,
+                    "drain_name": str(row.get("drain_name", "MPD-1976 Drain")),
+                    "basin": str(row.get("basin", "Delhi Basin")),
+                    "seq_no": int(row.get("seq_no", 0)) if str(row.get("seq_no", "")).isdigit() else 0,
+                    "status": str(row.get("status", "Existing / Remodeling")),
+                    "source": str(row.get("source", "MPD-1976")),
+                    "geometry_type": "Point"
+                })
+        except Exception:
+            pass
 
     # 2. Load Untraceable Drains GeoJSON
     if UNTRACE_PATH.exists():
-        gdf_untrace = gpd.read_file(UNTRACE_PATH)
-        for _, row in gdf_untrace.iterrows():
-            geom = row.geometry
-            if geom is None or geom.is_empty:
-                continue
+        try:
+            gdf_untrace = gpd.read_file(UNTRACE_PATH)
+            for _, row in gdf_untrace.iterrows():
+                geom = row.geometry
+                if geom is None or geom.is_empty:
+                    continue
 
-            lon, lat = float(geom.x), float(geom.y)
-            features.append({
-                "lon": lon,
-                "lat": lat,
-                "drain_name": str(row.get("drain_name", "Untraceable Drain")),
-                "basin": str(row.get("basin", "Delhi Basin")),
-                "seq_no": int(row.get("seq_no", 0)) if str(row.get("seq_no", "")).isdigit() else 0,
-                "status": "Untraceable / Encroached",
-                "source": "MPD-1976 Untraceable",
-                "geometry_type": "Point"
-            })
+                lon, lat = float(geom.x), float(geom.y)
+                features.append({
+                    "lon": lon,
+                    "lat": lat,
+                    "drain_name": str(row.get("drain_name", "Untraceable Drain")),
+                    "basin": str(row.get("basin", "Delhi Basin")),
+                    "seq_no": int(row.get("seq_no", 0)) if str(row.get("seq_no", "")).isdigit() else 0,
+                    "status": "Untraceable / Encroached",
+                    "source": "MPD-1976 Untraceable",
+                    "geometry_type": "Point"
+                })
+        except Exception:
+            pass
 
     _DRAINAGE_CACHE = features
 

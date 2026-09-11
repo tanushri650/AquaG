@@ -12,11 +12,12 @@ import time
 from pathlib import Path
 from typing import Dict, Any, List, Optional, Tuple
 
+from waterlogging import find_project_file
+
 # ---------------------------------------------------------------------------
 # Path Resolutions & Constants
 # ---------------------------------------------------------------------------
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-INFRA_PATH = PROJECT_ROOT / "existing code" / "data" / "raw" / "infrastructure" / "delhi_important_infrastructure.json"
+INFRA_PATH = find_project_file("existing code/data/raw/infrastructure/delhi_important_infrastructure.json")
 
 _INFRA_CACHE: Optional[List[Dict[str, Any]]] = None
 
@@ -76,8 +77,12 @@ def _init_infrastructure_cache() -> None:
         _INFRA_CACHE = []
         return
 
-    with open(INFRA_PATH, "r", encoding="utf-8") as f:
-        raw_data = json.load(f)
+    try:
+        with open(INFRA_PATH, "r", encoding="utf-8") as f:
+            raw_data = json.load(f)
+    except Exception:
+        _INFRA_CACHE = []
+        return
 
     elements = raw_data.get("elements", [])
     parsed_features = []

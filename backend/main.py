@@ -137,6 +137,20 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+from fastapi import Request
+from fastapi.responses import JSONResponse
+import logging
+
+logger = logging.getLogger("aquag")
+
+@app.exception_handler(Exception)
+async def global_exception_handler(request: Request, exc: Exception):
+    logger.error(f"Unhandled exception on {request.url.path}: {exc}", exc_info=True)
+    return JSONResponse(
+        status_code=500,
+        content={"detail": "Internal server error occurred.", "error": str(exc)},
+    )
+
 
 # ---------------------------------------------------------------------------
 # Helper functions
@@ -391,10 +405,10 @@ def drainage(bbox: str | None = None) -> Dict[str, Any]:
 def population_priority(
     scenario: str = "NORMAL",
     timestep: str = "T+0",
-    rainfall_1h: float = 10.0,
-    rainfall_3h: float = 20.0,
-    rainfall_6h: float = 30.0,
-    recent_rainfall_intensity: float = 5.0,
+    rainfall_1h: float | None = None,
+    rainfall_3h: float | None = None,
+    rainfall_6h: float | None = None,
+    recent_rainfall_intensity: float | None = None,
     bbox: str | None = None,
 ) -> Dict[str, Any]:
     bbox_list = None
@@ -424,10 +438,10 @@ def population_priority(
 def alerts(
     scenario: str = "NORMAL",
     timestep: str = "T+0",
-    rainfall_1h: float = 10.0,
-    rainfall_3h: float = 20.0,
-    rainfall_6h: float = 30.0,
-    recent_rainfall_intensity: float = 5.0,
+    rainfall_1h: float | None = None,
+    rainfall_3h: float | None = None,
+    rainfall_6h: float | None = None,
+    recent_rainfall_intensity: float | None = None,
     bbox: str | None = None,
 ) -> Dict[str, Any]:
     bbox_list = None

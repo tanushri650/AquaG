@@ -18,13 +18,12 @@ from pathlib import Path
 from typing import Dict, Any, List, Optional
 from scipy.spatial import cKDTree
 
-from waterlogging import get_street_waterlogging_geojson
+from waterlogging import get_street_waterlogging_geojson, find_project_file
 
 # ---------------------------------------------------------------------------
 # Path Resolutions & Resources
 # ---------------------------------------------------------------------------
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-POP_PATH = PROJECT_ROOT / "existing code" / "data" / "raw" / "population" / "delhi_districts_population_2011-3.geojson"
+POP_PATH = find_project_file("existing code/data/raw/population/delhi_districts_population_2011-3.geojson")
 
 _POP_KDTREE: Optional[cKDTree] = None
 _POP_NAMES: Optional[np.ndarray] = None
@@ -40,11 +39,16 @@ def _init_population_resources() -> None:
     if not POP_PATH.exists():
         return
 
-    gdf_pop = gpd.read_file(POP_PATH)
-    coords = np.column_stack([gdf_pop.geometry.y, gdf_pop.geometry.x]).astype(np.float32)
-    _POP_NAMES = gdf_pop["district"].values
-    _POP_TOTALS = gdf_pop["population_total"].values.astype(np.float32)
-    _POP_KDTREE = cKDTree(coords)
+    try:
+        gdf_pop = gpd.read_file(POP_PATH)
+        coords = np.column_stack([gdf_pop.geometry.y, gdf_pop.geometry.x]).astype(np.float32)
+        _POP_NAMES = gdf_pop["district"].values
+        _POP_TOTALS = gdf_pop["population_total"].values.astype(np.float32)
+        _POP_KDTREE = cKDTree(coords)
+    except Exception:
+        _POP_KDTREE = None
+        _POP_NAMES = None
+        _POP_TOTALS = None
 
 
 def calculate_population_priority_score(
@@ -91,10 +95,10 @@ def calculate_population_priority_score(
 def get_population_priority_geojson(
     scenario: str = "NORMAL",
     timestep: str = "T+0",
-    rainfall_1h: float = 10.0,
-    rainfall_3h: float = 20.0,
-    rainfall_6h: float = 30.0,
-    recent_rainfall_intensity: float = 5.0,
+    rainfall_1h: Optional[float] = None,
+    rainfall_3h: Optional[float] = None,
+    rainfall_6h: Optional[float] = None,
+    recent_rainfall_intensity: Optional[float] = None,
     bbox: Optional[List[float]] = None,
     max_features: int = 2500,
 ) -> Dict[str, Any]:

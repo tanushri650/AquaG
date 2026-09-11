@@ -11,11 +11,12 @@ import pandas as pd
 from pathlib import Path
 from typing import Dict, Any, List
 
+from waterlogging import find_project_file
+
 # ---------------------------------------------------------------------------
 # Path Resolutions
 # ---------------------------------------------------------------------------
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-PUMPS_PATH = PROJECT_ROOT / "existing code" / "data" / "raw" / "pumps" / "page_018.csv"
+PUMPS_PATH = find_project_file("existing code/data/raw/pumps/page_018.csv")
 
 _PUMPS_CACHE: List[Dict[str, Any]] | None = None
 
@@ -31,7 +32,10 @@ def _init_pumps_cache() -> None:
         return
 
     # Load raw CSV containing 10 pumping station entries
-    df = pd.read_csv(PUMPS_PATH)
+    try:
+        df = pd.read_csv(PUMPS_PATH)
+    except Exception:
+        pass
     
     # Raw CSV structure has station title as row index / first column
     stations = [

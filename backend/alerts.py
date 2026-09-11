@@ -39,10 +39,10 @@ def generate_recommended_action(
 def get_alerts_triage(
     scenario: str = "NORMAL",
     timestep: str = "T+0",
-    rainfall_1h: float = 10.0,
-    rainfall_3h: float = 20.0,
-    rainfall_6h: float = 30.0,
-    recent_rainfall_intensity: float = 5.0,
+    rainfall_1h: Optional[float] = None,
+    rainfall_3h: Optional[float] = None,
+    rainfall_6h: Optional[float] = None,
+    recent_rainfall_intensity: Optional[float] = None,
     bbox: Optional[List[float]] = None,
     max_incidents: int = 50,
 ) -> Dict[str, Any]:

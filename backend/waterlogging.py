@@ -26,14 +26,39 @@ import rasterio
 # ---------------------------------------------------------------------------
 # Path Resolutions
 # ---------------------------------------------------------------------------
-PROJECT_ROOT = Path(__file__).resolve().parents[2]
-MODEL_PATH = PROJECT_ROOT / "models" / "aquag_model_v2.pkl"
-METADATA_PATH = PROJECT_ROOT / "models" / "aquag_model_v2_metadata.json"
-GRAPH_PATH = PROJECT_ROOT / "existing code" / "data" / "processed" / "delhi_road_graph_compact.npz"
-DEM_PATH = PROJECT_ROOT / "existing code" / "data" / "raw" / "dem" / "delhi_aw3d30.tif"
-DRAINS_PATH = PROJECT_ROOT / "existing code" / "data" / "raw" / "drainage" / "delhi_drains_mpd1976_full.geojson"
-INFRA_PATH = PROJECT_ROOT / "existing code" / "data" / "raw" / "infrastructure" / "delhi_important_infrastructure.json"
-POP_PATH = PROJECT_ROOT / "existing code" / "data" / "raw" / "population" / "delhi_districts_population_2011-3.geojson"
+def find_project_file(relative_path: str) -> Path:
+    this_dir = Path(__file__).resolve().parent
+    candidate_roots = [
+        this_dir.parent.parent,
+        this_dir.parent,
+        this_dir,
+        Path.cwd(),
+        Path.cwd().parent,
+    ]
+    clean_rel = relative_path.replace("\\", "/").strip("/")
+    rel_parts = clean_rel.split("/")
+
+    for root in candidate_roots:
+        target = root.joinpath(*rel_parts)
+        if target.exists():
+            return target
+        if rel_parts[0] == "existing code":
+            target_stripped = root.joinpath(*rel_parts[1:])
+            if target_stripped.exists():
+                return target_stripped
+        target_added = root.joinpath("existing code", *rel_parts)
+        if target_added.exists():
+            return target_added
+
+    return candidate_roots[0].joinpath(*rel_parts)
+
+MODEL_PATH = find_project_file("models/aquag_model_v2.pkl")
+METADATA_PATH = find_project_file("models/aquag_model_v2_metadata.json")
+GRAPH_PATH = find_project_file("existing code/data/processed/delhi_road_graph_compact.npz")
+DEM_PATH = find_project_file("existing code/data/raw/dem/delhi_aw3d30.tif")
+DRAINS_PATH = find_project_file("existing code/data/raw/drainage/delhi_drains_mpd1976_full.geojson")
+INFRA_PATH = find_project_file("existing code/data/raw/infrastructure/delhi_important_infrastructure.json")
+POP_PATH = find_project_file("existing code/data/raw/population/delhi_districts_population_2011-3.geojson")
 
 # ---------------------------------------------------------------------------
 # Lazy Loaded Singletons
@@ -69,7 +94,7 @@ def _init_waterlogging_resources() -> None:
 
     # 1. Load Model V2 and Metadata
     if not MODEL_PATH.exists() or not METADATA_PATH.exists():
-        raise FileNotFoundError("Model V2 or metadata artifact missing for waterlogging engine")
+        raise FileNotFoundError(f"Model V2 or metadata artifact missing for waterlogging engine: {MODEL_PATH}")
     
     _MODEL = joblib.load(MODEL_PATH)
     with METADATA_PATH.open("r", encoding="utf-8") as f:
@@ -92,35 +117,48 @@ def _init_waterlogging_resources() -> None:
 
     # 3. Build Drains Spatial KDTree
     if DRAINS_PATH.exists():
-        drn_gdf = gpd.read_file(DRAINS_PATH)
-        drn_coords = np.column_stack([drn_gdf.geometry.y, drn_gdf.geometry.x]).astype(np.float32)
-        _DRAIN_KDTREE = cKDTree(drn_coords)
+        try:
+            drn_gdf = gpd.read_file(DRAINS_PATH)
+            drn_coords = np.column_stack([drn_gdf.geometry.y, drn_gdf.geometry.x]).astype(np.float32)
+            _DRAIN_KDTREE = cKDTree(drn_coords)
+        except Exception:
+            _DRAIN_KDTREE = None
 
     # 4. Build Population Spatial KDTree
     if POP_PATH.exists():
-        pop_gdf = gpd.read_file(POP_PATH)
-        pop_coords = np.column_stack([pop_gdf.geometry.y, pop_gdf.geometry.x]).astype(np.float32)
-        _POP_TOTALS = pop_gdf["population_total"].values
-        _POP_KDTREE = cKDTree(pop_coords)
+        try:
+            pop_gdf = gpd.read_file(POP_PATH)
+            pop_coords = np.column_stack([pop_gdf.geometry.y, pop_gdf.geometry.x]).astype(np.float32)
+            _POP_TOTALS = pop_gdf["population_total"].values
+            _POP_KDTREE = cKDTree(pop_coords)
+        except Exception:
+            _POP_KDTREE = None
+            _POP_TOTALS = None
 
     # 5. Build Infrastructure Spatial KDTree
     if INFRA_PATH.exists():
-        with open(INFRA_PATH, "r", encoding="utf-8") as f:
-            infra_raw = json.load(f)
-        
-        infra_coords = []
-        for el in infra_raw.get("elements", []):
-            lat = el.get("lat") or el.get("center", {}).get("lat")
-            lon = el.get("lon") or el.get("center", {}).get("lon")
-            if lat is not None and lon is not None:
-                infra_coords.append([lat, lon])
-        
-        if infra_coords:
-            _INFRA_KDTREE = cKDTree(np.array(infra_coords, dtype=np.float32))
+        try:
+            with open(INFRA_PATH, "r", encoding="utf-8") as f:
+                infra_raw = json.load(f)
+            
+            infra_coords = []
+            for el in infra_raw.get("elements", []):
+                lat = el.get("lat") or el.get("center", {}).get("lat")
+                lon = el.get("lon") or el.get("center", {}).get("lon")
+                if lat is not None and lon is not None:
+                    infra_coords.append([lat, lon])
+            
+            if infra_coords:
+                _INFRA_KDTREE = cKDTree(np.array(infra_coords, dtype=np.float32))
+        except Exception:
+            _INFRA_KDTREE = None
 
     # 6. Load DEM Raster Dataset Handle
     if DEM_PATH.exists():
-        _DEM_DATASET = rasterio.open(DEM_PATH)
+        try:
+            _DEM_DATASET = rasterio.open(DEM_PATH)
+        except Exception:
+            _DEM_DATASET = None
 
 
 def calculate_water_depth_proxy(
@@ -180,10 +218,10 @@ def _get_timestep_multiplier(timestep: str) -> float:
 def get_street_waterlogging_geojson(
     scenario: str = "MODERATE",
     timestep: str = "T+0",
-    rainfall_1h: float = 45.0,
-    rainfall_3h: float = 85.0,
-    rainfall_6h: float = 130.0,
-    recent_rainfall_intensity: float = 22.5,
+    rainfall_1h: float | None = None,
+    rainfall_3h: float | None = None,
+    rainfall_6h: float | None = None,
+    recent_rainfall_intensity: float | None = None,
     bbox: List[float] | None = None,
     max_segments: int = 2500,
 ) -> Dict[str, Any]:
@@ -194,6 +232,26 @@ def get_street_waterlogging_geojson(
     """
     _init_waterlogging_resources()
     t_start = time.time()
+
+    scenario_clean = str(scenario).upper().strip() if scenario else "MODERATE"
+    preset_rain = {
+        "NORMAL": (10.0, 20.0, 30.0, 5.0),
+        "LOW": (10.0, 20.0, 30.0, 5.0),
+        "MODERATE": (45.0, 85.0, 130.0, 22.5),
+        "MEDIUM": (45.0, 85.0, 130.0, 22.5),
+        "HEAVY": (75.0, 130.0, 180.0, 37.5),
+        "HIGH": (75.0, 130.0, 180.0, 37.5),
+        "EXTREME": (110.0, 180.0, 250.0, 55.0),
+    }.get(scenario_clean, (45.0, 85.0, 130.0, 22.5))
+
+    if rainfall_1h is None:
+        rainfall_1h = preset_rain[0]
+    if rainfall_3h is None:
+        rainfall_3h = preset_rain[1]
+    if rainfall_6h is None:
+        rainfall_6h = preset_rain[2]
+    if recent_rainfall_intensity is None:
+        recent_rainfall_intensity = preset_rain[3]
 
     # Validate Bounding Box
     if not bbox or len(bbox) != 4:

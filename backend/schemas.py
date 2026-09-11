@@ -150,10 +150,10 @@ class HealthResponse(BaseModel):
 class WaterloggingRequest(BaseModel):
     scenario: str = "MODERATE"
     timestep: str = "T+0"
-    rainfall_1h: float = Field(..., ge=0.0)
-    rainfall_3h: float = Field(..., ge=0.0)
-    rainfall_6h: float = Field(..., ge=0.0)
-    recent_rainfall_intensity: float = Field(..., ge=0.0)
+    rainfall_1h: float | None = Field(None, ge=0.0)
+    rainfall_3h: float | None = Field(None, ge=0.0)
+    rainfall_6h: float | None = Field(None, ge=0.0)
+    recent_rainfall_intensity: float | None = Field(None, ge=0.0)
     bbox: List[float] = Field(..., description="[min_lon, min_lat, max_lon, max_lat]")
 
     @field_validator("bbox")
