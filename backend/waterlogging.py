@@ -61,7 +61,7 @@ INFRA_PATH = find_project_file("existing code/data/raw/infrastructure/delhi_impo
 POP_PATH = find_project_file("existing code/data/raw/population/delhi_districts_population_2011-3.geojson")
 
 # ---------------------------------------------------------------------------
-# Lazy Loaded Singletons
+# Lazy Loaded Singletons & Cache
 # ---------------------------------------------------------------------------
 _MODEL = None
 _METADATA = None
@@ -75,6 +75,7 @@ _OFFSETS = None
 _TARGETS = None
 _DISTANCES = None
 _NODE_RISK_MULT = None
+_U_NODES = None
 
 _DRAIN_KDTREE = None
 _INFRA_KDTREE = None
@@ -82,11 +83,34 @@ _POP_KDTREE = None
 _POP_TOTALS = None
 _DEM_DATASET = None
 
+_WATERLOGGING_CACHE: Dict[Tuple, Tuple[float, Dict[str, Any]]] = {}
+_CACHE_MAX_SIZE = 30
+_CACHE_TTL_SEC = 60.0
+
+
+def _get_cached_waterlogging(cache_key: Tuple) -> Dict[str, Any] | None:
+    now = time.time()
+    if cache_key in _WATERLOGGING_CACHE:
+        ts, result = _WATERLOGGING_CACHE[cache_key]
+        if now - ts <= _CACHE_TTL_SEC:
+            return result
+        else:
+            del _WATERLOGGING_CACHE[cache_key]
+    return None
+
+
+def _set_cached_waterlogging(cache_key: Tuple, result: Dict[str, Any]) -> None:
+    now = time.time()
+    if len(_WATERLOGGING_CACHE) >= _CACHE_MAX_SIZE:
+        oldest_key = min(_WATERLOGGING_CACHE, key=lambda k: _WATERLOGGING_CACHE[k][0])
+        del _WATERLOGGING_CACHE[oldest_key]
+    _WATERLOGGING_CACHE[cache_key] = (now, result)
+
 
 def _init_waterlogging_resources() -> None:
     """Initialize and cache all graph, model, spatial trees, and DEM resources once at startup."""
     global _MODEL, _METADATA, _FEATURE_ORDER, _CLASS_NAMES
-    global _GRAPH_DATA, _LATS, _LONS, _OFFSETS, _TARGETS, _DISTANCES, _NODE_RISK_MULT
+    global _GRAPH_DATA, _LATS, _LONS, _OFFSETS, _TARGETS, _DISTANCES, _NODE_RISK_MULT, _U_NODES
     global _DRAIN_KDTREE, _INFRA_KDTREE, _POP_KDTREE, _POP_TOTALS, _DEM_DATASET
 
     if (
@@ -98,6 +122,7 @@ def _init_waterlogging_resources() -> None:
         and _TARGETS is not None
         and _DISTANCES is not None
         and _NODE_RISK_MULT is not None
+        and _U_NODES is not None
     ):
         return
 
@@ -123,6 +148,7 @@ def _init_waterlogging_resources() -> None:
     _TARGETS = np.ascontiguousarray(_GRAPH_DATA["targets"], dtype=np.int32)
     _DISTANCES = np.ascontiguousarray(_GRAPH_DATA["distances"], dtype=np.float32)
     _NODE_RISK_MULT = np.ascontiguousarray(_GRAPH_DATA["node_risk_mult"], dtype=np.float32)
+    _U_NODES = np.repeat(np.arange(len(_LATS), dtype=np.int32), np.diff(_OFFSETS))
 
     # 3. Build Drains Spatial KDTree
     if DRAINS_PATH.exists():
@@ -270,15 +296,35 @@ def get_street_waterlogging_geojson(
     if min_lon >= max_lon or min_lat >= max_lat:
         raise ValueError("Invalid bounding box bounds: min values must be strictly less than max values")
 
-    # 1. Filter Nodes within Viewport Bounding Box
-    if _LONS is None or _LATS is None:
+    # 1. Check LRU Result Cache
+    cache_key = (
+        scenario_clean,
+        str(timestep).upper().strip(),
+        round(float(rainfall_1h), 1),
+        round(float(rainfall_3h), 1),
+        round(float(rainfall_6h), 1),
+        round(float(recent_rainfall_intensity), 1),
+        round(float(min_lon), 3),
+        round(float(min_lat), 3),
+        round(float(max_lon), 3),
+        round(float(max_lat), 3),
+    )
+    cached_res = _get_cached_waterlogging(cache_key)
+    if cached_res is not None:
+        return cached_res
+
+    # 2. Vectorized Node & Edge Bounding Box Filtering
+    if _LONS is None or _LATS is None or _U_NODES is None:
         raise RuntimeError("Waterlogging graph coordinates failed to initialize")
 
-    node_mask = (_LONS >= min_lon) & (_LONS <= max_lon) & (_LATS >= min_lat) & (_LATS <= max_lat)
-    valid_nodes = np.where(node_mask)[0]
+    edge_mid_lats = (_LATS[_U_NODES] + _LATS[_TARGETS]) / 2.0
+    edge_mid_lons = (_LONS[_U_NODES] + _LONS[_TARGETS]) / 2.0
+    edge_mask = (edge_mid_lats >= min_lat) & (edge_mid_lats <= max_lat) & (edge_mid_lons >= min_lon) & (edge_mid_lons <= max_lon)
+    valid_edge_indices = np.where(edge_mask)[0]
 
-    if len(valid_nodes) == 0:
-        return {
+    total_candidates = len(valid_edge_indices)
+    if total_candidates == 0:
+        empty_res = {
             "type": "FeatureCollection",
             "features": [],
             "metadata": {
@@ -290,46 +336,55 @@ def get_street_waterlogging_geojson(
                 "bbox": bbox,
             },
         }
+        _set_cached_waterlogging(cache_key, empty_res)
+        return empty_res
 
-    # 2. Extract Edges for Filtered Nodes
-    segment_u = []
-    segment_v = []
-    segment_midpoints = []
-    segment_dists = []
-
-    for u in valid_nodes:
-        start_edge = _OFFSETS[u]
-        end_edge = _OFFSETS[u + 1]
-        for e_idx in range(start_edge, end_edge):
-            v = _TARGETS[e_idx]
-            u_lat, u_lon = _LATS[u], _LONS[u]
-            v_lat, v_lon = _LATS[v], _LONS[v]
-            
-            mid_lat = (u_lat + v_lat) / 2.0
-            mid_lon = (u_lon + v_lon) / 2.0
-            
-            segment_u.append(u)
-            segment_v.append(v)
-            segment_midpoints.append([mid_lat, mid_lon])
-            segment_dists.append(float(_DISTANCES[e_idx]))
-
-    total_candidates = len(segment_u)
-    
-    # 3. Truncate / Cap Segments for Performance & RAM Safety
+    # 3. Spatially Representative Grid Selection BEFORE KDTree Queries & DEM Sampling for Performance & RAM Safety
     truncated = False
     if total_candidates > max_segments:
         truncated = True
-        # Sort/prioritize segments with higher node risk multiplier or lower node index
-        risks = _NODE_RISK_MULT[np.array(segment_u)]
-        top_indices = np.argsort(-risks)[:max_segments]
-        
-        segment_u = [segment_u[i] for i in top_indices]
-        segment_v = [segment_v[i] for i in top_indices]
-        segment_midpoints = [segment_midpoints[i] for i in top_indices]
-        segment_dists = [segment_dists[i] for i in top_indices]
+        grid_cols = 10
+        grid_rows = 10
+        cell_quota = max_segments // (grid_cols * grid_rows)
+
+        v_lats = edge_mid_lats[valid_edge_indices]
+        v_lons = edge_mid_lons[valid_edge_indices]
+        v_risks = _NODE_RISK_MULT[_U_NODES[valid_edge_indices]]
+
+        gx = np.clip(np.int32(((v_lons - min_lon) / (max_lon - min_lon)) * grid_cols), 0, grid_cols - 1)
+        gy = np.clip(np.int32(((v_lats - min_lat) / (max_lat - min_lat)) * grid_rows), 0, grid_rows - 1)
+        cell_ids = gy * grid_cols + gx
+
+        sort_order = np.lexsort((-v_risks, cell_ids))
+        sorted_edge_indices = valid_edge_indices[sort_order]
+        sorted_cell_ids = cell_ids[sort_order]
+
+        _, cell_start_indices, cell_counts = np.unique(sorted_cell_ids, return_index=True, return_counts=True)
+
+        selected_indices = []
+        for start, count in zip(cell_start_indices, cell_counts):
+            take = min(count, cell_quota)
+            selected_indices.extend(sorted_edge_indices[start : start + take])
+
+        rem_capacity = max_segments - len(selected_indices)
+        if rem_capacity > 0:
+            sel_set = set(selected_indices)
+            unselected = [idx for idx in sorted_edge_indices if idx not in sel_set]
+            selected_indices.extend(unselected[:rem_capacity])
+
+        top_indices = np.array(selected_indices[:max_segments], dtype=np.int32)
+    else:
+        top_indices = valid_edge_indices
+
+    segment_u = _U_NODES[top_indices]
+    segment_v = _TARGETS[top_indices]
+    segment_dists = _DISTANCES[top_indices]
+
+    mid_lats = (_LATS[segment_u] + _LATS[segment_v]) / 2.0
+    mid_lons = (_LONS[segment_u] + _LONS[segment_v]) / 2.0
+    midpoints_arr = np.column_stack([mid_lats, mid_lons]).astype(np.float32)
 
     N = len(segment_u)
-    midpoints_arr = np.array(segment_midpoints, dtype=np.float32)
 
     # 4. Batch Spatial KDTree Queries
     # Drain Distance Query
@@ -467,7 +522,7 @@ def get_street_waterlogging_geojson(
 
     exec_ms = round((time.time() - t_start) * 1000.0, 1)
 
-    return {
+    result = {
         "type": "FeatureCollection",
         "features": features,
         "metadata": {
@@ -481,3 +536,6 @@ def get_street_waterlogging_geojson(
             "basis": "hydro_spatial_proxy",
         },
     }
+
+    _set_cached_waterlogging(cache_key, result)
+    return result

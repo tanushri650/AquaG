@@ -450,7 +450,12 @@ async function loadPopulationPriorityLayer() {
 // --------------------------------------------------------------------------
 // 6. Alerts & Triage Engine Panel (GET /alerts)
 // --------------------------------------------------------------------------
-async function loadAlertsPanel() {
+async function loadAlertsPanel(force = false) {
+  const alertsTab = document.getElementById("tab-alerts");
+  if (!force && alertsTab && !alertsTab.classList.contains("active")) {
+    return;
+  }
+
   const bbox = getMapViewportBbox();
   const bboxStr = bbox.join(",");
   const encodedTimestep = encodeURIComponent(activeTimestep);
@@ -546,7 +551,7 @@ function initSideTabs() {
       if (targetEl) targetEl.classList.add("active");
 
       if (targetTab === "tab-alerts") {
-        loadAlertsPanel();
+        loadAlertsPanel(true);
       }
     });
   });
