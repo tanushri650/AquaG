@@ -349,7 +349,15 @@ def waterlogging(payload: WaterloggingRequest) -> WaterloggingResponse:
     summary="Get Viewport-Filtered Critical Infrastructure GeoJSON Layer",
     tags=["GIS & Infrastructure"],
 )
-def infrastructure(bbox: str | None = None) -> Dict[str, Any]:
+def infrastructure(
+    scenario: str = "NORMAL",
+    timestep: str = "T+0",
+    rainfall_1h: float | None = None,
+    rainfall_3h: float | None = None,
+    rainfall_6h: float | None = None,
+    recent_rainfall_intensity: float | None = None,
+    bbox: str | None = None,
+) -> Dict[str, Any]:
     bbox_list = None
     if bbox:
         try:
@@ -358,7 +366,15 @@ def infrastructure(bbox: str | None = None) -> Dict[str, Any]:
                 bbox_list = parts
         except ValueError:
             pass
-    return get_infrastructure_geojson(bbox=bbox_list)
+    return get_infrastructure_geojson(
+        scenario=scenario,
+        timestep=timestep,
+        rainfall_1h=rainfall_1h,
+        rainfall_3h=rainfall_3h,
+        rainfall_6h=rainfall_6h,
+        recent_rainfall_intensity=recent_rainfall_intensity,
+        bbox=bbox_list,
+    )
 
 
 @app.get(
